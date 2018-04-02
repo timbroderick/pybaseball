@@ -1,0 +1,277 @@
+body {
+	background: #FFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+
+.divgfx {
+	-webkit-overflow-scrolling: touch;
+	overflow: scroll;
+	width: 100%;
+	height: 550px;
+	background-color: #ffffff;
+}
+
+.divgfx100 {
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+
+/* General styles */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p.indexmap {
+	margin-bottom: 0em;
+}
+
+.spaceB {
+	margin: 0 0 .5em 0;
+}
+
+.space {
+	margin: 1em 0 0 0;
+}
+
+.li_position {
+		    list-style-position: inside;
+}
+
+.gray {
+	background:#6E7272;
+}
+
+.lightgrey {
+	background:#BAC2C2;
+}
+
+.brown {
+	background:#A77954;
+}
+
+a.newsART:link {
+	color:#326464;
+	} 
+
+a.newsART:visited {
+	color:#BEBAB7;
+}
+
+a {text-decoration:none;border-bottom:1px dotted #ccc;color:#003366;}
+a:hover {color:#000;border-bottom:1px dotted #000;}
+a.ahrefLite {color:#fff;border:0;}
+a:hover.ahrefLite {color:#feeba0;border:0;}
+strong {font-weight:bold;}
+
+.topmargin { 
+	margin-top:5px;
+}
+
+table.fullTable { 
+	width:100%;
+}
+
+
+td {text-align:right;}
+td.tdRIGHT {text-align:right;}
+td.tdLEFT {text-align:left;}
+td.tdCENT {
+	text-align:center;
+	width:30%;
+	background-color:#f6e8c3;
+	font-size:36px;
+	color:#a6611a;
+}
+
+th {text-align:right;}
+th.thRIGHT {text-align:right;}
+th.thLEFT {text-align:left;}
+th.thCENT {text-align:center;}
+
+
+/* Header styles */
+
+#opening_header {
+	color: #326464;
+	margin: 0 0 .2em .2em;
+}
+
+/* NAV styles */
+
+.navSpec {
+text-decoration: none;
+font-color: #FFF;
+height:2em;
+}
+
+nav a:link {
+	color:#FFF;
+	} 
+nav a:visited {
+	color:#BEBAB7;
+}
+
+
+/* Aside styles */
+
+
+/* Section styles */
+
+#creditBox {
+	background-color: #dedede;
+	padding: 10px;
+}
+
+#underfoot {
+  background-color: #006BA4;
+  height: 10px;
+}
+/* style for interactive graphics */
+
+
+table.mapTable { 
+	width:200px;
+	margin-top:5px;
+}
+
+
+.center100 {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.high375 {
+	height: 375px;
+	background-color: #ffffff;
+}
+
+.high350 {
+	height: 350px;
+	background-color: #ffffff;
+}
+
+.high325 {
+	height: 325px;
+}
+
+
+/* Article styles */
+
+
+article li {
+	color:#006561;
+	padding:.3em;
+}
+
+article li:hover{
+	background:#FFB173;
+}
+
+/*Graphic Styles */
+
+#reserveSPACE {
+  width:768px;
+  height:600px;
+}
+
+
+.hidden {
+	display:none;
+}
+
+/* Mapping Styles */
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.source {
+		font-size: 14px;
+}
+
+
+p.chartEmbed {
+	font-size: 14.5px;
+	margin-bottom: 0em;
+}
+
+.headstyle {
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	font-size: 70px;
+    line-height: 70px;
+    letter-spacing: -1px;
+	color: white;
+	margin: 0 0 10 0;
+	padding: 0 0 10 0;
+	font-weight: 500;
+	text-align:center;
+
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/* Footer styles */
+
+
+/* bootstrap hack: fix content width inside hidden tabs */
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: block;     /* undo display:none          */
+    height: 0;          /* height:0 is also invisible */ 
+    overflow-y: hidden; /* no-overflow                */
+}
+.tab-content > .active,
+.pill-content > .active {
+    height: auto;       /* let the content decide it  */
+} /* bootstrap hack end */
+
+
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}
+
+.table {
+	font-size: 1em;
+}
+
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td{
+    padding: 1px 10px;
+}
+
+
