@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+  <title>
+    Baseball 2018
+  </title>
+
+    <link rel="stylesheet" href="static/css/normalize.css">
+
+    <!-- BOOTSTRAP Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script type="text/javascript" src="static/js/jquery-1.11.3.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+     <link rel="stylesheet" href="static/css/newsArt.css" />
+
+     <link rel="stylesheet" href="static/css/elec.css" />
+
+<script>
+var $ = jQuery;
+</script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top" style="margin : 0 !important;">
+    <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <img alt="Brand" src="static/img/dh.png"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="http://www.dailyherald.com" target="_blank">Daily Herald</a></li>
+                <li><a href="https://i.dailyherald.com/gfx/" target="_blank">Daily Herald News Art</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+        <h2 style='width:100%; text-align:center' class='elexhdd' ><strong>Baseball 2018</strong></h2>
+        <h3><small>I'm going to try and follow the baseball season using a python app. It's not much to look at right now, but I'll add to it gradually. The idea is to run a script once a day and update this website.<br>
+            I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and more about baseball statistics. All my work can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
+
+        <div class="row">
+        <div class="col-md-6">
+
+            <br>
+            <!--Begin schedule-->
+            <!--Select for League-->
+             
+                
+                    <hr class='fancy'>
+                    <br>
+                    <h2 style='width:100%; text-align:center'>American League</h2>
+
+                    <!-- East division -->
+                    
+                        
+                        
+                        
+                            <br>
+                            <h4><strong>East Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Boston Red Sox</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>.667</td>
+                                            <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">New York Yankees</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>.667</td>
+                                            <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Baltimore Orioles</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>.500</td>
+                                            <td>0.5</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Tampa Bay Rays</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>.333</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Toronto Blue Jays</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>.333</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                
+                                </tbody>
+                            </table>
+                        
+                        
+                        
+                        
+
+                        <!-- Central division -->
+                    
+                        
+                            <br>
+                            <h4><strong>Central Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left"><a href=""><strong style='color:#FF9C00'>Chicago White Sox</a></strong></td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td>1.000</td>
+                                            <td>--</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">Cleveland Indians</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>.500</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">Minnesota Twins</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>.500</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">Detroit Tigers</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>.000</td>
+                                            <td>1.5</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">Kansas City Royals</td>
+                                            <td>0</td>
+                                            <td>2</td>
+                                            <td>.000</td>
+                                            <td>2.0</td>
+                                        </tr>
+                                    
+                                
+                                </tbody>
+                            </table>
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <!-- West division -->
+                    
+                        
+                    
+                        
+                    
+                        
+                            <br>
+                            <h4><strong>West Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Houston Astros</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>.667</td>
+                                            <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Los Angeles Angels of Anaheim</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>.667</td>
+                                            <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Seattle Mariners</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>.500</td>
+                                            <td>0.5</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Oakland Athletics</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>.333</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Texas Rangers</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>.333</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                
+                                </tbody>
+                            </table>
+                        
+                    
+                
+            
+                
+            
+        </div>
+
+        <div class="col-md-6">
+            <br>
+            <!--Begin schedule-->
+            <!--Select for League-->
+             
+                
+            
+                
+                    <hr class='fancy'>
+                    <br>
+                    <h2 style='width:100%; text-align:center'>National League</h2>
+                    
+                    <!-- East division -->
+                    
+                        
+                        
+                        
+                            <br>
+                            <h4><strong>East Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                
+                                        <tr>
+                                            <td style="text-align:left">New York Mets</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td>1.000</td>
+                                            <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Washington Nationals</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td>1.000</td>
+                                            <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Atlanta Braves</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>.667</td>
+                                            <td>0.5</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Miami Marlins</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>.333</td>
+                                            <td>1.5</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Philadelphia Phillies</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>.333</td>
+                                            <td>1.5</td>
+                                        </tr>
+                                
+                                </tbody>
+                            </table>
+                        
+                        
+                        
+                        
+
+                        <!-- Central division -->
+                    
+                        
+                            <br>
+                            <h4><strong>Central Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">Milwaukee Brewers</td>
+                                            <td>3</td>
+                                            <td>0</td>
+                                            <td>1.000</td>
+                                            <td>--</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">Pittsburgh Pirates</td>
+                                            <td>1</td>
+                                            <td>0</td>
+                                            <td>1.000</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left"><a href=""><strong style='color:#FF9C00'>Chicago Cubs</a></strong></td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>.667</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">Cincinnati Reds</td>
+                                            <td>0</td>
+                                            <td>2</td>
+                                            <td>.000</td>
+                                            <td>2.5</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">St. Louis Cardinals</td>
+                                            <td>0</td>
+                                            <td>2</td>
+                                            <td>.000</td>
+                                            <td>2.5</td>
+                                        </tr>
+                                    
+                                
+                                </tbody>
+                            </table>
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <!-- West division -->
+                    
+                        
+                    
+                        
+                    
+                        
+                            <br>
+                            <h4><strong>West Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Arizona Diamondbacks</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>.667</td>
+                                            <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">San Francisco Giants</td>
+                                            <td>2</td>
+                                            <td>1</td>
+                                            <td>.667</td>
+                                            <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Colorado Rockies</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>.333</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Los Angeles Dodgers</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>.333</td>
+                                            <td>1.0</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">San Diego Padres</td>
+                                            <td>0</td>
+                                            <td>3</td>
+                                            <td>.000</td>
+                                            <td>2.0</td>
+                                        </tr>
+                                
+                                </tbody>
+                            </table>
+                        
+                    
+                
+            
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<br><br>
+<script>
+$.ajaxSetup({ cache: false});
+</script>
+
+
+<div id="creditBox">
+  <div class="row">
+    <div class="col-md-10 center-block center-blockfloat">
+      <p><small>Web app by Tim Broderick <a href="mailto:tbroderick@dailyherald.com">tbroderick@dailyherald.com</a>.<br> 
+      </small></p>
+    </div>
+  </div>
+</div>
+<div id="underfoot"></div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+Tm,W,L,WLperc,GB,League,Division
+Boston Red Sox,2,1,.667,--,American,East
+New York Yankees,2,1,.667,--,American,East
+Baltimore Orioles,1,1,.500,0.5,American,East
+Tampa Bay Rays,1,2,.333,1.0,American,East
+Toronto Blue Jays,1,2,.333,1.0,American,East
+Chicago White Sox,2,0,1.000,--,American,Central
+Cleveland Indians,1,1,.500,1.0,American,Central
+Minnesota Twins,1,1,.500,1.0,American,Central
+Detroit Tigers,0,1,.000,1.5,American,Central
+Kansas City Royals,0,2,.000,2.0,American,Central
+Houston Astros,2,1,.667,--,American,West
+Los Angeles Angels of Anaheim,2,1,.667,--,American,West
+Seattle Mariners,1,1,.500,0.5,American,West
+Oakland Athletics,1,2,.333,1.0,American,West
+Texas Rangers,1,2,.333,1.0,American,West
+New York Mets,2,0,1.000,--,National,East
+Washington Nationals,2,0,1.000,--,National,East
+Atlanta Braves,2,1,.667,0.5,National,East
+Miami Marlins,1,2,.333,1.5,National,East
+Philadelphia Phillies,1,2,.333,1.5,National,East
+Milwaukee Brewers,3,0,1.000,--,National,Central
+Pittsburgh Pirates,1,0,1.000,1.0,National,Central
+Chicago Cubs,2,1,.667,1.0,National,Central
+Cincinnati Reds,0,2,.000,2.5,National,Central
+St. Louis Cardinals,0,2,.000,2.5,National,Central
+Arizona Diamondbacks,2,1,.667,--,National,West
+San Francisco Giants,2,1,.667,--,National,West
+Colorado Rockies,1,2,.333,1.0,National,West
+Los Angeles Dodgers,1,2,.333,1.0,National,West
+San Diego Padres,0,3,.000,2.0,National,West

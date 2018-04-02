@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+{% include 'header.html' %}
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+        <h2 style='width:100%; text-align:center' class='elexhdd' ><strong>Baseball 2018</strong></h2>
+        <h3><small>I'm going to try and follow the baseball season using a python app. It's not much to look at right now, but I'll add to it gradually. The idea is to run a script once a day and update this website.<br>
+            I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and more about baseball statistics. All my work can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
+
+        <div class="row">
+        <div class="col-md-6">
+
+            <br>
+            <!--Begin schedule-->
+            <!--Select for League-->
+             {% for group in object_list|groupby('League') %}
+                {% if group.grouper == "American" %}
+                    <hr class='fancy'>
+                    <br>
+                    <h2 style='width:100%; text-align:center'>{{ group.grouper }} League</h2>
+
+                    <!-- East division -->
+                    {% for div in group.list|groupby('Division') %}
+                        {% if div.grouper == "East" %}
+                            <br>
+                            <h4><strong>{{ div.grouper }} Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                {% for team in div.list|sort(reverse=True, attribute='WLperc') %}
+                                        <tr>
+                                            <td style="text-align:left">{{ team.Tm }}</td>
+                                            <td>{{ team.W }}</td>
+                                            <td>{{ team.L }}</td>
+                                            <td>{{ team.WLperc }}</td>
+                                            <td>{{ team.GB }}</td>
+                                        </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endif %}
+                        {% endfor %}
+
+                        <!-- Central division -->
+                    {% for div in group.list|groupby('Division') %}
+                        {% if div.grouper == "Central" %}
+                            <br>
+                            <h4><strong>{{ div.list[0]['Division'] }} Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                {% for team in div.list|sort(reverse=True, attribute='WLperc') %}
+                                    {% if team.Tm == 'Chicago White Sox' %}
+                                        <tr>
+                                            <td style="text-align:left"><a href=""><strong style='color:#FF9C00'>{{ team.Tm }}</a></strong></td>
+                                            <td>{{ team.W }}</td>
+                                            <td>{{ team.L }}</td>
+                                            <td>{{ team.WLperc }}</td>
+                                            <td>{{ team.GB }}</td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td style="text-align:left">{{ team.Tm }}</td>
+                                            <td>{{ team.W }}</td>
+                                            <td>{{ team.L }}</td>
+                                            <td>{{ team.WLperc }}</td>
+                                            <td>{{ team.GB }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endif %}
+                        {% endfor %}
+
+                        <!-- West division -->
+                    {% for div in group.list|groupby('Division') %}
+                        {% if div.grouper == "West" %}
+                            <br>
+                            <h4><strong>{{ div.list[0]['Division'] }} Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                {% for team in div.list|sort(reverse=True, attribute='WLperc') %}
+                                        <tr>
+                                            <td style="text-align:left">{{ team.Tm }}</td>
+                                            <td>{{ team.W }}</td>
+                                            <td>{{ team.L }}</td>
+                                            <td>{{ team.WLperc }}</td>
+                                            <td>{{ team.GB }}</td>
+                                        </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="col-md-6">
+            <br>
+            <!--Begin schedule-->
+            <!--Select for League-->
+             {% for group in object_list|groupby('League') %}
+                {% if group.grouper == "National" %}
+                    <hr class='fancy'>
+                    <br>
+                    <h2 style='width:100%; text-align:center'>{{ group.grouper }} League</h2>
+                    
+                    <!-- East division -->
+                    {% for div in group.list|groupby('Division') %}
+                        {% if div.grouper == "East" %}
+                            <br>
+                            <h4><strong>{{ div.grouper }} Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                {% for team in div.list|sort(reverse=True, attribute='WLperc') %}
+                                        <tr>
+                                            <td style="text-align:left">{{ team.Tm }}</td>
+                                            <td>{{ team.W }}</td>
+                                            <td>{{ team.L }}</td>
+                                            <td>{{ team.WLperc }}</td>
+                                            <td>{{ team.GB }}</td>
+                                        </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endif %}
+                        {% endfor %}
+
+                        <!-- Central division -->
+                    {% for div in group.list|groupby('Division') %}
+                        {% if div.grouper == "Central" %}
+                            <br>
+                            <h4><strong>{{ div.list[0]['Division'] }} Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                {% for team in div.list|sort(reverse=True, attribute='WLperc') %}
+                                    {% if team.Tm == 'Chicago Cubs' %}
+                                        <tr>
+                                            <td style="text-align:left"><a href=""><strong style='color:#FF9C00'>{{ team.Tm }}</a></strong></td>
+                                            <td>{{ team.W }}</td>
+                                            <td>{{ team.L }}</td>
+                                            <td>{{ team.WLperc }}</td>
+                                            <td>{{ team.GB }}</td>
+                                        </tr>
+                                    {% else %}
+                                        <tr>
+                                            <td style="text-align:left">{{ team.Tm }}</td>
+                                            <td>{{ team.W }}</td>
+                                            <td>{{ team.L }}</td>
+                                            <td>{{ team.WLperc }}</td>
+                                            <td>{{ team.GB }}</td>
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endif %}
+                        {% endfor %}
+
+                        <!-- West division -->
+                    {% for div in group.list|groupby('Division') %}
+                        {% if div.grouper == "West" %}
+                            <br>
+                            <h4><strong>{{ div.list[0]['Division'] }} Division</strong></h4>
+                            <table class='table table-condensed elex'>
+                                <thead>
+                                <th style="text-align:left">Team</th><th>Wins</th><th>Loses</th><th>W-L %</th><th>GB</th>
+                            </thead><tbody>
+                                {% for team in div.list|sort(reverse=True, attribute='WLperc') %}
+                                        <tr>
+                                            <td style="text-align:left">{{ team.Tm }}</td>
+                                            <td>{{ team.W }}</td>
+                                            <td>{{ team.L }}</td>
+                                            <td>{{ team.WLperc }}</td>
+                                            <td>{{ team.GB }}</td>
+                                        </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<br><br>
+<script>
+$.ajaxSetup({ cache: false});
+</script>
+
+{% include 'footer.html' %}
