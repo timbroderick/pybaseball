@@ -80,6 +80,7 @@ var $ = jQuery;
 
         <h3><small>I'm going to try and follow the baseball season using a python app. It's not much to look at right now, but I'll add to it gradually. The idea is to run a script once a day and update this website.<br>
             I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and more about baseball statistics. All my work can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
+            <br>
             <p><strong>Updated Wednesday, April 4</strong><br>
                 I really ought to automate that date. While not reflected in the page below, I have updated things behind the scenes. First, in the github repository, all the code to this is in the freeze.py script as well as the playing jupyter notebook.<br>
                 Next, I've added batting and pitching stats for each team to the standings file. Pybaseball gets these from <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a> I'm going to add some graphics below the standings, likely based on some work I've done with <a href="https://github.com/dailyherald/Seaborn" target="_blank"> Seaborn.</a> I'm thinking of running regressions on several things and watch how they change as the season progresses.<br>
@@ -493,6 +494,28 @@ var $ = jQuery;
             
         </div>
         </div>
+        <!-- end standings -->
+        <!-- Begin analysis -->
+        <br>
+        <hr class='fancy'>
+        <br>
+        <h2 style='width:100%; text-align:center'><strong>Regressions</strong></h2>
+        <br>
+        <p>Here's where I'm going to take a look at various measures visually and see how the Chicago teams fall among the major leagues.</p>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h4><strong>Batting average versus Earned Run Average:</strong> The classic statistics - obviously a high batting average and a low ERA should equal more wins.</h4>
+                <p>Black = White Sox, Blue = Cubs.</p>
+                <br>
+            </div>
+            <div class="col-md-8">
+                <img src="static/img/BAvERA.png" class="img-responsive center-block"><br>
+            </div>
+        </div>
+
+
+
     </div>
     </div>
 </div>

@@ -124,6 +124,50 @@ print('standings file done and saved')
 
 
 # -------------------------------
+# Now we're going to create the visuals
+
+import seaborn as sns
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import math
+
+#-----
+# set styles
+
+mpl.rcParams['font.family'] = ['sans-serif']
+mpl.rcParams['xtick.labelsize'] = 12
+mpl.rcParams['ytick.labelsize'] = 12
+mpl.rcParams['lines.linewidth'] = 0.75
+
+mpl.rcParams['pdf.fonttype'] = 42 # allegedly allows text to be saved as editable
+
+mpl.rcParams['font.sans-serif'] = ['Arial Narrow']
+mpl.rcParams['font.size'] = 9
+mpl.rcParams['text.usetex'] = False
+mpl.rcParams['svg.fonttype'] = 'none'
+
+plt.style.use(['ggplot'])
+
+from scipy.stats import norm
+
+print('plotting ready')
+
+# ERA vs Batting average
+g = sns.regplot(data=result3, x='AVGbat', y='ERA',
+                fit_reg=True,
+                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
+                line_kws={"color":"orange","lw":1}
+               )
+
+# Set the size of the graph from here
+g.figure.set_size_inches(8,8)
+#plt.suptitle('Batting average vs. ERA', fontsize=16, family='Arial Black', y=.94)
+plt.ylabel('ERA', fontsize=16, fontweight='bold')
+plt.xlabel('BATTING AVERAGE', fontsize=16, fontweight='bold')
+
+g.figure.savefig('static/img/BAvERA.png',bbox_inches='tight')
+
+# -------------------------------
 # Freeze the app
 
 from flask_frozen import Freezer
