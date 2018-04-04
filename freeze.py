@@ -7,14 +7,14 @@ import datetime
 import pandas as pd
 import numpy as np
 
-from pybaseball import batting_stats_range, schedule_and_record
+from pybaseball import batting_stats_range, schedule_and_record, team_batting, team_pitching
 
 print('ready')
 
 
 
 # -------------------------------
-# Get the standings
+# Create the standings file
 
 
 # Scraping baseball reference for latest standings
@@ -53,48 +53,73 @@ print('tables gotten')
 
 # This grabs each dataframe, labels league and division, appends and saves csv
 
+df_standings = pd.DataFrame()
+
 AMeast = df2[0]
 AMeast.columns = AMeast.iloc[0]
 AMeast = AMeast.reindex(AMeast.index.drop(0))
-AMeast['League'] = 'American'
-AMeast['Division'] = 'East'
+df_standings = df_standings.append(AMeast)
 AMcent = df2[1]
 AMcent.columns = AMcent.iloc[0]
 AMcent = AMcent.reindex(AMcent.index.drop(0))
-AMcent['League'] = 'American'
-AMcent['Division'] = 'Central'
+df_standings = df_standings.append(AMcent)
 AMwest = df2[2]
 AMwest.columns = AMwest.iloc[0]
 AMwest = AMwest.reindex(AMwest.index.drop(0))
-AMwest['League'] = 'American'
-AMwest['Division'] = 'West'
+df_standings = df_standings.append(AMwest)
 NAeast = df2[3]
 NAeast.columns = NAeast.iloc[0]
 NAeast = NAeast.reindex(NAeast.index.drop(0))
-NAeast['League'] = 'National'
-NAeast['Division'] = 'East'
+df_standings = df_standings.append(NAeast)
 NAcent = df2[4]
 NAcent.columns = NAcent.iloc[0]
 NAcent = NAcent.reindex(NAcent.index.drop(0))
-NAcent['League'] = 'National'
-NAcent['Division'] = 'Central'
+df_standings = df_standings.append(NAcent)
 NAwest = df2[5]
 NAwest.columns = NAwest.iloc[0]
 NAwest = NAwest.reindex(NAwest.index.drop(0))
-NAwest['League'] = 'National'
-NAwest['Division'] = 'West'
-
-df_standings = pd.DataFrame()
-df_standings = df_standings.append(AMeast)
-df_standings = df_standings.append(AMcent)
-df_standings = df_standings.append(AMwest)
-df_standings = df_standings.append(NAeast)
-df_standings = df_standings.append(NAcent)
 df_standings = df_standings.append(NAwest)
-df_standings.rename(columns={'W-L%':'WLperc'}, inplace=True)
-df_standings.to_csv("csv/standings.csv", index=False, encoding="utf-8")
 
-print('standings file done')
+df_standings.rename(columns={'W-L%':'WLperc'}, inplace=True)
+
+print('standings appended')
+
+# now scraping www.fangraphs.com for pitching and batting stats 
+
+batting = team_batting(start_season='2018', end_season=None, league='all', ind=1)
+newbat = batting[['Team','R','RBI','HR','AVG','OBP','SLG','wOBA', 'wRC+','WAR']]
+newbat = newbat.rename(columns={'wRC+':'wRCplus','WAR':'WARbat','AVG':'AVGbat'})
+
+print('batting stats done')
+
+pitching = team_pitching(start_season='2018', end_season=None, league='all', ind=1)
+newpitch = pitching[['Team','ERA','SV','IP','BABIP','FIP','xFIP','WAR']]
+newpitch = newpitch.rename(columns={'WAR':'WARpitch'})
+
+print('pitching stats done')
+
+#Joining standings with bballjoin
+bballJoin = pd.read_csv('csv/bballJoin.csv', index_col=None)
+left = df_standings
+right = bballJoin
+result = pd.merge(left, right, how='left', left_on='Tm', right_on='Tm', suffixes=('_x', '_y'))
+print('1st standings join done')
+
+# now joining batting stats
+left = result
+right = newbat
+result2 = pd.merge(left, right, how='left', left_on='Team', right_on='Team', suffixes=('_x', '_y'))
+print('batting stats joined')
+
+# finally join pitching stats
+left = result2
+right = newpitch
+result3 = pd.merge(left, right, how='left', left_on='Team', right_on='Team', suffixes=('_x', '_y'))
+print('pitching stats joined')
+
+result3.to_csv("csv/standings.csv", index=False, encoding="utf-8")
+
+print('standings file done and saved')
 
 
 
