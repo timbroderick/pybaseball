@@ -78,14 +78,14 @@ var $ = jQuery;
             <hr class='fancy'>
         <br>
 
-        <h3><small>I'm going to try and follow the baseball season using a python app. It's not much to look at right now, but I'll add to it gradually. The idea is to run a script once a day and update this website.<br>
+        <h3><small>I'm going to try and follow the baseball season using a python app. It's not much to look at right now, but I'll add to it gradually. The idea is to run a script once a day to update all the csv files and build this python/flask-based website. Then I'll back it up to github where it'll be viewable.<br>
             I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and more about baseball statistics. All my work can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
             <br>
             <p><strong>Updated Wednesday, April 4</strong><br>
-                I really ought to automate that date. While not reflected in the page below, I have updated things behind the scenes. First, in the github repository, all the code to this is in the freeze.py script as well as the playing jupyter notebook.<br>
-                Next, I've added batting and pitching stats for each team to the standings file. Pybaseball gets these from <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a> I'm going to add some graphics below the standings, likely based on some work I've done with <a href="https://github.com/dailyherald/Seaborn" target="_blank"> Seaborn.</a> I'm thinking of running regressions on several things and watch how they change as the season progresses.<br>
-                I'll also set up a simple home run bar chart to track teams' progress. I believe it's projected a couple of teams may break the single-season record.<br>
-                After this page is done, I'll start figuring out what kind of analytics I want to do for the Cubs and Sox, as well as a head-to-head comparison page.
+                I really ought to automate that date. I have updated things behind the scenes. First, in the github repository, the final version of the code to this is in the 'freeze.py' script. The 'playing' jupyter notebook is where I work things out prior to including them in freeze.py.<br>
+                Next, I've added batting and pitching stats for each team to the standings file. Pybaseball gets these from <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a> I'm in the process of adding graphics below the standings, based on some work I've done with <a href="https://github.com/dailyherald/Seaborn" target="_blank"> Seaborn.</a> I'll be running regressions on several things and watch how they change as the season progresses.<br>
+                Finally, I'll set up a bar chart of team home runs. I believe it's projected a couple of teams may break the single-season record, so maybe there'll be a horse race to watch.<br>
+                After this page is done, I'll start figuring out what kind of analytics I want to do for the Cubs and Sox individually, as well as a head-to-head comparison page.
             </p>
 
         <div class="row">
@@ -505,8 +505,9 @@ var $ = jQuery;
         <hr>
         <div class="row">
             <div class="col-md-4">
-                <h4><strong>Batting average versus Earned Run Average:</strong> The classic statistics - obviously a high batting average and a low ERA should equal more wins.</h4>
-                <p>Black = White Sox, Blue = Cubs.</p>
+                <h4><strong>Batting average versus Earned Run Average</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                <p>The classic statistics - obviously a high batting average and a low ERA should equal more wins.</p>
                 <br>
             </div>
             <div class="col-md-8">

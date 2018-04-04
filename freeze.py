@@ -6,12 +6,17 @@ import requests
 import datetime
 import pandas as pd
 import numpy as np
+import shutil
 
 from pybaseball import batting_stats_range, schedule_and_record, team_batting, team_pitching
 
 print('ready')
 
 
+# ---------
+# first remove the old directories
+shutil.rmtree('build', ignore_errors=True)
+shutil.rmtree('docs', ignore_errors=True)
 
 # -------------------------------
 # Create the standings file
@@ -179,3 +184,9 @@ if __name__ == '__main__':
     freezer.freeze()
 
 print('Frozen')
+
+# Now rename the build directory
+
+shutil.move('build', 'docs')
+
+print('all done')
