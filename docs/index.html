@@ -78,13 +78,11 @@ var $ = jQuery;
             <hr class='fancy'>
         <br>
 
-        <h3><small>I'm going to try and follow the baseball season using a python app. It's not much to look at right now, but I'll add to it gradually. The idea is to run a script once a day to update all the csv files and build this python/flask-based website. Then I'll back it up to github where it'll be viewable.<br>
-            I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and more about baseball statistics. All my work can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
+        <h3><small>I'm going to follow the baseball season using a python app. The idea is to run a script once a day, update a bunch of csv files and charts and use them to build this python/flask-based website. Then I'll back it up to github where it'll be viewable.<br>
+            I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and baseball statistics as I gradually add features and content. All my work so far can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
             <br>
-            <p><strong>Updated Wednesday, April 4</strong><br>
-                I really ought to automate that date. I have updated things behind the scenes. First, in the github repository, the final version of the code to this is in the 'freeze.py' script. The 'playing' jupyter notebook is where I work things out prior to including them in freeze.py.<br>
-                Next, I've added batting and pitching stats for each team to the standings file. Pybaseball gets these from <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a> I'm in the process of adding graphics below the standings, based on some work I've done with <a href="https://github.com/dailyherald/Seaborn" target="_blank"> Seaborn.</a> I'll be running regressions on several things and watch how they change as the season progresses.<br>
-                Finally, I'll set up a bar chart of team home runs. I believe it's projected a couple of teams may break the single-season record, so maybe there'll be a horse race to watch.<br>
+            <p><strong>Updated Thursday, April 5</strong><br>
+                I really ought to automate that date. I've added a number of charts to the Regressions section, located below the standings. I think I need a better name for that section. I intend to save a copy of the charts at the end of each month and maybe create an animated gif to see how things changed as the season progressed.<br> 
                 After this page is done, I'll start figuring out what kind of analytics I want to do for the Cubs and Sox individually, as well as a head-to-head comparison page.
             </p>
 
@@ -502,19 +500,67 @@ var $ = jQuery;
         <h2 style='width:100%; text-align:center'><strong>Regressions</strong></h2>
         <br>
         <p>Here's where I'm going to take a look at various measures visually and see how the Chicago teams fall among the major leagues.</p>
+        <p>Pybaseball gets these from <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a> I'm using <a href="https://github.com/dailyherald/Seaborn" target="_blank"> Seaborn,</a>  a Python visualization library, to create the charts. Seaborn is inspired by ggplot2 in R.</p>
+        <p>As far as how I decide what and how I chart, I'm using the highly sophisticated method of "Well that sounds important, I wonder what it would look like if I chart it with this other thing that sounds important." A high bar indeed.</p>
+        <p>To finish this page off, I'm going to include a bar chart of team home runs. I believe it's projected a couple of teams may break the single-season record, so maybe there'll be a horse race to watch.</p>
         <hr>
         <div class="row">
             <div class="col-md-4">
                 <h4><strong>Batting average versus Earned Run Average</strong>
                     <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
                 <p>The classic statistics - obviously a high batting average and a low ERA should equal more wins.</p>
+                <p>I don't expect there to be much of a correlation between the two stats, but it's handy to have them accessible in one chart like this.</p>
                 <br>
             </div>
             <div class="col-md-8">
                 <img src="static/img/BAvERA.png" class="img-responsive center-block"><br>
             </div>
         </div>
-
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h4><strong>WAR batting and pitching</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Fangraphs describes <a href="https://www.fangraphs.com/library/misc/war/" target="_blank">Wins Above Replacement or WAR</a> as the average number of wins a player is worth compared to what you'd get from an average replacement player. The higher the WAR number, the more valuable a player is.</p>
+                <p>I'm assuming the WAR numbers I'm charting here are the team average.</p>
+                <br>
+            </div>
+            <div class="col-md-8">
+                <img src="static/img/WAR.png" class="img-responsive center-block"><br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h4><strong>Weighted On-Base Average and RBIs</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p><a href="https://www.fangraphs.com/library/offense/woba/" target="_blank">Weighted On-Base Average</a> combines batting average, on-base percentage, and slugging percentage, "weighting each of them in proportion to their actual run value" according to fangraphs.com.</p>
+                <p>So these two measures should give us a pretty good idea of offensive production, if I think if it in terms of "get 'em on, get 'em over, get 'em in."</p>
+                <br>
+            </div>
+            <div class="col-md-8">
+                <img src="static/img/offense.png" class="img-responsive center-block"><br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h4><strong>FIP and BABIP</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>These two stats are pretty new to me.</p>
+                <p><a href="https://www.fangraphs.com/library/pitching/babip/" target="_blank">Batting Average on Balls In Play (BABIP)</a> measures average batting average allowed based on how often a ball in play goes for a hit. Balls in play don't include home runs. So if the pitcher is giving up a lot of hits their defense can't handle, or if you have a third baseman who doesn't make those tougher plays, the BABIP is higher.</p>
+                <p><a href="https://www.fangraphs.com/library/offense/fip/" target="_blank">FIP or Fielding Independent Pitching</a> tries to show a pitcher's ERA correcting for the performance of the fielding around them. According to fangraphs, FIP looks at "their strikeouts, walks, hit batters, and home runs while assuming average luck on balls in play."</p>
+                <p>With both of these measures, the lower the better. That should be a challenge given expected home run production this season.</p>
+                <br>
+            </div>
+            <div class="col-md-8">
+                <img src="static/img/defense.png" class="img-responsive center-block"><br>
+            </div>
+        </div>
 
 
     </div>

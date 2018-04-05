@@ -158,19 +158,56 @@ from scipy.stats import norm
 print('plotting ready')
 
 # ERA vs Batting average
+plt.figure()
 g = sns.regplot(data=result3, x='AVGbat', y='ERA',
                 fit_reg=True,
                 scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
                 line_kws={"color":"orange","lw":1}
                )
-
-# Set the size of the graph from here
 g.figure.set_size_inches(8,8)
-#plt.suptitle('Batting average vs. ERA', fontsize=16, family='Arial Black', y=.94)
 plt.ylabel('ERA', fontsize=16, fontweight='bold')
 plt.xlabel('BATTING AVERAGE', fontsize=16, fontweight='bold')
-
 g.figure.savefig('static/img/BAvERA.png',bbox_inches='tight')
+
+
+# WAR stats
+plt.figure()
+g = sns.regplot(data=result3, x='WARbat', y='WARpitch',
+                fit_reg=True,
+                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
+                line_kws={"color":"orange","lw":1}
+               )
+g.figure.set_size_inches(8,8)
+plt.ylabel('WAR PITCHING', fontsize=16, fontweight='bold')
+plt.xlabel('WAR BATTING', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/WAR.png',bbox_inches='tight')
+
+# offense stats
+plt.figure()
+g = sns.regplot(data=result3, x='wOBA', y='RBI',
+                fit_reg=True,
+                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
+                line_kws={"color":"orange","lw":1}
+               )
+
+g.figure.set_size_inches(8,8)
+plt.ylabel('RBI', fontsize=16, fontweight='bold')
+plt.xlabel('Weighted On-Base Average', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/offense.png',bbox_inches='tight')
+
+# defense stats
+plt.figure()
+g = sns.regplot(data=result3, x='BABIP', y='FIP',
+                fit_reg=True,
+                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
+                line_kws={"color":"orange","lw":1}
+               )
+g.figure.set_size_inches(8,8)
+plt.ylabel('Fielding Independent Pitching', fontsize=16, fontweight='bold')
+plt.xlabel('Batting Average on Balls In Play', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/defense.png',bbox_inches='tight')
+
+print("charts created")
 
 # -------------------------------
 # Freeze the app
