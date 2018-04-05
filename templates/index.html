@@ -23,10 +23,15 @@
             I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and baseball statistics as I gradually add features and content. All my work so far can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
             <br>
             <p><strong>Updated Thursday, April 5</strong><br>
-                I really ought to automate that date. I've added a number of charts to the Regressions section, located below the standings. I think I need a better name for that section. I intend to save a copy of the charts at the end of each month and maybe create an animated gif to see how things changed as the season progressed.<br> 
+                I really ought to automate that date. I've added a number of charts to the Visualizations section, located below the standings. I think I need a better name for that section. I intend to save a copy of the charts at the end of each month and maybe create an animated gif to see how things changed as the season progressed.<br> 
                 After this page is done, I'll start figuring out what kind of analytics I want to do for the Cubs and Sox individually, as well as a head-to-head comparison page.
             </p>
-
+        <br>
+        <hr class='fancy'>
+        <br>
+        <h2 style='width:100%; text-align:center'><strong>Standings</strong></h2>
+        <br>
+        <p>Pybaseballs gathers these from <a href="https://www.baseball-reference.com/" target="_blank">Baseball-reference.com.</a> Standings are not always updated by the time this page is, and may be slightly out of date.</p>
         <div class="row">
         <div class="col-md-6">
 
@@ -35,7 +40,7 @@
             <!--Select for League-->
              {% for group in object_list|groupby('League') %}
                 {% if group.grouper == "American" %}
-                    <hr class='fancy'>
+                    <hr>
                     <br>
                     <h2 style='width:100%; text-align:center'>{{ group.grouper }} League</h2>
 
@@ -127,7 +132,7 @@
             <!--Select for League-->
              {% for group in object_list|groupby('League') %}
                 {% if group.grouper == "National" %}
-                    <hr class='fancy'>
+                    <hr>
                     <br>
                     <h2 style='width:100%; text-align:center'>{{ group.grouper }} League</h2>
                     
@@ -218,7 +223,7 @@
         <br>
         <hr class='fancy'>
         <br>
-        <h2 style='width:100%; text-align:center'><strong>Regressions</strong></h2>
+        <h2 style='width:100%; text-align:center'><strong>Visualizations</strong></h2>
         <br>
         <p>Here's where I'm going to take a look at various measures visually and see how the Chicago teams fall among the major leagues.</p>
         <p>Pybaseball gets these from <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a> I'm using <a href="https://github.com/dailyherald/Seaborn" target="_blank"> Seaborn,</a>  a Python visualization library, to create the charts. Seaborn is inspired by ggplot2 in R.</p>
