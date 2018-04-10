@@ -142,8 +142,8 @@ import math
 # set styles
 
 mpl.rcParams['font.family'] = ['sans-serif']
-mpl.rcParams['xtick.labelsize'] = 12
-mpl.rcParams['ytick.labelsize'] = 12
+mpl.rcParams['xtick.labelsize'] = 17
+mpl.rcParams['ytick.labelsize'] = 17
 mpl.rcParams['lines.linewidth'] = 0.75
 
 mpl.rcParams['pdf.fonttype'] = 42 # allegedly allows text to be saved as editable
@@ -223,9 +223,7 @@ g = sns.barplot(
     palette=dfHR['color']
 )
 plt.plot([264, 264], [-10, 30], linewidth=1)
-# need to reset the mpl style
-mpl.rcParams['ytick.labelsize'] = 15
-g.figure.set_size_inches(8,12)
+g.figure.set_size_inches(8,14)
 g.set_ylabel('TEAM', fontsize=16, fontweight='bold')
 g.set_xlabel('HOME RUNS', fontsize=16, fontweight='bold')
 # placing the bar labels
@@ -233,7 +231,7 @@ for p in g.patches:
     width = math.ceil( p.get_width() )
     g.text(width*1.04, p.get_y() + p.get_height()/1.25,
             "{:" ">6}".format( width ),
-            fontsize=12, color="black", fontweight='bold', zorder=10)
+            fontsize=15, color="black", fontweight='bold', zorder=10)
 g.figure.savefig('static/img/HR.png',bbox_inches='tight')
 
 
