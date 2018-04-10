@@ -81,9 +81,10 @@ var $ = jQuery;
         <h3><small>I'm going to follow the baseball season using a python app. The idea is to run a script once a day, update a bunch of csv files and charts and use them to build this python/flask-based website. Then I'll back it up to github where it'll be viewable.<br>
             I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and baseball statistics as I gradually add features and content. All my work so far can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
             <br>
-            <p><strong>Updated Monday, April 9, at 1:47 p.m.</strong><br>
-                Cool little timestamp function courtesy of <a href="https://www.palmbeachpost.com/online/contacts/mike-stucka/FjphMq55qdlRspL3H7GKoM/" target="_blank">Mike Stucka</a> of the Palm Beach Post. Thanks Mike! I've added a number of charts to the Visualizations section, located below the standings. I intend to save a copy of the charts at the end of each month and create an animated gif to see how things changed as the season progressed.<br> 
-                After this page is done, I'll start figuring out what kind of analytics I want to do for the Cubs and Sox individually, as well as a head-to-head comparison page.
+            <p><strong>Updated Monday, April 9, at 10:04 p.m.</strong><br>
+                Cool little timestamp function courtesy of <a href="https://www.palmbeachpost.com/online/contacts/mike-stucka/FjphMq55qdlRspL3H7GKoM/" target="_blank">Mike Stucka</a> of the Palm Beach Post. Thanks Mike!<br>
+                I've added a number of charts to the Visualizations section, located below the standings. I intend to save a copy of the charts at the end of each month and create an animated gif to see how things changed as the season progressed.<br> 
+                Right now I'm figuring out what kind of analytics I want to do for the Cubs and Sox individually, as well as a head-to-head comparison page. I'm thinking of aggregating games by team, so I can see a summary of how the Cubs or Sox did against teams they played this season instead of game-by-game results.
             </p>
             <br>
         <hr class='fancy'>
@@ -502,7 +503,6 @@ var $ = jQuery;
         <p>Here's where I'm going to take a look at various measures visually and see how the Chicago teams fall among the major leagues.</p>
         <p>Pybaseball gets these from <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a> I'm using <a href="https://github.com/dailyherald/Seaborn" target="_blank"> Seaborn,</a>  a Python visualization library, to create the charts. Seaborn is inspired by ggplot2 in R.</p>
         <p>As far as how I decide what and how I chart, I'm using the highly sophisticated method of "Well that sounds important, I wonder what it would look like if I chart it with this other thing that sounds important." A high bar indeed.</p>
-        <p>To finish this page off, I'm going to include a bar chart of team home runs. I believe it's projected a couple of teams may break the single-season record, so maybe there'll be a horse race to watch.</p>
         <hr>
         <div class="row">
             <div class="col-md-4">
@@ -559,6 +559,20 @@ var $ = jQuery;
             </div>
             <div class="col-md-8">
                 <img src="static/img/defense.png" class="img-responsive center-block"><br>
+            </div>
+        </div>
+                <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h4><strong>Team home runs</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Reports suggest the single-season team home run record may be broken this year. This chart will track total home runs hit by teams this year.</p>
+                <p>The vertical red line indicates the current record of 264 by the 1997 Seattle Mariners.</p>
+                <br>
+            </div>
+            <div class="col-md-8">
+                <img src="static/img/hr.png" class="img-responsive center-block"><br>
             </div>
         </div>
 

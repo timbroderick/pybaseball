@@ -12,6 +12,8 @@ from pybaseball import batting_stats_range, schedule_and_record, team_batting, t
 
 print('ready')
 
+import warnings
+warnings.filterwarnings("ignore")
 
 # ---------
 # first remove the old directories
@@ -161,7 +163,7 @@ print('plotting ready')
 plt.figure()
 g = sns.regplot(data=result3, x='AVGbat', y='ERA',
                 fit_reg=True,
-                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
+                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70,'edgecolor':'none'},
                 line_kws={"color":"orange","lw":1}
                )
 g.figure.set_size_inches(8,8)
@@ -174,7 +176,7 @@ g.figure.savefig('static/img/BAvERA.png',bbox_inches='tight')
 plt.figure()
 g = sns.regplot(data=result3, x='WARbat', y='WARpitch',
                 fit_reg=True,
-                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
+                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70,'edgecolor':'none'},
                 line_kws={"color":"orange","lw":1}
                )
 g.figure.set_size_inches(8,8)
@@ -186,7 +188,7 @@ g.figure.savefig('static/img/WAR.png',bbox_inches='tight')
 plt.figure()
 g = sns.regplot(data=result3, x='wOBA', y='RBI',
                 fit_reg=True,
-                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
+                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70,'edgecolor':'none'},
                 line_kws={"color":"orange","lw":1}
                )
 
@@ -199,13 +201,41 @@ g.figure.savefig('static/img/offense.png',bbox_inches='tight')
 plt.figure()
 g = sns.regplot(data=result3, x='BABIP', y='FIP',
                 fit_reg=True,
-                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70},
+                scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70,'edgecolor':'none'},
                 line_kws={"color":"orange","lw":1}
                )
 g.figure.set_size_inches(8,8)
 plt.ylabel('Fielding Independent Pitching', fontsize=16, fontweight='bold')
 plt.xlabel('Batting Average on Balls In Play', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/defense.png',bbox_inches='tight')
+
+# bar plot, start with sorting
+# need to reset the index
+dfHR = result3.sort_values(by='HR', ascending=False).reset_index(drop=True)
+# clear the plt figure
+plt.figure()
+my_dpi=150
+plt.xlim(0, 300)
+g = sns.barplot(
+    x='HR',
+    y='Team',
+    data=dfHR,
+    palette=dfHR['color']
+)
+plt.plot([264, 264], [-10, 30], linewidth=1)
+# need to reset the mpl style
+mpl.rcParams['ytick.labelsize'] = 15
+g.figure.set_size_inches(8,12)
+g.set_ylabel('TEAM', fontsize=16, fontweight='bold')
+g.set_xlabel('HOME RUNS', fontsize=16, fontweight='bold')
+# placing the bar labels
+for p in g.patches:
+    width = math.ceil( p.get_width() )
+    g.text(width*1.04, p.get_y() + p.get_height()/1.25,
+            "{:" ">6}".format( width ),
+            fontsize=12, color="black", fontweight='bold', zorder=10)
+g.figure.savefig('static/img/HR.png',bbox_inches='tight')
+
 
 print("charts created")
 
