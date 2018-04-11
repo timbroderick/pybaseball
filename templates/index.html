@@ -7,9 +7,8 @@
     <div class="row">
         <div class="col-md-12">
 
-        <h2 style='width:100%; text-align:center' class='elexhdd' ><strong>Baseball 2018</strong></h2>
-        <p><i>A little-more-than-casual but not-very-wonky statistical look at the current season</i><p>
-        <br>
+        <h2 style='width:100%; text-align:center' class='elexhdd' id="top"><strong>Baseball 2018</strong></h2>
+       <p style='width:100%; text-align:center'><i>A little-more-than-casual but not-very-wonky statistical look at the current season</i></p>
             <hr class='fancy'>
             <div class="row">
                 <div class="col-xs-3" style='text-align:center'>League</div>
@@ -18,10 +17,8 @@
                 <div class="col-xs-3" style='text-align:center'><a href=""><strong style='color:#FF9C00'>H2H</strong></a></div>
             </div>
             <hr class='fancy'>
-        <br>
-
-        <h3><small>I'm following the baseball season using a python app. The idea is to run a script once a day, update a bunch of csv files and charts and use them to build this python/flask-based website. Then I'll back it up to github where it'll be viewable.<br>
-            I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and baseball statistics as I gradually add features and content. All my work so far can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a></small></h3>
+            <br>
+        <h3><small>I'm following the baseball season using this python/flask app I'm writing. I'm starting with the <a href ="https://github.com/jldbc/pybaseball" target="_blank">pybaseball</a> package by James LeDoux and going from there. The goal is to learn more python and baseball statistics as I gradually add features and content. All my code so far can be <a href="https://github.com/dailyherald/pybaseball" target="_blank">found here.</a> At some point, I'll set this up to update automatically each day.</small></h3>
             <br>
             <p><strong>Updated {{timestamp}}</strong><br>
                 Cool little timestamp function courtesy of <a href="https://www.palmbeachpost.com/online/contacts/mike-stucka/FjphMq55qdlRspL3H7GKoM/" target="_blank">Mike Stucka</a> of the Palm Beach Post. Thanks Mike!<br>
@@ -31,8 +28,8 @@
             <br>
         <hr class='fancy'>
         <br>
-        <h2 style='width:100%; text-align:center'><strong>Standings</strong></h2>
-        <br>
+        <h2 style='width:100%; text-align:center' id="standings"><strong>Standings</strong></h2>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#visualizations"><strong style='color:#FF9C00'>VISUALIZATIONS</strong></a></small><p>
         <p>Pybaseballs gathers these from <a href="https://www.baseball-reference.com/" target="_blank">Baseball-reference.com.</a> Standings are not always updated by the time this page is, and may be slightly out of date.</p>
         <div class="row">
         <div class="col-md-6">
@@ -220,8 +217,8 @@
         <br>
         <hr class='fancy'>
         <br>
-        <h2 style='width:100%; text-align:center'><strong>Visualizations</strong></h2>
-        <br>
+        <h2 style='width:100%; text-align:center' id="visualizations"><strong>Visualizations</strong></h2>
+        <p style='width:100%; text-align:center' ><small>JUMP TO  <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#standings"><strong style='color:#FF9C00'>STANDINGS</strong></a></small><p>
         <p>Pybaseball gets these statistics from <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a> I'm using <a href="https://github.com/dailyherald/Seaborn" target="_blank"> Seaborn,</a>  a Python visualization library, to create the charts. Seaborn is inspired by ggplot2 in R.</p>
         <p>As far as how I decide what and how I chart, I'm using the highly sophisticated method of "Well that sounds important, I wonder what it would look like if I chart it with this other thing that sounds important." A high bar indeed.</p>
         <hr>
