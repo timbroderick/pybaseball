@@ -36,11 +36,30 @@ def get_big_timestamp(date_object=None):
 # create pages here
 
 @app.route("/")
+@app.route("/index.html")
 def index():
     template = 'index.html'
     timestamp=get_big_timestamp()
     object_list = get_csv()
     return render_template(template, timestamp=timestamp, object_list=object_list)
+
+@app.route("/sox.html")
+def sox():
+    template = 'sox.html'
+    timestamp=get_big_timestamp()
+    return render_template(template, timestamp=timestamp)
+
+@app.route("/cubs.html")
+def cubs():
+    template = 'cubs.html'
+    timestamp=get_big_timestamp()
+    return render_template(template, timestamp=timestamp)
+
+@app.route("/h2h.html")
+def h2h():
+    template = 'h2h.html'
+    timestamp=get_big_timestamp()
+    return render_template(template, timestamp=timestamp)
 
 # necessary to establish the app
 if __name__ == '__main__':

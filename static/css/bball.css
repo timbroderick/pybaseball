@@ -274,4 +274,33 @@ p.chartEmbed {
     padding: 1px 10px;
 }
 
+hr.fancy { 
+	border: 0; 
+	height: 1px;
+	background-color:#444;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
 
+
+h2.elexhdd {
+	font-family: times, Times New Roman, times-roman, georgia, serif !important;
+	font-size: 4em;
+	line-height: 1em;
+	letter-spacing: -1px;
+	color: #444;
+	padding: 0 0 0 0;
+	margin: 10px 0 0 0;
+	font-weight: 100;
+}
+
+h2.titlesmall {
+	font-family: times, Times New Roman, times-roman, georgia, serif !important;
+	font-size: 3em;
+	font-weight: 400;
+	line-height: 1em;
+	letter-spacing: -1px;
+	color: #777;
+	padding: 0 0 0 0;
+	margin: 0 0 7px 0;
+}

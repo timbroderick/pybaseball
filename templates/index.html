@@ -8,13 +8,14 @@
         <div class="col-md-12">
 
         <h2 style='width:100%; text-align:center' class='elexhdd' id="top"><strong>Baseball 2018</strong></h2>
+            <h2 style='width:100%; text-align:center' class=' titlesmall'>League</h2>
        <p style='width:100%; text-align:center'><i>A little-more-than-casual but not-very-wonky statistical look at the current season</i></p>
             <hr class='fancy'>
             <div class="row">
                 <div class="col-xs-3" style='text-align:center'>League</div>
-                <div class="col-xs-3" style='text-align:center'><a href=""><strong style='color:#FF9C00'>Sox</strong></a></div>
-                <div class="col-xs-3" style='text-align:center'><a href=""><strong style='color:#FF9C00'>Cubs</strong></a></div>
-                <div class="col-xs-3" style='text-align:center'><a href=""><strong style='color:#FF9C00'>H2H</strong></a></div>
+                <div class="col-xs-3" style='text-align:center'><a href="sox.html"><strong style='color:#FF9C00'>Sox</strong></a></div>
+                <div class="col-xs-3" style='text-align:center'><a href="cubs.html"><strong style='color:#FF9C00'>Cubs</strong></a></div>
+                <div class="col-xs-3" style='text-align:center'><a href="h2h.html"><strong style='color:#FF9C00'>H2H</strong></a></div>
             </div>
             <hr class='fancy'>
             <br>
@@ -75,7 +76,7 @@
                                 {% for team in div.list|sort(reverse=True, attribute='WLperc') %}
                                     {% if team.Tm == 'Chicago White Sox' %}
                                         <tr>
-                                            <td style="text-align:left"><a href=""><strong style='color:#FF9C00'>{{ team.Team }}</a></strong></td>
+                                            <td style="text-align:left"><a href="sox.html"><strong style='color:#FF9C00'>{{ team.Team }}</a></strong></td>
                                             <td>{{ team.W }}</td>
                                             <td>{{ team.L }}</td>
                                             <td>{{ team.WLperc }}</td>
@@ -165,7 +166,7 @@
                                 {% for team in div.list|sort(reverse=True, attribute='WLperc') %}
                                     {% if team.Tm == 'Chicago Cubs' %}
                                         <tr>
-                                            <td style="text-align:left"><a href=""><strong style='color:#FF9C00'>{{ team.Team }}</a></strong></td>
+                                            <td style="text-align:left"><a href="cubs.html"><strong style='color:#FF9C00'>{{ team.Team }}</a></strong></td>
                                             <td>{{ team.W }}</td>
                                             <td>{{ team.L }}</td>
                                             <td>{{ team.WLperc }}</td>

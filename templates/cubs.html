@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+{% include 'header.html' %}
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+        <h2 style='width:100%; text-align:center' class='elexhdd' id="top"><strong>Baseball 2018</strong></h2>
+            <h2 style='width:100%; text-align:center' class=' titlesmall'>Cubs</h2>
+       <p style='width:100%; text-align:center'><i>A little-more-than-casual but not-very-wonky statistical look at the current season</i></p>
+            <hr class='fancy'>
+            <div class="row">
+                <div class="col-xs-3" style='text-align:center'><a href="index.html"><strong style='color:#FF9C00'>League</strong></div>
+                <div class="col-xs-3" style='text-align:center'><a href="sox.html"><strong style='color:#FF9C00'>Sox</a></strong></div>
+                <div class="col-xs-3" style='text-align:center'>Cubs</div>
+                <div class="col-xs-3" style='text-align:center'><a href="h2h.html"><strong style='color:#FF9C00'>H2H</strong></a></div>
+            </div>
+            <hr class='fancy'>
+            <br>
+            <p><strong>Updated {{timestamp}}</strong><br>
+                Statistical look at games, batters and pitchers useful for the more casual fan at the ballpark.
+            </p>
+            <br>
+        <hr class='fancy'>
+        <br>
+        <h2 style='width:100%; text-align:center' id="games"><strong>Games</strong></h2>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a> | <a href="#PITCHERS"><strong style='color:#FF9C00'>PITCHERS</strong></a></small><p>
+        <p>Games will have results of the last game played and game results summarized by team. By summariezed I mean that, instead of each game played, I'm going to have summarized stats of how the Cubs have done against each team all season.</p>
+
+            <br>
+        <hr class='fancy'>
+        <br>
+        <h2 style='width:100%; text-align:center' id="batters"><strong>Batters</strong></h2>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#games"><strong style='color:#FF9C00'>GAMES</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small><p>
+        <p>Season batting stats.</p>
+
+            <br>
+        <hr class='fancy'>
+        <br>
+        <h2 style='width:100%; text-align:center' id="pitchers"><strong>Pitchers</strong></h2>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#games"><strong style='color:#FF9C00'>GAMES</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a></small><p>
+        <p>Season pitching stats.</p>
+
+
+    </div>
+    </div>
+</div>
+
+<br><br>
+<script>
+$.ajaxSetup({ cache: false});
+</script>
+
+{% include 'footer.html' %}

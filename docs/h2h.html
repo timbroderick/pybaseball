@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width" />
@@ -9,7 +10,7 @@
     Baseball 2018
   </title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="static/css/normalize.css">
 
     <!-- BOOTSTRAP Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,15 +18,15 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.11.3.min.js') }}"></script>
+    <script type="text/javascript" src="static/js/jquery-1.11.3.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
-     <link rel="stylesheet" href="{{ url_for('static', filename='css/bball.css') }}" />
+     <link rel="stylesheet" href="static/css/bball.css" />
 
-     <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/elec.css') }}" />-->
+     <!--<link rel="stylesheet" href="static/css/elec.css" />-->
 
 <script>
 var $ = jQuery;
@@ -46,7 +47,7 @@ var $ = jQuery;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <img alt="Brand" src="{{ url_for('static', filename='img/dh.png') }}"></a>
+            <img alt="Brand" src="static/img/dh.png"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,3 +59,50 @@ var $ = jQuery;
         </div>
     </div>
 </nav>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+        <h2 style='width:100%; text-align:center' class='elexhdd' id="top"><strong>Baseball 2018</strong></h2>
+            <h2 style='width:100%; text-align:center' class=' titlesmall'>head 2 head</h2>
+       <p style='width:100%; text-align:center'><i>A little-more-than-casual but not-very-wonky statistical look at the current season</i></p>
+            <hr class='fancy'>
+            <div class="row">
+                <div class="col-xs-3" style='text-align:center'><a href="index.html"><strong style='color:#FF9C00'>League</strong></div>
+                <div class="col-xs-3" style='text-align:center'><a href="sox.html"><strong style='color:#FF9C00'>Sox</strong></a></div>
+                <div class="col-xs-3" style='text-align:center'><a href="cubs.html"><strong style='color:#FF9C00'>Cubs</strong></a></div>
+                <div class="col-xs-3" style='text-align:center'>H2H</div>
+            </div>
+            <hr class='fancy'>
+            <br>
+            <p><strong>Updated Sunday, April 15, at 1:17 p.m.</strong><br>
+                Violin plots!
+            </p>
+            <br>
+
+
+    </div>
+    </div>
+</div>
+
+<br><br>
+<script>
+$.ajaxSetup({ cache: false});
+</script>
+
+
+<div id="creditBox">
+  <div class="row">
+    <div class="col-md-10 center-block center-blockfloat">
+      <p><small>Web app by Tim Broderick <a href="mailto:tbroderick@dailyherald.com">tbroderick@dailyherald.com</a>.<br> 
+      </small></p>
+    </div>
+  </div>
+</div>
+<div id="underfoot"></div>
+
+</body>
+</html>

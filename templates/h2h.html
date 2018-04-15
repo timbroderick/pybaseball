@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+{% include 'header.html' %}
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+        <h2 style='width:100%; text-align:center' class='elexhdd' id="top"><strong>Baseball 2018</strong></h2>
+            <h2 style='width:100%; text-align:center' class=' titlesmall'>head 2 head</h2>
+       <p style='width:100%; text-align:center'><i>A little-more-than-casual but not-very-wonky statistical look at the current season</i></p>
+            <hr class='fancy'>
+            <div class="row">
+                <div class="col-xs-3" style='text-align:center'><a href="index.html"><strong style='color:#FF9C00'>League</strong></div>
+                <div class="col-xs-3" style='text-align:center'><a href="sox.html"><strong style='color:#FF9C00'>Sox</strong></a></div>
+                <div class="col-xs-3" style='text-align:center'><a href="cubs.html"><strong style='color:#FF9C00'>Cubs</strong></a></div>
+                <div class="col-xs-3" style='text-align:center'>H2H</div>
+            </div>
+            <hr class='fancy'>
+            <br>
+            <p><strong>Updated {{timestamp}}</strong><br>
+                Violin plots!
+            </p>
+            <br>
+
+
+    </div>
+    </div>
+</div>
+
+<br><br>
+<script>
+$.ajaxSetup({ cache: false});
+</script>
+
+{% include 'footer.html' %}
