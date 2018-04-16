@@ -279,9 +279,11 @@ for team in df['Team']:
     df1 = soxsort[opp]
     # get wins and losses
     w = df1['W/L'] == 'W'
-    wins = len( df1[w] )
+    wof = df1['W/L'] == 'W-wo'
+    wins = len( df1[w] ) + len( df1[wof] )
     l = df1['W/L'] == 'L'
-    loses = len( df1[l] )
+    lof = df1['W/L'] == 'L-wo'
+    loses = len( df1[l] ) + len( df1[lof] )
     # average runs/against
     rAvg = np.round( df1['R'].mean() ,2)
     raAvg = np.round( df1['RA'].mean() ,2)
@@ -338,9 +340,11 @@ for team in df['Team']:
     df1 = cubssort[opp]
     # get wins and losses
     w = df1['W/L'] == 'W'
-    wins = len( df1[w] )
+    wof = df1['W/L'] == 'W-wo'
+    wins = len( df1[w] ) + len( df1[wof] )
     l = df1['W/L'] == 'L'
-    loses = len( df1[l] )
+    lof = df1['W/L'] == 'L-wo'
+    loses = len( df1[l] ) + len( df1[lof] )
     # average runs/against
     rAvg = np.round( df1['R'].mean() ,2)
     raAvg = np.round( df1['RA'].mean() ,2)
