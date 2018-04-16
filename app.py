@@ -4,7 +4,7 @@ from flask import abort
 from flask import render_template
 app = Flask(__name__)
 
-# this loads our csv file
+# this loads csv for index file
 def get_csv():
 	csv_path = 'csv/standings.csv'
 	csv_file = open(csv_path, 'r') # typo rb
@@ -12,6 +12,38 @@ def get_csv():
 	csv_list = list(csv_obj)
 	return csv_list
 
+# this loads csv for Sox next last file
+def soxagg():
+    soxagg_path = 'csv/soxagg.csv'
+    soxagg_file = open(soxagg_path, 'r') # typo rb
+    soxagg_obj = csv.DictReader(soxagg_file)
+    soxagg_list = list(soxagg_obj)
+    return soxagg_list
+
+# this loads csv for Sox game aggregate file
+def soxnl():
+    soxnextlast_path = 'csv/soxnextlast.csv'
+    soxnextlast_file = open(soxnextlast_path, 'r') # typo rb
+    soxnextlast_obj = csv.DictReader(soxnextlast_file)
+    soxnextlast_list = list(soxnextlast_obj)
+    return soxnextlast_list
+
+
+# this loads csv for cubs next last file
+def cubsagg():
+    cubsagg_path = 'csv/cubsagg.csv'
+    cubsagg_file = open(cubsagg_path, 'r') # typo rb
+    cubsagg_obj = csv.DictReader(cubsagg_file)
+    cubsagg_list = list(cubsagg_obj)
+    return cubsagg_list
+
+# this loads csv for cubs game aggregate file
+def cubsnl():
+    cubsnextlast_path = 'csv/cubsnextlast.csv'
+    cubsnextlast_file = open(cubsnextlast_path, 'r') # typo rb
+    cubsnextlast_obj = csv.DictReader(cubsnextlast_file)
+    cubsnextlast_list = list(cubsnextlast_obj)
+    return cubsnextlast_list
 
 # trying mike stucka's date 
 def get_big_timestamp(date_object=None):
@@ -47,13 +79,17 @@ def index():
 def sox():
     template = 'sox.html'
     timestamp=get_big_timestamp()
-    return render_template(template, timestamp=timestamp)
+    soxagg_list = soxagg()
+    soxnl_list = soxnl()
+    return render_template(template, timestamp=timestamp, agg=soxagg_list, nl=soxnl_list)
 
 @app.route("/cubs.html")
 def cubs():
     template = 'cubs.html'
     timestamp=get_big_timestamp()
-    return render_template(template, timestamp=timestamp)
+    cubsagg_list = cubsagg()
+    cubsnl_list = cubsnl()
+    return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list)
 
 @app.route("/h2h.html")
 def h2h():

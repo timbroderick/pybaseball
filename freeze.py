@@ -237,6 +237,125 @@ g.figure.savefig('static/img/HR.png',bbox_inches='tight')
 
 print("charts created")
 
+
+
+# -------------------------------
+# Get data for Sox page
+
+print('Get Sox sched stuff')
+sox = schedule_and_record(2018, 'CHW')
+soxsort = pd.DataFrame ( sox.loc[ ( sox["W/L"].notnull() ) ] )
+soxsort.sort_index(ascending=False,inplace=True)
+soxlast = soxsort[:1]
+soxlast = soxlast.copy()
+soxlast.loc[:, 'R'] = soxlast['R'].astype(int)
+soxlast.loc[:, 'R'] = soxlast['R'].astype(str)
+soxlast.loc[:, 'RA'] = soxlast['RA'].astype(int)
+soxlast.loc[:, 'RA'] = soxlast['RA'].astype(str)
+soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(int)
+soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(str)
+soxnext = pd.DataFrame ( sox.loc[ ( sox["W/L"].isnull() ) ] )
+soxnext = soxnext[:1]
+soxlast = soxnext.append(soxlast)
+soxlast = soxlast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
+left = soxlast
+right = bballJoin
+soxnextlast = pd.merge(left, right, how='left', left_on='Opp', right_on='tres', suffixes=('_x', '_y'))
+soxnextlast = soxnextlast.sort_values(by='R', ascending=False).reset_index(drop=True)
+soxnextlast.to_csv("csv/soxnextlast.csv", index=False, encoding="utf-8")
+print('Last and next sox games saved')
+# Now aggregate results by team
+# get df of teams played
+soxteams = []
+for name,grouped in soxsort.groupby(['Opp']):
+    dlist = list([name])
+    soxteams.append(dlist)
+df = pd.DataFrame(data = soxteams, columns=['Team'])
+# now aggregate results
+soxlist = []
+for team in df['Team']:
+    # Link team in df to soxteams list in teamlist
+    opp = soxsort['Opp'] == team
+    df1 = soxsort[opp]
+    # get wins and losses
+    w = df1['W/L'] == 'W'
+    wins = len( df1[w] )
+    l = df1['W/L'] == 'L'
+    loses = len( df1[l] )
+    # average runs/against
+    rAvg = np.round( df1['R'].mean() ,2)
+    raAvg = np.round( df1['RA'].mean() ,2)
+    # append to empty list
+    slist = list([team,wins,loses,rAvg,raAvg])
+    soxlist.append(slist)
+# bring list into dataframe and name columns
+soxagainst = pd.DataFrame(data = soxlist, columns=['teamID','Wins','Loses','AvgRuns','AvgRunsAg'])
+# join aggregated list with team names
+left = soxagainst
+right = bballJoin
+soxagg = pd.merge(left, right, how='left', left_on='teamID', right_on='tres', suffixes=('_x', '_y'))
+soxagg.to_csv("csv/soxagg.csv", index=False, encoding="utf-8")
+print("Sox aggregate done")
+
+
+# -------------------------------
+# Get data for cubs page
+
+print('Get cubs sched stuff')
+cubs = schedule_and_record(2018, 'CHC')
+cubssort = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].notnull() ) ] )
+cubssort.sort_index(ascending=False,inplace=True)
+cubslast = cubssort[:1]
+cubslast = cubslast.copy()
+cubslast.loc[:, 'R'] = cubslast['R'].astype(int)
+cubslast.loc[:, 'R'] = cubslast['R'].astype(str)
+cubslast.loc[:, 'RA'] = cubslast['RA'].astype(int)
+cubslast.loc[:, 'RA'] = cubslast['RA'].astype(str)
+cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(int)
+cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(str)
+cubsnext = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].isnull() ) ] )
+cubsnext = cubsnext[:1]
+cubslast = cubsnext.append(cubslast)
+cubslast = cubslast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
+left = cubslast
+right = bballJoin
+cubsnextlast = pd.merge(left, right, how='left', left_on='Opp', right_on='tres', suffixes=('_x', '_y'))
+cubsnextlast = cubsnextlast.sort_values(by='R', ascending=False).reset_index(drop=True)
+cubsnextlast.to_csv("csv/cubsnextlast.csv", index=False, encoding="utf-8")
+print('Last and next cubs games saved')
+# Now aggregate results by team
+# get df of teams played
+cubsteams = []
+for name,grouped in cubssort.groupby(['Opp']):
+    dlist = list([name])
+    cubsteams.append(dlist)
+df = pd.DataFrame(data = cubsteams, columns=['Team'])
+# now aggregate results
+cubslist = []
+for team in df['Team']:
+    # Link team in df to cubsteams list in teamlist
+    opp = cubssort['Opp'] == team
+    df1 = cubssort[opp]
+    # get wins and losses
+    w = df1['W/L'] == 'W'
+    wins = len( df1[w] )
+    l = df1['W/L'] == 'L'
+    loses = len( df1[l] )
+    # average runs/against
+    rAvg = np.round( df1['R'].mean() ,2)
+    raAvg = np.round( df1['RA'].mean() ,2)
+    # append to empty list
+    slist = list([team,wins,loses,rAvg,raAvg])
+    cubslist.append(slist)
+# bring list into dataframe and name columns
+cubsagainst = pd.DataFrame(data = cubslist, columns=['teamID','Wins','Loses','AvgRuns','AvgRunsAg'])
+# join aggregated list with team names
+left = cubsagainst
+right = bballJoin
+cubsagg = pd.merge(left, right, how='left', left_on='teamID', right_on='tres', suffixes=('_x', '_y'))
+cubsagg.to_csv("csv/cubsagg.csv", index=False, encoding="utf-8")
+print("Cubs aggregate done")
+
 # -------------------------------
 # Freeze the app
 

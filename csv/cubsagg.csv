@@ -1,0 +1,6 @@
+teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
+ATL,1,1,7.0,7.0,Braves,Atlanta Braves,National,East,#6B8E23,ATL
+CIN,0,1,0.0,1.0,Reds,Cincinnati Reds,National,Central,#6B8E23,CIN
+MIA,2,1,4.75,4.5,Marlins,Miami Marlins,National,East,#6B8E23,MIA
+MIL,3,0,5.0,1.75,Brewers,Milwaukee Brewers,National,Central,#6B8E23,MIL
+PIT,1,2,6.33,6.33,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
