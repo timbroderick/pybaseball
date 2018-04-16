@@ -28,6 +28,13 @@ def soxnl():
     soxnextlast_list = list(soxnextlast_obj)
     return soxnextlast_list
 
+# this loads csv for Sox game aggregate file
+def soxhit():
+    soxhit_path = 'csv/soxhit.csv'
+    soxhit_file = open(soxhit_path, 'r') # typo rb
+    soxhit_obj = csv.DictReader(soxhit_file)
+    soxhit_list = list(soxhit_obj)
+    return soxhit_list
 
 # this loads csv for cubs next last file
 def cubsagg():
@@ -44,6 +51,14 @@ def cubsnl():
     cubsnextlast_obj = csv.DictReader(cubsnextlast_file)
     cubsnextlast_list = list(cubsnextlast_obj)
     return cubsnextlast_list
+
+# this loads csv for cubs game aggregate file
+def cubshit():
+    cubshit_path = 'csv/cubshit.csv'
+    cubshit_file = open(cubshit_path, 'r') # typo rb
+    cubshit_obj = csv.DictReader(cubshit_file)
+    cubshit_list = list(cubshit_obj)
+    return cubshit_list
 
 # trying mike stucka's date 
 def get_big_timestamp(date_object=None):
@@ -81,7 +96,8 @@ def sox():
     timestamp=get_big_timestamp()
     soxagg_list = soxagg()
     soxnl_list = soxnl()
-    return render_template(template, timestamp=timestamp, agg=soxagg_list, nl=soxnl_list)
+    soxhit_list = soxhit()
+    return render_template(template, timestamp=timestamp, agg=soxagg_list, nl=soxnl_list, hit=soxhit_list)
 
 @app.route("/cubs.html")
 def cubs():
@@ -89,7 +105,8 @@ def cubs():
     timestamp=get_big_timestamp()
     cubsagg_list = cubsagg()
     cubsnl_list = cubsnl()
-    return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list)
+    soxhit_list = cubshit()
+    return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list, hit=soxhit_list)
 
 @app.route("/h2h.html")
 def h2h():

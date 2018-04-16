@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import shutil
 
-from pybaseball import batting_stats_range, schedule_and_record, team_batting, team_pitching
+from pybaseball import schedule_and_record, team_batting, team_pitching, batting_stats#, batting_stats_range
 
 print('ready')
 
@@ -299,6 +299,28 @@ soxagg = pd.merge(left, right, how='left', left_on='teamID', right_on='tres', su
 soxagg.to_csv("csv/soxagg.csv", index=False, encoding="utf-8")
 print("Sox aggregate done")
 
+battingstats = batting_stats(2018)
+# start batting stats 
+soxBS = pd.DataFrame( battingstats.loc[ ( battingstats["Team"] == "White Sox") ] )
+soxBSselect = soxBS[['Name','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
+soxBSselect = soxBSselect.copy()
+soxBSselect.loc[:,'SOperc'] = np.round( (soxBSselect['SO'] / soxBSselect['AB'] )*100,1 )
+soxBSselect['last'] = soxBSselect['Name'].str.split(' ').str[1]
+soxBSselect.loc[:, 'AB'] = soxBSselect['AB'].astype(int)
+soxBSselect.loc[:, 'R'] = soxBSselect['R'].astype(int)
+soxBSselect.loc[:, 'H'] = soxBSselect['H'].astype(int)
+soxBSselect.loc[:, '2B'] = soxBSselect['2B'].astype(int)
+soxBSselect.loc[:, '3B'] = soxBSselect['3B'].astype(int)
+soxBSselect.loc[:, 'HR'] = soxBSselect['HR'].astype(int)
+soxBSselect.loc[:, 'RBI'] = soxBSselect['RBI'].astype(int)
+soxBSselect.loc[:, 'BB'] = soxBSselect['BB'].astype(int)
+soxBSselect.loc[:, 'SO'] = soxBSselect['SO'].astype(int)
+soxBSselect.loc[:, 'CS'] = soxBSselect['CS'].astype(int)
+soxBSselect = soxBSselect.rename(columns = {'2B':'dbls','3B':'trps' })
+soxBSselect.to_csv("csv/soxhit.csv", index=False, encoding="utf-8")
+print("Sox batting stats done")
+
+
 
 # -------------------------------
 # Get data for cubs page
@@ -359,6 +381,29 @@ right = bballJoin
 cubsagg = pd.merge(left, right, how='left', left_on='teamID', right_on='tres', suffixes=('_x', '_y'))
 cubsagg.to_csv("csv/cubsagg.csv", index=False, encoding="utf-8")
 print("Cubs aggregate done")
+
+
+# start cubs batting stats
+
+cubsBS = pd.DataFrame( battingstats.loc[ ( battingstats["Team"] == "Cubs") ] )
+cubsBSselect = cubsBS[['Name','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
+cubsBSselect = cubsBSselect.copy()
+cubsBSselect.loc[:,'SOperc'] = np.round( (cubsBSselect['SO'] / cubsBSselect['AB'] )*100,1 )
+cubsBSselect['last'] = cubsBSselect['Name'].str.split(' ').str[1]
+cubsBSselect.loc[:, 'AB'] = cubsBSselect['AB'].astype(int)
+cubsBSselect.loc[:, 'R'] = cubsBSselect['R'].astype(int)
+cubsBSselect.loc[:, 'H'] = cubsBSselect['H'].astype(int)
+cubsBSselect.loc[:, '2B'] = cubsBSselect['2B'].astype(int)
+cubsBSselect.loc[:, '3B'] = cubsBSselect['3B'].astype(int)
+cubsBSselect.loc[:, 'HR'] = cubsBSselect['HR'].astype(int)
+cubsBSselect.loc[:, 'RBI'] = cubsBSselect['RBI'].astype(int)
+cubsBSselect.loc[:, 'BB'] = cubsBSselect['BB'].astype(int)
+cubsBSselect.loc[:, 'SO'] = cubsBSselect['SO'].astype(int)
+cubsBSselect.loc[:, 'CS'] = cubsBSselect['CS'].astype(int)
+cubsBSselect = cubsBSselect.rename(columns = {'2B':'dbls','3B':'trps' })
+cubsBSselect.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
+print("cubs batting stats done")
+
 
 # -------------------------------
 # Freeze the app

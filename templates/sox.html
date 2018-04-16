@@ -24,7 +24,7 @@
         <hr class='fancy'>
         <br>
         <h2 style='width:100%; text-align:center' id="games"><strong>Games</strong></h2>
-        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small><p>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small></p>
         <p><strong>On {{ nl[0].Date }},</strong> the Sox {% if nl[0].WL == 'W' %}won{% elif nl[0].WL == 'W-wo' %}won in a walk-off{% elif nl[0].WL == 'L' %}lost{% elif nl[0].WL == 'L-wo' %}lost in a walk off{% endif %} a {% if nl[0].DN == 'D' %}day{% else %}night{% endif %} {% if nl[0].Home_Away == '@' %}away{% else %}home{% endif %} game against the {{ nl[0].Team }}, {{ nl[0].R }} to {{ nl[0].RA }}, in {{ nl[0].Inn }} innings. The winning pitcher was {{ nl[0].Win }}, losing pitcher was {{ nl[0].Loss }}. Save: {{ nl[0].Save }}. <strong>Next scheduled game:</strong> {{ nl[1].Date }}, a {% if nl[1].DN == 'D' %}day{% else %}night{% endif %} {% if nl[1].Home_Away == '@' %}away{% else %}home{% endif %} game with the {{ nl[1].Team }}.</p>
         <br>
         <h3 style='width:100%; text-align:center'>Summary results by team</h3>
@@ -44,24 +44,126 @@
             {% endfor %}
             </tbody>
         </table>
+        <br>
 
+        <!-- End games, start batting stats -->
+        <div class="row">
+        <div class="col-md-6">
 
-            <br>
         <hr class='fancy'>
         <br>
         <h2 style='width:100%; text-align:center' id="batters"><strong>Batters</strong></h2>
-        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#games"><strong style='color:#FF9C00'>GAMES</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small><p>
-        <p>Season batting stats.</p>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#games"><strong style='color:#FF9C00'>GAMES</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small></p>
 
-            <br>
+        <div class="panel-group" id="hitaccordion" role="tablist" aria-multiselectable="true">
+
+        {% for name in hit|sort(attribute='last') %}
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="{{ name.last }}{{ name.R }}{{ name.H }}">
+              <h4 class="panel-title">
+                <strong>{{ name.Name }}</strong>
+              </h4>
+              <p>Batting average: {{ name.AVG }} | <a class="collapsed" role="button" data-toggle="collapse" data-parent="#hitaccordion" href="#collapse{{ name.last }}{{ name.R }}{{ name.H }}" aria-expanded="false" aria-controls="collapse{{ name.last }}{{ name.R }}{{ name.H }}"><small>CLICK HERE FOR MORE</small></a></p>
+
+            </div>
+            <div id="collapse{{ name.last }}{{ name.R }}{{ name.H }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ name.last }}{{ name.R }}{{ name.H }}">
+              <div class="panel-body">
+                <table class='table table table-condensed table-striped'>
+                    <tbody>
+                        <tr><td class='tdLEFT'>At bats</td><td>{{ name.AB }}</td></tr>
+                        <tr><td class='tdLEFT'>Runs</td><td>{{ name.R }}</td></tr>
+                        <tr><td class='tdLEFT'>Hits</td><td>{{ name.H }}</td></tr>
+                        <tr><td class='tdLEFT'>Doubles</td><td>{{ name.dbls }}</td></tr>
+                        <tr><td class='tdLEFT'>Triples</td><td>{{ name.trps }}</td></tr>
+                        <tr><td class='tdLEFT'>Home runs</td><td>{{ name.HR }}</td></tr>
+                        <tr><td class='tdLEFT'>RBI</td><td>{{ name.RBI }}</td></tr>
+                        <tr><td class='tdLEFT'>Base on balls</td><td>{{ name.BB }}</td></tr>
+                        <tr><td class='tdLEFT'>Strike outs</td><td>{{ name.SO }}</td></tr>
+                        <tr><td class='tdLEFT'>% SO</td><td>{{ name.SOperc }}%</td></tr>
+                        <tr><td class='tdLEFT'>Stolen bases</td><td>{{ name.SB }}</td></tr>
+                        <tr><td class='tdLEFT'>Caught stealing</td><td>{{ name.CS }}</td></tr>
+                        <tr><td class='tdLEFT'>On-base percent</td><td>{{ name.OBP }}</td></tr>
+                        <tr><td class='tdLEFT'>Weighted OBP</td><td>{{ name.wOBA }}</td></tr>
+                        <tr><td class='tdLEFT'>Slugging %</td><td>{{ name.SLG }}</td></tr>
+                        <tr><td class='tdLEFT'>Weighted runs above avg.</td><td>{{ name.wRAA }}</td></tr>
+                        <tr><td class='tdLEFT'>Runs Above Replacement</td><td>{{ name.RAR }}</td></tr>
+                        <tr><td class='tdLEFT'>WAR</td><td>{{ name.WAR }}</td></tr>
+                        <tr><td class='tdLEFT'>Fielding %</td><td>{{ name.Fld }}</td></tr>
+                    </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+
+        {% endfor %}
+        </div>
+        <br>
+
+        <!-- End battingstats, start pitching stats -->
+        </div>
+        <div class="col-md-6">
+
         <hr class='fancy'>
         <br>
         <h2 style='width:100%; text-align:center' id="pitchers"><strong>Pitchers</strong></h2>
-        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#games"><strong style='color:#FF9C00'>GAMES</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a></small><p>
-        <p>Season pitching stats.</p>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#games"><strong style='color:#FF9C00'>GAMES</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a></small></p>
 
+        
+        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne2">
+              <h4 class="panel-title">
+                <h5><strong>Player name</srong><br>
+                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                  <small>CLICK HERE FOR MORE</small></h5>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
+              <div class="panel-body">
+                <p>1st panel body</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo2">
+              <h4 class="panel-title">
+                <h5><strong>Player name</srong><br>
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                  <small>CLICK HERE FOR MORE</small></h5>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
+              <div class="panel-body">
+                <p>2nd panel body</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree2">
+              <h4 class="panel-title">
+                <h5><strong>Player name</srong><br>
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                  <small>CLICK HERE FOR MORE</small></h5>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+              <div class="panel-body">
+                <p>3rd panel body</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
 
     </div>
+</div>
+
+
+        </div>
     </div>
 </div>
 
