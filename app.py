@@ -105,8 +105,8 @@ def cubs():
     timestamp=get_big_timestamp()
     cubsagg_list = cubsagg()
     cubsnl_list = cubsnl()
-    soxhit_list = cubshit()
-    return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list, hit=soxhit_list)
+    cubshit_list = cubshit()
+    return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list, hit=cubshit_list)
 
 @app.route("/h2h.html")
 def h2h():
