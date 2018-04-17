@@ -302,7 +302,7 @@ soxBS = pd.DataFrame( battingstats.loc[ ( battingstats["Team"] == "White Sox") ]
 soxBSselect = soxBS[['Name','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
 soxBSselect = soxBSselect.copy()
 soxBSselect.loc[:,'SOperc'] = np.round( (soxBSselect['SO'] / soxBSselect['AB'] )*100,1 )
-soxBSselect['last'] = soxBSselect['Name'].str.split(' ').str[1]
+soxBSselect['lastname'] = soxBSselect['Name'].str.split(' ').str[1]
 soxBSselect.loc[:, 'AB'] = soxBSselect['AB'].astype(int)
 soxBSselect.loc[:, 'R'] = soxBSselect['R'].astype(int)
 soxBSselect.loc[:, 'H'] = soxBSselect['H'].astype(int)
@@ -320,9 +320,45 @@ right = soxroster
 soxBShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
 soxBShit.loc[:, 'posnum'] = soxBShit['posnum'].astype(int).astype(str)
 soxBShit.to_csv("csv/soxhit.csv", index=False, encoding="utf-8")
-print("Sox batting stats done")
+print("Sox batting stats done, begin sox hitting charts")
 
+for index, row in soxBShit.iterrows():
+    d = {'hits': ['WALKS','SO','HITS','1B', '2B', '3B', 'HR']}
+    df = pd.DataFrame(data=d)
+    df['hitperc'] = [0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+    df['hitcolor'] = ['#000000','#000000','#000000','#AAAAAA','#AAAAAA','#AAAAAA','#AAAAAA']
+    if ( row.H == 0):
+        junkvar = []
+    else:
+        df['hitperc'][0] = np.round( (row.BB / row.AB)*100,1 )
+        df['hitperc'][1] = np.round( (row.SO / row.AB)*100,1 )
+        df['hitperc'][2] = np.round( (row.H / row.AB)*100,1 )
+        onebs = row.H - ( row.dbls + row.trps + row.HR )
+        df['hitperc'][3] = np.round( (onebs / row.H)*100,1 )
+        df['hitperc'][4] = np.round( (row.dbls / row.H)*100,1 )
+        df['hitperc'][5] = np.round( (row.trps / row.H)*100,1 )
+        df['hitperc'][6] = np.round( (row.HR / row.H)*100,1 )
+    # start the plot
+    plt.figure()
+    my_dpi=150
+    plt.ylim(0, 100)
+    g = sns.barplot(
+        x='hits',
+        y='hitperc',
+        data=df,
+        palette=df['hitcolor']
+    )
+    g.figure.set_size_inches(8,6)
+    plt.plot([2.5, 2.5], [0, 100], linewidth=2)
+    # Add labels to the plot
+    style = dict(fontsize=18, family='Arial', fontweight='bold', color='black')
+    plt.text(0, 89, "As % of AB", **style)
+    plt.text(3, 89, "As % of hits", **style)
+    g.set_ylabel('% of AT BATS | HITS', fontsize=16, fontweight='bold')
+    g.set_xlabel('AT-BAT RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
+    g.figure.savefig('static/img/sox' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
 
+print('Sox hitting charts done')
 
 # -------------------------------
 # Get data for cubs page
@@ -388,7 +424,7 @@ cubsBS = pd.DataFrame( battingstats.loc[ ( battingstats["Team"] == "Cubs") ] )
 cubsBSselect = cubsBS[['Name','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
 cubsBSselect = cubsBSselect.copy()
 cubsBSselect.loc[:,'SOperc'] = np.round( (cubsBSselect['SO'] / cubsBSselect['AB'] )*100,1 )
-cubsBSselect['last'] = cubsBSselect['Name'].str.split(' ').str[1]
+cubsBSselect['lastname'] = cubsBSselect['Name'].str.split(' ').str[1]
 cubsBSselect.loc[:, 'AB'] = cubsBSselect['AB'].astype(int)
 cubsBSselect.loc[:, 'R'] = cubsBSselect['R'].astype(int)
 cubsBSselect.loc[:, 'H'] = cubsBSselect['H'].astype(int)
@@ -406,7 +442,45 @@ right = cubsroster
 cubsBShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
 cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
 cubsBShit.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
-print("cubs batting stats done")
+print("cubs batting stats done, begin cubs hitting charts")
+
+for index, row in cubsBShit.iterrows():
+    d = {'hits': ['WALKS','SO','HITS','1B', '2B', '3B', 'HR']}
+    df = pd.DataFrame(data=d)
+    df['hitperc'] = [0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+    df['hitcolor'] = ['#000FFF','#000FFF','#000FFF','#737AFF','#737AFF','#737AFF','#737AFF']
+    if ( row.H == 0):
+        junkvar = []
+    else:
+        df['hitperc'][0] = np.round( (row.BB / row.AB)*100,1 )
+        df['hitperc'][1] = np.round( (row.SO / row.AB)*100,1 )
+        df['hitperc'][2] = np.round( (row.H / row.AB)*100,1 )
+        onebs = row.H - ( row.dbls + row.trps + row.HR )
+        df['hitperc'][3] = np.round( (onebs / row.H)*100,1 )
+        df['hitperc'][4] = np.round( (row.dbls / row.H)*100,1 )
+        df['hitperc'][5] = np.round( (row.trps / row.H)*100,1 )
+        df['hitperc'][6] = np.round( (row.HR / row.H)*100,1 )
+    # start the plot
+    plt.figure()
+    my_dpi=150
+    plt.ylim(0, 100)
+    g = sns.barplot(
+        x='hits',
+        y='hitperc',
+        data=df,
+        palette=df['hitcolor']
+    )
+    g.figure.set_size_inches(8,6)
+    plt.plot([2.5, 2.5], [0, 100], linewidth=2)
+    # Add labels to the plot
+    style = dict(fontsize=18, family='Arial', fontweight='bold', color='black')
+    plt.text(0, 89, "As % of AB", **style)
+    plt.text(3, 89, "As % of hits", **style)
+    g.set_ylabel('% of AT BATS | HITS', fontsize=16, fontweight='bold')
+    g.set_xlabel('AT-BAT RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
+    g.figure.savefig('static/img/cubs' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
+
+print('cubs hitting charts done')
 
 
 # -------------------------------

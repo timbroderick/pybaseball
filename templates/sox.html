@@ -57,32 +57,37 @@
 
         <div class="panel-group" id="hitaccordion" role="tablist" aria-multiselectable="true">
 
-        {% for name in hit|sort(attribute='last') %}
+        {% for name in hit|sort(attribute='lastname') %}
           <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="{{ name.last }}{{ name.R }}{{ name.H }}">
+            <div class="panel-heading" role="tab" id="{{ name.lastname }}{{ name.R }}{{ name.H }}">
               <h4 class="panel-title">
                 <strong>{{ name.Name }}</strong> <small>#{{ name.posnum }}, {{ name.position }}</small>
               </h4>
-              <p>Batting average: {{ name.AVG }} | <a class="collapsed" role="button" data-toggle="collapse" data-parent="#hitaccordion" href="#collapse{{ name.last }}{{ name.R }}{{ name.H }}" aria-expanded="false" aria-controls="collapse{{ name.last }}{{ name.R }}{{ name.H }}"><small>CLICK HERE FOR MORE</small></a></p>
+              <p>Batting average: {{ name.AVG }} | <a class="collapsed" role="button" data-toggle="collapse" data-parent="#hitaccordion" href="#collapse{{ name.lastname }}{{ name.R }}{{ name.H }}" aria-expanded="false" aria-controls="collapse{{ name.lastname }}{{ name.R }}{{ name.H }}"><small>CLICK HERE FOR MORE</small></a></p>
 
             </div>
-            <div id="collapse{{ name.last }}{{ name.R }}{{ name.H }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ name.last }}{{ name.R }}{{ name.H }}">
+            <div id="collapse{{ name.lastname }}{{ name.R }}{{ name.H }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ name.lastname }}{{ name.R }}{{ name.H }}">
               <div class="panel-body">
                 <table class='table table table-condensed table-striped'>
                     <tbody>
                         <tr><td class='tdLEFT'>At bats</td><td>{{ name.AB }}</td></tr>
-                        <tr><td class='tdLEFT'>Runs</td><td>{{ name.R }}</td></tr>
                         <tr><td class='tdLEFT'>Hits</td><td>{{ name.H }}</td></tr>
-                        <tr><td class='tdLEFT'>Doubles</td><td>{{ name.dbls }}</td></tr>
-                        <tr><td class='tdLEFT'>Triples</td><td>{{ name.trps }}</td></tr>
-                        <tr><td class='tdLEFT'>Home runs</td><td>{{ name.HR }}</td></tr>
+                    </tbody>
+                </table>
+                <img src="static/img/sox{{ name.lastname|string }}{{ name.posnum|string }}.png" class="img-responsive center-block"><br>
+                 <table class='table table table-condensed table-striped'>
+                    <tbody>
+                        <tr><td class='tdLEFT'>Runs</td><td>{{ name.R }}</td></tr>
                         <tr><td class='tdLEFT'>RBI</td><td>{{ name.RBI }}</td></tr>
-                        <tr><td class='tdLEFT'>Base on balls</td><td>{{ name.BB }}</td></tr>
-                        <tr><td class='tdLEFT'>Strike outs</td><td>{{ name.SO }}</td></tr>
-                        <tr><td class='tdLEFT'>% SO</td><td>{{ name.SOperc }}%</td></tr>
+                        <tr><td class='tdLEFT'>Home runs</td><td>{{ name.HR }}</td></tr>
                         <tr><td class='tdLEFT'>Stolen bases</td><td>{{ name.SB }}</td></tr>
                         <tr><td class='tdLEFT'>Caught stealing</td><td>{{ name.CS }}</td></tr>
                         <tr><td class='tdLEFT'>On-base percent</td><td>{{ name.OBP }}</td></tr>
+                    </tbody>
+                </table>
+                <p><strong>Other measures</strong></p>
+                 <table class='table table table-condensed table-striped'>
+                    <tbody>
                         <tr><td class='tdLEFT'>Weighted OBP</td><td>{{ name.wOBA }}</td></tr>
                         <tr><td class='tdLEFT'>Slugging %</td><td>{{ name.SLG }}</td></tr>
                         <tr><td class='tdLEFT'>Weighted runs above avg.</td><td>{{ name.wRAA }}</td></tr>
