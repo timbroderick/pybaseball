@@ -61,7 +61,7 @@
           <div class="panel panel-default">
             <div class="panel-heading" role="tab" id="{{ name.last }}{{ name.R }}{{ name.H }}">
               <h4 class="panel-title">
-                <strong>{{ name.Name }}</strong>
+                <strong>{{ name.Name }}</strong> <small>#{{ name.posnum }}, {{ name.position }}</small>
               </h4>
               <p>Batting average: {{ name.AVG }} | <a class="collapsed" role="button" data-toggle="collapse" data-parent="#hitaccordion" href="#collapse{{ name.last }}{{ name.R }}{{ name.H }}" aria-expanded="false" aria-controls="collapse{{ name.last }}{{ name.R }}{{ name.H }}"><small>CLICK HERE FOR MORE</small></a></p>
 
@@ -108,55 +108,7 @@
         <br>
         <h2 style='width:100%; text-align:center' id="pitchers"><strong>Pitchers</strong></h2>
         <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#games"><strong style='color:#FF9C00'>GAMES</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a></small></p>
-
-        
-        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingOne2">
-              <h4 class="panel-title">
-                <h5><strong>Player name</srong><br>
-                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-                  <small>CLICK HERE FOR MORE</small></h5>
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
-              <div class="panel-body">
-                <p>1st panel body</p>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingTwo2">
-              <h4 class="panel-title">
-                <h5><strong>Player name</srong><br>
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                  <small>CLICK HERE FOR MORE</small></h5>
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
-              <div class="panel-body">
-                <p>2nd panel body</p>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree2">
-              <h4 class="panel-title">
-                <h5><strong>Player name</srong><br>
-                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
-                  <small>CLICK HERE FOR MORE</small></h5>
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
-              <div class="panel-body">
-                <p>3rd panel body</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p>Season pitching stats.</p>
         <br>
 
     </div>

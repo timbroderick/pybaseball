@@ -248,12 +248,9 @@ soxsort = pd.DataFrame ( sox.loc[ ( sox["W/L"].notnull() ) ] )
 soxsort.sort_index(ascending=False,inplace=True)
 soxlast = soxsort[:1]
 soxlast = soxlast.copy()
-soxlast.loc[:, 'R'] = soxlast['R'].astype(int)
-soxlast.loc[:, 'R'] = soxlast['R'].astype(str)
-soxlast.loc[:, 'RA'] = soxlast['RA'].astype(int)
-soxlast.loc[:, 'RA'] = soxlast['RA'].astype(str)
-soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(int)
-soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(str)
+soxlast.loc[:, 'R'] = soxlast['R'].astype(int).astype(str)
+soxlast.loc[:, 'RA'] = soxlast['RA'].astype(int).astype(str)
+soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(int).astype(str)
 soxnext = pd.DataFrame ( sox.loc[ ( sox["W/L"].isnull() ) ] )
 soxnext = soxnext[:1]
 soxlast = soxnext.append(soxlast)
@@ -317,7 +314,12 @@ soxBSselect.loc[:, 'BB'] = soxBSselect['BB'].astype(int)
 soxBSselect.loc[:, 'SO'] = soxBSselect['SO'].astype(int)
 soxBSselect.loc[:, 'CS'] = soxBSselect['CS'].astype(int)
 soxBSselect = soxBSselect.rename(columns = {'2B':'dbls','3B':'trps' })
-soxBSselect.to_csv("csv/soxhit.csv", index=False, encoding="utf-8")
+soxroster = pd.read_csv('csv/soxroster.csv', index_col=None)
+left = soxBSselect
+right = soxroster
+soxBShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
+soxBShit.loc[:, 'posnum'] = soxBShit['posnum'].astype(int).astype(str)
+soxBShit.to_csv("csv/soxhit.csv", index=False, encoding="utf-8")
 print("Sox batting stats done")
 
 
@@ -331,12 +333,9 @@ cubssort = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].notnull() ) ] )
 cubssort.sort_index(ascending=False,inplace=True)
 cubslast = cubssort[:1]
 cubslast = cubslast.copy()
-cubslast.loc[:, 'R'] = cubslast['R'].astype(int)
-cubslast.loc[:, 'R'] = cubslast['R'].astype(str)
-cubslast.loc[:, 'RA'] = cubslast['RA'].astype(int)
-cubslast.loc[:, 'RA'] = cubslast['RA'].astype(str)
-cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(int)
-cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(str)
+cubslast.loc[:, 'R'] = cubslast['R'].astype(int).astype(str)
+cubslast.loc[:, 'RA'] = cubslast['RA'].astype(int).astype(str)
+cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(int).astype(str)
 cubsnext = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].isnull() ) ] )
 cubsnext = cubsnext[:1]
 cubslast = cubsnext.append(cubslast)
@@ -401,7 +400,12 @@ cubsBSselect.loc[:, 'BB'] = cubsBSselect['BB'].astype(int)
 cubsBSselect.loc[:, 'SO'] = cubsBSselect['SO'].astype(int)
 cubsBSselect.loc[:, 'CS'] = cubsBSselect['CS'].astype(int)
 cubsBSselect = cubsBSselect.rename(columns = {'2B':'dbls','3B':'trps' })
-cubsBSselect.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
+cubsroster = pd.read_csv('csv/cubsroster.csv', index_col=None)
+left = cubsBSselect
+right = cubsroster
+cubsBShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
+cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
+cubsBShit.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
 print("cubs batting stats done")
 
 
