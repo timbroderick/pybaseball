@@ -136,6 +136,7 @@ print('standings file done and saved')
 import seaborn as sns
 import matplotlib as mpl
 import matplotlib.pyplot as plt
+from matplotlib import ticker
 import math
 
 #-----
@@ -342,12 +343,15 @@ for index, row in soxBShit.iterrows():
     plt.figure()
     my_dpi=150
     plt.ylim(0, 100)
+    tick_locator = ticker.MaxNLocator(10)
     g = sns.barplot(
         x='hits',
         y='hitperc',
         data=df,
         palette=df['hitcolor']
     )
+    g.yaxis.set_major_locator(tick_locator)
+    g.grid(axis='y', linewidth=2)
     g.figure.set_size_inches(8,6)
     plt.plot([2.5, 2.5], [0, 100], linewidth=2)
     # Add labels to the plot
@@ -464,12 +468,15 @@ for index, row in cubsBShit.iterrows():
     plt.figure()
     my_dpi=150
     plt.ylim(0, 100)
+    tick_locator = ticker.MaxNLocator(10)
     g = sns.barplot(
         x='hits',
         y='hitperc',
         data=df,
         palette=df['hitcolor']
     )
+    g.yaxis.set_major_locator(tick_locator)
+    g.grid(axis='y', linewidth=2)
     g.figure.set_size_inches(8,6)
     plt.plot([2.5, 2.5], [0, 100], linewidth=2)
     # Add labels to the plot
