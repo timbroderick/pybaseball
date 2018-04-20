@@ -19,13 +19,13 @@
             </div>
             <hr class='fancy'>
             <br>
-            <p style='width:100%; text-align:center' ><strong>Updated {{timestamp}}</strong></p>
+            <p style='width:100%; text-align:center' ><strong>Updated {{timestamp}}</strong> Pybaseballs gathers these from <a href="https://www.baseball-reference.com/" target="_blank">Baseball-reference.com.</a></p>
             <br>
         <hr class='fancy'>
         <br>
         <h2 style='width:100%; text-align:center' id="games"><strong>Games</strong></h2>
         <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small><p>
-        <p><strong>On {{ nl[0].Date }},</strong> the Cubs {% if nl[0].WL == 'W' %}won{% elif nl[0].WL == 'W-wo' %}won in a walk-off{% elif nl[0].WL == 'L' %}lost{% elif nl[0].WL == 'L-wo' %}lost in a walk off{% endif %} a {% if nl[0].DN == 'D' %}day{% else %}night{% endif %} {% if nl[0].Home_Away == '@' %}away{% else %}home{% endif %} game against the {{ nl[0].Team }}, {{ nl[0].R }} to {{ nl[0].RA }}, in {{ nl[0].Inn }} innings. The winning pitcher was {{ nl[0].Win }}, losing pitcher was {{ nl[0].Loss }}. Save: {{ nl[0].Save }}. <strong>Next scheduled game:</strong> {{ nl[1].Date }}, a {% if nl[1].DN == 'D' %}day{% else %}night{% endif %} {% if nl[1].Home_Away == '@' %}away{% else %}home{% endif %} game with the {{ nl[1].Team }}.</p>
+        <p><strong>On {{ nl[0].Date }},</strong> the Cubs {% if nl[0].WL == 'W' %}won a{% elif nl[0].WL == 'W-wo' %}won with a walk-off in a{% elif nl[0].WL == 'L' %}lost a{% elif nl[0].WL == 'L-wo' %}lost with a walk off in a{% endif %} {% if nl[0].DN == 'D' %}day{% else %}night{% endif %} game {% if nl[0].Home_Away == '@' %}at{% else %}at home against{% endif %} the {{ nl[0].Team }}, {{ nl[0].R }} to {{ nl[0].RA }}, in {{ nl[0].Inn }} innings. The winning pitcher was {{ nl[0].Win }}, losing pitcher was {{ nl[0].Loss }}. Save: {{ nl[0].Save }}. <strong>Next scheduled game:</strong> {{ nl[1].Date }}, a {% if nl[1].DN == 'D' %}day{% else %}night{% endif %} game {% if nl[1].Home_Away == '@' %}away at{% else %}at home with{% endif %} the {{ nl[1].Team }}.</p>
         <br>
         <h3 style='width:100%; text-align:center'>Summary results by team</h3>
         <br>
@@ -72,31 +72,31 @@
                  <table class='table table table-condensed table-striped'>
                     <tbody>
                         <tr><td class='tdLEFT'>At bats</td><td>{{ name.AB }}</td></tr>
+                        <tr><td class='tdLEFT'>Hits</td><td>{{ name.H }}</td></tr>
+                        <tr><td class='tdLEFT'>Home runs</td><td>{{ name.HR }}</td></tr>
                         <tr><td class='tdLEFT'>Batting Avg.</td><td>{{ name.AVG }}</td></tr>
                     </tbody>
                 </table>
                 <img src="static/img/cubs{{ name.lastname|string }}{{ name.posnum|string }}.png" class="img-responsive center-block"><br>
                  <table class='table table table-condensed table-striped'>
                     <tbody>
-                        <tr><td class='tdLEFT'>Hits</td><td>{{ name.H }}</td></tr>
                         <tr><td class='tdLEFT'>Runs</td><td>{{ name.R }}</td></tr>
                         <tr><td class='tdLEFT'>RBI</td><td>{{ name.RBI }}</td></tr>
-                        <tr><td class='tdLEFT'>Home runs</td><td>{{ name.HR }}</td></tr>
+                        <tr><td class='tdLEFT'>On-base percent</td><td>{{ name.OBP }}</td></tr>
+                        <tr><td class='tdLEFT'>Weighted OBP</td><td>{{ name.wOBA }}</td></tr>
+                        <tr><td class='tdLEFT'>Slugging %</td><td>{{ name.SLG }}</td></tr>
                         <tr><td class='tdLEFT'>Stolen bases</td><td>{{ name.SB }}</td></tr>
                         <tr><td class='tdLEFT'>Caught stealing</td><td>{{ name.CS }}</td></tr>
-                        <tr><td class='tdLEFT'>On-base percent</td><td>{{ name.OBP }}</td></tr>
                     </tbody>
                 </table>
                 <p><strong>Other measures</strong></p>
                  <table class='table table table-condensed table-striped'>
                     <tbody>
-                        <tr><td class='tdLEFT'>Weighted OBP</td><td>{{ name.wOBA }}</td></tr>
-                        <tr><td class='tdLEFT'>Slugging %</td><td>{{ name.SLG }}</td></tr>
                         <tr><td class='tdLEFT'>Weighted runs above avg.</td><td>{{ name.wRAA }}</td></tr>
                         <tr><td class='tdLEFT'>Runs Above Replacement</td><td>{{ name.RAR }}</td></tr>
-                        <tr><td class='tdLEFT'>WAR</td><td>{{ name.WAR }}</td></tr>
                         <tr><td class='tdLEFT'>Fielding %</td><td>{{ name.Fld }}</td></tr>
-                    </tbody>
+                        <tr><td class='tdLEFT'>WAR</td><td>{{ name.WAR }}</td></tr>
+                     </tbody>
                 </table>
 
               </div>
