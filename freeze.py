@@ -236,7 +236,7 @@ for p in g.patches:
 g.figure.savefig('static/img/HR.png',bbox_inches='tight')
 
 
-print("charts created")
+print("p1 charts created")
 
 
 
@@ -313,6 +313,7 @@ soxBSselect.loc[:, 'HR'] = soxBSselect['HR'].astype(int)
 soxBSselect.loc[:, 'RBI'] = soxBSselect['RBI'].astype(int)
 soxBSselect.loc[:, 'BB'] = soxBSselect['BB'].astype(int)
 soxBSselect.loc[:, 'SO'] = soxBSselect['SO'].astype(int)
+soxBSselect.loc[:, 'SB'] = soxBSselect['SB'].astype(int)
 soxBSselect.loc[:, 'CS'] = soxBSselect['CS'].astype(int)
 soxBSselect = soxBSselect.rename(columns = {'2B':'dbls','3B':'trps' })
 soxroster = pd.read_csv('csv/soxroster.csv', index_col=None)
@@ -438,6 +439,7 @@ cubsBSselect.loc[:, 'HR'] = cubsBSselect['HR'].astype(int)
 cubsBSselect.loc[:, 'RBI'] = cubsBSselect['RBI'].astype(int)
 cubsBSselect.loc[:, 'BB'] = cubsBSselect['BB'].astype(int)
 cubsBSselect.loc[:, 'SO'] = cubsBSselect['SO'].astype(int)
+cubsBSselect.loc[:, 'SB'] = cubsBSselect['SB'].astype(int)
 cubsBSselect.loc[:, 'CS'] = cubsBSselect['CS'].astype(int)
 cubsBSselect = cubsBSselect.rename(columns = {'2B':'dbls','3B':'trps' })
 cubsroster = pd.read_csv('csv/cubsroster.csv', index_col=None)
