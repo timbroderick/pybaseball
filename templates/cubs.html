@@ -19,7 +19,7 @@
             </div>
             <hr class='fancy'>
             <br>
-            <h3 style='width:100%; text-align:center' ><small>Just enough stats to feed into the anxieties of your typical Cubby fan.</small></h3>
+            <h3 style='width:100%; text-align:center' ><small>Just enough stats to feed into the anxieties of your typical Cubby fan.</small></h3><br>
             <p style='width:100%; text-align:center' ><strong>Updated {{timestamp}}</strong> Pybaseball gathers these from <a href="https://www.baseball-reference.com/" target="_blank">Baseball-reference.com.</a></p>
             <br>
         <hr class='fancy'>
@@ -117,6 +117,93 @@
         <h2 style='width:100%; text-align:center' id="pitchers"><strong>Pitchers</strong></h2>
         <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#games"><strong style='color:#FF9C00'>GAMES</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a></small><p>
         <p>Click the link under a player's name to get acquainted with who's on the mound.</p>
+
+        
+        <div class="panel-group" id="pitchaccordion" role="tablist" aria-multiselectable="true">
+
+        {% for toss in pitch|sort(attribute='lastname') %}
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="{{ toss.lastname }}{{ toss.R }}{{ toss.H }}">
+              <h4 class="panel-title">
+                <strong>{{ toss.Name }}</strong> <small>#{{ toss.posnum }}, {{ toss.position }}</small>
+              </h4>
+              <p><a class="collapsed" role="button" data-toggle="collapse" data-parent="#pitchaccordion" href="#collapse{{ toss.lastname }}{{ toss.posnum }}" aria-expanded="false" aria-controls="collapse{{ toss.lastname }}{{ toss.posnum }}"><small>CLICK HERE FOR MORE</small></a></p>
+
+            </div>
+            <div id="collapse{{ toss.lastname }}{{ toss.posnum }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ toss.lastname }}{{ toss.posnum }}">
+              <div class="panel-body">
+                <table class='table table table-condensed table-striped'>
+                    <tbody>
+                        <tr><td class='tdLEFT'>Wins</td><td>{{ toss.W }}</td></tr>
+                        <tr><td class='tdLEFT'>Losses</td><td>{{ toss.L }}</td></tr>
+                        <tr><td class='tdLEFT'>ERA</td><td>{{ toss.ERA }}</td></tr>
+                        <tr><td class='tdLEFT'>Games saved</td><td>{{ toss.GS }}</td></tr>
+                        <tr><td class='tdLEFT'>Complete games</td><td>{{ toss.CG }}</td></tr>
+                        <tr><td class='tdLEFT'>Shutouts</td><td>{{ toss.ShO }}</td></tr>
+                        <tr><td class='tdLEFT'>Saves</td><td>{{ toss.SV }}</td></tr>
+                        <tr><td class='tdLEFT'>Blown saves</td><td>{{ toss.BS }}</td></tr>
+                        <tr><td class='tdLEFT'>Average innings pitched</td><td>{{ toss.avgIP }}</td></tr>
+                        <tr><td class='tdLEFT'>Hits</td><td>{{ toss.H }}</td></tr>
+                        <tr><td class='tdLEFT'>Runs</td><td>{{ toss.R }}</td></tr>
+                        <tr><td class='tdLEFT'>Earned runs</td><td>{{ toss.ER }}</td></tr>
+                        <tr><td class='tdLEFT'>Home runs</td><td>{{ toss.HR }}</td></tr>
+                        <tr><td class='tdLEFT'>Walks</td><td>{{ toss.BB }}</td></tr>
+                        <tr><td class='tdLEFT'>Hit batters</td><td>{{ toss.HBP }}</td></tr>
+                        <tr><td class='tdLEFT'>Balks</td><td>{{ toss.BK }}</td></tr>
+                        <tr><td class='tdLEFT'>Strike outs</td><td>{{ toss.SO }}</td></tr>
+                        <tr><td class='tdLEFT'>Balls</td><td>{{ toss.Balls }}</td></tr>
+                        <tr><td class='tdLEFT'>Strikes</td><td>{{ toss.Strikes }}</td></tr>
+                        <tr><td class='tdLEFT'>Pitches</td><td>{{ toss.Pitches }}</td></tr>
+                        <tr><td class='tdLEFT'>Strikeouts per 9 innings</td><td>{{ toss.K9}}</td></tr>
+                        <tr><td class='tdLEFT'>Walks per 9 innings</td><td>{{ toss.BB9}}</td></tr>
+                        <tr><td class='tdLEFT'>Percent strikeouts</td><td>{{ toss.Kperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Percent walks</td><td>{{ toss.BBperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Percent left on base</td><td>{{ toss.LOBperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Percent first pitch strike</td><td>{{ toss.FStrikeperc}}</td></tr>
+                    </tbody>
+                </table>
+                <p><strong>Pitch types</strong></p>
+                 <table class='table table table-condensed table-striped'>
+                    <tbody>
+                        <tr><td class='tdLEFT'>Four Seam and Unclassified Fastballs</td><td>{{ toss.FAperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Two Seam Fastballs</td><td>{{ toss.FTperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Cutters</td><td>{{ toss.FCperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Split Fingers</td><td>{{ toss.FSperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Forkballs</td><td>{{ toss.FOperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Sinkers</td><td>{{ toss.SIperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Sliders</td><td>{{ toss.SLperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Curveballs</td><td>{{ toss.CUperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Knuckle-Curves</td><td>{{ toss.KCperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Ephesuses - really slow ball</td><td>{{ toss.EPperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Changeups</td><td>{{ toss.CHperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Screwballs</td><td>{{ toss.SCperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Knuckleballs</td><td>{{ toss.KNperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Unknowns</td><td>{{ toss.UNperc}}</td></tr>
+                        <tr><td class='tdLEFT'>Wild pitches</td><td>{{ toss.WP }}</td></tr>
+                    </tbody>
+                </table>
+                <p><strong>Other measures</strong></p>
+                 <table class='table table table-condensed table-striped'>
+                    <tbody>
+                        <tr><td class='tdLEFT'>Avg. run support</td><td>{{ toss.RS }}</td></tr>
+                        <tr><td class='tdLEFT'>Opponents batting average</td><td>{{ toss.AVG }}</td></tr>
+                        <tr><td class='tdLEFT'>Walks, hits per inning (WHIP)</td><td>{{ toss.WHIP }}</td></tr>
+                        <tr><td class='tdLEFT'>Batting avg. on balls in play</td><td>{{ toss.BABIP }}</td></tr>
+                        <tr><td class='tdLEFT'>Fielding independent pitching</td><td>{{ toss.FIP }}</td></tr>
+                        <tr><td class='tdLEFT'>Win probability added (WPA)</td><td>{{ toss.WPA }}</td></tr>
+                        <tr><td class='tdLEFT'>Runs above replacement</td><td>{{ toss.RAR }}</td></tr>
+                        <tr><td class='tdLEFT'>WAR</td><td>{{ toss.WAR }}</td></tr>
+                    </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+
+        {% endfor %}
+        </div>
+        <br>
+
     </div>
 </div>
 

@@ -28,7 +28,15 @@ def soxnl():
     soxnextlast_list = list(soxnextlast_obj)
     return soxnextlast_list
 
-# this loads csv for Sox game aggregate file
+# this loads csv for Sox pitch aggregate file
+def soxpitch():
+    soxpitch_path = 'csv/soxpitch.csv'
+    soxpitch_file = open(soxpitch_path, 'r') # typo rb
+    soxpitch_obj = csv.DictReader(soxpitch_file)
+    soxpitch_list = list(soxpitch_obj)
+    return soxpitch_list
+
+# this loads csv for Sox hit aggregate file
 def soxhit():
     soxhit_path = 'csv/soxhit.csv'
     soxhit_file = open(soxhit_path, 'r') # typo rb
@@ -59,6 +67,14 @@ def cubshit():
     cubshit_obj = csv.DictReader(cubshit_file)
     cubshit_list = list(cubshit_obj)
     return cubshit_list
+
+# this loads csv for Cubs pitch aggregate file
+def cubspitch():
+    cubspitch_path = 'csv/cubspitch.csv'
+    cubspitch_file = open(cubspitch_path, 'r') # typo rb
+    cubspitch_obj = csv.DictReader(cubspitch_file)
+    cubspitch_list = list(cubspitch_obj)
+    return cubspitch_list
 
 # trying mike stucka's date 
 def get_big_timestamp(date_object=None):
@@ -97,7 +113,8 @@ def sox():
     soxagg_list = soxagg()
     soxnl_list = soxnl()
     soxhit_list = soxhit()
-    return render_template(template, timestamp=timestamp, agg=soxagg_list, nl=soxnl_list, hit=soxhit_list)
+    soxpitch_list = soxpitch()
+    return render_template(template, timestamp=timestamp, agg=soxagg_list, nl=soxnl_list, hit=soxhit_list, pitch=soxpitch_list)
 
 @app.route("/cubs.html")
 def cubs():
@@ -106,7 +123,8 @@ def cubs():
     cubsagg_list = cubsagg()
     cubsnl_list = cubsnl()
     cubshit_list = cubshit()
-    return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list, hit=cubshit_list)
+    cubspitch_list = cubspitch()
+    return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list, hit=cubshit_list, pitch=cubspitch_list)
 
 @app.route("/h2h.html")
 def h2h():
