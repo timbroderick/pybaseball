@@ -327,6 +327,7 @@ cubsroster = pd.read_csv('csv/cubsroster.csv', index_col=None)
 left = cubsBSselect
 right = cubsroster
 cubsBShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
+#cubsBShit.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
 cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
 cubsBShit.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
 print("cubs batting stats done")
@@ -353,9 +354,10 @@ cubsPSselect.loc[:, 'ER'] = cubsPSselect['ER'].astype(int)
 cubsroster = pd.read_csv('csv/cubsroster.csv', index_col=None)
 left = cubsPSselect
 right = cubsroster
-cubsPShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
-cubsPShit.loc[:, 'posnum'] = cubsPShit['posnum'].astype(int).astype(str)
-cubsPShit.to_csv("csv/cubspitch.csv", index=False, encoding="utf-8")
+cubsPSpitch = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
+#cubsPSpitch.to_csv("csv/cubspitch.csv", index=False, encoding="utf-8")
+cubsPSpitch.loc[:, 'posnum'] = cubsPSpitch['posnum'].astype(int).astype(str)
+cubsPSpitch.to_csv("csv/cubspitch.csv", index=False, encoding="utf-8")
 print("cubs pitching stats done")
 
 

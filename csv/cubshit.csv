@@ -1,22 +1,23 @@
 Name,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc,lastname,posName,posnum,position
-Javier Baez,62,16,18,4,3,6,20,6,14,1,0,0.29,0.371,0.742,0.451,7.6,10.2,1.1,-0.2,22.6,Baez,Javier Baez,9,Second base
-Kris Bryant,66,12,22,7,1,2,11,12,11,0,1,0.333,0.471,0.561,0.443,8.6,10.2,1.1,-0.1,16.7,Bryant,Kris Bryant,17,Third base
-Kyle Schwarber,53,10,15,3,0,4,13,11,17,0,1,0.283,0.406,0.566,0.417,5.2,5.9,0.6,0.0,32.1,Schwarber,Kyle Schwarber,12,Outfield
-Albert Almora Jr.,40,12,13,3,1,1,5,3,7,0,0,0.325,0.372,0.525,0.39,2.6,4.7,0.5,0.7,17.5,Almora,Albert Almora Jr.,5,Outfield
-Ben Zobrist,43,6,14,1,1,1,7,6,5,0,0,0.326,0.408,0.465,0.387,2.8,4.5,0.5,0.4,11.6,Zobrist,Ben Zobrist,18,Infield
-Addison Russell,59,9,14,4,0,0,2,9,9,1,0,0.237,0.348,0.305,0.299,-0.8,3.4,0.4,1.3,15.3,Russell,Addison Russell,27,Shortstop
-Willson Contreras,65,6,18,6,1,0,4,4,15,0,0,0.277,0.356,0.4,0.334,1.2,3.1,0.3,0.7,23.1,Contreras,Willson Contreras,40,Catcher
+Javier Baez,66,17,19,4,3,6,20,6,14,1,0,0.288,0.365,0.712,0.438,7.2,10.0,1.0,-0.2,21.2,Baez,Javier Baez,9,Second base
+Kris Bryant,69,12,22,7,1,2,11,13,12,0,1,0.319,0.461,0.536,0.43,8.2,9.8,1.0,-0.1,17.4,Bryant,Kris Bryant,17,Third base
+Albert Almora Jr.,43,13,15,4,1,1,5,4,7,0,0,0.349,0.404,0.558,0.417,3.8,6.1,0.6,0.7,16.3,Almora,Albert Almora Jr.,5,Outfield
+Kyle Schwarber,54,10,15,3,0,4,13,11,17,0,1,0.278,0.4,0.556,0.411,4.9,5.7,0.6,0.0,31.5,Schwarber,Kyle Schwarber,12,Outfield
+Ben Zobrist,43,6,14,1,1,1,7,6,5,0,0,0.326,0.408,0.465,0.387,2.8,4.6,0.5,0.4,11.6,Zobrist,Ben Zobrist,18,Infield
+Willson Contreras,69,6,19,7,1,0,6,4,15,0,0,0.275,0.351,0.406,0.334,1.2,3.3,0.4,0.7,21.7,Contreras,Willson Contreras,40,Catcher
+Addison Russell,62,9,14,4,0,0,2,9,10,1,0,0.226,0.333,0.29,0.286,-1.6,2.8,0.3,1.3,16.1,Russell,Addison Russell,27,Shortstop
 Jason Heyward,57,12,14,1,1,2,12,7,7,0,0,0.246,0.333,0.404,0.327,0.7,1.8,0.2,-0.2,12.3,Heyward,Jason Heyward,22,Outfield
-Ian Happ,49,4,10,2,0,2,5,4,25,2,0,0.204,0.264,0.367,0.28,-1.4,1.6,0.2,0.7,51.0,Happ,Ian Happ,8,Outfield
+Ian Happ,52,4,11,2,0,2,5,4,25,2,0,0.212,0.268,0.365,0.281,-1.5,1.6,0.2,0.7,48.1,Happ,Ian Happ,8,Outfield
 Victor Caratini,28,4,7,3,0,0,1,1,7,0,0,0.25,0.3,0.357,0.294,-0.5,0.8,0.1,0.0,25.0,Caratini,Victor Caratini,7,Catcher
-Tommy La Stella,21,3,6,2,0,0,4,3,4,0,0,0.286,0.375,0.381,0.342,0.5,0.4,0.0,-0.8,19.0,La,Tommy La Stella,2,Infield
+David Bote,3,0,1,1,0,0,0,0,2,0,1,0.333,0.333,0.667,0.424,0.3,0.0,0.0,,66.7,Bote,David Bote,13,Infield
+Tommy La Stella,22,3,6,2,0,0,4,3,4,0,0,0.273,0.36,0.364,0.328,0.3,0.2,0.0,-0.8,18.2,La,Tommy La Stella,2,Infield
 Eddie Butler,2,0,0,0,0,0,0,1,0,0,0,0.0,0.333,0.0,0.232,-0.2,0.2,0.0,,0.0,Butler,Eddie Butler,33,Pitcher
-Kyle Hendricks,8,0,1,0,0,0,0,0,5,0,0,0.125,0.125,0.125,0.112,-1.3,-0.2,0.0,,62.5,Hendricks,Kyle Hendricks,28,Pitcher
+Kyle Hendricks,8,0,1,0,0,0,0,0,5,0,0,0.125,0.125,0.125,0.112,-1.3,-0.1,0.0,,62.5,Hendricks,Kyle Hendricks,28,Pitcher
 Jon Lester,9,0,1,0,0,0,1,0,4,0,0,0.111,0.111,0.111,0.099,-1.9,-0.3,0.0,,44.4,Lester,Jon Lester,34,Pitcher
 Mike Montgomery,2,0,0,0,0,0,0,0,2,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,100.0,Montgomery,Mike Montgomery,38,Pitcher
 Steve Cishek,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.2,-0.1,0.0,,0.0,Cishek,Steve Cishek,41,Pitcher
 Efren Navarro,6,0,1,0,0,0,0,0,4,0,0,0.167,0.167,0.167,0.149,-0.8,-0.7,-0.1,,66.7,Navarro,Efren Navarro,61,First base
 Tyler Chatwood,4,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-1.2,-0.5,-0.1,,25.0,Chatwood,Tyler Chatwood,21,Pitcher
 Jose Quintana,4,0,0,0,0,0,0,0,4,0,0,0.0,0.0,0.0,0.0,-1.2,-0.5,-0.1,,100.0,Quintana,Jose Quintana,62,Pitcher
-Yu Darvish,4,0,0,0,0,0,0,0,3,0,0,0.0,0.0,0.0,0.0,-1.2,-0.5,-0.1,,75.0,Darvish,Yu Darvish,11,Pitcher
-Anthony Rizzo,40,5,6,0,0,1,5,4,8,0,0,0.15,0.292,0.225,0.255,-2.2,-2.2,-0.2,-0.1,20.0,Rizzo,Anthony Rizzo,44,First base
+Yu Darvish,6,0,0,0,0,0,0,0,5,0,0,0.0,0.0,0.0,0.0,-1.7,-0.7,-0.1,,83.3,Darvish,Yu Darvish,11,Pitcher
+Anthony Rizzo,44,5,6,0,0,1,5,4,9,0,0,0.136,0.269,0.205,0.236,-3.2,-3.2,-0.3,-0.1,20.5,Rizzo,Anthony Rizzo,44,First base

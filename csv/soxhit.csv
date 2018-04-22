@@ -1,13 +1,13 @@
 Name,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc,lastname,posName,posnum,position
-Yoan Moncada,66,10,14,4,0,3,9,11,31,4,0,0.212,0.325,0.409,0.328,0.9,6.8,0.7,1.1,47.0,Moncada,Yoan Moncada,10,Second base
-Tim Anderson,59,9,14,1,0,3,5,7,16,8,0,0.237,0.318,0.407,0.323,0.5,4.6,0.5,-0.7,27.1,Anderson,Tim Anderson,7,Short stop
-Matt Davidson,51,10,11,1,0,5,11,11,21,0,0,0.216,0.365,0.529,0.39,3.8,3.6,0.4,,41.2,Davidson,Matt Davidson,24,DH
-Jose Abreu,66,9,18,3,0,4,9,2,12,0,0,0.273,0.342,0.5,0.37,3.2,2.5,0.3,-0.5,18.2,Abreu,Jose Abreu,79,First base
-Yolmer Sanchez,55,4,14,2,2,1,9,3,14,1,0,0.255,0.306,0.418,0.314,0.0,3.0,0.3,1.5,25.5,Sanchez,Yolmer Sanchez,5,Third base
-Leury Garcia,29,4,7,1,0,0,3,2,7,4,0,0.241,0.333,0.276,0.287,-0.7,1.8,0.2,0.9,24.1,Garcia,Leury Garcia,28,Outfield
-Welington Castillo,38,4,9,3,0,2,4,3,12,0,0,0.237,0.293,0.474,0.333,0.6,0.6,0.1,-1.0,31.6,Castillo,Welington Castillo,21,Catcher
+Yoan Moncada,67,10,14,4,0,3,9,11,31,4,0,0.209,0.321,0.403,0.324,0.6,6.5,0.7,1.1,46.3,Moncada,Yoan Moncada,10,Second base
+Tim Anderson,63,9,15,2,0,3,5,7,17,8,0,0.238,0.314,0.413,0.323,0.5,4.8,0.5,-0.7,27.0,Anderson,Tim Anderson,7,Short stop
+Matt Davidson,54,10,11,1,0,5,11,12,23,0,0,0.204,0.358,0.5,0.377,3.3,3.1,0.3,,42.6,Davidson,Matt Davidson,24,DH
+Jose Abreu,69,9,19,3,0,4,9,3,13,0,0,0.275,0.351,0.493,0.372,3.5,2.8,0.3,-0.5,18.8,Abreu,Jose Abreu,79,First base
+Yolmer Sanchez,59,4,15,2,2,1,9,3,14,1,0,0.254,0.303,0.407,0.308,-0.3,2.8,0.3,1.5,23.7,Sanchez,Yolmer Sanchez,5,Third base
+Welington Castillo,40,4,9,3,0,2,4,4,12,0,0,0.225,0.295,0.45,0.326,0.4,0.5,0.1,-1.0,30.0,Castillo,Welington Castillo,21,Catcher
 Tyler Saladino,8,2,2,1,0,0,0,0,3,0,0,0.25,0.25,0.375,0.271,-0.3,0.7,0.1,0.8,37.5,Saladino,Tyler Saladino,20,Infield
+Leury Garcia,32,4,7,1,0,0,3,2,9,4,0,0.219,0.306,0.25,0.263,-1.5,1.1,0.1,0.9,28.1,Garcia,Leury Garcia,28,Outfield
 Nick Delmonico,49,3,13,1,0,1,4,7,11,1,0,0.265,0.368,0.347,0.33,0.7,0.4,0.0,-1.2,22.4,Delmonico,Nick Delmonico,30,Outfield
-Omar Narvaez,25,1,4,2,0,0,1,4,8,0,2,0.16,0.276,0.24,0.245,-1.6,0.0,0.0,1.0,32.0,Narvaez,Omar Narvaez,38,Catcher
-Adam Engel,42,1,7,1,0,0,4,5,14,1,0,0.167,0.265,0.19,0.221,-3.6,-3.8,-0.4,-2.0,33.3,Engel,Adam Engel,15,Outfield
-Avisail Garcia,63,5,14,3,0,1,3,0,15,0,1,0.222,0.242,0.317,0.247,-3.5,-4.7,-0.5,-1.3,23.8,Garcia,Avisail Garcia,26,Outfield
+Omar Narvaez,25,1,4,2,0,0,1,5,8,0,2,0.16,0.3,0.24,0.26,-1.3,0.3,0.0,1.0,32.0,Narvaez,Omar Narvaez,38,Catcher
+Adam Engel,45,1,7,1,0,0,4,5,14,1,0,0.156,0.25,0.178,0.208,-4.3,-4.4,-0.5,-2.0,31.1,Engel,Adam Engel,15,Outfield
+Avisail Garcia,67,5,14,3,0,1,3,0,17,0,1,0.209,0.229,0.299,0.233,-4.5,-5.6,-0.6,-1.3,25.4,Garcia,Avisail Garcia,26,Outfield
