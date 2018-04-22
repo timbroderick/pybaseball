@@ -22,8 +22,8 @@
         <h3><small>Best viewed on a mobile device on a warm evening, sitting in a cheap upper-deck seat with family, friends, a ballpark hot dog and your favorite cold beverage.</small></h3>
             <br>
             <p><strong>Updated {{timestamp}}</strong><br>
-                I'm a little concerned to see how roster changes are reflected here. Not sure I want to be too hands on once this gets going. I guess I'll need to figure out how to get the current active roster and filter on that.<br>
-                 Going over the available pitching stats, I can see what a rabbit hole this stuff can become. There's almost 300 columns in the stats file! So right now I need to focus on the limited use-case of this app - vital stats for the more casual fan - and filter out the kind of things that appeal to the more intense fans.<br>
+                I've updated the script to pull the latest rosters from MLB.com's api. Using those I can show only active players or those on the DL - and eventually have this update automatically with minimal manual interference. Connected to that, I've restructured and reorganized the overall script to group common tasks such as charting together.<br>
+                 Going over the available pitching stats, I can see what a rabbit hole this stuff can become. There's almost 300 columns in the stats file! I need to focus on the limited use-case of this app - vital stats for the more casual fan - and filter out the kind of things that appeal to the more intense fans. But right now there's a bunch of stats for each pitcher, at least until I decide what to keep and also chart. <br>
                  For the head 2 head page, there's some ready-made plots in the pybaseball package that would allow me to compare a few things, but mostly I'm thinking of violin plots to compare the team players. 
             </p>
             <br>

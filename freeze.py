@@ -7,6 +7,8 @@ import datetime
 import pandas as pd
 import numpy as np
 import shutil
+from pandas.io.json import json_normalize
+import json
 
 from pybaseball import schedule_and_record, team_batting, team_pitching, batting_stats, pitching_stats
 
@@ -76,12 +78,57 @@ print('Cubs sched acquired')
 
 # grab the batting stats
 battingstats = batting_stats(2018)
+BSselect = battingstats[['Name','Team','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
+BSselect = BSselect.copy()
+BSselect.loc[:,'SOperc'] = np.round( (BSselect['SO'] / BSselect['AB'] )*100,1 )
+BSselect = BSselect.rename(columns = {'2B':'dbls','3B':'trps' })
+BSselect.to_csv("csv/BSselect.csv", index=False, encoding="utf-8")
 print('batting stats acquired')
 
 # grab the pitching stats
 pitchstats = pitching_stats(2018)
+PSselect = pitchstats[['Name','Team','W','L','ERA','WAR','G','GS','CG','ShO','SV','BS','IP','H','R','ER','HR','BB','HBP','WP','BK','SO','IFFB','Balls','Strikes','Pitches','RS','AVG','WHIP','BABIP','FIP','WPA','RAR','K/9','BB/9','K%','BB%','LOB%','F-Strike%','FA% (pfx)','FT% (pfx)','FC% (pfx)','FS% (pfx)','FO% (pfx)','SI% (pfx)','SL% (pfx)','CU% (pfx)','KC% (pfx)','EP% (pfx)','CH% (pfx)','SC% (pfx)','KN% (pfx)','UN% (pfx)']]
+PSselect = PSselect.copy()
+PSselect = PSselect.rename(columns = { 'K/9':'K9','BB/9':'BB9','K%':'Kperc','BB%':'BBperc','LOB%':'LOBperc','F-Strike%':'FStrikeperc','FA% (pfx)':'FAperc','FT% (pfx)':'FTperc','FC% (pfx)':'FCperc','FS% (pfx)':'FSperc','FO% (pfx)':'FOperc','SI% (pfx)':'SIperc','SL% (pfx)':'SLperc','CU% (pfx)':'CUperc','KC% (pfx)':'KCperc','EP% (pfx)':'EPperc','CH% (pfx)':'CHperc','SC% (pfx)':'SCperc','KN% (pfx)':'KNperc','UN% (pfx)':'UNperc' })
+PSselect.to_csv("csv/PSselect.csv", index=False, encoding="utf-8")
 print('pitching stats acquired')
 
+#Grab the active rosters
+
+# Getting White Sox roster
+request='http://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id=145'
+data= requests.get(request)
+roster=data.json()
+CWS=json_normalize(roster)
+CWS.columns = CWS.columns.map(lambda x: x.split(".")[-1])
+work = CWS['row']
+df = json_normalize(work[0])
+#status_code
+# select only Active and DL players
+notActive = ['RM']
+dfWS = df[~df.status_code.isin(notActive)]
+WSroster = dfWS[['name_display_first_last','jersey_number','name_last','position_txt','status_code','bats','throws']]
+WSroster = WSroster.rename(columns={'name_display_first_last':'posName','jersey_number':'posnum','name_last':'lastname','position_txt':'position'})
+WSroster['lastname'] = WSroster['lastname'].str.replace(r"[\"\' ]", '')
+WSroster.to_csv("csv/WSroster.csv", index=False, encoding="utf-8")
+print('Sox roster acquired')
+
+# Getting Cubs roster
+request='http://lookup-service-prod.mlb.com/json/named.roster_40.bam?team_id=112'
+data= requests.get(request)
+roster=data.json()
+CHC=json_normalize(roster)
+CHC.columns = CHC.columns.map(lambda x: x.split(".")[-1])
+work = CHC['row']
+df = json_normalize(work[0])
+#status_code
+# select only Active and DL players
+dfCHC = df[~df.status_code.isin(notActive)]
+CHCroster = dfCHC[['name_display_first_last','jersey_number','name_last','position_txt','status_code','bats','throws']]
+CHCroster = CHCroster.rename(columns={'name_display_first_last':'posName','jersey_number':'posnum','name_last':'lastname','position_txt':'position'})
+CHCroster['lastname'] = CHCroster['lastname'].str.replace(r"[\"\' ]", '')
+CHCroster.to_csv("csv/CHCroster.csv", index=False, encoding="utf-8")
+print('Cubs roster acquired')
 
 # -------------------------------
 # Create the standings file
@@ -195,57 +242,46 @@ soxagg.to_csv("csv/soxagg.csv", index=False, encoding="utf-8")
 print("Sox aggregate done")
 
 
-# start batting stats 
-soxBS = pd.DataFrame( battingstats.loc[ ( battingstats["Team"] == "White Sox") ] )
-soxBSselect = soxBS[['Name','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
-soxBSselect = soxBSselect.copy()
-soxBSselect.loc[:,'SOperc'] = np.round( (soxBSselect['SO'] / soxBSselect['AB'] )*100,1 )
-soxBSselect['lastname'] = soxBSselect['Name'].str.split(' ').str[1]
-soxBSselect.loc[:, 'AB'] = soxBSselect['AB'].astype(int)
-soxBSselect.loc[:, 'R'] = soxBSselect['R'].astype(int)
-soxBSselect.loc[:, 'H'] = soxBSselect['H'].astype(int)
-soxBSselect.loc[:, '2B'] = soxBSselect['2B'].astype(int)
-soxBSselect.loc[:, '3B'] = soxBSselect['3B'].astype(int)
-soxBSselect.loc[:, 'HR'] = soxBSselect['HR'].astype(int)
-soxBSselect.loc[:, 'RBI'] = soxBSselect['RBI'].astype(int)
-soxBSselect.loc[:, 'BB'] = soxBSselect['BB'].astype(int)
-soxBSselect.loc[:, 'SO'] = soxBSselect['SO'].astype(int)
-soxBSselect.loc[:, 'SB'] = soxBSselect['SB'].astype(int)
-soxBSselect.loc[:, 'CS'] = soxBSselect['CS'].astype(int)
-soxBSselect = soxBSselect.rename(columns = {'2B':'dbls','3B':'trps' })
-soxroster = pd.read_csv('csv/soxroster.csv', index_col=None)
-left = soxBSselect
-right = soxroster
-soxBShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
+# start batting stats
+left = WSroster
+right = BSselect
+soxBShit = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
+soxBShit = soxBShit[soxBShit.Name.notnull()]
 soxBShit.loc[:, 'posnum'] = soxBShit['posnum'].astype(int).astype(str)
+soxBShit.loc[:, 'AB'] = soxBShit['AB'].astype(int)
+soxBShit.loc[:, 'R'] = soxBShit['R'].astype(int)
+soxBShit.loc[:, 'H'] = soxBShit['H'].astype(int)
+soxBShit.loc[:, 'dbls'] = soxBShit['dbls'].astype(int)
+soxBShit.loc[:, 'trps'] = soxBShit['trps'].astype(int)
+soxBShit.loc[:, 'HR'] = soxBShit['HR'].astype(int)
+soxBShit.loc[:, 'RBI'] = soxBShit['RBI'].astype(int)
+soxBShit.loc[:, 'BB'] = soxBShit['BB'].astype(int)
+soxBShit.loc[:, 'SO'] = soxBShit['SO'].astype(int)
+soxBShit.loc[:, 'SB'] = soxBShit['SB'].astype(int)
+soxBShit.loc[:, 'CS'] = soxBShit['CS'].astype(int)
 soxBShit.to_csv("csv/soxhit.csv", index=False, encoding="utf-8")
 print("Sox batting stats done")
 
 
 # start Sox pitching stats 
-soxPS = pd.DataFrame( pitchstats.loc[ ( pitchstats["Team"] == "White Sox") ] )
-soxPSselect = soxPS[['Name','W','L','ERA','WAR','G','GS','CG','ShO','SV','BS','IP','H','R','ER','HR','BB','HBP','WP','BK','SO','IFFB','Balls','Strikes','Pitches','RS','AVG','WHIP','BABIP','FIP','WPA','RAR','K/9','BB/9','K%','BB%','LOB%','F-Strike%','FA% (pfx)','FT% (pfx)','FC% (pfx)','FS% (pfx)','FO% (pfx)','SI% (pfx)','SL% (pfx)','CU% (pfx)','KC% (pfx)','EP% (pfx)','CH% (pfx)','SC% (pfx)','KN% (pfx)','UN% (pfx)']]
-soxPSselect = soxPSselect.copy()
-soxPSselect = soxPSselect.rename(columns = { 'K/9':'K9','BB/9':'BB9','K%':'Kperc','BB%':'BBperc','LOB%':'LOBperc','F-Strike%':'FStrikeperc','FA% (pfx)':'FAperc','FT% (pfx)':'FTperc','FC% (pfx)':'FCperc','FS% (pfx)':'FSperc','FO% (pfx)':'FOperc','SI% (pfx)':'SIperc','SL% (pfx)':'SLperc','CU% (pfx)':'CUperc','KC% (pfx)':'KCperc','EP% (pfx)':'EPperc','CH% (pfx)':'CHperc','SC% (pfx)':'SCperc','KN% (pfx)':'KNperc','UN% (pfx)':'UNperc' })
-soxPSselect['lastname'] = soxPSselect['Name'].str.split(' ').str[1]
-soxPSselect.loc[:, 'W'] = soxPSselect['W'].astype(int)
-soxPSselect.loc[:, 'L'] = soxPSselect['L'].astype(int)
-soxPSselect.loc[:, 'G'] = soxPSselect['G'].astype(int)
-soxPSselect.loc[:, 'GS'] = soxPSselect['GS'].astype(int)
-soxPSselect.loc[:, 'CG'] = soxPSselect['CG'].astype(int)
-soxPSselect.loc[:, 'ShO'] = soxPSselect['ShO'].astype(int)
-soxPSselect.loc[:, 'SV'] = soxPSselect['SV'].astype(int)
-soxPSselect.loc[:, 'BS'] = soxPSselect['BS'].astype(int)
-soxPSselect.loc[:, 'avgIP'] = soxPSselect['IP'] / soxPSselect['G']
-soxPSselect.loc[:, 'H'] = soxPSselect['H'].astype(int)
-soxPSselect.loc[:, 'R'] = soxPSselect['R'].astype(int)
-soxPSselect.loc[:, 'ER'] = soxPSselect['ER'].astype(int)
-soxroster = pd.read_csv('csv/soxroster.csv', index_col=None)
-left = soxPSselect
-right = soxroster
-soxPShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
-soxPShit.loc[:, 'posnum'] = soxPShit['posnum'].astype(int).astype(str)
-soxPShit.to_csv("csv/soxpitch.csv", index=False, encoding="utf-8")
+left = WSroster
+right = PSselect
+soxPSpitch = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
+soxPSpitch = soxPSpitch[soxPSpitch.Name.notnull()]
+soxPSpitch.loc[:, 'posnum'] = soxPSpitch['posnum'].astype(int).astype(str)
+soxPSpitch.loc[:, 'avgIP'] = np.round( ( soxPSpitch['IP'] / soxPSpitch['G'] ),1 )
+soxPSpitch.loc[:, 'W'] = soxPSpitch['W'].astype(int)
+soxPSpitch.loc[:, 'L'] = soxPSpitch['L'].astype(int)
+soxPSpitch.loc[:, 'G'] = soxPSpitch['G'].astype(int)
+soxPSpitch.loc[:, 'GS'] = soxPSpitch['GS'].astype(int)
+soxPSpitch.loc[:, 'CG'] = soxPSpitch['CG'].astype(int)
+soxPSpitch.loc[:, 'ShO'] = soxPSpitch['ShO'].astype(int)
+soxPSpitch.loc[:, 'SV'] = soxPSpitch['SV'].astype(int)
+soxPSpitch.loc[:, 'BS'] = soxPSpitch['BS'].astype(int)
+soxPSpitch.loc[:, 'H'] = soxPSpitch['H'].astype(int)
+soxPSpitch.loc[:, 'R'] = soxPSpitch['R'].astype(int)
+soxPSpitch.loc[:, 'ER'] = soxPSpitch['ER'].astype(int)
+soxPSpitch.to_csv("csv/soxpitch.csv", index=False, encoding="utf-8")
 print("Sox pitching stats done")
 
 
@@ -305,58 +341,44 @@ print("Cubs aggregate done")
 
 
 # start cubs batting stats
-
-cubsBS = pd.DataFrame( battingstats.loc[ ( battingstats["Team"] == "Cubs") ] )
-cubsBSselect = cubsBS[['Name','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
-cubsBSselect = cubsBSselect.copy()
-cubsBSselect.loc[:,'SOperc'] = np.round( (cubsBSselect['SO'] / cubsBSselect['AB'] )*100,1 )
-cubsBSselect['lastname'] = cubsBSselect['Name'].str.split(' ').str[1]
-cubsBSselect.loc[:, 'AB'] = cubsBSselect['AB'].astype(int)
-cubsBSselect.loc[:, 'R'] = cubsBSselect['R'].astype(int)
-cubsBSselect.loc[:, 'H'] = cubsBSselect['H'].astype(int)
-cubsBSselect.loc[:, '2B'] = cubsBSselect['2B'].astype(int)
-cubsBSselect.loc[:, '3B'] = cubsBSselect['3B'].astype(int)
-cubsBSselect.loc[:, 'HR'] = cubsBSselect['HR'].astype(int)
-cubsBSselect.loc[:, 'RBI'] = cubsBSselect['RBI'].astype(int)
-cubsBSselect.loc[:, 'BB'] = cubsBSselect['BB'].astype(int)
-cubsBSselect.loc[:, 'SO'] = cubsBSselect['SO'].astype(int)
-cubsBSselect.loc[:, 'SB'] = cubsBSselect['SB'].astype(int)
-cubsBSselect.loc[:, 'CS'] = cubsBSselect['CS'].astype(int)
-cubsBSselect = cubsBSselect.rename(columns = {'2B':'dbls','3B':'trps' })
-cubsroster = pd.read_csv('csv/cubsroster.csv', index_col=None)
-left = cubsBSselect
-right = cubsroster
-cubsBShit = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
-#cubsBShit.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
+left = CHCroster
+right = BSselect
+cubsBShit = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
+cubsBShit = cubsBShit[cubsBShit.Name.notnull()]
 cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
+cubsBShit.loc[:, 'AB'] = cubsBShit['AB'].astype(int)
+cubsBShit.loc[:, 'R'] = cubsBShit['R'].astype(int)
+cubsBShit.loc[:, 'H'] = cubsBShit['H'].astype(int)
+cubsBShit.loc[:, 'dbls'] = cubsBShit['dbls'].astype(int)
+cubsBShit.loc[:, 'trps'] = cubsBShit['trps'].astype(int)
+cubsBShit.loc[:, 'HR'] = cubsBShit['HR'].astype(int)
+cubsBShit.loc[:, 'RBI'] = cubsBShit['RBI'].astype(int)
+cubsBShit.loc[:, 'BB'] = cubsBShit['BB'].astype(int)
+cubsBShit.loc[:, 'SO'] = cubsBShit['SO'].astype(int)
+cubsBShit.loc[:, 'SB'] = cubsBShit['SB'].astype(int)
+cubsBShit.loc[:, 'CS'] = cubsBShit['CS'].astype(int)
 cubsBShit.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
 print("cubs batting stats done")
 
 
 # start cubs pitching stats 
-cubsPS = pd.DataFrame( pitchstats.loc[ ( pitchstats["Team"] == "Cubs") ] )
-cubsPSselect = cubsPS[['Name','W','L','ERA','WAR','G','GS','CG','ShO','SV','BS','IP','H','R','ER','HR','BB','HBP','WP','BK','SO','IFFB','Balls','Strikes','Pitches','RS','AVG','WHIP','BABIP','FIP','WPA','RAR','K/9','BB/9','K%','BB%','LOB%','F-Strike%','FA% (pfx)','FT% (pfx)','FC% (pfx)','FS% (pfx)','FO% (pfx)','SI% (pfx)','SL% (pfx)','CU% (pfx)','KC% (pfx)','EP% (pfx)','CH% (pfx)','SC% (pfx)','KN% (pfx)','UN% (pfx)']]
-cubsPSselect = cubsPSselect.copy()
-cubsPSselect = cubsPSselect.rename(columns = { 'K/9':'K9','BB/9':'BB9','K%':'Kperc','BB%':'BBperc','LOB%':'LOBperc','F-Strike%':'FStrikeperc','FA% (pfx)':'FAperc','FT% (pfx)':'FTperc','FC% (pfx)':'FCperc','FS% (pfx)':'FSperc','FO% (pfx)':'FOperc','SI% (pfx)':'SIperc','SL% (pfx)':'SLperc','CU% (pfx)':'CUperc','KC% (pfx)':'KCperc','EP% (pfx)':'EPperc','CH% (pfx)':'CHperc','SC% (pfx)':'SCperc','KN% (pfx)':'KNperc','UN% (pfx)':'UNperc' })
-cubsPSselect['lastname'] = cubsPSselect['Name'].str.split(' ').str[1]
-cubsPSselect.loc[:, 'W'] = cubsPSselect['W'].astype(int)
-cubsPSselect.loc[:, 'L'] = cubsPSselect['L'].astype(int)
-cubsPSselect.loc[:, 'G'] = cubsPSselect['G'].astype(int)
-cubsPSselect.loc[:, 'GS'] = cubsPSselect['GS'].astype(int)
-cubsPSselect.loc[:, 'CG'] = cubsPSselect['CG'].astype(int)
-cubsPSselect.loc[:, 'ShO'] = cubsPSselect['ShO'].astype(int)
-cubsPSselect.loc[:, 'SV'] = cubsPSselect['SV'].astype(int)
-cubsPSselect.loc[:, 'BS'] = cubsPSselect['BS'].astype(int)
-cubsPSselect.loc[:, 'avgIP'] = cubsPSselect['IP'] / cubsPSselect['G']
-cubsPSselect.loc[:, 'H'] = cubsPSselect['H'].astype(int)
-cubsPSselect.loc[:, 'R'] = cubsPSselect['R'].astype(int)
-cubsPSselect.loc[:, 'ER'] = cubsPSselect['ER'].astype(int)
-cubsroster = pd.read_csv('csv/cubsroster.csv', index_col=None)
-left = cubsPSselect
-right = cubsroster
-cubsPSpitch = pd.merge(left, right, how='left', left_on='Name', right_on='posName', suffixes=('_x', '_y'))
-#cubsPSpitch.to_csv("csv/cubspitch.csv", index=False, encoding="utf-8")
+left = CHCroster
+right = PSselect
+cubsPSpitch = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
+cubsPSpitch = cubsPSpitch[cubsPSpitch.Name.notnull()]
 cubsPSpitch.loc[:, 'posnum'] = cubsPSpitch['posnum'].astype(int).astype(str)
+cubsPSpitch.loc[:, 'avgIP'] = np.round( ( cubsPSpitch['IP'] / cubsPSpitch['G'] ),1 )
+cubsPSpitch.loc[:, 'W'] = cubsPSpitch['W'].astype(int)
+cubsPSpitch.loc[:, 'L'] = cubsPSpitch['L'].astype(int)
+cubsPSpitch.loc[:, 'G'] = cubsPSpitch['G'].astype(int)
+cubsPSpitch.loc[:, 'GS'] = cubsPSpitch['GS'].astype(int)
+cubsPSpitch.loc[:, 'CG'] = cubsPSpitch['CG'].astype(int)
+cubsPSpitch.loc[:, 'ShO'] = cubsPSpitch['ShO'].astype(int)
+cubsPSpitch.loc[:, 'SV'] = cubsPSpitch['SV'].astype(int)
+cubsPSpitch.loc[:, 'BS'] = cubsPSpitch['BS'].astype(int)
+cubsPSpitch.loc[:, 'H'] = cubsPSpitch['H'].astype(int)
+cubsPSpitch.loc[:, 'R'] = cubsPSpitch['R'].astype(int)
+cubsPSpitch.loc[:, 'ER'] = cubsPSpitch['ER'].astype(int)
 cubsPSpitch.to_csv("csv/cubspitch.csv", index=False, encoding="utf-8")
 print("cubs pitching stats done")
 
