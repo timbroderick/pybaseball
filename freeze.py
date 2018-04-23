@@ -591,6 +591,53 @@ for index, row in soxBShit.iterrows():
     g.figure.savefig('static/img/sox' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
 print('Sox hitting charts done')
 
+# start Sox pitching charts
+
+# begin Sox hitting charts
+
+for index, row in soxPSpitch.iterrows():
+    d = {'pitches': ['FASTBALL','FS-2SEAM','CUTTER','SPLIT-FINGER','FORKBALL', 'SINKER', 'SLIDER', 'CURVEBALL','EPHESUS','CHANGE-UP','SCREWBALL','KNUCKLEBALL','KNUCKLE-CURVE','UNKNOWN']}
+    df = pd.DataFrame(data=d)
+    df['perc'] = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+    if ( row.Pitches == 0):
+        junkvar = []
+    else:
+        df['perc'][0] = row.FAperc
+        df['perc'][1] = row.FTperc
+        df['perc'][2] = row.FCperc
+        df['perc'][3] = row.FSperc
+        df['perc'][4] = row.FOperc
+        df['perc'][5] = row.SIperc
+        df['perc'][6] = row.SLperc
+        df['perc'][7] = row.CUperc
+        df['perc'][8] = row.EPperc
+        df['perc'][9] = row.CHperc
+        df['perc'][10] = row.SCperc
+        df['perc'][11] = row.KNperc
+        df['perc'][12] = row.KCperc
+        df['perc'][13] = row.UNperc
+
+    df = df.fillna(value=0)
+    # start the plot
+    plt.figure()
+    my_dpi=150
+    plt.xlim(0, 100)
+    from matplotlib import ticker
+    tick_locator = ticker.MaxNLocator(10)
+    g = sns.barplot(
+        x='perc',
+        y='pitches',
+        data=df,
+        color="black"
+    )
+    g.xaxis.set_major_locator(tick_locator)
+    g.grid(axis='x', linewidth=2)
+    g.figure.set_size_inches(6,6)
+    g.set_xlabel('PERCENT THROWN', fontsize=16, fontweight='bold')
+    g.set_ylabel('PITCH TYPE', fontsize=16, fontweight='bold')
+    g.figure.savefig('static/img/soxpitch' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
+print('Sox pitching charts done')
+
 # start cubs hitting charts
 
 for index, row in cubsBShit.iterrows():
@@ -634,6 +681,51 @@ for index, row in cubsBShit.iterrows():
 
 print('cubs hitting charts done')
 
+
+# begin Cubs hitting charts
+
+for index, row in cubsPSpitch.iterrows():
+    d = {'pitches': ['FASTBALL','FS-2SEAM','CUTTER','SPLIT-FINGER','FORKBALL', 'SINKER', 'SLIDER', 'CURVEBALL','EPHESUS','CHANGE-UP','SCREWBALL','KNUCKLEBALL','KNUCKLE-CURVE','UNKNOWN']}
+    df = pd.DataFrame(data=d)
+    df['perc'] = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+    if ( row.Pitches == 0):
+        junkvar = []
+    else:
+        df['perc'][0] = row.FAperc
+        df['perc'][1] = row.FTperc
+        df['perc'][2] = row.FCperc
+        df['perc'][3] = row.FSperc
+        df['perc'][4] = row.FOperc
+        df['perc'][5] = row.SIperc
+        df['perc'][6] = row.SLperc
+        df['perc'][7] = row.CUperc
+        df['perc'][8] = row.EPperc
+        df['perc'][9] = row.CHperc
+        df['perc'][10] = row.SCperc
+        df['perc'][11] = row.KNperc
+        df['perc'][12] = row.KCperc
+        df['perc'][13] = row.UNperc
+
+    df = df.fillna(value=0)
+    # start the plot
+    plt.figure()
+    my_dpi=150
+    plt.xlim(0, 100)
+    from matplotlib import ticker
+    tick_locator = ticker.MaxNLocator(10)
+    g = sns.barplot(
+        x='perc',
+        y='pitches',
+        data=df,
+        color="#000FFF"
+    )
+    g.xaxis.set_major_locator(tick_locator)
+    g.grid(axis='x', linewidth=2)
+    g.figure.set_size_inches(6,6)
+    g.set_xlabel('PERCENT THROWN', fontsize=16, fontweight='bold')
+    g.set_ylabel('PITCH TYPE', fontsize=16, fontweight='bold')
+    g.figure.savefig('static/img/cubspitch' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
+print('Cubs pitching charts done')
 
 
 
