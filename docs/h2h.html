@@ -78,10 +78,40 @@ var $ = jQuery;
             </div>
             <hr class='fancy'>
             <br>
-            <p><strong>Updated Wednesday, April 25, at 9:08 a.m.</strong><br>
-                Violin plots!
-            </p>
+            <p><strong>Updated Wednesday, April 25, at 3:23 p.m.</strong><br>
+                The charts below look at how players are performing according to different measures. For each measure there's a plot for the Sox side-by-side with the Cubs, allowing us to compare the teams by themselves and with each other.<br>
+                I've opted to do a bit more than just violin plots - I'm combining violin plots, box-and-whisker plots and swarm charts.<br>
+                The olive lines are the box-and-whiskers plot, otherwise known as a box plot. Excluding outliers, this chart divides up all the values into quartiles, with the box showing the middle two quartiles. So the box should roughly show where 50% of the values lie, with the line inside the box being the median value. Outliers are anything that fall beyond the "whiskers," or the lines shooting out above and below the box.<br>
+                Sitting atop that is the violin plot. It's the color area where the width represents the number of values that fall along that vertical axes. The more values at particular point, the wider the plot is at that point. I'm also using the colors of the plot to quickly identify each team (black = White Sox, blue = Cubs).<br>
+                The swarm plot is the orange dots. Basically, all those dots should be on the line, where overlapping dots would be hard to see. A swarm plot simply moves them right or left of the center line so you can see each dot.<br>
+                These charts may be a bit hard to grasp at first, but once you get them they're kind of useful. Plus, I'll be turning a few of these into animated gifs at the end of the season so we can see how things changed over time.<br>
+                If you want to learn more about these kinds of plots, google the names. There's ample written about them online.</p>
             <br>
+        <hr class='fancy'>
+        <br>
+        <h2 style='width:100%; text-align:center' id="batting"><strong>Batting</strong></h2>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small></p>
+        <p>I'll only be using non-pitchers in this comparison. I thought about excluding the DH as well, but found that to be far too difficult to figure out since anyone could peform as a DH.</p>
+        <br>
+
+        <hr class='fancy'>
+        <br>
+        <h2 style='width:100%; text-align:center' id="pitchers"><strong>Pitchers</strong></h2>
+        <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a></small></p>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h4><strong>Win probability added</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p></p>
+                <br>
+            </div>
+            <div class="col-md-8">
+                <img src="static/img/WPA.png" class="img-responsive center-block"><br>
+            </div>
+        </div>
+
 
 
     </div>
