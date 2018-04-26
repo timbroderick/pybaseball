@@ -80,7 +80,7 @@ var $ = jQuery;
             <br>
         <h3><small>Best viewed on a mobile device on a warm evening, sitting in a cheap upper-deck seat with family, friends, a ballpark hot dog and your favorite cold beverage.</small></h3>
             <br>
-            <p><strong>Updated Wednesday, April 25, at 3:23 p.m.</strong><br>
+            <p><strong>Updated Thursday, April 26, at 8:28 a.m.</strong><br>
                 I've started on the head-2-head page by working out the design of the violin plots I want to use. Actually they're going to be more than just violin plots. There's one on the page now. I may also use some ready-made plots included in the pybaseball package.<br>
                 I've updated the script to pull the latest rosters from MLB.com's api. Using those I can show only active players or those on the DL - and eventually have this update automatically with minimal manual interference. Connected to that, I've restructured and reorganized the overall script to group common tasks such as charting together.<br>
                  Going over the available pitching stats, I can see what a rabbit hole this stuff can become. There's almost 300 columns in the stats file! I need to focus on the limited use-case of this app - vital stats for the more casual fan - and filter out the kind of things that appeal to the more intense fans. I may add/delete more stats, but I'll take some time and watch the ones I have right now.
@@ -114,42 +114,42 @@ var $ = jQuery;
                                 
                                         <tr>
                                             <td style="text-align:left">Red Sox</td>
-                                            <td>17</td>
+                                            <td>18</td>
                                             <td>5</td>
-                                            <td>.773</td>
+                                            <td>.783</td>
                                             <td>--</td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td style="text-align:left">Yankees</td>
+                                            <td>14</td>
+                                            <td>9</td>
+                                            <td>.609</td>
+                                            <td>4.0</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Blue Jays</td>
                                             <td>14</td>
-                                            <td>8</td>
-                                            <td>.636</td>
-                                            <td>3.0</td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td style="text-align:left">Yankees</td>
-                                            <td>13</td>
                                             <td>9</td>
-                                            <td>.591</td>
+                                            <td>.609</td>
                                             <td>4.0</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Rays</td>
-                                            <td>8</td>
+                                            <td>9</td>
                                             <td>13</td>
-                                            <td>.381</td>
+                                            <td>.409</td>
                                             <td>8.5</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Orioles</td>
                                             <td>6</td>
-                                            <td>17</td>
-                                            <td>.261</td>
-                                            <td>11.5</td>
+                                            <td>18</td>
+                                            <td>.250</td>
+                                            <td>12.5</td>
                                         </tr>
                                 
                                 </tbody>
@@ -172,9 +172,9 @@ var $ = jQuery;
                                     
                                         <tr>
                                             <td style="text-align:left">Indians</td>
-                                            <td>12</td>
+                                            <td>13</td>
                                             <td>9</td>
-                                            <td>.571</td>
+                                            <td>.591</td>
                                             <td>--</td>
                                         </tr>
                                     
@@ -182,10 +182,10 @@ var $ = jQuery;
                                     
                                         <tr>
                                             <td style="text-align:left">Tigers</td>
-                                            <td>9</td>
-                                            <td>11</td>
-                                            <td>.450</td>
-                                            <td>2.5</td>
+                                            <td>10</td>
+                                            <td>12</td>
+                                            <td>.455</td>
+                                            <td>3.0</td>
                                         </tr>
                                     
                                 
@@ -193,9 +193,9 @@ var $ = jQuery;
                                         <tr>
                                             <td style="text-align:left">Twins</td>
                                             <td>8</td>
-                                            <td>10</td>
-                                            <td>.444</td>
-                                            <td>2.5</td>
+                                            <td>11</td>
+                                            <td>.421</td>
+                                            <td>3.5</td>
                                         </tr>
                                     
                                 
@@ -203,9 +203,9 @@ var $ = jQuery;
                                         <tr>
                                             <td style="text-align:left"><a href="sox.html"><strong style='color:#FF9C00'>White Sox</a></strong></td>
                                             <td>5</td>
-                                            <td>15</td>
-                                            <td>.250</td>
-                                            <td>6.5</td>
+                                            <td>16</td>
+                                            <td>.238</td>
+                                            <td>7.5</td>
                                         </tr>
                                     
                                 
@@ -213,9 +213,9 @@ var $ = jQuery;
                                         <tr>
                                             <td style="text-align:left">Royals</td>
                                             <td>5</td>
-                                            <td>16</td>
-                                            <td>.238</td>
-                                            <td>7.0</td>
+                                            <td>17</td>
+                                            <td>.227</td>
+                                            <td>8.0</td>
                                         </tr>
                                     
                                 
@@ -243,15 +243,15 @@ var $ = jQuery;
                             </thead><tbody>
                                 
                                         <tr>
-                                            <td style="text-align:left">Angels</td>
-                                            <td>16</td>
-                                            <td>8</td>
-                                            <td>.667</td>
+                                            <td style="text-align:left">Astros</td>
+                                            <td>17</td>
+                                            <td>9</td>
+                                            <td>.654</td>
                                             <td>--</td>
                                         </tr>
                                 
                                         <tr>
-                                            <td style="text-align:left">Astros</td>
+                                            <td style="text-align:left">Angels</td>
                                             <td>16</td>
                                             <td>9</td>
                                             <td>.640</td>
@@ -260,26 +260,26 @@ var $ = jQuery;
                                 
                                         <tr>
                                             <td style="text-align:left">Mariners</td>
-                                            <td>12</td>
+                                            <td>13</td>
                                             <td>10</td>
-                                            <td>.545</td>
-                                            <td>3.0</td>
+                                            <td>.565</td>
+                                            <td>2.5</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Athletics</td>
                                             <td>13</td>
-                                            <td>11</td>
-                                            <td>.542</td>
-                                            <td>3.0</td>
+                                            <td>12</td>
+                                            <td>.520</td>
+                                            <td>3.5</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Rangers</td>
-                                            <td>8</td>
+                                            <td>9</td>
                                             <td>17</td>
-                                            <td>.320</td>
-                                            <td>8.5</td>
+                                            <td>.346</td>
+                                            <td>8.0</td>
                                         </tr>
                                 
                                 </tbody>
@@ -317,41 +317,41 @@ var $ = jQuery;
                                         <tr>
                                             <td style="text-align:left">Mets</td>
                                             <td>15</td>
-                                            <td>6</td>
-                                            <td>.714</td>
+                                            <td>7</td>
+                                            <td>.682</td>
                                             <td>--</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Phillies</td>
-                                            <td>14</td>
+                                            <td>15</td>
                                             <td>8</td>
-                                            <td>.636</td>
-                                            <td>1.5</td>
+                                            <td>.652</td>
+                                            <td>0.5</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Braves</td>
-                                            <td>12</td>
+                                            <td>13</td>
                                             <td>10</td>
-                                            <td>.545</td>
-                                            <td>3.5</td>
+                                            <td>.565</td>
+                                            <td>2.5</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Nationals</td>
-                                            <td>10</td>
+                                            <td>11</td>
                                             <td>14</td>
-                                            <td>.417</td>
-                                            <td>6.5</td>
+                                            <td>.440</td>
+                                            <td>5.5</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Marlins</td>
-                                            <td>6</td>
+                                            <td>7</td>
                                             <td>17</td>
-                                            <td>.261</td>
-                                            <td>10.0</td>
+                                            <td>.292</td>
+                                            <td>9.0</td>
                                         </tr>
                                 
                                 </tbody>
@@ -374,9 +374,9 @@ var $ = jQuery;
                                     
                                         <tr>
                                             <td style="text-align:left">Brewers</td>
-                                            <td>15</td>
+                                            <td>16</td>
                                             <td>9</td>
-                                            <td>.625</td>
+                                            <td>.640</td>
                                             <td>--</td>
                                         </tr>
                                     
@@ -384,10 +384,20 @@ var $ = jQuery;
                                     
                                         <tr>
                                             <td style="text-align:left">Cardinals</td>
-                                            <td>13</td>
+                                            <td>14</td>
                                             <td>9</td>
-                                            <td>.591</td>
+                                            <td>.609</td>
                                             <td>1.0</td>
+                                        </tr>
+                                    
+                                
+                                    
+                                        <tr>
+                                            <td style="text-align:left">Pirates</td>
+                                            <td>13</td>
+                                            <td>11</td>
+                                            <td>.542</td>
+                                            <td>2.5</td>
                                         </tr>
                                     
                                 
@@ -395,19 +405,9 @@ var $ = jQuery;
                                         <tr>
                                             <td style="text-align:left"><a href="cubs.html"><strong style='color:#FF9C00'>Cubs</a></strong></td>
                                             <td>11</td>
-                                            <td>9</td>
-                                            <td>.550</td>
-                                            <td>2.0</td>
-                                        </tr>
-                                    
-                                
-                                    
-                                        <tr>
-                                            <td style="text-align:left">Pirates</td>
-                                            <td>12</td>
                                             <td>10</td>
-                                            <td>.545</td>
-                                            <td>2.0</td>
+                                            <td>.524</td>
+                                            <td>3.0</td>
                                         </tr>
                                     
                                 
@@ -415,9 +415,9 @@ var $ = jQuery;
                                         <tr>
                                             <td style="text-align:left">Reds</td>
                                             <td>5</td>
-                                            <td>18</td>
-                                            <td>.217</td>
-                                            <td>9.5</td>
+                                            <td>19</td>
+                                            <td>.208</td>
+                                            <td>10.5</td>
                                         </tr>
                                     
                                 
@@ -447,40 +447,40 @@ var $ = jQuery;
                                         <tr>
                                             <td style="text-align:left">Diamondbacks</td>
                                             <td>16</td>
-                                            <td>6</td>
-                                            <td>.727</td>
+                                            <td>7</td>
+                                            <td>.696</td>
                                             <td>--</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Rockies</td>
-                                            <td>13</td>
+                                            <td>14</td>
                                             <td>12</td>
-                                            <td>.520</td>
-                                            <td>4.5</td>
+                                            <td>.538</td>
+                                            <td>3.5</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Dodgers</td>
                                             <td>11</td>
-                                            <td>11</td>
-                                            <td>.500</td>
+                                            <td>12</td>
+                                            <td>.478</td>
                                             <td>5.0</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Giants</td>
                                             <td>11</td>
-                                            <td>12</td>
-                                            <td>.478</td>
+                                            <td>13</td>
+                                            <td>.458</td>
                                             <td>5.5</td>
                                         </tr>
                                 
                                         <tr>
                                             <td style="text-align:left">Padres</td>
                                             <td>9</td>
-                                            <td>16</td>
-                                            <td>.360</td>
+                                            <td>17</td>
+                                            <td>.346</td>
                                             <td>8.5</td>
                                         </tr>
                                 
