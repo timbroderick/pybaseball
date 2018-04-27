@@ -450,20 +450,22 @@ import matplotlib.pyplot as plt
 from matplotlib import ticker
 import math
 
+
+
 #-----
 # set styles
 
-mpl.rcParams['font.family'] = ['sans-serif']
 mpl.rcParams['xtick.labelsize'] = 17
 mpl.rcParams['ytick.labelsize'] = 17
-mpl.rcParams['lines.linewidth'] = 0.75
+mpl.rcParams['lines.linewidth'] = 2
 
-mpl.rcParams['pdf.fonttype'] = 42 # allegedly allows text to be saved as editable
-
-mpl.rcParams['font.sans-serif'] = ['Arial Narrow']
-mpl.rcParams['font.size'] = 9
+mpl.rcParams['font.family'] = ['sans-serif ']
+mpl.rcParams['font.sans-serif'] = ['Verdana, Arial, Helvetica']
+mpl.rcParams['font.size'] = 11
 mpl.rcParams['text.usetex'] = False
 mpl.rcParams['svg.fonttype'] = 'none'
+
+#mpl.rcParams['pdf.fonttype'] = 42 # allows SVG text to be saved as editable
 
 plt.style.use(['ggplot'])
 
@@ -728,7 +730,153 @@ for index, row in cubsPSpitch.iterrows():
 print('Cubs pitching charts done')
 
 
+# -------------------------------
+# Now the head 2 head charts
 
+#set violin plot pallete
+my_pal = {"WHITE SOX": "#000000", "CUBS": "#000FFF"}
+
+# Collect the pitching stats
+h2hpitching = soxPSpitch
+h2hpitching['setcol'] = '#000000'
+h2hpitching['Team'] = 'WHITE SOX'
+h2hcubs = cubsPSpitch
+h2hcubs['setcol'] = '#000FFF'
+h2hcubs['Team'] = 'CUBS'
+h2hpitching = h2hpitching.append(h2hcubs)
+
+print('pitching stats appended')
+
+# ERA h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="ERA", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="ERA", data=h2hpitching,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="ERA", data=h2hpitching, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('EARNED RUN AVERAGE', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hERA.png',bbox_inches='tight')
+
+
+# FIP h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="FIP", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="FIP", data=h2hpitching,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="FIP", data=h2hpitching, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('FIELDING INDEPENDENT PITCHING', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hFIP.png',bbox_inches='tight')
+
+
+# BABIP h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="BABIP", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="BABIP", data=h2hpitching,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="BABIP", data=h2hpitching, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('BA BALLS IN PLAY', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hBABIP.png',bbox_inches='tight')
+
+
+# WPA h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="WPA", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="WPA", data=h2hpitching,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="WPA", data=h2hpitching, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+# Add labels to the plot
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('WIN PROBABILTY ADDED (WPA)', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hWPA.png',bbox_inches='tight')
+
+
+
+# RAR h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="RAR", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="RAR", data=h2hpitching,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="RAR", data=h2hpitching, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+# Add labels to the plot
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('RUNS ABOVE REPLACEMENT', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hRAR.png',bbox_inches='tight')
+
+
+# WAR h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="WAR", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="WAR", data=h2hpitching,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="WAR", data=h2hpitching, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+# Add labels to the plot
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('WINS ABOVE REPLACEMENT', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hWAR.png',bbox_inches='tight')
+
+print('h2h pitching done')
 
 
 # -------------------------------
