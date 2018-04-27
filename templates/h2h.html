@@ -22,9 +22,9 @@
             <p><strong>Updated {{timestamp}}</strong><br>
                 The charts below look at how players are performing according to different measures. For each measure there's a plot for the Sox side-by-side with the Cubs, allowing us to compare the teams by themselves and with each other.<br>
                 I've opted to do a bit more than just violin plots - I'm combining violin plots, box-and-whisker plots and swarm charts.<br>
-                The olive lines are the box-and-whiskers plot, otherwise known as a box plot. Excluding outliers, this chart divides up all the values into quartiles, with the box showing the middle two quartiles. So the box should roughly show where 50% of the values lie, with the line inside the box being the median value. Outliers are anything that fall beyond the "whiskers," or the lines shooting out above and below the box.<br>
-                Sitting atop that is the violin plot. It's the color area where the width represents the number of values that fall along that vertical axes. The more values at particular point, the wider the plot is at that point. I'm also using the colors of the plot to quickly identify each team (black = White Sox, blue = Cubs).<br>
-                The swarm plot is the orange dots. Basically, all those dots should be on the line, where overlapping dots would be hard to see. A swarm plot simply moves them right or left of the center line so you can see each dot.<br>
+                <strong>The olive lines are the box-and-whiskers plot</strong>, otherwise known as a box plot. Excluding outliers, this chart divides up all the values into quartiles, with the box showing the middle two quartiles. So the box should roughly show where 50% of the values lie, with the line inside the box being the median value. Outliers are anything that fall beyond the "whiskers," or the lines shooting out left and right of the box.<br>
+                <strong>Sitting atop that is the violin plot.</strong> It's the color area where the width represents the number of values that fall along the horizontal axes. The more values at a particular point, the wider the plot is at that point. I'm also using the colors of the plot to quickly identify each team (black = White Sox, blue = Cubs).<br>
+                <strong>The swarm plot is the orange dots.</strong> All those dots, each representing a player, should be on the line, where overlapping dots would be hard to see. A swarm plot simply moves them above or below of the center lines so you can see each dot.<br>
                 These charts may be a bit hard to grasp at first, but once you get them they're kind of useful. Plus, I'll be turning a few of these into animated gifs at the end of the season so we can see how things changed over time.<br>
                 If you want to learn more about these kinds of plots, google the names. There's ample written about them online.</p>
             <br>
@@ -45,10 +45,11 @@
                 <h4><strong>Win probability added</strong>
                     <br><small>Black = White Sox, Blue = Cubs.</small></h4>
                     <br>
-                <p></p>
+                <p>Top chart is an svg file, bottom is png. Testing for clarity.</p>
                 <br>
             </div>
             <div class="col-md-8">
+                <img src="{{ url_for('static', filename='img/WPA.svg') }}" class="img-responsive center-block"><br>
                 <img src="{{ url_for('static', filename='img/WPA.png') }}" class="img-responsive center-block"><br>
             </div>
         </div>
