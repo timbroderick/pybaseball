@@ -78,7 +78,7 @@ print('Cubs sched acquired')
 
 # grab the batting stats
 battingstats = batting_stats(2018)
-BSselect = battingstats[['Name','Team','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
+BSselect = battingstats[['Name','Team','PA','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
 BSselect = BSselect.copy()
 BSselect.loc[:,'SOperc'] = np.round( (BSselect['SO'] / BSselect['AB'] )*100,1 )
 BSselect = BSselect.rename(columns = {'2B':'dbls','3B':'trps' })
@@ -249,6 +249,7 @@ right = BSselect
 soxBShit = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
 soxBShit = soxBShit[soxBShit.Name.notnull()]
 soxBShit.loc[:, 'posnum'] = soxBShit['posnum'].astype(int).astype(str)
+soxBShit.loc[:, 'PA'] = soxBShit['PA'].astype(int)
 soxBShit.loc[:, 'AB'] = soxBShit['AB'].astype(int)
 soxBShit.loc[:, 'R'] = soxBShit['R'].astype(int)
 soxBShit.loc[:, 'H'] = soxBShit['H'].astype(int)
@@ -375,6 +376,7 @@ right = BSselect
 cubsBShit = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
 cubsBShit = cubsBShit[cubsBShit.Name.notnull()]
 cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
+cubsBShit.loc[:, 'PA'] = cubsBShit['PA'].astype(int)
 cubsBShit.loc[:, 'AB'] = cubsBShit['AB'].astype(int)
 cubsBShit.loc[:, 'R'] = cubsBShit['R'].astype(int)
 cubsBShit.loc[:, 'H'] = cubsBShit['H'].astype(int)
@@ -564,9 +566,9 @@ for index, row in soxBShit.iterrows():
     if ( row.H == 0):
         junkvar = []
     else:
-        df['hitperc'][0] = np.round( (row.BB / row.AB)*100,1 )
-        df['hitperc'][1] = np.round( (row.SO / row.AB)*100,1 )
-        df['hitperc'][2] = np.round( (row.H / row.AB)*100,1 )
+        df['hitperc'][0] = np.round( (row.BB / row.PA)*100,1 )
+        df['hitperc'][1] = np.round( (row.SO / row.PA)*100,1 )
+        df['hitperc'][2] = np.round( (row.H / row.PA)*100,1 )
         onebs = row.H - ( row.dbls + row.trps + row.HR )
         df['hitperc'][3] = np.round( (onebs / row.H)*100,1 )
         df['hitperc'][4] = np.round( (row.dbls / row.H)*100,1 )
@@ -588,10 +590,10 @@ for index, row in soxBShit.iterrows():
     plt.plot([2.5, 2.5], [0, 100], linewidth=2)
     # Add labels to the plot
     style = dict(fontsize=18, family='Arial', fontweight='bold', color='black')
-    plt.text(0, 89, "As % of AB", **style)
+    plt.text(0, 89, "As % of PA", **style)
     plt.text(3, 89, "As % of hits", **style)
-    g.set_ylabel('% of AT BATS | HITS', fontsize=16, fontweight='bold')
-    g.set_xlabel('AT-BAT RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
+    g.set_ylabel('% of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
+    g.set_xlabel('PLATE APPEARANCE RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
     g.figure.savefig('static/img/sox' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
 print('Sox hitting charts done')
 
@@ -651,9 +653,9 @@ for index, row in cubsBShit.iterrows():
     if ( row.H == 0):
         junkvar = []
     else:
-        df['hitperc'][0] = np.round( (row.BB / row.AB)*100,1 )
-        df['hitperc'][1] = np.round( (row.SO / row.AB)*100,1 )
-        df['hitperc'][2] = np.round( (row.H / row.AB)*100,1 )
+        df['hitperc'][0] = np.round( (row.BB / row.PA)*100,1 )
+        df['hitperc'][1] = np.round( (row.SO / row.PA)*100,1 )
+        df['hitperc'][2] = np.round( (row.H / row.PA)*100,1 )
         onebs = row.H - ( row.dbls + row.trps + row.HR )
         df['hitperc'][3] = np.round( (onebs / row.H)*100,1 )
         df['hitperc'][4] = np.round( (row.dbls / row.H)*100,1 )
@@ -675,10 +677,10 @@ for index, row in cubsBShit.iterrows():
     plt.plot([2.5, 2.5], [0, 100], linewidth=2)
     # Add labels to the plot
     style = dict(fontsize=18, family='Arial', fontweight='bold', color='black')
-    plt.text(0, 89, "As % of AB", **style)
+    plt.text(0, 89, "As % of PA", **style)
     plt.text(3, 89, "As % of hits", **style)
-    g.set_ylabel('% of AT BATS | HITS', fontsize=16, fontweight='bold')
-    g.set_xlabel('AT-BAT RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
+    g.set_ylabel('% of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
+    g.set_xlabel('PLATE APPEARANCE RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
     g.figure.savefig('static/img/cubs' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
 
 print('cubs hitting charts done')
