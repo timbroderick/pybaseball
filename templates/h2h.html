@@ -20,19 +20,100 @@
             <hr class='fancy'>
             <br>
             <p><strong>Updated {{timestamp}}</strong><br>
-                The charts below look at how players are performing according to different measures. For each measure there's a plot for the Sox side-by-side with the Cubs, allowing us to compare the teams by themselves and with each other.<br>
-                I've opted to do a bit more than just violin plots - I'm combining violin plots, box-and-whisker plots and swarm charts.<br>
-                <strong>The swarm plot is the orange dots.</strong> All those dots, each representing a player, would normally be along a straight line - or axis - aligned with the name of their team. But overlapping dots would be hard to see. A swarm plot simply moves them left or right of the center lines so you can see each dot.<br>
-                <strong>The olive lines are the box-and-whiskers plot</strong>, otherwise known as a box plot. Excluding outliers, this chart divides up all the values into quartiles with the box showing the middle two quartiles. Roughly half of the players should be within this box. The line in the middle of the box is the median. Outliers are anything that fall beyond the "whiskers," or the lines shooting out above and below the box.<br>
-                <strong>Below all that is the violin or what I call a displacement plot.</strong> It's the color area where the width represents the number of players that fall along the horizontal axes. The more values at a particular point, the wider the plot is at that point - kind of how rocks in the middle of a stream will displace the water flowing around them. I'm also using the colors of the plot to quickly identify each team (black = White Sox, blue = Cubs).<br>
-                These charts may be a bit hard to grasp at first, but once you get them they're very useful. Plus, I'll be turning a few of these into animated gifs at the end of the season so we can see how things changed over time.<br>
-                If you want to learn more about these kinds of plots, google the names. There's ample written about them online.</p>
+                As opposed to the charts on the <a href='index'>League page</a> which look at team-level numbers, the charts below look at how players are performing using distibution plots. These show how far away players (the orange dots) are from the median (the green line within the green box). For each measure there's a plot for the Sox side-by-side with the Cubs, allowing us to compare players on the same team and the other.</p>
+                <p>With data via <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a>,  I've combined violin plots, box-and-whisker plots and swarm charts.<br>
+                <p><strong>The swarm plot is the orange dots.</strong> All those dots, each representing a player, would normally be along a straight line - or axis - aligned with the name of their team. But overlapping dots would be hard to see. A swarm plot simply moves them left or right of the center lines so you can see each dot.</p>
+                <p><strong>The olive lines are the box-and-whiskers plot</strong>, otherwise known as a box plot. Excluding outliers, this chart divides up all the values into quartiles with the box showing the middle two quartiles. Roughly half of the players should be within this box. The line in the middle of the box is the median. Outliers are anything that fall beyond the "whiskers," or the lines shooting out above and below the box.</p>
+                <p><strong>Below all that is the violin or what I call a displacement plot.</strong> It's the color area where the width represents the number of players that fall along the horizontal axes. The more values at a particular point, the wider the plot is at that point - kind of how rocks in the middle of a stream will displace the water flowing around them. I'm also using the colors of the plot to quickly identify each team (black = White Sox, blue = Cubs).</p>
+                <p>These charts may be a bit hard to grasp at first, but once you get them they're very useful. Plus, I'll be turning a few of these into animated gifs at the end of the season so we can see how things changed over time.</p> 
+                <p>Many of these plots illustrate why it's important to look at how numbers are distributed instead of just summary stats like mean and median.</p>
+                <p>As this is being written at the end of April, several charts show the median (the line in the middle of the box) very close to each other. Which makes no sense, when you consider the two teams' records. But when you look at how values for each player are distributed, you can better understand it.</p>
             <br>
         <hr class='fancy'>
         <br>
         <h2 style='width:100%; text-align:center' id="batting"><strong>Batting</strong></h2>
         <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small></p>
         <p>I'll only be using non-pitchers in this comparison. I thought about excluding the DH as well, but found that to be far too difficult to figure out since anyone could peform as a DH.</p>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h4><strong>Batting Average</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Explainer text here.</p>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/h2hAVG.png') }}" class="img-responsive center-block"><br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h4><strong>Weighted on-base average (wOBA) </strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Explainer text here.</p>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/h2hwOBA.png') }}" class="img-responsive center-block"><br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h4><strong>Weighted runs above average (wRAA)</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Explainer text here.</p>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/h2hwRAA.png') }}" class="img-responsive center-block"><br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h4><strong>Runs above replacement</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Explainer text here.</p>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/h2hRARhit.png') }}" class="img-responsive center-block"><br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h4><strong>Fielding runs above average</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Measures defensive value of a player based on how many runs they save vs. an average replacement player. A higher number is better.</p>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/h2hFld.png') }}" class="img-responsive center-block"><br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <h4><strong>Wins above replacement</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Explaining text here.</p>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/h2hWARhit.png') }}" class="img-responsive center-block"><br>
+            </div>
+        </div>
+
+
         <br>
 
         <hr class='fancy'>
@@ -41,82 +122,93 @@
         <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a></small></p>
         <hr>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h4><strong>Earned run average</strong>
                     <br><small>Black = White Sox, Blue = Cubs.</small></h4>
                     <br>
                 <p>Explainer text here.</p>
                 <br>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <img src="{{ url_for('static', filename='img/h2hERA.png') }}" class="img-responsive center-block"><br>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h4><strong>Fielding independent pitching (FIP)</strong>
                     <br><small>Black = White Sox, Blue = Cubs.</small></h4>
                     <br>
                 <p>Explainer text here.</p>
                 <br>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <img src="{{ url_for('static', filename='img/h2hFIP.png') }}" class="img-responsive center-block"><br>
             </div>
         </div>
        <hr>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
+                <h4><strong>Walks, hits per inning pitched (WHIP)</strong>
+                    <br><small>Black = White Sox, Blue = Cubs.</small></h4>
+                    <br>
+                <p>Explainer text here.</p>
+                <br>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/h2hWHIP.png') }}" class="img-responsive center-block"><br>
+            </div>
+        </div>
+       <hr>
+        <div class="row">
+            <div class="col-md-6">
                 <h4><strong>Batting average on balls in play (BABIP)</strong>
                     <br><small>Black = White Sox, Blue = Cubs.</small></h4>
                     <br>
                 <p>Explainer text here.</p>
                 <br>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <img src="{{ url_for('static', filename='img/h2hBABIP.png') }}" class="img-responsive center-block"><br>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h4><strong>Win probability added (WPA) </strong>
                     <br><small>Black = White Sox, Blue = Cubs.</small></h4>
                     <br>
-                <p>I love this plot because it so perfectly illustrates why it's important to look at how numbers are distributed instead of just summary stats like mean and median.</p>
-                <p>At least in late April, when I'm writing this, the median WPA values for each team were very close. Which makes no sense, when you consider the two teams' records. But when you look at how values for each player are distributed, you can better understand it.</p>
-                <p>The White Sox have players with very high and very low WPA values, as you can see from the position of the orange dots compared to the median line (the line in the middle of the box). The Cubs have players clustered around that median line.</p>
-                <p>The end result is that, while overall the Cubs have more players with higher WPA values, the way the Sox players' values are distributed makes the team median appear comparable.</p>
+                    <p>Explainer text here.</p>
+
                 <br>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <img src="{{ url_for('static', filename='img/h2hWPA.png') }}" class="img-responsive center-block"><br>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-4">
-                <h4><strong>Runs above replacement (WAR)</strong>
+            <div class="col-md-6">
+                <h4><strong>Runs above replacement (RAR)</strong>
                     <br><small>Black = White Sox, Blue = Cubs.</small></h4>
                     <br>
                 <p>Explainer text here.</p>
                 <br>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <img src="{{ url_for('static', filename='img/h2hRAR.png') }}" class="img-responsive center-block"><br>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <h4><strong>Wins above replacement (WAR)</strong>
                     <br><small>Black = White Sox, Blue = Cubs.</small></h4>
                     <br>
                 <p>Explainer text here.</p>
                 <br>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <img src="{{ url_for('static', filename='img/h2hWAR.png') }}" class="img-responsive center-block"><br>
             </div>
         </div>

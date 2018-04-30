@@ -191,19 +191,20 @@ print('standings file done and saved')
 
 soxsort = pd.DataFrame ( sox.loc[ ( sox["W/L"].notnull() ) ] )
 soxsort.sort_index(ascending=False,inplace=True)
-soxlast = soxsort[:1]
+soxlast = soxsort[:2]
 soxlast = soxlast.copy()
 soxlast.loc[:, 'R'] = soxlast['R'].astype(int).astype(str)
 soxlast.loc[:, 'RA'] = soxlast['RA'].astype(int).astype(str)
 soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(int).astype(str)
 soxnext = pd.DataFrame ( sox.loc[ ( sox["W/L"].isnull() ) ] )
-soxnext = soxnext[:1]
+soxnext = soxnext[:2]
 soxlast = soxnext.append(soxlast)
 soxlast = soxlast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
 left = soxlast
 right = bballJoin
 soxnextlast = pd.merge(left, right, how='left', left_on='Opp', right_on='tres', suffixes=('_x', '_y'))
 soxnextlast = soxnextlast.sort_values(by='R', ascending=False).reset_index(drop=True)
+soxnextlast['Date'] = soxnextlast['Date'].str.replace( r"\(.*\)","" )
 soxnextlast.to_csv("csv/soxnextlast.csv", index=False, encoding="utf-8")
 print('Last and next sox games saved')
 # Now aggregate results by team
@@ -316,19 +317,20 @@ print("Sox pitching stats done")
 # Start Cubs pages
 cubssort = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].notnull() ) ] )
 cubssort.sort_index(ascending=False,inplace=True)
-cubslast = cubssort[:1]
+cubslast = cubssort[:2]
 cubslast = cubslast.copy()
 cubslast.loc[:, 'R'] = cubslast['R'].astype(int).astype(str)
 cubslast.loc[:, 'RA'] = cubslast['RA'].astype(int).astype(str)
 cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(int).astype(str)
 cubsnext = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].isnull() ) ] )
-cubsnext = cubsnext[:1]
+cubsnext = cubsnext[:2]
 cubslast = cubsnext.append(cubslast)
 cubslast = cubslast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
 left = cubslast
 right = bballJoin
 cubsnextlast = pd.merge(left, right, how='left', left_on='Opp', right_on='tres', suffixes=('_x', '_y'))
 cubsnextlast = cubsnextlast.sort_values(by='R', ascending=False).reset_index(drop=True)
+cubsnextlast['Date'] = cubsnextlast['Date'].str.replace( r"\(.*\)","" )
 cubsnextlast.to_csv("csv/cubsnextlast.csv", index=False, encoding="utf-8")
 print('Last and next cubs games saved')
 # Now aggregate results by team
@@ -465,6 +467,8 @@ mpl.rcParams['font.size'] = 11
 mpl.rcParams['text.usetex'] = False
 mpl.rcParams['svg.fonttype'] = 'none'
 
+my_dpi=150
+
 #mpl.rcParams['pdf.fonttype'] = 42 # allows SVG text to be saved as editable
 
 plt.style.use(['ggplot'])
@@ -483,7 +487,7 @@ g = sns.regplot(data=result3, x='AVGbat', y='ERA',
 g.figure.set_size_inches(8,8)
 plt.ylabel('ERA', fontsize=16, fontweight='bold')
 plt.xlabel('BATTING AVERAGE', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/BAvERA.png',bbox_inches='tight')
+g.figure.savefig('static/img/BAvERA.png',bbox_inches='tight',dpi=my_dpi)
 
 
 # WAR stats
@@ -496,7 +500,7 @@ g = sns.regplot(data=result3, x='WARbat', y='WARpitch',
 g.figure.set_size_inches(8,8)
 plt.ylabel('WAR PITCHING', fontsize=16, fontweight='bold')
 plt.xlabel('WAR BATTING', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/WAR.png',bbox_inches='tight')
+g.figure.savefig('static/img/WAR.png',bbox_inches='tight',dpi=my_dpi)
 
 # offense stats
 plt.figure()
@@ -509,7 +513,7 @@ g = sns.regplot(data=result3, x='wOBA', y='RBI',
 g.figure.set_size_inches(8,8)
 plt.ylabel('RBI', fontsize=16, fontweight='bold')
 plt.xlabel('Weighted On-Base Average', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/offense.png',bbox_inches='tight')
+g.figure.savefig('static/img/offense.png',bbox_inches='tight',dpi=my_dpi)
 
 # defense stats
 plt.figure()
@@ -521,14 +525,13 @@ g = sns.regplot(data=result3, x='BABIP', y='FIP',
 g.figure.set_size_inches(8,8)
 plt.ylabel('Fielding Independent Pitching', fontsize=16, fontweight='bold')
 plt.xlabel('Batting Average on Balls In Play', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/defense.png',bbox_inches='tight')
+g.figure.savefig('static/img/defense.png',bbox_inches='tight',dpi=my_dpi)
 
 # bar plot, start with sorting
 # need to reset the index
 dfHR = result3.sort_values(by='HR', ascending=False).reset_index(drop=True)
 # clear the plt figure
 plt.figure()
-my_dpi=150
 plt.xlim(0, 300)
 g = sns.barplot(
     x='HR',
@@ -546,7 +549,7 @@ for p in g.patches:
     g.text(width*1.04, p.get_y() + p.get_height()/1.25,
             "{:" ">6}".format( width ),
             fontsize=15, color="black", fontweight='bold', zorder=10)
-g.figure.savefig('static/img/HR.png',bbox_inches='tight')
+g.figure.savefig('static/img/HR.png',bbox_inches='tight',dpi=my_dpi)
 
 print("p1 charts created")
 
@@ -571,7 +574,6 @@ for index, row in soxBShit.iterrows():
         df['hitperc'][6] = np.round( (row.HR / row.H)*100,1 )
     # start the plot
     plt.figure()
-    my_dpi=150
     plt.ylim(0, 100)
     tick_locator = ticker.MaxNLocator(10)
     g = sns.barplot(
@@ -590,7 +592,7 @@ for index, row in soxBShit.iterrows():
     plt.text(3, 89, "As % of hits", **style)
     g.set_ylabel('% of AT BATS | HITS', fontsize=16, fontweight='bold')
     g.set_xlabel('AT-BAT RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
-    g.figure.savefig('static/img/sox' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
+    g.figure.savefig('static/img/sox' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
 print('Sox hitting charts done')
 
 # start Sox pitching charts
@@ -622,7 +624,6 @@ for index, row in soxPSpitch.iterrows():
     df = df.fillna(value=0)
     # start the plot
     plt.figure()
-    my_dpi=150
     plt.xlim(0, 100)
     from matplotlib import ticker
     tick_locator = ticker.MaxNLocator(10)
@@ -637,7 +638,7 @@ for index, row in soxPSpitch.iterrows():
     g.figure.set_size_inches(6,6)
     g.set_xlabel('PERCENT THROWN', fontsize=16, fontweight='bold')
     g.set_ylabel('PITCH TYPE', fontsize=16, fontweight='bold')
-    g.figure.savefig('static/img/soxpitch' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
+    g.figure.savefig('static/img/soxpitch' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
 print('Sox pitching charts done')
 
 # start cubs hitting charts
@@ -660,7 +661,6 @@ for index, row in cubsBShit.iterrows():
         df['hitperc'][6] = np.round( (row.HR / row.H)*100,1 )
     # start the plot
     plt.figure()
-    my_dpi=150
     plt.ylim(0, 100)
     tick_locator = ticker.MaxNLocator(10)
     g = sns.barplot(
@@ -679,7 +679,7 @@ for index, row in cubsBShit.iterrows():
     plt.text(3, 89, "As % of hits", **style)
     g.set_ylabel('% of AT BATS | HITS', fontsize=16, fontweight='bold')
     g.set_xlabel('AT-BAT RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
-    g.figure.savefig('static/img/cubs' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
+    g.figure.savefig('static/img/cubs' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
 
 print('cubs hitting charts done')
 
@@ -711,7 +711,6 @@ for index, row in cubsPSpitch.iterrows():
     df = df.fillna(value=0)
     # start the plot
     plt.figure()
-    my_dpi=150
     plt.xlim(0, 100)
     from matplotlib import ticker
     tick_locator = ticker.MaxNLocator(10)
@@ -726,7 +725,7 @@ for index, row in cubsPSpitch.iterrows():
     g.figure.set_size_inches(6,6)
     g.set_xlabel('PERCENT THROWN', fontsize=16, fontweight='bold')
     g.set_ylabel('PITCH TYPE', fontsize=16, fontweight='bold')
-    g.figure.savefig('static/img/cubspitch' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight')
+    g.figure.savefig('static/img/cubspitch' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
 print('Cubs pitching charts done')
 
 
@@ -735,6 +734,148 @@ print('Cubs pitching charts done')
 
 #set violin plot pallete
 my_pal = {"WHITE SOX": "#000000", "CUBS": "#000FFF"}
+
+# Collect the batting stats, minus pitchers
+
+h2hhitting = soxBShit
+h2hhitting['setcol'] = '#000000'
+h2hhitting['Team'] = 'WHITE SOX'
+h2hcubshit = cubsBShit
+h2hcubshit['setcol'] = '#000FFF'
+h2hcubshit['Team'] = 'CUBS'
+h2hhitting = h2hhitting.append(h2hcubshit)
+ispitcher = ['P']
+h2hhit = h2hhitting[~h2hhitting.position.isin(ispitcher)]
+
+print('batting stats appended')
+
+# Batting avg h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="AVG", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="AVG", data=h2hhit,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="AVG", data=h2hhit, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('BATTING AVERAGE', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hAVG.png',bbox_inches='tight',dpi=my_dpi)
+
+
+# wOBA avg h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="wOBA", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="wOBA", data=h2hhit,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="wOBA", data=h2hhit, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('WEIGHTED ON-BASE AVG. (wOBA)', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hwOBA.png',bbox_inches='tight',dpi=my_dpi)
+
+
+# wRAA avg h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="wRAA", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="wRAA", data=h2hhit,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="wRAA", data=h2hhit, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('WEIGHTED RUNS ABOVE AVG. (wRAA)', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hwRAA.png',bbox_inches='tight',dpi=my_dpi)
+
+
+# RAR avg h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="RAR", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="RAR", data=h2hhit,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="RAR", data=h2hhit, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('RUNS ABOVE REPLACEMENT (RAR)', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hRARhit.png',bbox_inches='tight',dpi=my_dpi)
+
+
+# FLD avg h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="Fld", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="Fld", data=h2hhit,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="Fld", data=h2hhit, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('FIELDING RUNS ABOVE AVG.', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hFld.png',bbox_inches='tight',dpi=my_dpi)
+
+
+# WAR hitting h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="WAR", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="WAR", data=h2hhit,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="WAR", data=h2hhit, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('WINS ABOVE REPLACEMENT', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hWARhit.png',bbox_inches='tight',dpi=my_dpi)
+
+
+print('h2h batting done')
 
 # Collect the pitching stats
 h2hpitching = soxPSpitch
@@ -765,7 +906,7 @@ tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('EARNED RUN AVERAGE', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/h2hERA.png',bbox_inches='tight')
+g.figure.savefig('static/img/h2hERA.png',bbox_inches='tight',dpi=my_dpi)
 
 
 # FIP h2h plot
@@ -786,7 +927,29 @@ tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('FIELDING INDEPENDENT PITCHING', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/h2hFIP.png',bbox_inches='tight')
+g.figure.savefig('static/img/h2hFIP.png',bbox_inches='tight',dpi=my_dpi)
+
+
+# WHIP h2h plot
+plt.figure()
+gs = sns.violinplot(x="Team", y="WHIP", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
+plt.setp(gs.collections, alpha=.5)
+g = sns.boxplot(x="Team", y="WHIP", data=h2hpitching,  
+                showcaps=True, 
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
+                whiskerprops={'color': '#8FBC8B'}, 
+                capprops={'color': '#8FBC8B'}, 
+                medianprops={'color': '#8FBC8B'}, 
+                showfliers=False)
+g = sns.swarmplot(x="Team", y="WHIP", data=h2hpitching, color="orange")
+g.figure.set_size_inches(6,6)
+g.grid(axis='y', linewidth=2)
+tick_locator = ticker.MaxNLocator(10)
+g.yaxis.set_major_locator(tick_locator)
+g.set_xlabel('', fontsize=2)
+g.set_ylabel('WALKS, HITS PER INNING (WHIP)', fontsize=16, fontweight='bold')
+g.figure.savefig('static/img/h2hWHIP.png',bbox_inches='tight',dpi=my_dpi)
+
 
 
 # BABIP h2h plot
@@ -807,7 +970,7 @@ tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('BA BALLS IN PLAY', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/h2hBABIP.png',bbox_inches='tight')
+g.figure.savefig('static/img/h2hBABIP.png',bbox_inches='tight',dpi=my_dpi)
 
 
 # WPA h2h plot
@@ -829,7 +992,7 @@ g.yaxis.set_major_locator(tick_locator)
 # Add labels to the plot
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('WIN PROBABILTY ADDED (WPA)', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/h2hWPA.png',bbox_inches='tight')
+g.figure.savefig('static/img/h2hWPA.png',bbox_inches='tight',dpi=my_dpi)
 
 
 
@@ -852,7 +1015,7 @@ g.yaxis.set_major_locator(tick_locator)
 # Add labels to the plot
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('RUNS ABOVE REPLACEMENT', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/h2hRAR.png',bbox_inches='tight')
+g.figure.savefig('static/img/h2hRAR.png',bbox_inches='tight',dpi=my_dpi)
 
 
 # WAR h2h plot
@@ -874,7 +1037,7 @@ g.yaxis.set_major_locator(tick_locator)
 # Add labels to the plot
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('WINS ABOVE REPLACEMENT', fontsize=16, fontweight='bold')
-g.figure.savefig('static/img/h2hWAR.png',bbox_inches='tight')
+g.figure.savefig('static/img/h2hWAR.png',bbox_inches='tight',dpi=my_dpi)
 
 print('h2h pitching done')
 
