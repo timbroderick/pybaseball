@@ -31,7 +31,7 @@
              -- In the first game, the Sox {% if nl[0].WL == 'W' %}won{% elif nl[0].WL == 'W-wo' %}won with a walk-off{% elif nl[0].WL == 'L' %}lost{% elif nl[0].WL == 'L-wo' %}lost after a walk off{% endif %} {{ nl[0].R }} to {{ nl[0].RA }} in {{ nl[0].Inn }} innings. The winning pitcher was {{ nl[0].Win }}, losing pitcher was {{ nl[0].Loss }}. Save: {{ nl[0].Save }}.<br>
              -- In the second game, the Sox {% if nl[1].WL == 'W' %}won{% elif nl[1].WL == 'W-wo' %}won with a walk-off{% elif nl[1].WL == 'L' %}lost{% elif nl[1].WL == 'L-wo' %}lost after a walk off{% endif %} {{ nl[1].R }} to {{ nl[1].RA }} in {{ nl[1].Inn }} innings. The winning pitcher was {{ nl[1].Win }}, losing pitcher was {{ nl[1].Loss }}. Save: {{ nl[1].Save }}.</p>
             {% else %}
-            <p><strong>On {{ nl[0].Date }},</strong> the Cubs {% if nl[0].WL == 'W' %}won a{% elif nl[0].WL == 'W-wo' %}won with a walk-off in a{% elif nl[0].WL == 'L' %}lost a{% elif nl[0].WL == 'L-wo' %}lost after a walk off in a{% endif %} {% if nl[0].DN == 'D' %}day{% else %}night{% endif %} game {% if nl[0].Home_Away == '@' %}at{% else %}at home against{% endif %} the {{ nl[0].Team }}, {{ nl[0].R }} to {{ nl[0].RA }}, in {{ nl[0].Inn }} innings. The winning pitcher was {{ nl[0].Win }}, losing pitcher was {{ nl[0].Loss }}. Save: {{ nl[0].Save }}. </p>
+            <p><strong>On {{ nl[0].Date }},</strong> the Sox {% if nl[0].WL == 'W' %}won a{% elif nl[0].WL == 'W-wo' %}won with a walk-off in a{% elif nl[0].WL == 'L' %}lost a{% elif nl[0].WL == 'L-wo' %}lost after a walk off in a{% endif %} {% if nl[0].DN == 'D' %}day{% else %}night{% endif %} game {% if nl[0].Home_Away == '@' %}at{% else %}at home against{% endif %} the {{ nl[0].Team }}, {{ nl[0].R }} to {{ nl[0].RA }}, in {{ nl[0].Inn }} innings. The winning pitcher was {{ nl[0].Win }}, losing pitcher was {{ nl[0].Loss }}. Save: {{ nl[0].Save }}. </p>
             {% endif %}
 
         {% if nl[2].Date == nl[3].Date %}
@@ -107,10 +107,10 @@
                 <p><strong>Other measures</strong></p>
                  <table class='table table table-condensed table-striped'>
                     <tbody>
-                        <tr><td class='tdLEFT'>Weighted runs above avg.</td><td>{{ name.wRAA }}</td></tr>
-                        <tr><td class='tdLEFT'>Runs Above Replacement</td><td>{{ name.RAR }}</td></tr>
-                        <tr><td class='tdLEFT'>Fielding %</td><td>{{ name.Fld }}</td></tr>
-                        <tr><td class='tdLEFT'>WAR</td><td>{{ name.WAR }}</td></tr>
+                        <tr><td class='tdLEFT'>Weighted runs above avg. (wRAA)</td><td>{{ name.wRAA }}</td></tr>
+                        <tr><td class='tdLEFT'>Runs Above Replacement (RAR)</td><td>{{ name.RAR }}</td></tr>
+                        <tr><td class='tdLEFT'>Fielding RAR</td><td>{{ name.Fld }}</td></tr>
+                        <tr><td class='tdLEFT'>Wins above replacement (WAR)</td><td>{{ name.WAR }}</td></tr>
                      </tbody>
                 </table>
 

@@ -19,15 +19,26 @@
             </div>
             <hr class='fancy'>
             <br>
-            <p><strong>Updated {{timestamp}}</strong><br>
-                As opposed to the charts on the <a href='index'>League page</a> which look at team-level numbers, the charts below look at how players are performing using distibution plots. These show how far away players (the orange dots) are from the median (the green line within the green box). For each measure there's a plot for the Sox side-by-side with the Cubs, allowing us to compare players on the same team and the other.</p>
-                <p>With data via <a href="https://www.fangraphs.com" target="_blank">fangraphs.com.</a>,  I've combined violin plots, box-and-whisker plots and swarm charts.<br>
-                <p><strong>The swarm plot is the orange dots.</strong> All those dots, each representing a player, would normally be along a straight line - or axis - aligned with the name of their team. But overlapping dots would be hard to see. A swarm plot simply moves them left or right of the center lines so you can see each dot.</p>
-                <p><strong>The olive lines are the box-and-whiskers plot</strong>, otherwise known as a box plot. Excluding outliers, this chart divides up all the values into quartiles with the box showing the middle two quartiles. Roughly half of the players should be within this box. The line in the middle of the box is the median. Outliers are anything that fall beyond the "whiskers," or the lines shooting out above and below the box.</p>
-                <p><strong>Below all that is the violin or what I call a displacement plot.</strong> It's the color area where the width represents the number of players that fall along the horizontal axes. The more values at a particular point, the wider the plot is at that point - kind of how rocks in the middle of a stream will displace the water flowing around them. I'm also using the colors of the plot to quickly identify each team (black = White Sox, blue = Cubs).</p>
-                <p>These charts may be a bit hard to grasp at first, but once you get them they're very useful. Plus, I'll be turning a few of these into animated gifs at the end of the season so we can see how things changed over time.</p> 
-                <p>Many of these plots illustrate why it's important to look at how numbers are distributed instead of just summary stats like mean and median.</p>
-                <p>As this is being written at the end of April, several charts show the median (the line in the middle of the box) very close to each other. Which makes no sense, when you consider the two teams' records. But when you look at how values for each player are distributed, you can better understand it.</p>
+            <h3 style='width:100%; text-align:center' ><small>Can't we all just get along?</small></h3><br>
+            <br>
+            <p style='width:100%; text-align:center' ><strong>Updated {{timestamp}}</strong></p>
+                <p>As opposed to the charts on the <a href='index'>League page</a> which look at team-level numbers, the charts below look at how players are performing using distribution plots. These show how far away players (the orange dots) are from the median (the green line within the green box). For each measure there's a plot for the Sox side-by-side with the Cubs, allowing us to compare players on the same team and with players from the other.</p>
+                <p>With data via <a href="https://www.fangraphs.com" target="_blank">fangraphs.com</a>,  I've combined violin plots, box-and-whisker plots and swarm charts. <a id="learncharts" data-toggle="collapse" href="#chartslearn" aria-expanded="false" aria-controls="chartslearn">Click here to learn more</a> about each plot.</p>
+                <div class="collapse well" id="chartslearn">
+                    <br>
+                    <h4><strong>Understanding the distribution plots</strong></h4>
+                    <br>
+                    <p><strong>The swarm plot is the orange dots.</strong> Each dot represents a player, and would normally be distributed along a straight vertical line - or axis - aligned with the name of their team. But overlapping dots would be hard to see. A swarm plot simply moves them left or right of the center line so you can see each dot.</p>
+                    <p><strong>The olive lines are the box-and-whiskers plot</strong>, otherwise known as a box plot. Excluding outliers, this chart divides up all the values into quartiles with the box showing the middle two quartiles. Roughly half of the players should be within this box. The line in the middle of the box is the median. Outliers are anything that fall beyond the "whiskers," or the lines shooting out above and below the box.</p>
+                    <p><strong>Below all that is the violin or what I call a displacement plot.</strong> It's the color area where the width represents the number of players that fall along the horizontal axes. The more values at a particular point, the wider the plot is at that point - kind of how rocks in the middle of a stream will displace the water flowing around them. I'm also using the colors of the plot to quickly identify each team (black = White Sox, blue = Cubs).</p>
+                    <br>
+                    <h4><strong>Why they're useful</strong></h4>
+                    <br>
+                    <p>Many of these plots illustrate why it's important to look at how numbers are distributed instead of just summary stats like mean and median.</p>
+                    <p>As this is being written at the end of April, several charts show the two teams' medians (the line in the middle of the box) very close to each other. Which makes no sense, when you consider their records at the time. But when you look at how values for each player are distributed, you can better understand what's going on.</p>
+                    <p>One team could have players much lower and much higher than the median, while the other could have many players clustered around the median.</p>
+                    <p>These charts may be a bit hard to grasp at first, but once you get them they're very informative. Plus I'll be turning a few of these into animated gifs at the end of the season so we can see how things changed over time.</p>
+                </div>
             <br>
         <hr class='fancy'>
         <br>
@@ -35,6 +46,11 @@
         <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small></p>
         <p>I'll only be using non-pitchers in this comparison. I thought about excluding the DH as well, but found that to be far too difficult to figure out since anyone could peform as a DH.</p>
         <hr>
+
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+
         <div class="row">
             <div class="col-md-6">
                 <h4><strong>Batting Average</strong>
@@ -212,6 +228,11 @@
                 <img src="{{ url_for('static', filename='img/h2hWAR.png') }}" class="img-responsive center-block"><br>
             </div>
         </div>
+
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
 
     </div>
     </div>
