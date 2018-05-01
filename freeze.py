@@ -514,7 +514,7 @@ g = sns.regplot(data=result3, x='wOBA', y='RBI',
 
 g.figure.set_size_inches(8,8)
 plt.ylabel('RBI', fontsize=16, fontweight='bold')
-plt.xlabel('Weighted On-Base Average', fontsize=16, fontweight='bold')
+plt.xlabel('WEIGHTED ON-BASE AVG. (wOBA)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/offense.png',bbox_inches='tight',dpi=my_dpi)
 
 # defense stats
@@ -525,8 +525,8 @@ g = sns.regplot(data=result3, x='BABIP', y='FIP',
                 line_kws={"color":"orange","lw":1}
                )
 g.figure.set_size_inches(8,8)
-plt.ylabel('Fielding Independent Pitching', fontsize=16, fontweight='bold')
-plt.xlabel('Batting Average on Balls In Play', fontsize=16, fontweight='bold')
+plt.ylabel('FIELDING INDEPENDENT PITCHING (FIP)', fontsize=16, fontweight='bold')
+plt.xlabel('BA ON BALLS IN PLAY (BABIP)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/defense.png',bbox_inches='tight',dpi=my_dpi)
 
 # bar plot, start with sorting
@@ -592,7 +592,7 @@ for index, row in soxBShit.iterrows():
     style = dict(fontsize=18, family='Arial', fontweight='bold', color='black')
     plt.text(0, 89, "As % of PA", **style)
     plt.text(3, 89, "As % of hits", **style)
-    g.set_ylabel('% of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
+    g.set_ylabel('% Of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
     g.set_xlabel('PLATE APPEARANCE RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
     g.figure.savefig('static/img/sox' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
 print('Sox hitting charts done')
@@ -679,7 +679,7 @@ for index, row in cubsBShit.iterrows():
     style = dict(fontsize=18, family='Arial', fontweight='bold', color='black')
     plt.text(0, 89, "As % of PA", **style)
     plt.text(3, 89, "As % of hits", **style)
-    g.set_ylabel('% of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
+    g.set_ylabel('% Of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
     g.set_xlabel('PLATE APPEARANCE RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
     g.figure.savefig('static/img/cubs' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
 
@@ -852,7 +852,7 @@ g.grid(axis='y', linewidth=2)
 tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
-g.set_ylabel('FIELDING RUNS ABOVE AVG.', fontsize=16, fontweight='bold')
+g.set_ylabel('FIELDING RUNS ABOVE AVG. (Fld)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hFld.png',bbox_inches='tight',dpi=my_dpi)
 
 
@@ -873,7 +873,7 @@ g.grid(axis='y', linewidth=2)
 tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
-g.set_ylabel('WINS ABOVE REPLACEMENT', fontsize=16, fontweight='bold')
+g.set_ylabel('WINS ABOVE REPLACEMENT (WAR)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hWARhit.png',bbox_inches='tight',dpi=my_dpi)
 
 
@@ -928,7 +928,7 @@ g.grid(axis='y', linewidth=2)
 tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
-g.set_ylabel('FIELDING INDEPENDENT PITCHING', fontsize=16, fontweight='bold')
+g.set_ylabel('FIELDING INDEPENDENT PITCHING (FIP)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hFIP.png',bbox_inches='tight',dpi=my_dpi)
 
 
@@ -971,7 +971,7 @@ g.grid(axis='y', linewidth=2)
 tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
-g.set_ylabel('BA BALLS IN PLAY', fontsize=16, fontweight='bold')
+g.set_ylabel('BA ON BALLS IN PLAY (BABIP)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hBABIP.png',bbox_inches='tight',dpi=my_dpi)
 
 
@@ -1016,7 +1016,7 @@ tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 # Add labels to the plot
 g.set_xlabel('', fontsize=2)
-g.set_ylabel('RUNS ABOVE REPLACEMENT', fontsize=16, fontweight='bold')
+g.set_ylabel('RUNS ABOVE REPLACEMENT (RAR)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hRAR.png',bbox_inches='tight',dpi=my_dpi)
 
 
@@ -1038,7 +1038,7 @@ tick_locator = ticker.MaxNLocator(10)
 g.yaxis.set_major_locator(tick_locator)
 # Add labels to the plot
 g.set_xlabel('', fontsize=2)
-g.set_ylabel('WINS ABOVE REPLACEMENT', fontsize=16, fontweight='bold')
+g.set_ylabel('WINS ABOVE REPLACEMENT (WAR)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hWAR.png',bbox_inches='tight',dpi=my_dpi)
 
 print('h2h pitching done')
