@@ -1,21 +1,21 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
 Albert Almora Jr.,5,Almora,CF,A,R,R,Albert Almora Jr.,Cubs,83,76,16,22,5,1,1,8,6,17,0,1,0.289,0.341,0.421,0.335,1.3,7.3,0.8,2.9,22.4
-Javier Baez,9,Baez,2B,A,R,R,Javier Baez,Cubs,108,100,20,28,8,3,7,26,6,24,3,1,0.28,0.333,0.63,0.395,6.9,11.0,1.1,-0.9,24.0
-Kris Bryant,17,Bryant,3B,A,R,R,Kris Bryant,Cubs,102,79,13,23,7,2,2,11,15,14,0,1,0.291,0.441,0.506,0.41,7.7,9.6,1.0,-0.5,17.7
-Eddie Butler,33,Butler,P,D10,R,R,Eddie Butler,Cubs,3,2,0,0,0,0,0,0,1,0,0,0,0.0,0.333,0.0,0.232,-0.2,0.2,0.0,,0.0
-Victor Caratini,7,Caratini,C,A,S,R,Victor Caratini,Cubs,40,37,4,11,3,0,0,2,2,10,0,0,0.297,0.35,0.378,0.325,0.3,2.1,0.2,0.0,27.0
+Javier Baez,9,Baez,2B,A,R,R,Javier Baez,Cubs,108,100,20,28,8,3,7,26,6,24,3,1,0.28,0.333,0.63,0.394,6.9,10.9,1.1,-0.9,24.0
+Kris Bryant,17,Bryant,3B,A,R,R,Kris Bryant,Cubs,106,83,13,24,7,2,2,11,15,16,0,1,0.289,0.434,0.494,0.402,7.4,9.3,1.0,-0.5,19.3
+Eddie Butler,33,Butler,P,D10,R,R,Eddie Butler,Cubs,3,2,0,0,0,0,0,0,1,0,0,0,0.0,0.333,0.0,0.231,-0.2,0.2,0.0,,0.0
+Victor Caratini,7,Caratini,C,A,S,R,Victor Caratini,Cubs,43,40,4,11,3,0,0,2,2,11,0,0,0.275,0.326,0.35,0.302,-0.4,1.5,0.2,0.0,27.5
 Tyler Chatwood,21,Chatwood,P,A,R,R,Tyler Chatwood,Cubs,7,6,0,1,0,0,0,1,0,1,0,0,0.167,0.167,0.167,0.148,-0.9,0.0,0.0,,16.7
 Steve Cishek,41,Cishek,P,A,R,R,Steve Cishek,Cubs,2,2,1,1,0,0,0,0,0,0,0,0,0.5,0.5,0.5,0.444,0.2,0.5,0.1,,0.0
 Willson Contreras,40,Contreras,C,A,R,R,Willson Contreras,Cubs,103,91,7,24,9,1,1,7,7,19,0,0,0.264,0.35,0.418,0.337,1.8,5.2,0.5,0.7,20.9
 Yu Darvish,11,Darvish,P,A,R,R,Yu Darvish,Cubs,9,7,0,1,1,0,0,0,0,5,0,0,0.143,0.143,0.286,0.18,-1.0,0.3,0.0,,71.4
-Ian Happ,8,Happ,CF,A,S,R,Ian Happ,Cubs,74,69,7,17,2,0,3,7,5,33,2,0,0.246,0.297,0.406,0.309,-0.4,2.8,0.3,0.3,47.8
-Kyle Hendricks,28,Hendricks,P,A,R,R,Kyle Hendricks,Cubs,10,10,0,1,0,0,0,0,0,6,0,0,0.1,0.1,0.1,0.089,-1.8,-0.4,0.0,,60.0
-Jason Heyward,22,Heyward,RF,A,L,L,Jason Heyward,Cubs,92,77,15,19,3,1,2,14,11,11,0,0,0.247,0.344,0.39,0.327,0.8,3.3,0.3,0.0,14.3
-Tommy La Stella,2,LaStella,3B,A,L,R,Tommy La Stella,Cubs,40,37,5,10,2,0,0,9,3,7,0,0,0.27,0.325,0.324,0.293,-0.7,-0.2,0.0,-0.5,18.9
-Jon Lester,34,Lester,P,A,L,L,Jon Lester,Cubs,13,11,0,1,0,0,0,1,0,5,0,0,0.091,0.091,0.091,0.081,-2.5,-0.6,-0.1,,45.5
+Ian Happ,8,Happ,CF,A,S,R,Ian Happ,Cubs,77,72,7,17,2,0,3,7,5,35,2,0,0.236,0.286,0.389,0.296,-1.1,2.2,0.2,0.3,48.6
+Kyle Hendricks,28,Hendricks,P,A,R,R,Kyle Hendricks,Cubs,12,12,0,1,0,0,0,0,0,7,0,0,0.083,0.083,0.083,0.074,-2.3,-0.6,-0.1,,58.3
+Jason Heyward,22,Heyward,RF,A,L,L,Jason Heyward,Cubs,95,80,15,19,3,1,2,14,11,12,0,0,0.238,0.333,0.375,0.316,0.1,2.6,0.3,0.0,15.0
+Tommy La Stella,2,LaStella,3B,A,L,R,Tommy La Stella,Cubs,41,38,5,10,2,0,0,9,3,7,0,0,0.263,0.317,0.316,0.285,-1.0,-0.4,0.0,-0.5,18.4
+Jon Lester,34,Lester,P,A,L,L,Jon Lester,Cubs,13,11,0,1,0,0,0,1,0,5,0,0,0.091,0.091,0.091,0.081,-2.4,-0.6,-0.1,,45.5
 Mike Montgomery,38,Montgomery,P,A,L,L,Mike Montgomery,Cubs,2,2,0,0,0,0,0,0,0,2,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,100.0
 Jose Quintana,62,Quintana,P,A,R,L,Jose Quintana,Cubs,10,7,0,0,0,0,0,0,0,7,0,0,0.0,0.0,0.0,0.0,-2.5,-1.1,-0.1,,100.0
-Anthony Rizzo,44,Rizzo,1B,A,L,L,Anthony Rizzo,Cubs,85,74,8,11,0,0,1,9,4,15,0,0,0.149,0.259,0.189,0.221,-6.4,-5.4,-0.6,0.5,20.3
-Addison Russell,27,Russell,SS,A,R,R,Addison Russell,Cubs,95,84,13,21,5,1,0,4,9,13,1,0,0.25,0.326,0.333,0.293,-1.7,3.8,0.4,1.5,15.5
-Kyle Schwarber,12,Schwarber,LF,A,L,R,Kyle Schwarber,Cubs,91,77,15,21,3,0,7,17,14,22,0,1,0.273,0.385,0.584,0.408,6.8,8.2,0.8,0.3,28.6
-Ben Zobrist,18,Zobrist,2B,A,S,R,Ben Zobrist,Cubs,55,49,8,16,2,1,1,7,6,6,0,0,0.327,0.4,0.469,0.382,2.9,5.7,0.6,1.0,12.2
+Anthony Rizzo,44,Rizzo,1B,A,L,L,Anthony Rizzo,Cubs,89,78,9,12,0,0,2,10,4,15,0,0,0.154,0.258,0.231,0.234,-5.8,-4.7,-0.5,0.5,19.2
+Addison Russell,27,Russell,SS,A,R,R,Addison Russell,Cubs,99,88,13,21,5,1,0,4,9,14,1,0,0.239,0.313,0.318,0.28,-2.7,2.9,0.3,1.5,15.9
+Kyle Schwarber,12,Schwarber,LF,A,L,R,Kyle Schwarber,Cubs,95,81,15,22,3,1,7,17,14,23,0,1,0.272,0.379,0.593,0.407,7.1,8.5,0.9,0.3,28.4
+Ben Zobrist,18,Zobrist,2B,A,S,R,Ben Zobrist,Cubs,59,51,8,16,2,1,1,7,8,6,0,0,0.314,0.407,0.451,0.379,3.1,5.9,0.6,1.0,11.8

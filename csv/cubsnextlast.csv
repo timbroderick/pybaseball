@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,Streak,Orig. Scheduled,Team,Tm,League,Division,color,tres
 "Monday, Apr 30",CHC,Home,COL,W,3,2,9,16-10,1.0,up 0.5,Farrell,Freeland,Cishek,2:57,N,35922.0,5.0,,Rockies,Colorado Rockies,National,West,#6B8E23,COL
-"Sunday, Apr 29",CHC,Home,MIL,W,2,0,9,15-10,2.0,0.5,Chatwood,Davies,Morrow,2:35,D,40895.0,4.0,,Brewers,Milwaukee Brewers,National,Central,#6B8E23,MIL
-"Tuesday, May 1",CHC,Home,COL,,,,,,,,,,,,,,,,Rockies,Colorado Rockies,National,West,#6B8E23,COL
+"Tuesday, May 1",CHC,Home,COL,L,1,3,9,16-11,1.0,Tied,Gray,Hendricks,Davis,2:24,N,40077.0,-1.0,,Rockies,Colorado Rockies,National,West,#6B8E23,COL
 "Wednesday, May 2",CHC,Home,COL,,,,,,,,,,,,,,,,Rockies,Colorado Rockies,National,West,#6B8E23,COL
+"Friday, May 4",CHC,@,STL,,,,,,,,,,,,,,,,Cardinals,St. Louis Cardinals,National,Central,#6B8E23,STL
