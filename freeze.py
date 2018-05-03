@@ -192,18 +192,24 @@ print('standings file done and saved')
 soxsort = pd.DataFrame ( sox.loc[ ( sox["W/L"].notnull() ) ] )
 soxsort.sort_index(ascending=False,inplace=True)
 soxlast = soxsort[:2]
-soxlast = soxlast.copy()
+soxlast = soxlast.copy().reset_index(drop=True)
 soxlast.loc[:, 'R'] = soxlast['R'].astype(int).astype(str)
 soxlast.loc[:, 'RA'] = soxlast['RA'].astype(int).astype(str)
 soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(int).astype(str)
+soxlast.loc[:, 'sorting'] = 0
+soxlast.loc[0, 'sorting'] = 0
+soxlast.loc[1, 'sorting'] = 1
 soxnext = pd.DataFrame ( sox.loc[ ( sox["W/L"].isnull() ) ] )
-soxnext = soxnext[:2]
+soxnext = soxnext[:2].reset_index(drop=True)
+soxnext.loc[:, 'sorting'] = 0
+soxnext.loc[0, 'sorting'] = 2
+soxnext.loc[1, 'sorting'] = 3
 soxlast = soxnext.append(soxlast)
 soxlast = soxlast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
 left = soxlast
 right = bballJoin
 soxnextlast = pd.merge(left, right, how='left', left_on='Opp', right_on='tres', suffixes=('_x', '_y'))
-soxnextlast = soxnextlast.sort_values(by='R', ascending=False).reset_index(drop=True)
+soxnextlast = soxnextlast.sort_values(by='sorting', ascending=True).reset_index(drop=True)
 soxnextlast['Date'] = soxnextlast['Date'].str.replace( r"\(.*\)","" )
 soxnextlast.to_csv("csv/soxnextlast.csv", index=False, encoding="utf-8")
 print('Last and next sox games saved')
@@ -319,18 +325,24 @@ print("Sox pitching stats done")
 cubssort = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].notnull() ) ] )
 cubssort.sort_index(ascending=False,inplace=True)
 cubslast = cubssort[:2]
-cubslast = cubslast.copy()
+cubslast = cubslast.copy().reset_index(drop=True)
 cubslast.loc[:, 'R'] = cubslast['R'].astype(int).astype(str)
 cubslast.loc[:, 'RA'] = cubslast['RA'].astype(int).astype(str)
 cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(int).astype(str)
+cubslast.loc[:, 'sorting'] = 0
+cubslast.loc[0, 'sorting'] = 0
+cubslast.loc[1, 'sorting'] = 1
 cubsnext = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].isnull() ) ] )
-cubsnext = cubsnext[:2]
+cubsnext = cubsnext[:2].reset_index(drop=True)
+cubsnext.loc[:, 'sorting'] = 0
+cubsnext.loc[0, 'sorting'] = 2
+cubsnext.loc[1, 'sorting'] = 3
 cubslast = cubsnext.append(cubslast)
 cubslast = cubslast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
 left = cubslast
 right = bballJoin
 cubsnextlast = pd.merge(left, right, how='left', left_on='Opp', right_on='tres', suffixes=('_x', '_y'))
-cubsnextlast = cubsnextlast.sort_values(by='R', ascending=False).reset_index(drop=True)
+cubsnextlast = cubsnextlast.sort_values(by='sorting', ascending=True).reset_index(drop=True)
 cubsnextlast['Date'] = cubsnextlast['Date'].str.replace( r"\(.*\)","" )
 cubsnextlast.to_csv("csv/cubsnextlast.csv", index=False, encoding="utf-8")
 print('Last and next cubs games saved')
