@@ -475,8 +475,11 @@ mpl.rcParams['xtick.labelsize'] = 17
 mpl.rcParams['ytick.labelsize'] = 17
 mpl.rcParams['lines.linewidth'] = 2
 
-mpl.rcParams['font.family'] = ['sans-serif ']
-mpl.rcParams['font.sans-serif'] = ['Verdana, Arial, Helvetica']
+#mpl.rcParams['font.sans-serif'].insert(0, 'Arial')
+#mpl.rcParams['font.sans-serif'].insert(0, 'Helvetica')
+mpl.rcParams['font.sans-serif'].insert(0, 'Verdana')
+
+mpl.rcParams['font.family'] = 'sans-serif'
 mpl.rcParams['font.size'] = 11
 mpl.rcParams['text.usetex'] = False
 mpl.rcParams['svg.fonttype'] = 'none'
@@ -502,7 +505,7 @@ g.figure.set_size_inches(8,8)
 plt.ylabel('ERA', fontsize=16, fontweight='bold')
 plt.xlabel('BATTING AVERAGE', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/BAvERA.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # WAR stats
 plt.figure()
@@ -515,6 +518,7 @@ g.figure.set_size_inches(8,8)
 plt.ylabel('WAR PITCHING', fontsize=16, fontweight='bold')
 plt.xlabel('WAR BATTING', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/WAR.png',bbox_inches='tight',dpi=my_dpi)
+plt.close()
 
 # offense stats
 plt.figure()
@@ -528,6 +532,7 @@ g.figure.set_size_inches(8,8)
 plt.ylabel('RBI', fontsize=16, fontweight='bold')
 plt.xlabel('WEIGHTED ON-BASE AVG. (wOBA)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/offense.png',bbox_inches='tight',dpi=my_dpi)
+plt.close()
 
 # defense stats
 plt.figure()
@@ -540,6 +545,7 @@ g.figure.set_size_inches(8,8)
 plt.ylabel('FIELDING INDEPENDENT PITCHING (FIP)', fontsize=16, fontweight='bold')
 plt.xlabel('BA ON BALLS IN PLAY (BABIP)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/defense.png',bbox_inches='tight',dpi=my_dpi)
+plt.close()
 
 # bar plot, start with sorting
 # need to reset the index
@@ -564,7 +570,7 @@ for p in g.patches:
             "{:" ">6}".format( width ),
             fontsize=15, color="black", fontweight='bold', zorder=10)
 g.figure.savefig('static/img/HR.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 print("p1 charts created")
 
 
@@ -578,14 +584,14 @@ for index, row in soxBShit.iterrows():
     if ( row.H == 0):
         junkvar = []
     else:
-        df['hitperc'][0] = np.round( (row.BB / row.PA)*100,1 )
-        df['hitperc'][1] = np.round( (row.SO / row.PA)*100,1 )
-        df['hitperc'][2] = np.round( (row.H / row.PA)*100,1 )
+        df[0, 'hitperc'] = np.round( (row.BB / row.PA)*100,1 )
+        df[1, 'hitperc'] = np.round( (row.SO / row.PA)*100,1 )
+        df[2, 'hitperc'] = np.round( (row.H / row.PA)*100,1 )
         onebs = row.H - ( row.dbls + row.trps + row.HR )
-        df['hitperc'][3] = np.round( (onebs / row.H)*100,1 )
-        df['hitperc'][4] = np.round( (row.dbls / row.H)*100,1 )
-        df['hitperc'][5] = np.round( (row.trps / row.H)*100,1 )
-        df['hitperc'][6] = np.round( (row.HR / row.H)*100,1 )
+        df[3, 'hitperc'] = np.round( (onebs / row.H)*100,1 )
+        df[4, 'hitperc'] = np.round( (row.dbls / row.H)*100,1 )
+        df[5, 'hitperc'] = np.round( (row.trps / row.H)*100,1 )
+        df[6, 'hitperc'] = np.round( (row.HR / row.H)*100,1 )
     # start the plot
     plt.figure()
     plt.ylim(0, 100)
@@ -607,6 +613,7 @@ for index, row in soxBShit.iterrows():
     g.set_ylabel('% Of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
     g.set_xlabel('PLATE APPEARANCE RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
     g.figure.savefig('static/img/sox' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
+    plt.close()
 print('Sox hitting charts done')
 
 # start Sox pitching charts
@@ -620,20 +627,20 @@ for index, row in soxPSpitch.iterrows():
     if ( row.Pitches == 0):
         junkvar = []
     else:
-        df['perc'][0] = row.FAperc
-        df['perc'][1] = row.FTperc
-        df['perc'][2] = row.FCperc
-        df['perc'][3] = row.FSperc
-        df['perc'][4] = row.FOperc
-        df['perc'][5] = row.SIperc
-        df['perc'][6] = row.SLperc
-        df['perc'][7] = row.CUperc
-        df['perc'][8] = row.EPperc
-        df['perc'][9] = row.CHperc
-        df['perc'][10] = row.SCperc
-        df['perc'][11] = row.KNperc
-        df['perc'][12] = row.KCperc
-        df['perc'][13] = row.UNperc
+        df[0, 'perc'] = row.FAperc
+        df[1, 'perc'] = row.FTperc
+        df[2, 'perc'] = row.FCperc
+        df[3, 'perc'] = row.FSperc
+        df[4, 'perc'] = row.FOperc
+        df[5, 'perc'] = row.SIperc
+        df[6, 'perc'] = row.SLperc
+        df[7, 'perc'] = row.CUperc
+        df[8, 'perc'] = row.EPperc
+        df[9, 'perc'] = row.CHperc
+        df[10, 'perc'] = row.SCperc
+        df[11, 'perc'] = row.KNperc
+        df[12, 'perc'] = row.KCperc
+        df[13, 'perc'] = row.UNperc
 
     df = df.fillna(value=0)
     # start the plot
@@ -653,6 +660,7 @@ for index, row in soxPSpitch.iterrows():
     g.set_xlabel('PERCENT THROWN', fontsize=16, fontweight='bold')
     g.set_ylabel('PITCH TYPE', fontsize=16, fontweight='bold')
     g.figure.savefig('static/img/soxpitch' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
+    plt.close()
 print('Sox pitching charts done')
 
 # start cubs hitting charts
@@ -665,14 +673,14 @@ for index, row in cubsBShit.iterrows():
     if ( row.H == 0):
         junkvar = []
     else:
-        df['hitperc'][0] = np.round( (row.BB / row.PA)*100,1 )
-        df['hitperc'][1] = np.round( (row.SO / row.PA)*100,1 )
-        df['hitperc'][2] = np.round( (row.H / row.PA)*100,1 )
+        df[0, 'hitperc'] = np.round( (row.BB / row.PA)*100,1 )
+        df[1, 'hitperc'] = np.round( (row.SO / row.PA)*100,1 )
+        df[2, 'hitperc'] = np.round( (row.H / row.PA)*100,1 )
         onebs = row.H - ( row.dbls + row.trps + row.HR )
-        df['hitperc'][3] = np.round( (onebs / row.H)*100,1 )
-        df['hitperc'][4] = np.round( (row.dbls / row.H)*100,1 )
-        df['hitperc'][5] = np.round( (row.trps / row.H)*100,1 )
-        df['hitperc'][6] = np.round( (row.HR / row.H)*100,1 )
+        df[3, 'hitperc'] = np.round( (onebs / row.H)*100,1 )
+        df[4, 'hitperc'] = np.round( (row.dbls / row.H)*100,1 )
+        df[5, 'hitperc'] = np.round( (row.trps / row.H)*100,1 )
+        df[6, 'hitperc'] = np.round( (row.HR / row.H)*100,1 )
     # start the plot
     plt.figure()
     plt.ylim(0, 100)
@@ -694,6 +702,7 @@ for index, row in cubsBShit.iterrows():
     g.set_ylabel('% Of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
     g.set_xlabel('PLATE APPEARANCE RESULTS | HIT TYPE', fontsize=16, fontweight='bold')
     g.figure.savefig('static/img/cubs' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
+    plt.close()
 
 print('cubs hitting charts done')
 
@@ -707,20 +716,20 @@ for index, row in cubsPSpitch.iterrows():
     if ( row.Pitches == 0):
         junkvar = []
     else:
-        df['perc'][0] = row.FAperc
-        df['perc'][1] = row.FTperc
-        df['perc'][2] = row.FCperc
-        df['perc'][3] = row.FSperc
-        df['perc'][4] = row.FOperc
-        df['perc'][5] = row.SIperc
-        df['perc'][6] = row.SLperc
-        df['perc'][7] = row.CUperc
-        df['perc'][8] = row.EPperc
-        df['perc'][9] = row.CHperc
-        df['perc'][10] = row.SCperc
-        df['perc'][11] = row.KNperc
-        df['perc'][12] = row.KCperc
-        df['perc'][13] = row.UNperc
+        df[0, 'perc'] = row.FAperc
+        df[1, 'perc'] = row.FTperc
+        df[2, 'perc'] = row.FCperc
+        df[3, 'perc'] = row.FSperc
+        df[4, 'perc'] = row.FOperc
+        df[5, 'perc'] = row.SIperc
+        df[6, 'perc'] = row.SLperc
+        df[7, 'perc'] = row.CUperc
+        df[8, 'perc'] = row.EPperc
+        df[9, 'perc'] = row.CHperc
+        df[10, 'perc'] = row.SCperc
+        df[11, 'perc'] = row.KNperc
+        df[12, 'perc'] = row.KCperc
+        df[13, 'perc'] = row.UNperc
 
     df = df.fillna(value=0)
     # start the plot
@@ -740,6 +749,7 @@ for index, row in cubsPSpitch.iterrows():
     g.set_xlabel('PERCENT THROWN', fontsize=16, fontweight='bold')
     g.set_ylabel('PITCH TYPE', fontsize=16, fontweight='bold')
     g.figure.savefig('static/img/cubspitch' + str( row.lastname ) + str( row.posnum ) + '.png',bbox_inches='tight',dpi=my_dpi)
+    plt.close()
 print('Cubs pitching charts done')
 
 
@@ -782,7 +792,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('BATTING AVERAGE', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hAVG.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # wOBA avg h2h plot
 plt.figure()
@@ -803,7 +813,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('WEIGHTED ON-BASE AVG. (wOBA)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hwOBA.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # wRAA avg h2h plot
 plt.figure()
@@ -824,7 +834,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('WEIGHTED RUNS ABOVE AVG. (wRAA)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hwRAA.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # RAR avg h2h plot
 plt.figure()
@@ -845,7 +855,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('RUNS ABOVE REPLACEMENT (RAR)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hRARhit.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # FLD avg h2h plot
 plt.figure()
@@ -866,7 +876,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('FIELDING RUNS ABOVE AVG. (Fld)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hFld.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # WAR hitting h2h plot
 plt.figure()
@@ -887,7 +897,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('WINS ABOVE REPLACEMENT (WAR)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hWARhit.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 print('h2h batting done')
 
@@ -921,7 +931,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('EARNED RUN AVERAGE', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hERA.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # FIP h2h plot
 plt.figure()
@@ -942,7 +952,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('FIELDING INDEPENDENT PITCHING (FIP)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hFIP.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # WHIP h2h plot
 plt.figure()
@@ -963,7 +973,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('WALKS, HITS PER INNING (WHIP)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hWHIP.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 
 # BABIP h2h plot
@@ -985,7 +995,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('BA ON BALLS IN PLAY (BABIP)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hBABIP.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # WPA h2h plot
 plt.figure()
@@ -1007,7 +1017,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('WIN PROBABILTY ADDED (WPA)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hWPA.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 
 # RAR h2h plot
@@ -1030,7 +1040,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('RUNS ABOVE REPLACEMENT (RAR)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hRAR.png',bbox_inches='tight',dpi=my_dpi)
-
+plt.close()
 
 # WAR h2h plot
 plt.figure()
@@ -1052,6 +1062,7 @@ g.yaxis.set_major_locator(tick_locator)
 g.set_xlabel('', fontsize=2)
 g.set_ylabel('WINS ABOVE REPLACEMENT (WAR)', fontsize=16, fontweight='bold')
 g.figure.savefig('static/img/h2hWAR.png',bbox_inches='tight',dpi=my_dpi)
+plt.close()
 
 print('h2h pitching done')
 
