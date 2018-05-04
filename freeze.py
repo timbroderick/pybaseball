@@ -584,14 +584,14 @@ for index, row in soxBShit.iterrows():
     if ( row.H == 0):
         junkvar = []
     else:
-        df[0, 'hitperc'] = np.round( (row.BB / row.PA)*100,1 )
-        df[1, 'hitperc'] = np.round( (row.SO / row.PA)*100,1 )
-        df[2, 'hitperc'] = np.round( (row.H / row.PA)*100,1 )
+        df.loc[0, 'hitperc'] = np.round( (row.BB / row.PA)*100,1 )
+        df.loc[1, 'hitperc'] = np.round( (row.SO / row.PA)*100,1 )
+        df.loc[2, 'hitperc'] = np.round( (row.H / row.PA)*100,1 )
         onebs = row.H - ( row.dbls + row.trps + row.HR )
-        df[3, 'hitperc'] = np.round( (onebs / row.H)*100,1 )
-        df[4, 'hitperc'] = np.round( (row.dbls / row.H)*100,1 )
-        df[5, 'hitperc'] = np.round( (row.trps / row.H)*100,1 )
-        df[6, 'hitperc'] = np.round( (row.HR / row.H)*100,1 )
+        df.loc[3, 'hitperc'] = np.round( (onebs / row.H)*100,1 )
+        df.loc[4, 'hitperc'] = np.round( (row.dbls / row.H)*100,1 )
+        df.loc[5, 'hitperc'] = np.round( (row.trps / row.H)*100,1 )
+        df.loc[6, 'hitperc'] = np.round( (row.HR / row.H)*100,1 )
     # start the plot
     plt.figure()
     plt.ylim(0, 100)
@@ -627,20 +627,20 @@ for index, row in soxPSpitch.iterrows():
     if ( row.Pitches == 0):
         junkvar = []
     else:
-        df[0, 'perc'] = row.FAperc
-        df[1, 'perc'] = row.FTperc
-        df[2, 'perc'] = row.FCperc
-        df[3, 'perc'] = row.FSperc
-        df[4, 'perc'] = row.FOperc
-        df[5, 'perc'] = row.SIperc
-        df[6, 'perc'] = row.SLperc
-        df[7, 'perc'] = row.CUperc
-        df[8, 'perc'] = row.EPperc
-        df[9, 'perc'] = row.CHperc
-        df[10, 'perc'] = row.SCperc
-        df[11, 'perc'] = row.KNperc
-        df[12, 'perc'] = row.KCperc
-        df[13, 'perc'] = row.UNperc
+        df.loc[0, 'perc'] = row.FAperc
+        df.loc[1, 'perc'] = row.FTperc
+        df.loc[2, 'perc'] = row.FCperc
+        df.loc[3, 'perc'] = row.FSperc
+        df.loc[4, 'perc'] = row.FOperc
+        df.loc[5, 'perc'] = row.SIperc
+        df.loc[6, 'perc'] = row.SLperc
+        df.loc[7, 'perc'] = row.CUperc
+        df.loc[8, 'perc'] = row.EPperc
+        df.loc[9, 'perc'] = row.CHperc
+        df.loc[10, 'perc'] = row.SCperc
+        df.loc[11, 'perc'] = row.KNperc
+        df.loc[12, 'perc'] = row.KCperc
+        df.loc[13, 'perc'] = row.UNperc
 
     df = df.fillna(value=0)
     # start the plot
@@ -673,14 +673,14 @@ for index, row in cubsBShit.iterrows():
     if ( row.H == 0):
         junkvar = []
     else:
-        df[0, 'hitperc'] = np.round( (row.BB / row.PA)*100,1 )
-        df[1, 'hitperc'] = np.round( (row.SO / row.PA)*100,1 )
-        df[2, 'hitperc'] = np.round( (row.H / row.PA)*100,1 )
+        df.loc[0, 'hitperc'] = np.round( (row.BB / row.PA)*100,1 )
+        df.loc[1, 'hitperc'] = np.round( (row.SO / row.PA)*100,1 )
+        df.loc[2, 'hitperc'] = np.round( (row.H / row.PA)*100,1 )
         onebs = row.H - ( row.dbls + row.trps + row.HR )
-        df[3, 'hitperc'] = np.round( (onebs / row.H)*100,1 )
-        df[4, 'hitperc'] = np.round( (row.dbls / row.H)*100,1 )
-        df[5, 'hitperc'] = np.round( (row.trps / row.H)*100,1 )
-        df[6, 'hitperc'] = np.round( (row.HR / row.H)*100,1 )
+        df.loc[3, 'hitperc'] = np.round( (onebs / row.H)*100,1 )
+        df.loc[4, 'hitperc'] = np.round( (row.dbls / row.H)*100,1 )
+        df.loc[5, 'hitperc'] = np.round( (row.trps / row.H)*100,1 )
+        df.loc[6, 'hitperc'] = np.round( (row.HR / row.H)*100,1 )
     # start the plot
     plt.figure()
     plt.ylim(0, 100)
@@ -716,20 +716,20 @@ for index, row in cubsPSpitch.iterrows():
     if ( row.Pitches == 0):
         junkvar = []
     else:
-        df[0, 'perc'] = row.FAperc
-        df[1, 'perc'] = row.FTperc
-        df[2, 'perc'] = row.FCperc
-        df[3, 'perc'] = row.FSperc
-        df[4, 'perc'] = row.FOperc
-        df[5, 'perc'] = row.SIperc
-        df[6, 'perc'] = row.SLperc
-        df[7, 'perc'] = row.CUperc
-        df[8, 'perc'] = row.EPperc
-        df[9, 'perc'] = row.CHperc
-        df[10, 'perc'] = row.SCperc
-        df[11, 'perc'] = row.KNperc
-        df[12, 'perc'] = row.KCperc
-        df[13, 'perc'] = row.UNperc
+        df.loc[0, 'perc'] = row.FAperc
+        df.loc[1, 'perc'] = row.FTperc
+        df.loc[2, 'perc'] = row.FCperc
+        df.loc[3, 'perc'] = row.FSperc
+        df.loc[4, 'perc'] = row.FOperc
+        df.loc[5, 'perc'] = row.SIperc
+        df.loc[6, 'perc'] = row.SLperc
+        df.loc[7, 'perc'] = row.CUperc
+        df.loc[8, 'perc'] = row.EPperc
+        df.loc[9, 'perc'] = row.CHperc
+        df.loc[10, 'perc'] = row.SCperc
+        df.loc[11, 'perc'] = row.KNperc
+        df.loc[12, 'perc'] = row.KCperc
+        df.loc[13, 'perc'] = row.UNperc
 
     df = df.fillna(value=0)
     # start the plot
