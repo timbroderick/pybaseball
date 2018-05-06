@@ -1,15 +1,16 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,White Sox,128,114,16,31,5,0,7,16,7,19,1,0,0.272,0.344,0.5,0.364,5.1,4.1,0.4,-1.3,16.7
-Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,White Sox,123,115,12,28,3,1,4,7,8,26,10,1,0.243,0.293,0.391,0.299,-1.6,2.9,0.3,-1.5,22.6
-Welington Castillo,21,Castillo,C,A,R,R,Welington Castillo,White Sox,74,68,8,15,3,0,3,6,5,19,0,0,0.221,0.284,0.397,0.298,-1.0,1.7,0.2,0.0,27.9
+Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,White Sox,132,118,16,32,5,0,7,17,7,19,1,0,0.271,0.341,0.492,0.36,4.8,3.8,0.4,-1.3,16.1
+Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,White Sox,127,119,15,31,4,1,6,9,8,26,10,1,0.261,0.307,0.462,0.332,1.7,6.4,0.7,-1.5,21.8
+Welington Castillo,21,Castillo,C,A,R,R,Welington Castillo,White Sox,78,72,8,16,3,0,3,6,5,22,0,0,0.222,0.282,0.389,0.294,-1.3,1.6,0.2,0.0,30.6
 Matt Davidson,24,Davidson,DH,A,R,R,Matt Davidson,White Sox,117,99,16,26,5,0,9,18,16,36,0,0,0.263,0.376,0.586,0.409,8.9,9.6,1.0,0.9,36.4
-Adam Engel,15,Engel,CF,A,R,R,Adam Engel,White Sox,80,69,3,11,1,1,0,7,7,19,5,1,0.159,0.244,0.203,0.21,-6.8,-7.2,-0.7,-3.3,27.5
+Adam Engel,15,Engel,CF,A,R,R,Adam Engel,White Sox,84,73,3,12,1,1,0,7,7,20,5,1,0.164,0.244,0.205,0.211,-7.1,-7.4,-0.8,-3.3,27.4
 Avisail Garcia,26,Garcia,RF,D10,R,R,Avisail Garcia,White Sox,76,73,5,17,3,0,1,4,0,17,0,1,0.233,0.25,0.315,0.247,-4.2,-5.2,-0.5,-1.2,23.3
-Leury Garcia,28,Garcia,CF,A,S,R,Leury Garcia,White Sox,71,66,8,18,1,2,1,8,3,16,5,0,0.273,0.324,0.394,0.315,0.0,2.3,0.2,-0.1,24.2
+Leury Garcia,28,Garcia,CF,A,S,R,Leury Garcia,White Sox,75,70,8,19,1,2,1,8,3,17,6,0,0.271,0.32,0.386,0.31,-0.3,2.3,0.2,-0.1,24.3
 Lucas Giolito,27,Giolito,P,A,R,R,Lucas Giolito,White Sox,2,2,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,50.0
-Yoan Moncada,10,Moncada,2B,A,S,R,Yoan Moncada,White Sox,132,114,17,30,8,1,6,15,17,49,4,0,0.263,0.359,0.509,0.374,6.3,12.9,1.3,1.2,43.0
+Yoan Moncada,10,Moncada,2B,D10,S,R,Yoan Moncada,White Sox,132,114,17,30,8,1,6,15,17,49,4,0,0.263,0.359,0.509,0.374,6.3,12.9,1.3,1.2,43.0
 Omar Narvaez,38,Narvaez,C,A,L,R,Omar Narvaez,White Sox,53,47,2,9,3,0,0,1,6,14,0,2,0.191,0.283,0.255,0.25,-2.8,-0.3,0.0,1.0,29.8
-Daniel Palka,18,Palka,RF,A,L,L,Daniel Palka,White Sox,28,28,4,7,2,1,2,8,0,5,0,0,0.25,0.25,0.607,0.356,0.9,1.4,0.1,0.0,17.9
-Yolmer Sanchez,5,Sanchez,3B,A,S,R,Yolmer Sanchez,White Sox,118,108,10,31,5,3,1,17,5,22,3,1,0.287,0.331,0.417,0.324,0.8,4.8,0.5,1.5,20.4
+Daniel Palka,18,Palka,RF,A,L,L,Daniel Palka,White Sox,32,32,4,7,2,1,2,8,0,7,0,0,0.219,0.219,0.531,0.312,-0.1,0.4,0.0,0.0,21.9
+Jose Rondon,20,Rondon,SS,A,R,R,Jose Rondon,White Sox,1,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.3,-0.2,0.0,,0.0
+Yolmer Sanchez,5,Sanchez,3B,A,S,R,Yolmer Sanchez,White Sox,122,112,11,33,7,3,1,17,5,22,3,1,0.295,0.336,0.438,0.334,1.9,6.0,0.6,1.5,19.6
 James Shields,33,Shields,P,A,R,R,James Shields,White Sox,2,2,0,0,0,0,0,0,0,2,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,100.0
-Trayce Thompson,32,Thompson,RF,A,R,R,Trayce Thompson,- - -,45,43,9,6,1,0,3,3,2,16,1,0,0.14,0.178,0.372,0.235,-2.9,0.1,0.0,1.8,37.2
+Trayce Thompson,32,Thompson,RF,A,R,R,Trayce Thompson,- - -,48,46,9,6,1,0,3,3,2,19,1,0,0.13,0.167,0.348,0.22,-3.7,-0.6,-0.1,1.8,41.3
