@@ -1,19 +1,20 @@
 posName,posnum,lastname,position,status_code,bats,throws
 Albert Almora Jr.,5,Almora,CF,A,R,R
 Javier Baez,9,Baez,2B,A,R,R
+David Bote,13,Bote,2B,A,R,R
 Kris Bryant,17,Bryant,3B,A,R,R
 Eddie Butler,33,Butler,P,D10,R,R
 Victor Caratini,7,Caratini,C,A,S,R
 Tyler Chatwood,21,Chatwood,P,A,R,R
 Steve Cishek,41,Cishek,P,A,R,R
 Willson Contreras,40,Contreras,C,A,R,R
-Yu Darvish,11,Darvish,P,A,R,R
+Yu Darvish,11,Darvish,P,D10,R,R
 Brian Duensing,32,Duensing,P,A,L,L
 Carl Edwards Jr.,6,Edwards,P,A,R,R
-Luke Farrell,59,Farrell,P,A,L,R
+Justin Hancock,54,Hancock,P,A,R,R
 Ian Happ,8,Happ,CF,A,S,R
 Kyle Hendricks,28,Hendricks,P,A,R,R
-Jason Heyward,22,Heyward,RF,A,L,L
+Jason Heyward,22,Heyward,RF,D7,L,L
 Tommy La Stella,2,LaStella,3B,A,L,R
 Jon Lester,34,Lester,P,A,L,L
 Mike Montgomery,38,Montgomery,P,A,L,L
@@ -24,4 +25,5 @@ Addison Russell,27,Russell,SS,A,R,R
 Kyle Schwarber,12,Schwarber,LF,A,L,R
 Pedro Strop,46,Strop,P,A,R,R
 Justin Wilson,37,Wilson,P,A,L,L
-Ben Zobrist,18,Zobrist,LF,A,S,R
+Mark Zagunis,20,Zagunis,RF,A,R,R
+Ben Zobrist,18,Zobrist,2B,A,S,R

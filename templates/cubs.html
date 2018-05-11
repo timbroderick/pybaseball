@@ -37,7 +37,7 @@
         {% if nl[2].Date == nl[3].Date %}
             <p><strong>Next scheduled games:</strong> {{ nl[3].Date }}, a doubleheader {% if nl[3].Home_Away == '@' %}at{% else %}at home with{% endif %} the {{ nl[3].Team }}.</p>
             {% else %}            
-            <p><strong>Next scheduled game:</strong> {{ nl[2].Date }}, a {% if nl[2].DN == 'D' %}day{% else %}night{% endif %} game {% if nl[2].Home_Away == '@' %}at{% else %}at home with{% endif %} the {{ nl[2].Team }}.</p>
+            <p><strong>Next scheduled game:</strong> {{ nl[2].Date }}, {% if nl[2].Home_Away == '@' %}an away game at{% else %}a game at home with{% endif %} the {{ nl[2].Team }}.</p>
             {% endif %}
         <br>
         <h3 style='width:100%; text-align:center'>Summary results by team</h3>

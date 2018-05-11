@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Sunday, May 6",CHW,Home,MIN,L,3,5,9,9-23,5.0,7.0,Duke,Rondon,Rodney,2:56,D,17424.0,-3.0,,0,Twins,Minnesota Twins,American,Central,#6B8E23,MIN
-"Saturday, May 5",CHW,Home,MIN,L,4,8,9,9-22,4.0,7.0,Lynn,Santiago,None,3:23,N,23765.0,-2.0,,1,Twins,Minnesota Twins,American,Central,#6B8E23,MIN
-"Tuesday, May 8",CHW,Home,PIT,,,,,,,,,,,,,,,,2,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
-"Wednesday, May 9",CHW,Home,PIT,,,,,,,,,,,,,,,,3,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
+"Wednesday, May 9",CHW,Home,PIT,L,5,6,9,9-25,5.0,8.0,Rodriguez,Jones,Vazquez,2:46,D,12476.0,-5.0,,0,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
+"Tuesday, May 8",CHW,Home,PIT,L,6,10,9,9-24,5.0,7.0,Glasnow,Volstad,None,3:53,N,12871.0,-4.0,,1,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
+"Friday, May 11",CHW,@,CHC,,,,,,,,,,,,,,,,2,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
+"Saturday, May 12",CHW,@,CHC,,,,,,,,,,,,,,,,3,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
