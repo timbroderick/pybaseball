@@ -58,7 +58,7 @@ df2 = get_tables(df1)
 
 print('standings info acquired')
 
-# now scraping www.fangraphs.com for pitching and batting stats 
+# now scraping www.fangraphs.com for pitching and batting stats
 batting = team_batting(start_season='2018', end_season=None, league='all', ind=1)
 newbat = batting[['Team','R','RBI','HR','AVG','OBP','SLG','wOBA', 'wRC+','WAR']]
 newbat = newbat.rename(columns={'wRC+':'wRCplus','WAR':'WARbat','AVG':'AVGbat'})
@@ -271,7 +271,7 @@ soxBShit.to_csv("csv/soxhit.csv", index=False, encoding="utf-8")
 print("Sox batting stats done")
 
 
-# start Sox pitching stats 
+# start Sox pitching stats
 left = WSroster
 right = PSselect
 soxPSpitch = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
@@ -387,7 +387,7 @@ left = CHCroster
 right = BSselect
 cubsBShit = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
 cubsBShit = cubsBShit[cubsBShit.Name.notnull()]
-cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
+#cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
 cubsBShit.loc[:, 'PA'] = cubsBShit['PA'].astype(int)
 cubsBShit.loc[:, 'AB'] = cubsBShit['AB'].astype(int)
 cubsBShit.loc[:, 'R'] = cubsBShit['R'].astype(int)
@@ -404,7 +404,7 @@ cubsBShit.to_csv("csv/cubshit.csv", index=False, encoding="utf-8")
 print("cubs batting stats done")
 
 
-# start cubs pitching stats 
+# start cubs pitching stats
 left = CHCroster
 right = PSselect
 cubsPSpitch = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
@@ -777,12 +777,12 @@ print('batting stats appended')
 plt.figure()
 gs = sns.violinplot(x="Team", y="AVG", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="AVG", data=h2hhit,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="AVG", data=h2hhit,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="AVG", data=h2hhit, color="orange")
 g.figure.set_size_inches(6,6)
@@ -798,12 +798,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="wOBA", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="wOBA", data=h2hhit,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="wOBA", data=h2hhit,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="wOBA", data=h2hhit, color="orange")
 g.figure.set_size_inches(6,6)
@@ -819,12 +819,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="wRAA", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="wRAA", data=h2hhit,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="wRAA", data=h2hhit,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="wRAA", data=h2hhit, color="orange")
 g.figure.set_size_inches(6,6)
@@ -840,12 +840,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="RAR", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="RAR", data=h2hhit,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="RAR", data=h2hhit,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="RAR", data=h2hhit, color="orange")
 g.figure.set_size_inches(6,6)
@@ -861,12 +861,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="Fld", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="Fld", data=h2hhit,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="Fld", data=h2hhit,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="Fld", data=h2hhit, color="orange")
 g.figure.set_size_inches(6,6)
@@ -882,12 +882,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="WAR", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="WAR", data=h2hhit,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="WAR", data=h2hhit,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="WAR", data=h2hhit, color="orange")
 g.figure.set_size_inches(6,6)
@@ -916,12 +916,12 @@ print('pitching stats appended')
 plt.figure()
 gs = sns.violinplot(x="Team", y="ERA", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="ERA", data=h2hpitching,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="ERA", data=h2hpitching,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="ERA", data=h2hpitching, color="orange")
 g.figure.set_size_inches(6,6)
@@ -937,12 +937,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="FIP", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="FIP", data=h2hpitching,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="FIP", data=h2hpitching,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="FIP", data=h2hpitching, color="orange")
 g.figure.set_size_inches(6,6)
@@ -958,12 +958,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="WHIP", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="WHIP", data=h2hpitching,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="WHIP", data=h2hpitching,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="WHIP", data=h2hpitching, color="orange")
 g.figure.set_size_inches(6,6)
@@ -980,12 +980,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="BABIP", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="BABIP", data=h2hpitching,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="BABIP", data=h2hpitching,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="BABIP", data=h2hpitching, color="orange")
 g.figure.set_size_inches(6,6)
@@ -1001,12 +1001,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="WPA", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="WPA", data=h2hpitching,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="WPA", data=h2hpitching,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="WPA", data=h2hpitching, color="orange")
 g.figure.set_size_inches(6,6)
@@ -1024,12 +1024,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="RAR", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="RAR", data=h2hpitching,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="RAR", data=h2hpitching,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="RAR", data=h2hpitching, color="orange")
 g.figure.set_size_inches(6,6)
@@ -1046,12 +1046,12 @@ plt.close()
 plt.figure()
 gs = sns.violinplot(x="Team", y="WAR", data=h2hpitching, inner=None, linewidth=0, palette=my_pal)
 plt.setp(gs.collections, alpha=.5)
-g = sns.boxplot(x="Team", y="WAR", data=h2hpitching,  
-                showcaps=True, 
-                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 }, 
-                whiskerprops={'color': '#8FBC8B'}, 
-                capprops={'color': '#8FBC8B'}, 
-                medianprops={'color': '#8FBC8B'}, 
+g = sns.boxplot(x="Team", y="WAR", data=h2hpitching,
+                showcaps=True,
+                boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                whiskerprops={'color': '#8FBC8B'},
+                capprops={'color': '#8FBC8B'},
+                medianprops={'color': '#8FBC8B'},
                 showfliers=False)
 g = sns.swarmplot(x="Team", y="WAR", data=h2hpitching, color="orange")
 g.figure.set_size_inches(6,6)
