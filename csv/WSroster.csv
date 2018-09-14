@@ -1,5 +1,5 @@
 posName,posnum,lastname,position,status_code,bats,throws
-Jose Abreu,79,Abreu,1B,D10,R,R
+Jose Abreu,79,Abreu,1B,A,R,R
 Tim Anderson,7,Anderson,SS,A,R,R
 Aaron Bummer,39,Bummer,P,A,L,L
 Ryan Burr,61,Burr,P,A,R,R
@@ -16,7 +16,7 @@ Leury Garcia,28,Garcia,LF,D10,S,R
 Lucas Giolito,27,Giolito,P,A,R,R
 Jeanmar Gomez,54,Gomez,P,A,R,R
 Ian Hamilton,63,Hamilton,P,A,R,R
-Michael Kopech,34,Kopech,P,A,R,R
+Nate Jones,65,Jones,P,A,R,R
 Ryan LaMarre,25,LaMarre,CF,A,R,L
 Reynaldo Lopez,40,Lopez,P,A,R,R
 Juan Minaya,37,Minaya,P,A,R,R
@@ -28,6 +28,7 @@ Jose Rondon,20,Rondon,2B,A,R,R
 Jose Ruiz,66,Ruiz,P,A,R,R
 Yolmer Sanchez,5,Sanchez,3B,A,S,R
 Hector Santiago,53,Santiago,P,A,R,L
+Rob Scahill,52,Scahill,P,A,L,R
 James Shields,33,Shields,P,A,R,R
 Kevan Smith,36,Smith,C,A,R,R
 Thyago Vieira,50,Vieira,P,A,R,R

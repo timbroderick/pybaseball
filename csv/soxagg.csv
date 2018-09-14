@@ -4,10 +4,10 @@ BOS,4,3,3.86,3.14,Red Sox,Boston Red Sox,American,East,#6B8E23,BOS
 CHC,1,2,3.67,7.33,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
 CIN,1,2,6.33,6.67,Reds,Cincinnati Reds,National,Central,#6B8E23,CIN
 CLE,3,10,2.62,5.62,Indians,Cleveland Indians,American,Central,#6B8E23,CLE
-DET,7,10,4.29,4.35,Tigers,Detroit Tigers,American,Central,#6B8E23,DET
+DET,7,12,4.11,4.84,Tigers,Detroit Tigers,American,Central,#6B8E23,DET
 HOU,0,7,2.29,8.0,Astros,Houston Astros,American,West,#6B8E23,HOU
-KCR,10,6,5.88,4.31,Royals,Kansas City Royals,American,Central,#6B8E23,KCR
-LAA,2,2,5.0,7.0,Angels,Los Angeles Angels,American,West,#6B8E23,LAA
+KCR,11,8,5.47,4.26,Royals,Kansas City Royals,American,Central,#6B8E23,KCR
+LAA,2,5,3.57,6.57,Angels,Los Angeles Angels,American,West,#6B8E23,LAA
 MIL,2,1,4.67,3.0,Brewers,Milwaukee Brewers,National,Central,#6B8E23,MIL
 MIN,7,8,4.27,4.27,Twins,Minnesota Twins,American,Central,#6B8E23,MIN
 NYY,2,4,3.33,4.33,Yankees,New York Yankees,American,East,#6B8E23,NYY
