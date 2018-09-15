@@ -475,9 +475,9 @@ mpl.rcParams['xtick.labelsize'] = 17
 mpl.rcParams['ytick.labelsize'] = 17
 mpl.rcParams['lines.linewidth'] = 2
 
+mpl.rcParams['font.sans-serif'].insert(0, 'Helvetica')
 #mpl.rcParams['font.sans-serif'].insert(0, 'Arial')
-#mpl.rcParams['font.sans-serif'].insert(0, 'Helvetica')
-mpl.rcParams['font.sans-serif'].insert(0, 'Verdana')
+#mpl.rcParams['font.sans-serif'].insert(0, 'Verdana')
 
 mpl.rcParams['font.family'] = 'sans-serif'
 mpl.rcParams['font.size'] = 11
