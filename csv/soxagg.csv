@@ -1,9 +1,9 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
-BAL,3,2,5.4,4.2,Orioles,Baltimore Orioles,American,East,#6B8E23,BAL
+BAL,4,3,4.71,4.14,Orioles,Baltimore Orioles,American,East,#6B8E23,BAL
 BOS,4,3,3.86,3.14,Red Sox,Boston Red Sox,American,East,#6B8E23,BOS
 CHC,1,2,3.67,7.33,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
 CIN,1,2,6.33,6.67,Reds,Cincinnati Reds,National,Central,#6B8E23,CIN
-CLE,3,10,2.62,5.62,Indians,Cleveland Indians,American,Central,#6B8E23,CLE
+CLE,3,11,2.64,5.57,Indians,Cleveland Indians,American,Central,#6B8E23,CLE
 DET,7,12,4.11,4.84,Tigers,Detroit Tigers,American,Central,#6B8E23,DET
 HOU,0,7,2.29,8.0,Astros,Houston Astros,American,West,#6B8E23,HOU
 KCR,11,8,5.47,4.26,Royals,Kansas City Royals,American,Central,#6B8E23,KCR
