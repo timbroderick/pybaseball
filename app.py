@@ -76,7 +76,7 @@ def cubspitch():
     cubspitch_list = list(cubspitch_obj)
     return cubspitch_list
 
-# trying mike stucka's date 
+# trying mike stucka's date
 def get_big_timestamp(date_object=None):
     import datetime
     if not date_object:
@@ -111,20 +111,22 @@ def sox():
     template = 'sox.html'
     timestamp=get_big_timestamp()
     soxagg_list = soxagg()
-    soxnl_list = soxnl()
+    #soxnl_list = soxnl()
     soxhit_list = soxhit()
     soxpitch_list = soxpitch()
-    return render_template(template, timestamp=timestamp, agg=soxagg_list, nl=soxnl_list, hit=soxhit_list, pitch=soxpitch_list)
+    #return render_template(template, timestamp=timestamp, agg=soxagg_list, nl=soxnl_list, hit=soxhit_list, pitch=soxpitch_list)
+    return render_template(template, timestamp=timestamp, agg=soxagg_list, hit=soxhit_list, pitch=soxpitch_list)
 
 @app.route("/cubs.html")
 def cubs():
     template = 'cubs.html'
     timestamp=get_big_timestamp()
     cubsagg_list = cubsagg()
-    cubsnl_list = cubsnl()
+    #cubsnl_list = cubsnl()
     cubshit_list = cubshit()
     cubspitch_list = cubspitch()
-    return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list, hit=cubshit_list, pitch=cubspitch_list)
+    #return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list, hit=cubshit_list, pitch=cubspitch_list)
+    return render_template(template, timestamp=timestamp, agg=cubsagg_list, hit=cubshit_list, pitch=cubspitch_list)
 
 @app.route("/h2h.html")
 def h2h():
@@ -136,4 +138,3 @@ def h2h():
 if __name__ == '__main__':
     # Fire up the Flask test server
     app.run(debug=True, use_reloader=True)
-

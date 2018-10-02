@@ -72,9 +72,11 @@ print('team pitching stats acquired')
 # Get data for Cubs and Sox pages
 sox = schedule_and_record(2018, 'CHW')
 print('Sox sched acquired')
+sox.to_csv("csv/soxrecord.csv", index=False, encoding="utf-8")
 
 cubs = schedule_and_record(2018, 'CHC')
 print('Cubs sched acquired')
+cubs.to_csv("csv/cubsrecord.csv", index=False, encoding="utf-8")
 
 # grab the batting stats
 battingstats = batting_stats(2018)
@@ -199,12 +201,12 @@ soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(int).astype(str)
 soxlast.loc[:, 'sorting'] = 0
 soxlast.loc[0, 'sorting'] = 0
 soxlast.loc[1, 'sorting'] = 1
-soxnext = pd.DataFrame ( sox.loc[ ( sox["W/L"].isnull() ) ] )
-soxnext = soxnext[:2].reset_index(drop=True)
-soxnext.loc[:, 'sorting'] = 0
-soxnext.loc[0, 'sorting'] = 2
-soxnext.loc[1, 'sorting'] = 3
-soxlast = soxnext.append(soxlast)
+#soxnext = pd.DataFrame ( sox.loc[ ( sox["W/L"].isnull() ) ] )
+#soxnext = soxnext[:2].reset_index(drop=True)
+#soxnext.loc[:, 'sorting'] = 0
+#soxnext.loc[0, 'sorting'] = 2
+#soxnext.loc[1, 'sorting'] = 3
+#soxlast = soxnext.append(soxlast)
 soxlast = soxlast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
 left = soxlast
 right = bballJoin
@@ -275,7 +277,11 @@ print("Sox batting stats done")
 left = WSroster
 right = PSselect
 soxPSpitch = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
+soxPSpitch.to_csv("csv/test1.csv", index=False, encoding="utf-8")
 soxPSpitch = soxPSpitch[soxPSpitch.Name.notnull()]
+soxPSpitch.to_csv("csv/test2.csv", index=False, encoding="utf-8")
+soxPSpitch = soxPSpitch[soxPSpitch.lastname != "Fulmer"]
+soxPSpitch.to_csv("csv/test3.csv", index=False, encoding="utf-8")
 soxPSpitch.loc[:, 'posnum'] = soxPSpitch['posnum'].astype(int).astype(str)
 soxPSpitch.loc[:, 'avgIP'] = np.round( ( soxPSpitch['IP'] / soxPSpitch['G'] ),1 )
 soxPSpitch.loc[:, 'W'] = soxPSpitch['W'].astype(int)
@@ -332,12 +338,12 @@ cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(int).astype(str)
 cubslast.loc[:, 'sorting'] = 0
 cubslast.loc[0, 'sorting'] = 0
 cubslast.loc[1, 'sorting'] = 1
-cubsnext = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].isnull() ) ] )
-cubsnext = cubsnext[:2].reset_index(drop=True)
-cubsnext.loc[:, 'sorting'] = 0
-cubsnext.loc[0, 'sorting'] = 2
-cubsnext.loc[1, 'sorting'] = 3
-cubslast = cubsnext.append(cubslast)
+#cubsnext = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].isnull() ) ] )
+#cubsnext = cubsnext[:2].reset_index(drop=True)
+#cubsnext.loc[:, 'sorting'] = 0
+#cubsnext.loc[0, 'sorting'] = 2
+#cubsnext.loc[1, 'sorting'] = 3
+#cubslast = cubsnext.append(cubslast)
 cubslast = cubslast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
 left = cubslast
 right = bballJoin

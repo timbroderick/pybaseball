@@ -21,7 +21,7 @@
             <br>
         <h3 style='width:100%; text-align:center' ><small>Best viewed on a mobile device on a warm evening, sitting in a cheap upper-deck seat with family, friends, a ballpark hot dog and your favorite cold beverage.</small></h3>
             <br>
-            <p style='width:100%; text-align:center' ><strong>Updated {{timestamp}}</strong></p>
+            <p style='width:100%; text-align:center' ><strong>Updated {{timestamp}}</strong>. This is the final update of the 2018 season. Overall I'm pretty happy with this little experiment. For a time I was running a chron job on a mac mini and the site was updating three times a day with the latest data. After getting a new job in September, I've been updating this only occasionally. I look forward to doing this again next season.</p>
             <br>
         <hr class='fancy'>
         <br>
@@ -126,7 +126,7 @@
                 {% if group.grouper == "National" %}
                     <hr>
                     <h2 style='width:100%; text-align:center'>{{ group.grouper }} League</h2>
-                    
+
                     <!-- East division -->
                     {% for div in group.list|groupby('Division') %}
                         {% if div.grouper == "East" %}

@@ -1,5 +1,3 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Monday, Sep 24",CHC,Home,PIT,L,1,5,9,91-65,1.0,up 1.5,Taillon,Hamels,None,2:53,N,34570.0,-1.0,,0,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
-"Sunday, Sep 23",CHC,@,CHW,W,6,1,9,91-64,1.0,up 2.5,Hendricks,Rodon,None,3:08,D,39449.0,2.0,,1,White Sox,Chicago White Sox,American,Central,#000000,CHW
-"Tuesday, Sep 25",CHC,Home,PIT,,,,,,,,,,,,,,,,2,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
-"Wednesday, Sep 26",CHC,Home,PIT,,,,,,,,,,,,,,,,3,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
+"Monday, Oct 1",CHC,Home,MIL,L,1,3,9,95-68,2.0,1.0,Knebel,Wilson,Hader,3:06,D,38450.0,-1.0,,0,Brewers,Milwaukee Brewers,National,Central,#6B8E23,MIL
+"Sunday, Sep 30",CHC,Home,STL,W,10,5,9,95-67,1.0,Tied,Webster,Flaherty,None,3:44,D,39275.0,1.0,,1,Cardinals,St. Louis Cardinals,National,Central,#6B8E23,STL

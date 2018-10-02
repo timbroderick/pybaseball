@@ -1,9 +1,12 @@
 posName,posnum,lastname,position,status_code,bats,throws
 Jose Abreu,79,Abreu,1B,A,R,R
+Micker Adolfo,,Adolfo,OF,A,R,R
 Tim Anderson,7,Anderson,SS,A,R,R
+Luis Alexander Basabe,,Basabe,CF,A,S,R
 Aaron Bummer,39,Bummer,P,A,L,L
 Ryan Burr,61,Burr,P,A,R,R
 Welington Castillo,21,Castillo,C,A,R,R
+Ian Clarkin,64,Clarkin,P,A,L,L
 Ryan Cordell,49,Cordell,CF,A,R,R
 Dylan Covey,68,Covey,P,A,R,R
 Matt Davidson,24,Davidson,DH,A,R,R
@@ -11,11 +14,13 @@ Nicky Delmonico,30,Delmonico,LF,A,L,R
 Adam Engel,15,Engel,CF,A,R,R
 Caleb Frare,67,Frare,P,A,L,L
 Jace Fry,57,Fry,P,A,L,L
+Carson Fulmer,,Fulmer,P,A,R,R
 Avisail Garcia,26,Garcia,RF,A,R,R
 Leury Garcia,28,Garcia,LF,A,S,R
 Lucas Giolito,27,Giolito,P,A,R,R
 Jeanmar Gomez,54,Gomez,P,A,R,R
 Ian Hamilton,63,Hamilton,P,A,R,R
+Eloy Jimenez,,Jimenez,LF,A,R,R
 Nate Jones,65,Jones,P,A,R,R
 Ryan LaMarre,25,LaMarre,CF,A,R,L
 Reynaldo Lopez,40,Lopez,P,A,R,R
@@ -31,4 +36,5 @@ Hector Santiago,53,Santiago,P,A,R,L
 Rob Scahill,52,Scahill,P,A,L,R
 James Shields,33,Shields,P,A,R,R
 Kevan Smith,36,Smith,C,A,R,R
+Charlie Tilson,22,Tilson,CF,A,L,L
 Thyago Vieira,50,Vieira,P,A,R,R
