@@ -1,3 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Monday, Oct 1",CHC,Home,MIL,L,1,3,9,95-68,2.0,1.0,Knebel,Wilson,Hader,3:06,D,38450.0,-1.0,,0,Brewers,Milwaukee Brewers,National,Central,#6B8E23,MIL
-"Sunday, Sep 30",CHC,Home,STL,W,10,5,9,95-67,1.0,Tied,Webster,Flaherty,None,3:44,D,39275.0,1.0,,1,Cardinals,St. Louis Cardinals,National,Central,#6B8E23,STL
+"Thursday, Mar 28",CHC,@,TEX,W,12,4,9,1-0,1.0,Tied,Lester,Minor,None,3:07,D,48538.0,1.0,,0.0,Rangers,Texas Rangers,American,West,#6B8E23,TEX
+,,,,,,,,,,,,,,,,,,,1.0,,,,,,
+"Saturday, Mar 30",CHC,@,TEX,,,,,,,,,,,,,,,,2.0,Rangers,Texas Rangers,American,West,#6B8E23,TEX
+"Sunday, Mar 31",CHC,@,TEX,,,,,,,,,,,,,,,,3.0,Rangers,Texas Rangers,American,West,#6B8E23,TEX

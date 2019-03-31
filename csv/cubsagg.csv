@@ -1,20 +1,2 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
-ARI,4,3,3.57,4.29,Diamondbacks,Arizona Diamondbacks,National,West,#6B8E23,ARI
-ATL,3,3,4.67,5.0,Braves,Atlanta Braves,National,East,#6B8E23,ATL
-CHW,4,2,6.67,4.17,White Sox,Chicago White Sox,American,Central,#000000,CHW
-CIN,11,8,4.79,3.53,Reds,Cincinnati Reds,National,Central,#6B8E23,CIN
-CLE,1,3,3.0,4.5,Indians,Cleveland Indians,American,Central,#6B8E23,CLE
-COL,3,3,5.5,5.5,Rockies,Colorado Rockies,National,West,#6B8E23,COL
-DET,3,1,4.75,2.25,Tigers,Detroit Tigers,American,Central,#6B8E23,DET
-KCR,2,1,2.67,3.33,Royals,Kansas City Royals,American,Central,#6B8E23,KCR
-LAD,4,3,5.0,3.29,Dodgers,Los Angeles Dodgers,National,West,#6B8E23,LAD
-MIA,5,2,7.14,3.86,Marlins,Miami Marlins,National,East,#6B8E23,MIA
-MIL,11,9,3.05,2.85,Brewers,Milwaukee Brewers,National,Central,#6B8E23,MIL
-MIN,3,0,11.67,8.33,Twins,Minnesota Twins,American,Central,#6B8E23,MIN
-NYM,6,1,4.71,3.0,Mets,New York Mets,National,East,#6B8E23,NYM
-PHI,4,2,4.67,3.0,Phillies,Philadelphia Phillies,National,East,#6B8E23,PHI
-PIT,10,9,3.63,3.37,Pirates,Pittsburgh Pirates,National,Central,#6B8E23,PIT
-SDP,5,2,5.71,5.43,Padres,San Diego Padres,National,West,#6B8E23,SDP
-SFG,3,3,4.17,2.83,Giants,San Francisco Giants,National,West,#6B8E23,SFG
-STL,9,10,5.26,5.05,Cardinals,St. Louis Cardinals,National,Central,#6B8E23,STL
-WSN,4,3,4.14,5.29,Nationals,Washington Nationals,National,East,#6B8E23,WSN
+TEX,1,0,12.0,4.0,Rangers,Texas Rangers,American,West,#6B8E23,TEX

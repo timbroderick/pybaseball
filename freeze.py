@@ -53,33 +53,33 @@ def get_tables(soup):
         datasets[idx] = pd.DataFrame(datasets[idx])
     return datasets #returns a list of dataframes
 
-df1 = get_soup(2018)
+df1 = get_soup(2019)
 df2 = get_tables(df1)
 
 print('standings info acquired')
 
 # now scraping www.fangraphs.com for pitching and batting stats
-batting = team_batting(start_season='2018', end_season=None, league='all', ind=1)
+batting = team_batting(start_season='2019', end_season=None, league='all', ind=1)
 newbat = batting[['Team','R','RBI','HR','AVG','OBP','SLG','wOBA', 'wRC+','WAR']]
 newbat = newbat.rename(columns={'wRC+':'wRCplus','WAR':'WARbat','AVG':'AVGbat'})
 print('team batting stats acquired')
 
-pitching = team_pitching(start_season='2018', end_season=None, league='all', ind=1)
+pitching = team_pitching(start_season='2019', end_season=None, league='all', ind=1)
 newpitch = pitching[['Team','ERA','SV','IP','BABIP','FIP','xFIP','WAR']]
 newpitch = newpitch.rename(columns={'WAR':'WARpitch'})
 print('team pitching stats acquired')
 
 # Get data for Cubs and Sox pages
-sox = schedule_and_record(2018, 'CHW')
+sox = schedule_and_record(2019, 'CHW')
 print('Sox sched acquired')
 sox.to_csv("csv/soxrecord.csv", index=False, encoding="utf-8")
 
-cubs = schedule_and_record(2018, 'CHC')
+cubs = schedule_and_record(2019, 'CHC')
 print('Cubs sched acquired')
 cubs.to_csv("csv/cubsrecord.csv", index=False, encoding="utf-8")
 
 # grab the batting stats
-battingstats = batting_stats(2018)
+battingstats = batting_stats(2019)
 BSselect = battingstats[['Name','Team','PA','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
 BSselect = BSselect.copy()
 BSselect.loc[:,'SOperc'] = np.round( (BSselect['SO'] / BSselect['AB'] )*100,1 )
@@ -88,7 +88,7 @@ BSselect.to_csv("csv/BSselect.csv", index=False, encoding="utf-8")
 print('batting stats acquired')
 
 # grab the pitching stats
-pitchstats = pitching_stats(2018)
+pitchstats = pitching_stats(2019)
 PSselect = pitchstats[['Name','Team','W','L','ERA','WAR','G','GS','CG','ShO','SV','BS','IP','H','R','ER','HR','BB','HBP','WP','BK','SO','IFFB','Balls','Strikes','Pitches','RS','AVG','WHIP','BABIP','FIP','WPA','RAR','K/9','BB/9','K%','BB%','LOB%','F-Strike%','FA% (pfx)','FT% (pfx)','FC% (pfx)','FS% (pfx)','FO% (pfx)','SI% (pfx)','SL% (pfx)','CU% (pfx)','KC% (pfx)','EP% (pfx)','CH% (pfx)','SC% (pfx)','KN% (pfx)','UN% (pfx)']]
 PSselect = PSselect.copy()
 PSselect = PSselect.rename(columns = { 'K/9':'K9','BB/9':'BB9','K%':'Kperc','BB%':'BBperc','LOB%':'LOBperc','F-Strike%':'FStrikeperc','FA% (pfx)':'FAperc','FT% (pfx)':'FTperc','FC% (pfx)':'FCperc','FS% (pfx)':'FSperc','FO% (pfx)':'FOperc','SI% (pfx)':'SIperc','SL% (pfx)':'SLperc','CU% (pfx)':'CUperc','KC% (pfx)':'KCperc','EP% (pfx)':'EPperc','CH% (pfx)':'CHperc','SC% (pfx)':'SCperc','KN% (pfx)':'KNperc','UN% (pfx)':'UNperc' })
@@ -201,12 +201,12 @@ soxlast.loc[:, 'Inn'] = soxlast['Inn'].astype(int).astype(str)
 soxlast.loc[:, 'sorting'] = 0
 soxlast.loc[0, 'sorting'] = 0
 soxlast.loc[1, 'sorting'] = 1
-#soxnext = pd.DataFrame ( sox.loc[ ( sox["W/L"].isnull() ) ] )
-#soxnext = soxnext[:2].reset_index(drop=True)
-#soxnext.loc[:, 'sorting'] = 0
-#soxnext.loc[0, 'sorting'] = 2
-#soxnext.loc[1, 'sorting'] = 3
-#soxlast = soxnext.append(soxlast)
+soxnext = pd.DataFrame ( sox.loc[ ( sox["W/L"].isnull() ) ] )
+soxnext = soxnext[:2].reset_index(drop=True)
+soxnext.loc[:, 'sorting'] = 0
+soxnext.loc[0, 'sorting'] = 2
+soxnext.loc[1, 'sorting'] = 3
+soxlast = soxnext.append(soxlast)
 soxlast = soxlast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
 left = soxlast
 right = bballJoin
@@ -338,12 +338,12 @@ cubslast.loc[:, 'Inn'] = cubslast['Inn'].astype(int).astype(str)
 cubslast.loc[:, 'sorting'] = 0
 cubslast.loc[0, 'sorting'] = 0
 cubslast.loc[1, 'sorting'] = 1
-#cubsnext = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].isnull() ) ] )
-#cubsnext = cubsnext[:2].reset_index(drop=True)
-#cubsnext.loc[:, 'sorting'] = 0
-#cubsnext.loc[0, 'sorting'] = 2
-#cubsnext.loc[1, 'sorting'] = 3
-#cubslast = cubsnext.append(cubslast)
+cubsnext = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].isnull() ) ] )
+cubsnext = cubsnext[:2].reset_index(drop=True)
+cubsnext.loc[:, 'sorting'] = 0
+cubsnext.loc[0, 'sorting'] = 2
+cubsnext.loc[1, 'sorting'] = 3
+cubslast = cubsnext.append(cubslast)
 cubslast = cubslast.rename(columns = {'Tm':'teamID', 'W/L': 'WL', 'D/N': 'DN'})
 left = cubslast
 right = bballJoin
@@ -393,7 +393,7 @@ left = CHCroster
 right = BSselect
 cubsBShit = pd.merge(left, right, how='left', left_on='posName', right_on='Name', suffixes=('_x', '_y'))
 cubsBShit = cubsBShit[cubsBShit.Name.notnull()]
-#cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
+cubsBShit.loc[:, 'posnum'] = cubsBShit['posnum'].astype(int).astype(str)
 cubsBShit.loc[:, 'PA'] = cubsBShit['PA'].astype(int)
 cubsBShit.loc[:, 'AB'] = cubsBShit['AB'].astype(int)
 cubsBShit.loc[:, 'R'] = cubsBShit['R'].astype(int)
@@ -481,9 +481,9 @@ mpl.rcParams['xtick.labelsize'] = 17
 mpl.rcParams['ytick.labelsize'] = 17
 mpl.rcParams['lines.linewidth'] = 2
 
-mpl.rcParams['font.sans-serif'].insert(0, 'Helvetica')
-#mpl.rcParams['font.sans-serif'].insert(0, 'Arial')
-#mpl.rcParams['font.sans-serif'].insert(0, 'Verdana')
+#mpl.rcParams['font.sans-serif'].insert(0, 'Helvetica')
+
+#sns.set(font="Helvetica")
 
 mpl.rcParams['font.family'] = 'sans-serif'
 mpl.rcParams['font.size'] = 11
@@ -565,7 +565,7 @@ g = sns.barplot(
     data=dfHR,
     palette=dfHR['color']
 )
-plt.plot([264, 264], [-10, 30], linewidth=1)
+plt.plot([266, 266], [-10, 30], linewidth=1)
 g.figure.set_size_inches(8,14)
 g.set_ylabel('TEAM', fontsize=16, fontweight='bold')
 g.set_xlabel('HOME RUNS', fontsize=16, fontweight='bold')
@@ -613,7 +613,8 @@ for index, row in soxBShit.iterrows():
     g.figure.set_size_inches(8,6)
     plt.plot([2.5, 2.5], [0, 100], linewidth=2)
     # Add labels to the plot
-    style = dict(fontsize=18, family='Arial', fontweight='bold', color='black')
+    style = dict(fontsize=18, color='black')
+    #style = dict(fontsize=18, family='Helvetica-Bold', color='black')
     plt.text(0, 89, "As % of PA", **style)
     plt.text(3, 89, "As % of hits", **style)
     g.set_ylabel('% Of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')
@@ -702,7 +703,8 @@ for index, row in cubsBShit.iterrows():
     g.figure.set_size_inches(8,6)
     plt.plot([2.5, 2.5], [0, 100], linewidth=2)
     # Add labels to the plot
-    style = dict(fontsize=18, family='Arial', fontweight='bold', color='black')
+    style = dict(fontsize=18, color='black')
+    #style = dict(fontsize=18, family='Helvetica-Bold', color='black')
     plt.text(0, 89, "As % of PA", **style)
     plt.text(3, 89, "As % of hits", **style)
     g.set_ylabel('% Of PLATE APPEARANCES | HITS', fontsize=16, fontweight='bold')

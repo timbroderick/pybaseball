@@ -1,26 +1,29 @@
 posName,posnum,lastname,position,status_code,bats,throws
 Albert Almora Jr.,5,Almora,CF,A,R,R
 Javier Baez,9,Baez,2B,A,R,R
+Tony Barnette,33,Barnette,P,D10,R,R
 David Bote,13,Bote,3B,A,R,R
+Brad Brach,29,Brach,P,A,R,R
 Kris Bryant,17,Bryant,3B,A,R,R
 Victor Caratini,7,Caratini,C,A,S,R
-Jesse Chavez,43,Chavez,P,A,R,R
+Xavier Cedeno,45,Cedeno,P,D10,L,L
+Tyler Chatwood,32,Chatwood,P,A,R,R
 Steve Cishek,41,Cishek,P,A,R,R
 Willson Contreras,40,Contreras,C,A,R,R
-Jorge De La Rosa,29,DeLaRosa,P,A,L,L
-Terrance Gore,1,Gore,CF,A,R,R
+Yu Darvish,11,Darvish,P,A,R,R
+Daniel Descalso,3,Descalso,2B,A,L,R
+Carl Edwards Jr.,6,Edwards,P,A,R,R
 Cole Hamels,35,Hamels,P,A,L,L
-Ian Happ,8,Happ,CF,A,S,R
 Kyle Hendricks,28,Hendricks,P,A,R,R
 Jason Heyward,22,Heyward,RF,A,L,L
-Tommy La Stella,2,LaStella,3B,A,L,R
+Brandon Kintzler,20,Kintzler,P,A,R,R
 Jon Lester,34,Lester,P,A,L,L
-Alec Mills,24,Mills,P,A,R,R
 Mike Montgomery,38,Montgomery,P,A,L,L
-Daniel Murphy,3,Murphy,2B,A,L,R
+Brandon Morrow,15,Morrow,P,D10,R,R
+Jose Quintana,62,Quintana,P,A,R,L
 Anthony Rizzo,44,Rizzo,1B,A,L,L
 Randy Rosario,47,Rosario,P,A,L,L
 Kyle Schwarber,12,Schwarber,LF,A,L,R
 Pedro Strop,46,Strop,P,A,R,R
-Justin Wilson,37,Wilson,P,A,L,L
+Mark Zagunis,2,Zagunis,RF,A,R,R
 Ben Zobrist,18,Zobrist,2B,A,S,R
