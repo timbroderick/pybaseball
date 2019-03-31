@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<!-- https://nathangrigg.com/2012/07/schedule-jobs-using-launchd -->
+<!-- http://www.launchd.info/ -->
+<!-- http://killtheyak.com/schedule-jobs-launchd/ -->
+<!-- https://stackoverflow.com/questions/17716181/finding-modules-when-running-python-with-virtualenvs-in-launchd -->
+<!-- https://stackoverflow.com/questions/46437863/schedule-a-python-script-via-batch-on-windows-using-anaconda -->
+
+<!-- chmod 644 "/Users/editdata/Desktop/anaconda/envs/pybaseball/com.apple.runbaseball.plist" -->
+<!-- launchctl stop com.apple.runbaseball -->
+<!-- launchctl unload /Users/editdata/Desktop/anaconda/envs/pybaseball/com.apple.runbaseball.plist -->
+<!-- launchctl load /Users/editdata/Desktop/anaconda/envs/pybaseball/com.apple.runbaseball.plist -->
+<!-- launchctl start com.apple.runbaseball -->
+
+<dict>
+
+    <key>Label</key>
+    <string>com.apple.runbaseball</string>
+
+    <key>ProgramArguments</key>
+    <array>
+    <string>/Users/editdata/Desktop/anaconda/envs/pybaseball/bin/python</string>
+    <string>/Users/editdata/Desktop/anaconda/envs/pybaseball/freeze2.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/editdata/Desktop/anaconda/envs/pybaseball/</string>
+
+    <!-- run immediately
+    <key>RunAtLoad</key>
+    <true/> -->
+
+    <!-- Run every minute (in seconds)
+    <key>StartInterval</key>
+    <integer>60</integer> -->
+
+    <!-- every day at 8:03, 10:03 and 12:03 am-->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>8</integer>
+            <key>Minute</key>
+            <integer>03</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>03</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>12</integer>
+            <key>Minute</key>
+            <integer>03</integer>
+        </dict>
+    </array>
+
+</dict>
+</plist>
