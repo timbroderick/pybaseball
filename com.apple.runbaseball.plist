@@ -8,11 +8,12 @@
 <!-- https://stackoverflow.com/questions/17716181/finding-modules-when-running-python-with-virtualenvs-in-launchd -->
 <!-- https://stackoverflow.com/questions/46437863/schedule-a-python-script-via-batch-on-windows-using-anaconda -->
 
-<!-- chmod 644 "/Users/editdata/Desktop/anaconda/envs/pybaseball/com.apple.runbaseball.plist" -->
+<!-- chmod 644 "/Users/tbroderick/anaconda3/envs/pybaseball/com.apple.runbaseball.plist" -->
 <!-- launchctl stop com.apple.runbaseball -->
-<!-- launchctl unload /Users/editdata/Desktop/anaconda/envs/pybaseball/com.apple.runbaseball.plist -->
-<!-- launchctl load /Users/editdata/Desktop/anaconda/envs/pybaseball/com.apple.runbaseball.plist -->
+<!-- launchctl unload /Users/tbroderick/anaconda3/envs/pybaseball/com.apple.runbaseball.plist -->
+<!-- launchctl load /Users/tbroderick/anaconda3/envs/pybaseball/com.apple.runbaseball.plist -->
 <!-- launchctl start com.apple.runbaseball -->
+<!-- launchctl list -->
 
 <dict>
 
@@ -21,11 +22,11 @@
 
     <key>ProgramArguments</key>
     <array>
-    <string>/Users/editdata/Desktop/anaconda/envs/pybaseball/bin/python</string>
-    <string>/Users/editdata/Desktop/anaconda/envs/pybaseball/freeze2.py</string>
+    <string>/Users/tbroderick/anaconda3/bin/python</string>
+    <string>/Users/tbroderick/anaconda3/envs/pybaseball/freeze2.py</string>
     </array>
     <key>WorkingDirectory</key>
-    <string>/Users/editdata/Desktop/anaconda/envs/pybaseball/</string>
+    <string>/Users/tbroderick/anaconda3/envs/pybaseball/</string>
 
     <!-- run immediately
     <key>RunAtLoad</key>
@@ -35,20 +36,20 @@
     <key>StartInterval</key>
     <integer>60</integer> -->
 
-    <!-- every day at 8:03, 10:03 and 12:03 am-->
+    <!-- every day at 7:03, 9:33 and 12:03 am-->
     <key>StartCalendarInterval</key>
     <array>
         <dict>
             <key>Hour</key>
-            <integer>8</integer>
+            <integer>7</integer>
             <key>Minute</key>
             <integer>03</integer>
         </dict>
         <dict>
             <key>Hour</key>
-            <integer>10</integer>
+            <integer>9</integer>
             <key>Minute</key>
-            <integer>03</integer>
+            <integer>33</integer>
         </dict>
         <dict>
             <key>Hour</key>
