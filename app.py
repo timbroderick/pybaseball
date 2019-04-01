@@ -115,7 +115,8 @@ def sox():
     soxhit_list = soxhit()
     soxpitch_list = soxpitch()
     return render_template(template, timestamp=timestamp, agg=soxagg_list, nl=soxnl_list, hit=soxhit_list, pitch=soxpitch_list)
-    #return render_template(template, timestamp=timestamp, agg=soxagg_list, hit=soxhit_list, pitch=soxpitch_list)
+	# For end of season, doesn't include the next/last file
+	#return render_template(template, timestamp=timestamp, agg=soxagg_list, hit=soxhit_list, pitch=soxpitch_list)
 
 @app.route("/cubs.html")
 def cubs():
@@ -126,6 +127,7 @@ def cubs():
     cubshit_list = cubshit()
     cubspitch_list = cubspitch()
     return render_template(template, timestamp=timestamp, agg=cubsagg_list, nl=cubsnl_list, hit=cubshit_list, pitch=cubspitch_list)
+	# For end of season, doesn't include the next/last file
     #return render_template(template, timestamp=timestamp, agg=cubsagg_list, hit=cubshit_list, pitch=cubspitch_list)
 
 @app.route("/h2h.html")

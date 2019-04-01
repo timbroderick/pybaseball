@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 {% include 'header.html' %}
 
-<br>
-
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -26,6 +24,7 @@
         <br>
         <h2 style='width:100%; text-align:center' id="games"><strong>Games</strong></h2>
         <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small></p>
+        <!-- End of season comment out these lines -->
         {% if nl[0].Date == nl[1].Date %}
                 <p><strong>On {{ nl[0].Date }},</strong> the Sox played a doubleheader {% if nl[0].Home_Away == '@' %}at{% else %}at home against{% endif %} the {{ nl[0].Team }}.<br>
                  -- In the first game, the Sox {% if nl[1].WL == 'W' %}won{% elif nl[1].WL == 'W-wo' %}won with a walk-off{% elif nl[1].WL == 'L' %}lost{% elif nl[1].WL == 'L-wo' %}lost after a walk off{% endif %} {{ nl[1].R }} to {{ nl[1].RA }} in {{ nl[1].Inn }} innings. The winning pitcher was {{ nl[1].Win }}, losing pitcher was {{ nl[1].Loss }}. Save: {{ nl[1].Save }}.<br>
@@ -39,6 +38,7 @@
                 {% else %}
                 <p><strong>Next scheduled game:</strong> {{ nl[2].Date }}, {% if nl[2].Home_Away == '@' %}an away game at{% else %}a game at home with{% endif %} the {{ nl[2].Team }}.</p>
                 {% endif %}
+          <!-- End of season comment out these lines -->
         <br>
         <h3 style='width:100%; text-align:center'>Summary results by team</h3>
         <br>

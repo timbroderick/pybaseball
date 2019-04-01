@@ -38,9 +38,8 @@ var $ = jQuery;
 
   <div>
     <br>
+    <p id="hard" style='text-align:center'><a href="#!"><small style='color:#FF9C00'>CLICK FOR LATEST AVAILABLE RESULTS</small></a></p>
   </div>
-
-<br>
 
 <div class="container">
     <div class="row">
@@ -59,7 +58,7 @@ var $ = jQuery;
             <hr class='fancy'>
             <br>
             <h3 style='width:100%; text-align:center' ><small>Just enough stats to feed into the anxieties of your typical Cubby fan.</small></h3><br>
-            <p style='width:100%; text-align:center' ><strong>Updated Monday, April 1, at 7:10 a.m.</strong> Pybaseball gathers these from <a href="https://www.baseball-reference.com/" target="_blank">Baseball-reference.com.</a></p>
+            <p style='width:100%; text-align:center' ><strong>Updated Monday, April 1, at 9:18 a.m.</strong> Pybaseball gathers these from <a href="https://www.baseball-reference.com/" target="_blank">Baseball-reference.com.</a></p>
             <br>
 
         <hr class='fancy'>
@@ -67,11 +66,11 @@ var $ = jQuery;
         <h2 style='width:100%; text-align:center' id="games"><strong>Games</strong></h2>
         <p style='width:100%; text-align:center' ><small>JUMP TO <a href="#top"><strong style='color:#FF9C00'>TOP</strong></a> | <a href="#batters"><strong style='color:#FF9C00'>BATTERS</strong></a> | <a href="#pitchers"><strong style='color:#FF9C00'>PITCHERS</strong></a></small><p>
           
-              <p><strong>On Saturday, Mar 30,</strong> the Cubs lost a day game at the Rangers, 6 to 8, in 9 innings. The winning pitcher was Kelley, losing pitcher was Edwards. Save: Leclerc. </p>
+              <p><strong>On Sunday, Mar 31,</strong> the Cubs lost after a walk off in a night game at the Rangers, 10 to 11, in 9 innings. The winning pitcher was Leclerc, losing pitcher was Strop. Save: None. </p>
               
 
           
-              <p><strong>Next scheduled game:</strong> Sunday, Mar 31, an away game at the Rangers.</p>
+              <p><strong>Next scheduled game:</strong> Monday, Apr 1, an away game at the Braves.</p>
               
 
         <br>
@@ -85,9 +84,9 @@ var $ = jQuery;
                     <tr>
                         <td style="text-align:left">Rangers</td>
                         <td>1</td>
-                        <td>1</td>
-                        <td>9.0</td>
-                        <td>6.0</td>
+                        <td>2</td>
+                        <td>9.33</td>
+                        <td>7.67</td>
                     </tr>
             
             </tbody>
@@ -1281,6 +1280,9 @@ $.ajaxSetup({ cache: false});
 
 <script>
 $.ajaxSetup({ cache: false});
+$('#hard').click(function(){
+  location.reload(true)
+});
 </script>
 
 </body>
