@@ -557,7 +557,7 @@ try:
     plt.figure()
     g = sns.regplot(data=result3, x='AVGbat', y='ERA',
                     fit_reg=True,
-                    scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70,'edgecolor':'none'},
+                    scatter_kws={'facecolors':result3['color'],"alpha":0.7,"s":70,'edgecolor':'none'},
                     line_kws={"color":"orange","lw":1}
                    )
     g.figure.set_size_inches(8,8)
@@ -570,7 +570,7 @@ try:
     plt.figure()
     g = sns.regplot(data=result3, x='WARbat', y='WARpitch',
                     fit_reg=True,
-                    scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70,'edgecolor':'none'},
+                    scatter_kws={'facecolors':result3['color'],"alpha":0.7,"s":70,'edgecolor':'none'},
                     line_kws={"color":"orange","lw":1}
                    )
     g.figure.set_size_inches(8,8)
@@ -583,7 +583,7 @@ try:
     plt.figure()
     g = sns.regplot(data=result3, x='wOBA', y='RBI',
                     fit_reg=True,
-                    scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70,'edgecolor':'none'},
+                    scatter_kws={'facecolors':result3['color'],"alpha":0.7,"s":70,'edgecolor':'none'},
                     line_kws={"color":"orange","lw":1}
                    )
 
@@ -597,7 +597,7 @@ try:
     plt.figure()
     g = sns.regplot(data=result3, x='BABIP', y='FIP',
                     fit_reg=True,
-                    scatter_kws={'facecolors':result3['color'],"alpha":0.6,"s":70,'edgecolor':'none'},
+                    scatter_kws={'facecolors':result3['color'],"alpha":0.7,"s":70,'edgecolor':'none'},
                     line_kws={"color":"orange","lw":1}
                    )
     g.figure.set_size_inches(8,8)
@@ -609,6 +609,7 @@ try:
     # bar plot, start with sorting
     # need to reset the index
     dfHR = result3.sort_values(by='HR', ascending=False).reset_index(drop=True)
+    dfHR.to_csv("csv/dfHR.csv", index=False, encoding="utf-8")
     # clear the plt figure
     plt.figure()
     plt.xlim(0, 300)
@@ -618,7 +619,7 @@ try:
         data=dfHR,
         palette=dfHR['color']
     )
-    plt.plot([266, 266], [-10, 30], linewidth=1)
+    plt.plot([266, 266], [-10, 30], color="#FF9C00", linewidth=2)
     g.figure.set_size_inches(8,14)
     g.set_ylabel('TEAM', fontsize=16, fontweight='bold')
     g.set_xlabel('HOME RUNS', fontsize=16, fontweight='bold')
@@ -929,25 +930,25 @@ try:
     plt.close()
 
     # FLD avg h2h plot
-    plt.figure()
-    gs = sns.violinplot(x="Team", y="Fld", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
-    plt.setp(gs.collections, alpha=.5)
-    g = sns.boxplot(x="Team", y="Fld", data=h2hhit,
-                    showcaps=True,
-                    boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
-                    whiskerprops={'color': '#8FBC8B'},
-                    capprops={'color': '#8FBC8B'},
-                    medianprops={'color': '#8FBC8B'},
-                    showfliers=False)
-    g = sns.swarmplot(x="Team", y="Fld", data=h2hhit, color="orange")
-    g.figure.set_size_inches(6,6)
-    g.grid(axis='y', linewidth=2)
-    tick_locator = ticker.MaxNLocator(10)
-    g.yaxis.set_major_locator(tick_locator)
-    g.set_xlabel('', fontsize=2)
-    g.set_ylabel('FIELDING RUNS ABOVE AVG. (Fld)', fontsize=16, fontweight='bold')
-    g.figure.savefig('static/img/h2hFld.png',bbox_inches='tight',dpi=my_dpi)
-    plt.close()
+    # plt.figure()
+    # gs = sns.violinplot(x="Team", y="Fld", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
+    # plt.setp(gs.collections, alpha=.5)
+    # g = sns.boxplot(x="Team", y="Fld", data=h2hhit,
+    #                 showcaps=True,
+    #                 boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+    #                 whiskerprops={'color': '#8FBC8B'},
+    #                 capprops={'color': '#8FBC8B'},
+    #                 medianprops={'color': '#8FBC8B'},
+    #                 showfliers=False)
+    # g = sns.swarmplot(x="Team", y="Fld", data=h2hhit, color="orange")
+    # g.figure.set_size_inches(6,6)
+    # g.grid(axis='y', linewidth=2)
+    # tick_locator = ticker.MaxNLocator(10)
+    # g.yaxis.set_major_locator(tick_locator)
+    # g.set_xlabel('', fontsize=2)
+    # g.set_ylabel('FIELDING RUNS ABOVE AVG. (Fld)', fontsize=16, fontweight='bold')
+    # g.figure.savefig('static/img/h2hFld.png',bbox_inches='tight',dpi=my_dpi)
+    # plt.close()
 
     # WAR hitting h2h plot
     plt.figure()
