@@ -557,7 +557,7 @@ try:
     plt.figure()
     g = sns.regplot(data=result3, x='AVGbat', y='ERA',
                     fit_reg=True,
-                    scatter_kws={'facecolors':result3['color'],"alpha":0.7,"s":70,'edgecolor':'none'},
+                    scatter_kws={'facecolors':result3['color'],"alpha":0.8,"s":70,'edgecolor':'none'},
                     line_kws={"color":"orange","lw":1}
                    )
     g.figure.set_size_inches(8,8)
@@ -570,7 +570,7 @@ try:
     plt.figure()
     g = sns.regplot(data=result3, x='WARbat', y='WARpitch',
                     fit_reg=True,
-                    scatter_kws={'facecolors':result3['color'],"alpha":0.7,"s":70,'edgecolor':'none'},
+                    scatter_kws={'facecolors':result3['color'],"alpha":0.8,"s":70,'edgecolor':'none'},
                     line_kws={"color":"orange","lw":1}
                    )
     g.figure.set_size_inches(8,8)
@@ -583,7 +583,7 @@ try:
     plt.figure()
     g = sns.regplot(data=result3, x='wOBA', y='RBI',
                     fit_reg=True,
-                    scatter_kws={'facecolors':result3['color'],"alpha":0.7,"s":70,'edgecolor':'none'},
+                    scatter_kws={'facecolors':result3['color'],"alpha":0.8,"s":70,'edgecolor':'none'},
                     line_kws={"color":"orange","lw":1}
                    )
 
@@ -597,7 +597,7 @@ try:
     plt.figure()
     g = sns.regplot(data=result3, x='BABIP', y='FIP',
                     fit_reg=True,
-                    scatter_kws={'facecolors':result3['color'],"alpha":0.7,"s":70,'edgecolor':'none'},
+                    scatter_kws={'facecolors':result3['color'],"alpha":0.8,"s":70,'edgecolor':'none'},
                     line_kws={"color":"orange","lw":1}
                    )
     g.figure.set_size_inches(8,8)

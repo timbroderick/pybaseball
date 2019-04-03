@@ -1,1 +1,31 @@
-Team,Tm,League,Division,color,tresAngels,Los Angeles Angels,American,West,#8FBC8B,LAADiamondbacks,Arizona Diamondbacks,National,West,#8FBC8B,ARIBraves,Atlanta Braves,National,East,#8FBC8B,ATLOrioles,Baltimore Orioles,American,East,#8FBC8B,BALRed Sox,Boston Red Sox,American,East,#8FBC8B,BOSCubs,Chicago Cubs,National,Central,#0000FF,CHCWhite Sox,Chicago White Sox,American,Central,#000000,CHWReds,Cincinnati Reds,National,Central,#8FBC8B,CINIndians,Cleveland Indians,American,Central,#8FBC8B,CLERockies,Colorado Rockies,National,West,#8FBC8B,COLTigers,Detroit Tigers,American,Central,#8FBC8B,DETAstros,Houston Astros,American,West,#8FBC8B,HOURoyals,Kansas City Royals,American,Central,#8FBC8B,KCRDodgers,Los Angeles Dodgers,National,West,#8FBC8B,LADMarlins,Miami Marlins,National,East,#8FBC8B,MIABrewers,Milwaukee Brewers,National,Central,#8FBC8B,MILTwins,Minnesota Twins,American,Central,#8FBC8B,MINMets,New York Mets,National,East,#8FBC8B,NYMYankees,New York Yankees,American,East,#8FBC8B,NYYAthletics,Oakland Athletics,American,West,#8FBC8B,OAKPhillies,Philadelphia Phillies,National,East,#8FBC8B,PHIPirates,Pittsburgh Pirates,National,Central,#8FBC8B,PITPadres,San Diego Padres,National,West,#8FBC8B,SDPMariners,Seattle Mariners,American,West,#8FBC8B,SEAGiants,San Francisco Giants,National,West,#8FBC8B,SFGCardinals,St. Louis Cardinals,National,Central,#8FBC8B,STLRays,Tampa Bay Rays,American,East,#8FBC8B,TBRRangers,Texas Rangers,American,West,#8FBC8B,TEXBlue Jays,Toronto Blue Jays,American,East,#8FBC8B,TORNationals,Washington Nationals,National,East,#8FBC8B,WSN
+Team,Tm,League,Division,color,tres
+Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
+Diamondbacks,Arizona Diamondbacks,National,West,#8FBC8B,ARI
+Braves,Atlanta Braves,National,East,#8FBC8B,ATL
+Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
+Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
+Cubs,Chicago Cubs,National,Central,#0000FF,CHC
+White Sox,Chicago White Sox,American,Central,#000000,CHW
+Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+Indians,Cleveland Indians,American,Central,#8FBC8B,CLE
+Rockies,Colorado Rockies,National,West,#8FBC8B,COL
+Tigers,Detroit Tigers,American,Central,#8FBC8B,DET
+Astros,Houston Astros,American,West,#8FBC8B,HOU
+Royals,Kansas City Royals,American,Central,#8FBC8B,KCR
+Dodgers,Los Angeles Dodgers,National,West,#788DF0,LAD
+Marlins,Miami Marlins,National,East,#8FBC8B,MIA
+Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+Twins,Minnesota Twins,American,Central,#8FBC8B,MIN
+Mets,New York Mets,National,East,#8FBC8B,NYM
+Yankees,New York Yankees,American,East,#8FBC8B,NYY
+Athletics,Oakland Athletics,American,West,#8FBC8B,OAK
+Phillies,Philadelphia Phillies,National,East,#8FBC8B,PHI
+Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
+Padres,San Diego Padres,National,West,#8FBC8B,SDP
+Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
+Giants,San Francisco Giants,National,West,#8FBC8B,SFG
+Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
+Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
+Rangers,Texas Rangers,American,West,#8FBC8B,TEX
+Blue Jays,Toronto Blue Jays,American,East,#8FBC8B,TOR
+Nationals,Washington Nationals,National,East,#8FBC8B,WSN
