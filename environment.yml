@@ -1,0 +1,5 @@
+name: pybaseball
+channels:
+  - defaults
+prefix: /Users/tbroderick/anaconda3/envs/pybaseball
+
