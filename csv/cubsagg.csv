@@ -1,5 +1,10 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
+ARI,4,2,4.17,3.67,Diamondbacks,Arizona Diamondbacks,National,West,#8FBC8B,ARI
 ATL,0,3,2.67,7.67,Braves,Atlanta Braves,National,East,#8FBC8B,ATL
+LAA,1,1,5.0,3.5,Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
+LAD,2,1,5.0,3.33,Dodgers,Los Angeles Dodgers,National,West,#788DF0,LAD
+MIA,3,0,5.67,0.67,Marlins,Miami Marlins,National,East,#8FBC8B,MIA
 MIL,1,2,8.67,8.33,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
 PIT,2,1,4.67,1.67,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
+SEA,2,0,8.5,2.5,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
 TEX,1,2,9.33,7.67,Rangers,Texas Rangers,American,West,#8FBC8B,TEX

@@ -1,5 +1,9 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
+BAL,3,3,5.33,4.83,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
+BOS,1,0,6.0,4.0,Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
 CLE,1,1,5.5,4.0,Indians,Cleveland Indians,American,Central,#8FBC8B,CLE
-KCR,1,2,5.0,5.33,Royals,Kansas City Royals,American,Central,#8FBC8B,KCR
+DET,3,2,6.6,5.6,Tigers,Detroit Tigers,American,Central,#8FBC8B,DET
+KCR,3,3,4.67,4.17,Royals,Kansas City Royals,American,Central,#8FBC8B,KCR
+NYY,2,1,4.67,4.0,Yankees,New York Yankees,American,East,#8FBC8B,NYY
 SEA,1,2,5.67,9.67,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
 TBR,0,3,2.33,8.0,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
