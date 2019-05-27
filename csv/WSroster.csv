@@ -2,10 +2,10 @@ posName,posnum,lastname,position,status_code,bats,throws
 Jose Abreu,79,Abreu,1B,A,R,R
 Yonder Alonso,17,Alonso,1B,A,L,R
 Tim Anderson,7,Anderson,SS,A,R,R
-Manny Banuelos,58,Banuelos,P,D10,R,L
+Manny Banuelos,58,Banuelos,P,A,R,L
 Aaron Bummer,39,Bummer,P,A,L,L
 Ryan Burr,61,Burr,P,A,R,R
-Welington Castillo,21,Castillo,C,A,R,R
+Welington Castillo,21,Castillo,C,D7,R,R
 Alex Colome,48,Colome,P,A,R,R
 Ryan Cordell,49,Cordell,CF,A,R,R
 Dylan Covey,68,Covey,P,A,R,R
@@ -23,6 +23,6 @@ Ivan Nova,46,Nova,P,A,R,R
 Josh Osich,64,Osich,P,A,L,L
 Carlos Rodon,55,Rodon,P,D10,L,L
 Jose Rondon,20,Rondon,2B,A,R,R
-Jose Ruiz,66,Ruiz,P,A,R,R
 Yolmer Sanchez,5,Sanchez,2B,A,S,R
 Charlie Tilson,22,Tilson,CF,A,L,L
+Seby Zavala,59,Zavala,C,A,R,R

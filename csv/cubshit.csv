@@ -1,22 +1,21 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Albert Almora Jr.,5,Almora,CF,A,R,R,Albert Almora Jr.,Cubs,140,130,19,36,7,0,4,13,6,23,2,0,0.277,0.314,0.423,0.31,-0.6,6.4,0.6,1.3,17.7
-Javier Baez,9,Baez,2B,A,R,R,Javier Baez,Cubs,198,185,34,59,16,1,11,31,12,57,2,2,0.319,0.359,0.595,0.394,12.9,25.1,2.5,3.6,30.8
-David Bote,13,Bote,3B,A,R,R,David Bote,Cubs,130,114,17,27,7,0,4,17,13,33,0,0,0.237,0.323,0.404,0.312,-0.4,2.2,0.2,-2.2,28.9
+Albert Almora Jr.,5,Almora,CF,A,R,R,Albert Almora Jr.,Cubs,163,150,22,39,7,0,6,19,8,27,2,0,0.26,0.302,0.427,0.306,-1.6,6.0,0.6,1.3,18.0
+Javier Baez,9,Baez,2B,A,R,R,Javier Baez,Cubs,220,205,37,65,17,1,13,34,14,67,2,2,0.317,0.359,0.6,0.395,14.4,27.2,2.7,3.6,32.7
+David Bote,13,Bote,3B,A,R,R,David Bote,Cubs,144,125,18,32,8,0,4,18,16,36,0,0,0.256,0.347,0.416,0.329,1.4,4.3,0.4,-2.2,28.8
 Brad Brach,29,Brach,P,A,R,R,Brad Brach,Cubs,2,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,0.0
-Kris Bryant,17,Bryant,3B,A,R,R,Kris Bryant,Cubs,204,167,36,44,12,1,11,32,30,34,1,0,0.263,0.392,0.545,0.396,13.6,19.4,1.9,-1.5,20.4
-Victor Caratini,7,Caratini,C,A,S,R,Victor Caratini,Cubs,26,20,5,9,3,0,1,5,5,7,0,0,0.45,0.577,0.75,0.547,5.0,5.0,0.5,-0.8,35.0
-Tyler Chatwood,32,Chatwood,P,A,R,R,Tyler Chatwood,Cubs,4,4,1,1,1,0,0,0,0,2,0,0,0.25,0.25,0.5,0.308,0.0,0.6,0.1,,50.0
+Kris Bryant,17,Bryant,3B,A,R,R,Kris Bryant,Cubs,227,187,42,53,15,1,12,34,33,37,1,0,0.283,0.405,0.567,0.407,17.1,23.3,2.3,-1.5,19.8
+Victor Caratini,7,Caratini,C,A,S,R,Victor Caratini,Cubs,38,30,6,11,3,0,1,5,7,9,0,0,0.367,0.5,0.567,0.456,4.4,4.9,0.5,-0.8,30.0
+Tyler Chatwood,32,Chatwood,P,A,R,R,Tyler Chatwood,Cubs,7,6,1,2,2,0,0,1,0,2,0,0,0.333,0.333,0.667,0.41,0.5,1.6,0.2,,33.3
 Steve Cishek,41,Cishek,P,A,R,R,Steve Cishek,Cubs,2,2,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,0.0
-Willson Contreras,40,Contreras,C,A,R,R,Willson Contreras,Cubs,162,134,24,43,8,0,11,29,20,42,1,2,0.321,0.426,0.627,0.434,16.0,18.9,1.9,-3.5,31.3
-Yu Darvish,11,Darvish,P,A,R,R,Yu Darvish,Cubs,17,16,0,1,0,0,0,0,0,9,0,0,0.063,0.063,0.063,0.055,-3.7,-1.2,-0.1,,56.2
-Daniel Descalso,3,Descalso,2B,A,L,R,Daniel Descalso,Cubs,125,111,16,24,5,1,2,14,12,33,1,1,0.216,0.29,0.333,0.274,-4.4,-2.4,-0.2,0.3,29.7
-Cole Hamels,35,Hamels,P,A,L,L,Cole Hamels,Cubs,16,15,0,0,0,0,0,1,0,3,0,0,0.0,0.0,0.0,0.0,-4.2,-1.9,-0.2,,20.0
-Kyle Hendricks,28,Hendricks,P,A,R,R,Kyle Hendricks,Cubs,23,21,1,4,1,0,0,3,1,11,0,0,0.19,0.227,0.238,0.207,-2.1,1.2,0.1,,52.4
-Jason Heyward,22,Heyward,RF,A,L,L,Jason Heyward,Cubs,178,152,23,37,2,2,6,18,23,31,4,0,0.243,0.343,0.401,0.32,0.6,1.3,0.1,-2.6,20.4
-Jon Lester,34,Lester,P,A,L,L,Jon Lester,Cubs,11,9,1,2,1,0,0,2,2,5,0,0,0.222,0.364,0.333,0.317,0.0,1.6,0.2,,55.6
+Willson Contreras,40,Contreras,C,A,R,R,Willson Contreras,Cubs,181,150,26,48,8,0,12,32,22,45,1,2,0.32,0.425,0.613,0.43,17.1,20.0,2.0,-4.2,30.0
+Yu Darvish,11,Darvish,P,A,R,R,Yu Darvish,Cubs,20,19,0,1,0,0,0,0,0,11,0,0,0.053,0.053,0.053,0.046,-4.6,-1.7,-0.2,,57.9
+Daniel Descalso,3,Descalso,2B,A,L,R,Daniel Descalso,Cubs,138,122,16,25,5,1,2,14,14,36,1,1,0.205,0.285,0.311,0.264,-6.2,-4.0,-0.4,0.3,29.5
+Cole Hamels,35,Hamels,P,A,L,L,Cole Hamels,Cubs,18,17,0,0,0,0,0,1,0,4,0,0,0.0,0.0,0.0,0.0,-4.8,-2.2,-0.2,,23.5
+Kyle Hendricks,28,Hendricks,P,A,R,R,Kyle Hendricks,Cubs,25,22,1,4,1,0,0,3,2,11,0,0,0.182,0.25,0.227,0.218,-2.1,1.5,0.1,,50.0
+Jason Heyward,22,Heyward,RF,A,L,L,Jason Heyward,Cubs,199,167,24,39,2,2,7,19,29,34,4,1,0.234,0.347,0.395,0.319,0.3,0.8,0.1,-2.6,20.4
+Jon Lester,34,Lester,P,A,L,L,Jon Lester,Cubs,12,10,1,2,1,0,0,2,2,6,0,0,0.2,0.333,0.3,0.29,-0.3,1.4,0.1,,60.0
 Mike Montgomery,38,Montgomery,P,A,L,L,Mike Montgomery,Cubs,3,3,0,1,0,0,0,0,0,1,0,0,0.333,0.333,0.333,0.291,-0.1,0.4,0.0,,33.3
-Jose Quintana,62,Quintana,P,A,R,L,Jose Quintana,Cubs,18,17,1,1,0,0,0,0,0,10,0,0,0.059,0.059,0.059,0.051,-4.0,-1.4,-0.1,,58.8
-Anthony Rizzo,44,Rizzo,1B,A,L,L,Anthony Rizzo,Cubs,188,156,27,40,8,1,11,31,22,26,1,1,0.256,0.378,0.532,0.384,10.6,15.1,1.5,0.9,16.7
-Addison Russell,27,Russell,SS,A,R,R,Addison Russell,Cubs,27,24,3,6,1,0,1,2,2,5,0,0,0.25,0.308,0.417,0.311,-0.1,1.4,0.1,0.8,20.8
-Kyle Schwarber,12,Schwarber,LF,A,L,R,Kyle Schwarber,Cubs,162,134,18,30,4,1,6,15,24,44,0,2,0.224,0.34,0.403,0.313,-0.3,2.6,0.3,0.9,32.8
-Mark Zagunis,2,Zagunis,RF,A,R,R,Mark Zagunis,Cubs,37,33,2,8,3,0,0,5,4,15,0,0,0.242,0.324,0.333,0.293,-0.7,-1.7,-0.2,-1.4,45.5
+Jose Quintana,62,Quintana,P,A,R,L,Jose Quintana,Cubs,22,20,1,1,0,0,0,0,0,11,0,0,0.05,0.05,0.05,0.044,-5.1,-1.9,-0.2,,55.0
+Anthony Rizzo,44,Rizzo,1B,A,L,L,Anthony Rizzo,Cubs,215,179,35,51,10,1,14,40,24,28,2,1,0.285,0.4,0.587,0.411,17.0,21.8,2.2,0.9,15.6
+Addison Russell,27,Russell,SS,A,R,R,Addison Russell,Cubs,45,41,5,10,1,0,2,4,3,10,0,0,0.244,0.295,0.415,0.304,-0.5,1.5,0.2,0.8,24.4
+Kyle Schwarber,12,Schwarber,LF,A,L,R,Kyle Schwarber,Cubs,191,159,24,36,5,1,8,19,27,52,0,2,0.226,0.335,0.421,0.317,0.0,3.3,0.3,0.9,32.7
