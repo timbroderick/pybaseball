@@ -7,11 +7,14 @@ taskdata = {'task': ['Packages loaded','old directories removed','standings','te
 xreport = pd.DataFrame(data=taskdata)
 xreport ['status'] = ['Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem']
 
+get_season = 2021
+int_season ='2021'
+print('getting the ',get_season,' season')
+
 try:
     # -------------------------------
     # Libraries loaded
 
-    from bs4 import BeautifulSoup
     import requests
     import datetime
     import numpy as np
@@ -19,11 +22,12 @@ try:
     from pandas.io.json import json_normalize
     import json
 
-    from pybaseball import schedule_and_record, team_batting, team_pitching, batting_stats, pitching_stats
+    from pybaseball import schedule_and_record, team_batting, team_pitching, batting_stats, pitching_stats, standings
 
     # packages
     xreport.loc[0, 'status'] = 'OK'
     print('packages loaded, ready')
+
 
     # ---------
     # first remove the old directories
@@ -36,49 +40,32 @@ try:
     #-----------
     # let's grab all the information we'll need
 
-    # Scraping baseball reference for latest standings
-    # this scrapes the standings page
-    def get_soup(year):
-        url = 'http://www.baseball-reference.com/leagues/MLB/{}-standings.shtml'.format(year)
-        s=requests.get(url).content
-        return BeautifulSoup(s, "html.parser")
-    # This finds all the tables and puts each of them into a dataframe
-    def get_tables(soup):
-        tables = soup.find_all('table')
-        datasets = []
-        for table in tables:
-            data = []
-            headings = [th.get_text() for th in table.find("tr").find_all("th")]
-            data.append(headings)
-            table_body = table.find('tbody')
-            rows = table_body.find_all('tr')
-            for row in rows:
-                cols = row.find_all('td')
-                cols = [ele.text.strip() for ele in cols]
-                cols.insert(0,row.find_all('a')[0]['title']) # team name
-                data.append([ele for ele in cols if ele])
-            datasets.append(data)
-        #convert list-of-lists to dataframes
-        for idx in range(len(datasets)):
-            datasets[idx] = pd.DataFrame(datasets[idx])
-        return datasets #returns a list of dataframes
+    # get the standings, new method
 
-    df1 = get_soup(2019)
-    df2 = get_tables(df1)
+    dfstand = standings(get_season)
+    getthis = '1'
+
+    df_standings = pd.DataFrame()
+    for d in dfstand:
+        #print(type(d))
+        d = pd.DataFrame(d)
+        df_standings=df_standings.append(d)
+    df_standings.rename(columns={'W-L%':'WLperc'}, inplace=True)
+    df_standings.to_csv("csv/standingstest.csv", index=False, encoding="utf-8")
 
     # standings
     xreport.loc[2, 'status'] = 'OK'
     print('standings info acquired')
 
     # now scraping www.fangraphs.com for pitching and batting stats
-    batting = team_batting(start_season='2019', end_season=None, league='all', ind=1)
+    batting = team_batting(start_season=get_season, end_season=None, league='all', ind=1)
     newbat = batting[['Team','R','RBI','HR','AVG','OBP','SLG','wOBA', 'wRC+','WAR']]
     newbat = newbat.rename(columns={'wRC+':'wRCplus','WAR':'WARbat','AVG':'AVGbat'})
     # team batting
     xreport.loc[3, 'status'] = 'OK'
     print('team batting stats acquired')
 
-    pitching = team_pitching(start_season='2019', end_season=None, league='all', ind=1)
+    pitching = team_pitching(start_season=get_season, end_season=None, league='all', ind=1)
     newpitch = pitching[['Team','ERA','SV','IP','BABIP','FIP','xFIP','WAR']]
     newpitch = newpitch.rename(columns={'WAR':'WARpitch'})
     # team pitching
@@ -86,20 +73,20 @@ try:
     print('team pitching stats acquired')
 
     # Get data for Cubs and Sox pages
-    sox = schedule_and_record(2019, 'CHW')
+    sox = schedule_and_record(get_season, 'CHW')
     # Sox sched
     xreport.loc[5, 'status'] = 'OK'
     print('Sox sched acquired')
     sox.to_csv("csv/soxrecord.csv", index=False, encoding="utf-8")
 
-    cubs = schedule_and_record(2019, 'CHC')
+    cubs = schedule_and_record(get_season, 'CHC')
     # Cubs sched
     xreport.loc[6, 'status'] = 'OK'
     print('Cubs sched acquired')
     cubs.to_csv("csv/cubsrecord.csv", index=False, encoding="utf-8")
 
     # grab the batting stats
-    battingstats = batting_stats(2019)
+    battingstats = batting_stats(get_season,qual=1)
     BSselect = battingstats[['Name','Team','PA','AB','R','H','2B','3B','HR','RBI','BB','SO','SB','CS','AVG','OBP','SLG','wOBA','wRAA','RAR','WAR','Fld']]
     BSselect = BSselect.copy()
     BSselect.loc[:,'SOperc'] = np.round( (BSselect['SO'] / BSselect['AB'] )*100,1 )
@@ -110,10 +97,10 @@ try:
     print('batting stats acquired')
 
     # grab the pitching stats
-    pitchstats = pitching_stats(2019)
-    PSselect = pitchstats[['Name','Team','W','L','ERA','WAR','G','GS','CG','ShO','SV','BS','IP','H','R','ER','HR','BB','HBP','WP','BK','SO','IFFB','Balls','Strikes','Pitches','RS','AVG','WHIP','BABIP','FIP','WPA','RAR','K/9','BB/9','K%','BB%','LOB%','F-Strike%','FA% (pfx)','FT% (pfx)','FC% (pfx)','FS% (pfx)','FO% (pfx)','SI% (pfx)','SL% (pfx)','CU% (pfx)','KC% (pfx)','EP% (pfx)','CH% (pfx)','SC% (pfx)','KN% (pfx)','UN% (pfx)']]
+    pitchstats = pitching_stats(get_season,qual=1)
+    PSselect = pitchstats[['Name','Team','W','L','ERA','WAR','G','GS','CG','ShO','SV','BS','IP','H','R','ER','HR','BB','HBP','WP','BK','SO','IFFB','Balls','Strikes','Pitches','RS','AVG','WHIP','BABIP','FIP','WPA','RAR','K/9','BB/9','K%','BB%','LOB%','F-Strike%','FA% (sc)','FT% (sc)','FC% (sc)','FS% (sc)','FO% (sc)','SI% (sc)','SL% (sc)','CU% (sc)','KC% (sc)','EP% (sc)','CH% (sc)','SC% (sc)','KN% (sc)','UN% (sc)']]
     PSselect = PSselect.copy()
-    PSselect = PSselect.rename(columns = { 'K/9':'K9','BB/9':'BB9','K%':'Kperc','BB%':'BBperc','LOB%':'LOBperc','F-Strike%':'FStrikeperc','FA% (pfx)':'FAperc','FT% (pfx)':'FTperc','FC% (pfx)':'FCperc','FS% (pfx)':'FSperc','FO% (pfx)':'FOperc','SI% (pfx)':'SIperc','SL% (pfx)':'SLperc','CU% (pfx)':'CUperc','KC% (pfx)':'KCperc','EP% (pfx)':'EPperc','CH% (pfx)':'CHperc','SC% (pfx)':'SCperc','KN% (pfx)':'KNperc','UN% (pfx)':'UNperc' })
+    PSselect = PSselect.rename(columns = { 'K/9':'K9','BB/9':'BB9','K%':'Kperc','BB%':'BBperc','LOB%':'LOBperc','F-Strike%':'FStrikeperc','FA% (sc)':'FAperc','FT% (sc)':'FTperc','FC% (sc)':'FCperc','FS% (sc)':'FSperc','FO% (sc)':'FOperc','SI% (sc)':'SIperc','SL% (sc)':'SLperc','CU% (sc)':'CUperc','KC% (sc)':'KCperc','EP% (sc)':'EPperc','CH% (sc)':'CHperc','SC% (sc)':'SCperc','KN% (sc)':'KNperc','UN% (sc)':'UNperc' })
     PSselect.to_csv("csv/PSselect.csv", index=False, encoding="utf-8")
     # pitching stats
     xreport.loc[8, 'status'] = 'OK'
@@ -163,35 +150,6 @@ try:
     # -------------------------------
     # Create the standings file
 
-    # This grabs each dataframe, labels league and division, appends and saves csv
-
-    df_standings = pd.DataFrame()
-    AMeast = df2[0]
-    AMeast.columns = AMeast.iloc[0]
-    AMeast = AMeast.reindex(AMeast.index.drop(0))
-    df_standings = df_standings.append(AMeast)
-    AMcent = df2[1]
-    AMcent.columns = AMcent.iloc[0]
-    AMcent = AMcent.reindex(AMcent.index.drop(0))
-    df_standings = df_standings.append(AMcent)
-    AMwest = df2[2]
-    AMwest.columns = AMwest.iloc[0]
-    AMwest = AMwest.reindex(AMwest.index.drop(0))
-    df_standings = df_standings.append(AMwest)
-    NAeast = df2[3]
-    NAeast.columns = NAeast.iloc[0]
-    NAeast = NAeast.reindex(NAeast.index.drop(0))
-    df_standings = df_standings.append(NAeast)
-    NAcent = df2[4]
-    NAcent.columns = NAcent.iloc[0]
-    NAcent = NAcent.reindex(NAcent.index.drop(0))
-    df_standings = df_standings.append(NAcent)
-    NAwest = df2[5]
-    NAwest.columns = NAwest.iloc[0]
-    NAwest = NAwest.reindex(NAwest.index.drop(0))
-    df_standings = df_standings.append(NAwest)
-    df_standings.rename(columns={'W-L%':'WLperc'}, inplace=True)
-    # standings appended
     xreport.loc[11, 'status'] = 'OK'
     print('standings appended')
 
@@ -201,13 +159,18 @@ try:
     right = bballJoin
     result = pd.merge(left, right, how='left', left_on='Tm', right_on='Tm', suffixes=('_x', '_y'))
     # standings joined
+    result.to_csv("csv/result.csv", index=False, encoding="utf-8")
+
     xreport.loc[12, 'status'] = 'OK'
     print('1st standings join done')
 
     # now joining batting stats
     left = result
     right = newbat
-    result2 = pd.merge(left, right, how='left', left_on='Team', right_on='Team', suffixes=('_x', '_y'))
+    result2 = pd.merge(left, right, how='left', left_on='tres', right_on='Team', suffixes=('_x', '_y'))
+    newbat.to_csv("csv/newbat.csv", index=False, encoding="utf-8")
+    result2.to_csv("csv/result2.csv", index=False, encoding="utf-8")
+
     # batting stats joined
     xreport.loc[13, 'status'] = 'OK'
     print('batting stats joined')
@@ -215,7 +178,7 @@ try:
     # finally join pitching stats
     left = result2
     right = newpitch
-    result3 = pd.merge(left, right, how='left', left_on='Team', right_on='Team', suffixes=('_x', '_y'))
+    result3 = pd.merge(left, right, how='left', left_on='tres', right_on='Team', suffixes=('_x', '_y'))
     print('pitching stats joined')
     result3.to_csv("csv/standings.csv", index=False, encoding="utf-8")
     print('standings file done and saved')
@@ -252,17 +215,17 @@ try:
     # Sox games
     xreport.loc[15, 'status'] = 'OK'
     print('Last and next sox games saved')
+
     # Now aggregate results by team
     # get df of teams played
+
     soxteams = []
     for name,grouped in soxsort.groupby(['Opp']):
-        dlist = list([name])
+        dlist = name
         soxteams.append(dlist)
-    df = pd.DataFrame(data = soxteams, columns=['Team'])
-    # now aggregate results
+
     soxlist = []
-    for team in df['Team']:
-        # Link team in df to soxteams list in teamlist
+    for team in soxteams:
         opp = soxsort['Opp'] == team
         df1 = soxsort[opp]
         # get wins and losses
@@ -276,8 +239,10 @@ try:
         rAvg = np.round( df1['R'].mean() ,2)
         raAvg = np.round( df1['RA'].mean() ,2)
         # append to empty list
-        slist = list([team,wins,loses,rAvg,raAvg])
+        slist = [team,wins,loses,rAvg,raAvg]
         soxlist.append(slist)
+
+
     # bring list into dataframe and name columns
     soxagainst = pd.DataFrame(data = soxlist, columns=['teamID','Wins','Loses','AvgRuns','AvgRunsAg'])
     # join aggregated list with team names
@@ -288,6 +253,8 @@ try:
     # Sox players
     xreport.loc[16, 'status'] = 'OK'
     print("Sox aggregate done")
+
+
 
 
     # start batting stats
@@ -312,6 +279,7 @@ try:
     # Sox batting
     xreport.loc[17, 'status'] = 'OK'
     print("Sox batting stats done")
+
 
 
     # start Sox pitching stats
@@ -368,7 +336,6 @@ try:
     xreport.loc[18, 'status'] = 'OK'
     print("Sox pitching stats done")
 
-
     # -------------------------------
     # Start Cubs pages
     cubssort = pd.DataFrame ( cubs.loc[ ( cubs["W/L"].notnull() ) ] )
@@ -397,16 +364,17 @@ try:
     # Cubs games
     xreport.loc[19, 'status'] = 'OK'
     print('Last and next cubs games saved')
+
+
     # Now aggregate results by team
     # get df of teams played
     cubsteams = []
     for name,grouped in cubssort.groupby(['Opp']):
-        dlist = list([name])
+        dlist = name
         cubsteams.append(dlist)
-    df = pd.DataFrame(data = cubsteams, columns=['Team'])
     # now aggregate results
     cubslist = []
-    for team in df['Team']:
+    for team in cubsteams:
         # Link team in df to cubsteams list in teamlist
         opp = cubssort['Opp'] == team
         df1 = cubssort[opp]
@@ -421,7 +389,7 @@ try:
         rAvg = np.round( df1['R'].mean() ,2)
         raAvg = np.round( df1['RA'].mean() ,2)
         # append to empty list
-        slist = list([team,wins,loses,rAvg,raAvg])
+        slist = [team,wins,loses,rAvg,raAvg]
         cubslist.append(slist)
     # bring list into dataframe and name columns
     cubsagainst = pd.DataFrame(data = cubslist, columns=['teamID','Wins','Loses','AvgRuns','AvgRunsAg'])
@@ -433,6 +401,8 @@ try:
     # Cubs players
     xreport.loc[20, 'status'] = 'OK'
     print("Cubs aggregate done")
+
+
 
 
     # start cubs batting stats
@@ -612,14 +582,14 @@ try:
     dfHR.to_csv("csv/dfHR.csv", index=False, encoding="utf-8")
     # clear the plt figure
     plt.figure()
-    plt.xlim(0, 300)
+    plt.xlim(0, 350)
     g = sns.barplot(
         x='HR',
         y='Team',
         data=dfHR,
         palette=dfHR['color']
     )
-    plt.plot([266, 266], [-10, 30], color="#FF9C00", linewidth=2)
+    plt.plot([307, 307], [-10, 30], color="#FF9C00", linewidth=2)
     g.figure.set_size_inches(8,14)
     g.set_ylabel('TEAM', fontsize=16, fontweight='bold')
     g.set_xlabel('HOME RUNS', fontsize=16, fontweight='bold')
@@ -930,25 +900,25 @@ try:
     plt.close()
 
     # FLD avg h2h plot
-    # plt.figure()
-    # gs = sns.violinplot(x="Team", y="Fld", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
-    # plt.setp(gs.collections, alpha=.5)
-    # g = sns.boxplot(x="Team", y="Fld", data=h2hhit,
-    #                 showcaps=True,
-    #                 boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
-    #                 whiskerprops={'color': '#8FBC8B'},
-    #                 capprops={'color': '#8FBC8B'},
-    #                 medianprops={'color': '#8FBC8B'},
-    #                 showfliers=False)
-    # g = sns.swarmplot(x="Team", y="Fld", data=h2hhit, color="orange")
-    # g.figure.set_size_inches(6,6)
-    # g.grid(axis='y', linewidth=2)
-    # tick_locator = ticker.MaxNLocator(10)
-    # g.yaxis.set_major_locator(tick_locator)
-    # g.set_xlabel('', fontsize=2)
-    # g.set_ylabel('FIELDING RUNS ABOVE AVG. (Fld)', fontsize=16, fontweight='bold')
-    # g.figure.savefig('static/img/h2hFld.png',bbox_inches='tight',dpi=my_dpi)
-    # plt.close()
+    plt.figure()
+    gs = sns.violinplot(x="Team", y="Fld", data=h2hhit, inner=None, linewidth=0, palette=my_pal)
+    plt.setp(gs.collections, alpha=.5)
+    g = sns.boxplot(x="Team", y="Fld", data=h2hhit,
+                    showcaps=True,
+                    boxprops={'facecolor':'None', 'edgecolor': '#8FBC8B', 'zorder': 1 },
+                    whiskerprops={'color': '#8FBC8B'},
+                    capprops={'color': '#8FBC8B'},
+                    medianprops={'color': '#8FBC8B'},
+                    showfliers=False)
+    g = sns.swarmplot(x="Team", y="Fld", data=h2hhit, color="orange")
+    g.figure.set_size_inches(6,6)
+    g.grid(axis='y', linewidth=2)
+    tick_locator = ticker.MaxNLocator(10)
+    g.yaxis.set_major_locator(tick_locator)
+    g.set_xlabel('', fontsize=2)
+    g.set_ylabel('FIELDING RUNS ABOVE AVG. (Fld)', fontsize=16, fontweight='bold')
+    g.figure.savefig('static/img/h2hFld.png',bbox_inches='tight',dpi=my_dpi)
+    plt.close()
 
     # WAR hitting h2h plot
     plt.figure()
@@ -1164,66 +1134,6 @@ try:
     shutil.move('build', 'docs')
 
     print('docs folder done')
-
-    #------------------------------
-    # Now send to the web
-
-    # import os
-    # import paramiko
-    # paramiko.util.log_to_file('/tmp/paramiko.log')
-    # from ftplib import FTP
-    #
-    # # Open a transport
-    #
-    # host = "xxxxxx"
-    # port = xxxx
-    # transport = paramiko.Transport((host, port))
-    #
-    # # Auth
-    #
-    # password = "xxxxxx"
-    # username = "xxxxxx"
-    # transport.connect(username = username, password = password)
-    #
-    # # Go!
-    #
-    # sftp = paramiko.SFTPClient.from_transport(transport)
-    #
-    # # Upload index
-    # filepath = '/public_html/webservice2/docs/index.html'
-    # localpath = '/Users/tbroderick/anaconda3/envs/pybaseball/docs/index.html'
-    # sftp.put(localpath, filepath)
-    #
-    # # Upload sox
-    # filepath = '/public_html/webservice2/docs/sox.html'
-    # localpath = '/Users/tbroderick/anaconda3/envs/pybaseball/docs/sox.html'
-    # sftp.put(localpath, filepath)
-    #
-    # # Upload cubs
-    # filepath = '/public_html/webservice2/docs/cubs.html'
-    # localpath = '/Users/tbroderick/anaconda3/envs/pybaseball/docs/cubs.html'
-    # sftp.put(localpath, filepath)
-    #
-    # # Upload h2h
-    # filepath = '/public_html/webservice2/docs/h2h.html'
-    # localpath = '/Users/tbroderick/anaconda3/envs/pybaseball/docs/h2h.html'
-    # sftp.put(localpath, filepath)
-    #
-    # # to upload all new images
-    # file_names = []
-    # for filename in os.listdir("docs/static/img/"):
-    #     name = os.path.basename(filename) # this gets the entire name, plus the .
-    #     file_names.append(name)
-    #
-    # for nm in file_names:
-    #     filepath = '/public_html/webservice2/docs/static/img/' + nm
-    #     localpath = '/Users/tbroderick/anaconda3/envs/pybaseball/docs/static/img/' + nm
-    #     sftp.put(localpath, filepath)
-    #
-    #
-    # sftp.close()
-    # transport.close()
-
 
     # pushed to web
     xreport.loc[34, 'status'] = 'OK'
