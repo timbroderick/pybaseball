@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Sunday, Apr 11",CHC,@,PIT,L,1,7,9,4-5,4.0,2.0,Brubaker,Williams,None,3:02,D,6851.0,--,,,0,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
-"Saturday, Apr 10",CHC,@,PIT,L,2,8,9,4-4,3.0,2.0,Keller,Davies,None,3:07,N,7052.0,1.07,-1.0,,1,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
-"Monday, Apr 12",CHC,@,MIL,,,,,,,,,,,,,,,,,2,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
-"Tuesday, Apr 13",CHC,@,MIL,,,,,,,,,,,,,,,,,3,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+"Monday, Apr 12",CHC,@,MIL,L,3,6,9,4-6,4.0,3.0,Peralta,Alzolay,Hader,3:04,N,11209.0,1.01,-3.0,,0,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+"Sunday, Apr 11",CHC,@,PIT,L,1,7,9,4-5,4.0,2.0,Brubaker,Williams,None,3:02,D,6851.0,1.01,-2.0,,1,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
+"Tuesday, Apr 13",CHC,@,MIL,,,,,,,,,,,,,,,,,2,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+"Wednesday, Apr 14",CHC,@,MIL,,,,,,,,,,,,,,,,,3,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL

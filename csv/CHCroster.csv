@@ -1,5 +1,5 @@
 posName,posnum,lastname,position,status_code,bats,throws
-Jason Adam,60,Adam,P,A,R,R
+Jason Adam,60,Adam,P,D10,R,R
 Adbert Alzolay,73,Alzolay,P,A,R,R
 Jake Arrieta,49,Arrieta,P,A,R,R
 Javier Baez,9,Baez,SS,A,R,R
@@ -23,9 +23,12 @@ Joc Pederson,24,Pederson,LF,A,L,L
 Anthony Rizzo,44,Rizzo,1B,A,L,L
 Austin Romine,25,Romine,C,D10,R,R
 Eric Sogard,4,Sogard,2B,A,L,R
+Justin Steele,35,Steele,P,A,L,L
+Pedro Strop,64,Strop,P,A,R,R
 Ryan Tepera,18,Tepera,P,A,R,R
 Rowan Wick,50,Wick,P,D10,L,R
+Brad Wieck,38,Wieck,P,A,L,L
 Trevor Williams,32,Williams,P,A,R,R
-Dan Winkler,43,Winkler,P,A,R,R
+Dan Winkler,43,Winkler,P,D10,R,R
 Tony Wolters,11,Wolters,C,A,L,R
-Brandon Workman,45,Workman,P,A,R,R
+Brandon Workman,45,Workman,P,D10,R,R

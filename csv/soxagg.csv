@@ -1,4 +1,5 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
+CLE,1,0,4.0,3.0,Indians,Cleveland Indians,American,Central,#8FBC8B,CLE
 KCR,1,1,4.5,2.0,Royals,Kansas City Royals,American,Central,#8FBC8B,KCR
 LAA,1,3,5.5,6.0,Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
 SEA,2,1,6.67,4.0,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
