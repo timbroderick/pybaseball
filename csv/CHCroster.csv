@@ -1,5 +1,6 @@
 posName,posnum,lastname,position,status_code,bats,throws
 Jason Adam,60,Adam,P,A,R,R
+Adbert Alzolay,73,Alzolay,P,A,R,R
 Jake Arrieta,49,Arrieta,P,A,R,R
 Javier Baez,9,Baez,SS,A,R,R
 David Bote,13,Bote,3B,A,R,R
@@ -23,9 +24,8 @@ Alec Mills,30,Mills,P,A,R,R
 Joc Pederson,24,Pederson,LF,D10,L,L
 Anthony Rizzo,44,Rizzo,1B,A,L,L
 Austin Romine,25,Romine,C,A,R,R
-Kyle Ryan,56,Ryan,P,A,L,L
 Eric Sogard,4,Sogard,2B,A,L,R
-Ryan Tepera,18,Tepera,P,A,R,R
+Ryan Tepera,18,Tepera,P,SU,R,R
 Rowan Wick,50,Wick,P,D10,L,R
 Trevor Williams,32,Williams,P,A,R,R
 Dan Winkler,43,Winkler,P,A,R,R

@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Friday, Apr 23",CHC,Home,MIL,W,15,2,9,10-9,2.0,1.0,Hendricks,Anderson,None,3:06,D,10343.0,1.12,4.0,,0,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
-"Thursday, Apr 22",CHC,Home,NYM,W-wo,4,3,10,9-9,2.0,2.0,Winkler,Diaz,None,3:41,N,10343.0,.89,3.0,,1,Mets,New York Mets,National,East,#8FBC8B,NYM
-"Saturday, Apr 24",CHC,Home,MIL,,,,,,,,,,,,,,,,,2,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
-"Sunday, Apr 25",CHC,Home,MIL,,,,,,,,,,,,,,,,,3,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+"Saturday, Apr 24",CHC,Home,MIL,L,3,4,9,10-10,2.0,2.0,Suter,Chafin,Hader,3:32,D,10343.0,1.17,-1.0,,0,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+"Friday, Apr 23",CHC,Home,MIL,W,15,2,9,10-9,2.0,1.0,Hendricks,Anderson,None,3:06,D,10343.0,1.12,4.0,,1,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+"Sunday, Apr 25",CHC,Home,MIL,,,,,,,,,,,,,,,,,2,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+"Monday, Apr 26",CHC,@,ATL,,,,,,,,,,,,,,,,,3,Braves,Atlanta Braves,National,East,#8FBC8B,ATL
