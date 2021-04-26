@@ -1,14 +1,14 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,CHW,88,76,10,16,2,0,4,14,11,26,1,0,0.211,0.307,0.395,0.309,0.1,2.9,0.3,1.1,34.2
-Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,CHW,47,47,11,16,1,0,3,3,0,12,3,1,0.34,0.34,0.553,0.384,2.9,4.7,0.5,-0.4,25.5
-Zack Collins,21,Collins,C,A,L,R,Zack Collins,CHW,34,31,2,4,1,0,1,5,3,11,0,0,0.129,0.206,0.258,0.211,-2.6,-0.2,0.0,0.7,35.5
-Adam Eaton,12,Eaton,RF,A,L,L,Adam Eaton,CHW,80,70,14,17,4,0,3,16,7,16,1,0,0.243,0.338,0.429,0.338,2.0,5.1,0.5,-0.1,22.9
-Leury Garcia,28,Garcia,OF,A,S,R,Leury Garcia,CHW,45,43,7,7,2,0,0,2,1,13,1,0,0.163,0.182,0.209,0.173,-4.8,-2.6,-0.3,0.1,30.2
-Yasmani Grandal,24,Grandal,C,A,S,R,Yasmani Grandal,CHW,57,46,6,6,2,0,2,9,10,10,0,0,0.13,0.286,0.304,0.274,-1.6,0.6,0.1,-0.8,21.7
-Billy Hamilton,0,Hamilton,CF,A,S,R,Billy Hamilton,CHW,15,13,2,3,0,0,0,1,2,2,2,0,0.231,0.333,0.231,0.269,-0.5,0.4,0.0,-0.1,15.4
-Jake Lamb,23,Lamb,3B,A,L,R,Jake Lamb,CHW,16,13,2,1,0,0,0,0,3,4,0,0,0.077,0.25,0.077,0.185,-1.6,-1.4,-0.1,-0.4,30.8
-Nick Madrigal,1,Madrigal,2B,A,R,R,Nick Madrigal,CHW,68,61,11,18,3,1,0,6,4,2,1,1,0.295,0.353,0.377,0.323,0.8,2.2,0.2,-0.9,3.3
-Yermin Mercedes,73,Mercedes,C,A,R,R,Yermin Mercedes,CHW,71,66,8,28,5,0,4,15,5,10,0,1,0.424,0.465,0.682,0.487,10.2,10.2,1.1,,15.2
-Yoan Moncada,10,Moncada,3B,A,S,R,Yoan Moncada,CHW,80,68,9,18,2,0,2,11,8,22,0,0,0.265,0.363,0.382,0.334,1.7,5.3,0.5,1.1,32.4
-Luis Robert,88,Robert,CF,A,R,R,Luis Robert,CHW,86,79,10,25,8,1,1,6,6,22,4,0,0.316,0.36,0.481,0.362,3.7,9.1,0.9,1.0,27.8
-Andrew Vaughn,25,Vaughn,1B,A,R,R,Andrew Vaughn,CHW,45,38,4,9,3,0,0,1,6,13,0,0,0.237,0.356,0.316,0.31,0.1,0.2,0.0,-1.0,34.2
+Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,CHW,93,80,11,18,2,0,5,17,11,26,1,0,0.225,0.312,0.438,0.325,1.3,3.4,0.4,0.8,32.5
+Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,CHW,52,51,12,17,2,0,3,4,1,14,3,1,0.333,0.346,0.549,0.385,3.2,6.5,0.7,0.2,27.5
+Zack Collins,21,Collins,C,A,L,R,Zack Collins,CHW,38,34,3,7,1,0,1,5,4,11,0,0,0.206,0.289,0.324,0.277,-0.9,1.7,0.2,0.7,32.4
+Adam Eaton,12,Eaton,RF,A,L,L,Adam Eaton,CHW,85,74,15,18,4,1,3,18,7,16,1,0,0.243,0.333,0.446,0.342,2.3,7.6,0.8,2.3,21.6
+Leury Garcia,28,Garcia,OF,A,S,R,Leury Garcia,CHW,49,47,8,8,2,0,0,2,1,13,1,0,0.17,0.188,0.213,0.178,-5.1,-2.6,-0.3,-0.8,27.7
+Yasmani Grandal,24,Grandal,C,A,S,R,Yasmani Grandal,CHW,57,46,6,6,2,0,2,9,10,10,0,0,0.13,0.286,0.304,0.274,-1.5,0.2,0.0,-0.8,21.7
+Billy Hamilton,0,Hamilton,CF,A,S,R,Billy Hamilton,CHW,15,13,2,3,0,0,0,1,2,2,2,0,0.231,0.333,0.231,0.269,-0.5,1.6,0.2,1.1,15.4
+Jake Lamb,23,Lamb,3B,A,L,R,Jake Lamb,CHW,16,13,2,1,0,0,0,0,3,4,0,0,0.077,0.25,0.077,0.185,-1.6,-0.1,0.0,0.7,30.8
+Nick Madrigal,1,Madrigal,2B,A,R,R,Nick Madrigal,CHW,72,65,13,20,3,2,0,8,4,2,1,1,0.308,0.361,0.415,0.34,1.8,3.1,0.3,-1.3,3.1
+Yermin Mercedes,73,Mercedes,C,A,R,R,Yermin Mercedes,CHW,76,70,8,29,5,0,4,15,6,11,0,1,0.414,0.461,0.657,0.477,10.2,9.0,0.9,-0.8,15.7
+Yoan Moncada,10,Moncada,3B,A,S,R,Yoan Moncada,CHW,85,71,10,18,2,0,2,11,10,23,0,0,0.254,0.365,0.366,0.331,1.6,7.7,0.8,2.9,32.4
+Luis Robert,88,Robert,CF,A,R,R,Luis Robert,CHW,90,82,10,25,8,1,1,6,7,23,4,0,0.305,0.356,0.463,0.354,3.3,8.8,0.9,0.4,28.0
+Andrew Vaughn,25,Vaughn,1B,A,R,R,Andrew Vaughn,CHW,45,38,4,9,3,0,0,1,6,13,0,0,0.237,0.356,0.316,0.31,0.1,2.5,0.3,0.9,34.2

@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-Boston Red Sox,13,9,.591,--,Red Sox,American,East,#8FBC8B,BOS
-Tampa Bay Rays,11,10,.524,1.5,Rays,American,East,#8FBC8B,TBR
-New York Yankees,9,11,.450,3.0,Yankees,American,East,#8FBC8B,NYY
-Toronto Blue Jays,9,11,.450,3.0,Blue Jays,American,East,#8FBC8B,TOR
-Baltimore Orioles,8,12,.400,4.0,Orioles,American,East,#8FBC8B,BAL
-Kansas City Royals,12,7,.632,--,Royals,American,Central,#8FBC8B,KCR
-Chicago White Sox,11,9,.550,1.5,White Sox,American,Central,#000000,CHW
-Cleveland Indians,8,11,.421,4.0,Indians,American,Central,#8FBC8B,CLE
-Minnesota Twins,7,12,.368,5.0,Twins,American,Central,#8FBC8B,MIN
-Detroit Tigers,7,14,.333,6.0,Tigers,American,Central,#8FBC8B,DET
-Oakland Athletics,14,7,.667,--,Athletics,American,West,#8FBC8B,OAK
-Seattle Mariners,13,8,.619,1.0,Mariners,American,West,#8FBC8B,SEA
-Houston Astros,10,10,.500,3.5,Astros,American,West,#8FBC8B,HOU
-Los Angeles Angels,9,10,.474,4.0,Angels,American,West,#8FBC8B,LAA
-Texas Rangers,9,12,.429,5.0,Rangers,American,West,#8FBC8B,TEX
-New York Mets,8,8,.500,--,Mets,National,East,#8FBC8B,NYM
-Philadelphia Phillies,10,10,.500,--,Phillies,National,East,#8FBC8B,PHI
-Atlanta Braves,9,10,.474,0.5,Braves,National,East,#8FBC8B,ATL
-Miami Marlins,9,11,.450,1.0,Marlins,National,East,#8FBC8B,MIA
-Washington Nationals,8,10,.444,1.0,Nationals,National,East,#8FBC8B,WSN
-Milwaukee Brewers,12,8,.600,--,Brewers,National,Central,#8FBC8B,MIL
-Chicago Cubs,10,10,.500,2.0,Cubs,National,Central,#0000FF,CHC
-St. Louis Cardinals,10,10,.500,2.0,Cardinals,National,Central,#8FBC8B,STL
-Pittsburgh Pirates,10,11,.476,2.5,Pirates,National,Central,#8FBC8B,PIT
-Cincinnati Reds,9,11,.450,3.0,Reds,National,Central,#8FBC8B,CIN
-Los Angeles Dodgers,15,6,.714,--,Dodgers,National,West,#788DF0,LAD
-San Francisco Giants,13,8,.619,2.0,Giants,National,West,#8FBC8B,SFG
-San Diego Padres,12,11,.522,4.0,Padres,National,West,#8FBC8B,SDP
-Arizona Diamondbacks,9,11,.450,5.5,Diamondbacks,National,West,#8FBC8B,ARI
-Colorado Rockies,7,13,.350,7.5,Rockies,National,West,#8FBC8B,COL
+Boston Red Sox,14,9,.609,--,Red Sox,American,East,#8FBC8B,BOS
+Tampa Bay Rays,11,11,.500,2.5,Rays,American,East,#8FBC8B,TBR
+Toronto Blue Jays,10,11,.476,3.0,Blue Jays,American,East,#8FBC8B,TOR
+Baltimore Orioles,9,12,.429,4.0,Orioles,American,East,#8FBC8B,BAL
+New York Yankees,9,12,.429,4.0,Yankees,American,East,#8FBC8B,NYY
+Kansas City Royals,13,7,.650,--,Royals,American,Central,#8FBC8B,KCR
+Chicago White Sox,12,9,.571,1.5,White Sox,American,Central,#000000,CHW
+Cleveland Indians,9,11,.450,4.0,Indians,American,Central,#8FBC8B,CLE
+Minnesota Twins,7,13,.350,6.0,Twins,American,Central,#8FBC8B,MIN
+Detroit Tigers,7,15,.318,7.0,Tigers,American,Central,#8FBC8B,DET
+Oakland Athletics,14,8,.636,--,Athletics,American,West,#8FBC8B,OAK
+Seattle Mariners,13,9,.591,1.0,Mariners,American,West,#8FBC8B,SEA
+Los Angeles Angels,10,10,.500,3.0,Angels,American,West,#8FBC8B,LAA
+Houston Astros,10,11,.476,3.5,Astros,American,West,#8FBC8B,HOU
+Texas Rangers,9,13,.409,5.0,Rangers,American,West,#8FBC8B,TEX
+New York Mets,9,8,.529,--,Mets,National,East,#8FBC8B,NYM
+Philadelphia Phillies,10,11,.476,1.0,Phillies,National,East,#8FBC8B,PHI
+Atlanta Braves,9,12,.429,2.0,Braves,National,East,#8FBC8B,ATL
+Miami Marlins,9,12,.429,2.0,Marlins,National,East,#8FBC8B,MIA
+Washington Nationals,8,11,.421,2.0,Nationals,National,East,#8FBC8B,WSN
+Milwaukee Brewers,13,8,.619,--,Brewers,National,Central,#8FBC8B,MIL
+St. Louis Cardinals,11,10,.524,2.0,Cardinals,National,Central,#8FBC8B,STL
+Pittsburgh Pirates,11,11,.500,2.5,Pirates,National,Central,#8FBC8B,PIT
+Chicago Cubs,10,11,.476,3.0,Cubs,National,Central,#0000FF,CHC
+Cincinnati Reds,9,12,.429,4.0,Reds,National,Central,#8FBC8B,CIN
+Los Angeles Dodgers,15,7,.682,--,Dodgers,National,West,#788DF0,LAD
+San Francisco Giants,14,8,.636,1.0,Giants,National,West,#8FBC8B,SFG
+San Diego Padres,13,11,.542,3.0,Padres,National,West,#8FBC8B,SDP
+Arizona Diamondbacks,11,11,.500,4.0,Diamondbacks,National,West,#8FBC8B,ARI
+Colorado Rockies,8,13,.381,6.5,Rockies,National,West,#8FBC8B,COL
