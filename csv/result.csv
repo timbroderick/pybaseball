@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-Boston Red Sox,15,9,.625,--,Red Sox,American,East,#8FBC8B,BOS
-Tampa Bay Rays,12,12,.500,3.0,Rays,American,East,#8FBC8B,TBR
-Toronto Blue Jays,11,11,.500,3.0,Blue Jays,American,East,#8FBC8B,TOR
-Baltimore Orioles,10,13,.435,4.5,Orioles,American,East,#8FBC8B,BAL
-New York Yankees,10,13,.435,4.5,Yankees,American,East,#8FBC8B,NYY
-Kansas City Royals,14,8,.636,--,Royals,American,Central,#8FBC8B,KCR
-Chicago White Sox,12,10,.545,2.0,White Sox,American,Central,#000000,CHW
-Cleveland Indians,11,11,.500,3.0,Indians,American,Central,#8FBC8B,CLE
-Detroit Tigers,8,16,.333,7.0,Tigers,American,Central,#8FBC8B,DET
-Minnesota Twins,7,15,.318,7.0,Twins,American,Central,#8FBC8B,MIN
-Oakland Athletics,15,9,.625,--,Athletics,American,West,#8FBC8B,OAK
-Seattle Mariners,13,11,.542,2.0,Mariners,American,West,#8FBC8B,SEA
-Houston Astros,12,11,.522,2.5,Astros,American,West,#8FBC8B,HOU
-Los Angeles Angels,11,11,.500,3.0,Angels,American,West,#8FBC8B,LAA
-Texas Rangers,10,14,.417,5.0,Rangers,American,West,#8FBC8B,TEX
-New York Mets,9,9,.500,--,Mets,National,East,#8FBC8B,NYM
-Atlanta Braves,11,12,.478,0.5,Braves,National,East,#8FBC8B,ATL
-Philadelphia Phillies,11,12,.478,0.5,Phillies,National,East,#8FBC8B,PHI
-Miami Marlins,10,13,.435,1.5,Marlins,National,East,#8FBC8B,MIA
-Washington Nationals,8,12,.400,2.0,Nationals,National,East,#8FBC8B,WSN
-Milwaukee Brewers,14,9,.609,--,Brewers,National,Central,#8FBC8B,MIL
-Pittsburgh Pirates,12,11,.522,2.0,Pirates,National,Central,#8FBC8B,PIT
-St. Louis Cardinals,12,11,.522,2.0,Cardinals,National,Central,#8FBC8B,STL
-Cincinnati Reds,11,12,.478,3.0,Reds,National,Central,#8FBC8B,CIN
-Chicago Cubs,10,13,.435,4.0,Cubs,National,Central,#0000FF,CHC
-Los Angeles Dodgers,15,9,.625,--,Dodgers,National,West,#788DF0,LAD
-San Francisco Giants,15,9,.625,--,Giants,National,West,#8FBC8B,SFG
-Arizona Diamondbacks,12,11,.522,2.5,Diamondbacks,National,West,#8FBC8B,ARI
-San Diego Padres,13,12,.520,2.5,Padres,National,West,#8FBC8B,SDP
-Colorado Rockies,9,14,.391,5.5,Rockies,National,West,#8FBC8B,COL
+Boston Red Sox,16,9,.640,--,Red Sox,American,East,#8FBC8B,BOS
+Tampa Bay Rays,13,12,.520,3.0,Rays,American,East,#8FBC8B,TBR
+Toronto Blue Jays,11,12,.478,4.0,Blue Jays,American,East,#8FBC8B,TOR
+New York Yankees,11,13,.458,4.5,Yankees,American,East,#8FBC8B,NYY
+Baltimore Orioles,10,14,.417,5.5,Orioles,American,East,#8FBC8B,BAL
+Kansas City Royals,15,8,.652,--,Royals,American,Central,#8FBC8B,KCR
+Chicago White Sox,12,10,.545,2.5,White Sox,American,Central,#000000,CHW
+Cleveland Indians,11,12,.478,4.0,Indians,American,Central,#8FBC8B,CLE
+Minnesota Twins,8,15,.348,7.0,Twins,American,Central,#8FBC8B,MIN
+Detroit Tigers,8,16,.333,7.5,Tigers,American,Central,#8FBC8B,DET
+Oakland Athletics,15,10,.600,--,Athletics,American,West,#8FBC8B,OAK
+Houston Astros,13,11,.542,1.5,Astros,American,West,#8FBC8B,HOU
+Los Angeles Angels,12,11,.522,2.0,Angels,American,West,#8FBC8B,LAA
+Seattle Mariners,13,12,.520,2.0,Mariners,American,West,#8FBC8B,SEA
+Texas Rangers,10,15,.400,5.0,Rangers,American,West,#8FBC8B,TEX
+Atlanta Braves,12,12,.500,--,Braves,National,East,#8FBC8B,ATL
+Philadelphia Phillies,12,12,.500,--,Phillies,National,East,#8FBC8B,PHI
+New York Mets,9,10,.474,0.5,Mets,National,East,#8FBC8B,NYM
+Miami Marlins,11,13,.458,1.0,Marlins,National,East,#8FBC8B,MIA
+Washington Nationals,9,12,.429,1.5,Nationals,National,East,#8FBC8B,WSN
+Milwaukee Brewers,14,10,.583,--,Brewers,National,Central,#8FBC8B,MIL
+Pittsburgh Pirates,12,12,.500,2.0,Pirates,National,Central,#8FBC8B,PIT
+St. Louis Cardinals,12,12,.500,2.0,Cardinals,National,Central,#8FBC8B,STL
+Cincinnati Reds,11,13,.458,3.0,Reds,National,Central,#8FBC8B,CIN
+Chicago Cubs,10,14,.417,4.0,Cubs,National,Central,#0000FF,CHC
+Los Angeles Dodgers,16,9,.640,--,Dodgers,National,West,#788DF0,LAD
+San Francisco Giants,16,9,.640,--,Giants,National,West,#8FBC8B,SFG
+San Diego Padres,14,12,.538,2.5,Padres,National,West,#8FBC8B,SDP
+Arizona Diamondbacks,12,12,.500,3.5,Diamondbacks,National,West,#8FBC8B,ARI
+Colorado Rockies,9,15,.375,6.5,Rockies,National,West,#8FBC8B,COL
