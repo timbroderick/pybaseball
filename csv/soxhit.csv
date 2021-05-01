@@ -1,14 +1,14 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,CHW,104,90,11,20,2,0,5,19,12,28,1,0,0.222,0.308,0.411,0.314,0.6,2.9,0.3,0.8,31.1
-Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,CHW,65,62,13,19,2,0,3,4,3,19,3,2,0.306,0.338,0.484,0.356,2.6,6.1,0.6,0.2,30.6
+Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,CHW,108,94,11,20,2,0,5,19,12,29,1,0,0.213,0.296,0.394,0.302,-0.4,1.9,0.2,0.8,30.9
+Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,CHW,70,67,14,21,2,0,3,5,3,20,5,2,0.313,0.343,0.478,0.356,2.8,6.9,0.7,0.2,29.9
 Zack Collins,21,Collins,C,A,L,R,Zack Collins,CHW,40,35,4,8,2,0,1,5,5,11,0,0,0.229,0.325,0.371,0.311,0.2,2.5,0.3,0.3,31.4
-Adam Eaton,12,Eaton,RF,A,L,L,Adam Eaton,CHW,93,82,16,20,4,1,3,18,7,18,1,0,0.244,0.326,0.427,0.331,1.8,7.3,0.8,2.3,22.0
-Leury Garcia,28,Garcia,LF,A,S,R,Leury Garcia,CHW,59,57,10,12,2,0,0,7,1,16,2,0,0.211,0.224,0.246,0.208,-4.6,-1.6,-0.2,-0.8,28.1
-Yasmani Grandal,24,Grandal,C,A,S,R,Yasmani Grandal,CHW,65,51,8,6,2,0,2,9,13,11,0,0,0.118,0.297,0.275,0.271,-1.8,0.3,0.0,-1.0,21.6
+Adam Eaton,12,Eaton,RF,A,L,L,Adam Eaton,CHW,97,86,16,20,4,1,3,18,7,21,1,0,0.233,0.313,0.407,0.317,0.8,6.4,0.7,2.3,24.4
+Leury Garcia,28,Garcia,LF,A,S,R,Leury Garcia,CHW,60,58,10,12,2,0,0,7,1,16,2,0,0.207,0.22,0.241,0.204,-4.9,-1.9,-0.2,-0.8,27.6
+Yasmani Grandal,24,Grandal,C,A,S,R,Yasmani Grandal,CHW,69,55,8,7,2,0,2,9,13,14,0,0,0.127,0.294,0.273,0.268,-2.1,0.1,0.0,-1.0,25.5
 Billy Hamilton,0,Hamilton,LF,A,S,R,Billy Hamilton,CHW,18,15,2,3,0,0,0,2,2,3,2,0,0.2,0.294,0.2,0.237,-1.0,1.2,0.1,1.1,20.0
 Jake Lamb,23,Lamb,3B,A,L,R,Jake Lamb,CHW,22,18,3,3,0,0,0,0,4,5,0,0,0.167,0.318,0.167,0.245,-1.1,0.5,0.1,0.7,27.8
-Nick Madrigal,1,Madrigal,2B,A,R,R,Nick Madrigal,CHW,80,72,15,23,3,2,0,9,5,3,1,1,0.319,0.375,0.417,0.347,2.6,4.1,0.4,-1.3,4.2
-Yermin Mercedes,73,Mercedes,1B,A,R,R,Yermin Mercedes,CHW,84,78,9,33,5,0,5,16,6,11,0,1,0.423,0.464,0.679,0.487,12.0,10.9,1.1,-0.8,14.1
-Yoan Moncada,10,Moncada,3B,A,S,R,Yoan Moncada,CHW,96,81,11,22,3,0,3,14,11,24,0,0,0.272,0.375,0.42,0.353,3.5,10.1,1.1,2.9,29.6
-Luis Robert,88,Robert,CF,A,R,R,Luis Robert,CHW,94,86,11,26,8,1,1,7,7,25,4,0,0.302,0.351,0.453,0.348,3.1,8.8,0.9,0.4,29.1
-Andrew Vaughn,25,Vaughn,LF,A,R,R,Andrew Vaughn,CHW,52,44,7,12,5,0,0,1,7,15,0,0,0.273,0.385,0.386,0.346,1.7,4.2,0.4,0.9,34.1
+Nick Madrigal,1,Madrigal,2B,A,R,R,Nick Madrigal,CHW,84,76,16,24,4,2,0,9,5,3,1,1,0.316,0.369,0.421,0.345,2.6,4.2,0.4,-1.3,3.9
+Yermin Mercedes,73,Mercedes,1B,A,R,R,Yermin Mercedes,CHW,88,82,10,34,5,0,5,16,6,12,0,1,0.415,0.455,0.659,0.475,11.7,10.6,1.1,-0.8,14.6
+Yoan Moncada,10,Moncada,3B,A,S,R,Yoan Moncada,CHW,100,84,11,23,3,0,3,15,12,26,0,0,0.274,0.38,0.417,0.354,3.8,10.4,1.1,2.9,31.0
+Luis Robert,88,Robert,CF,A,R,R,Luis Robert,CHW,98,90,11,28,9,1,1,8,7,26,4,0,0.311,0.357,0.467,0.356,3.8,9.6,1.0,0.4,28.9
+Andrew Vaughn,25,Vaughn,LF,A,R,R,Andrew Vaughn,CHW,55,47,7,12,5,0,0,1,7,17,0,0,0.255,0.364,0.362,0.328,0.9,3.5,0.4,0.9,36.2
