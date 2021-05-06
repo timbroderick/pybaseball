@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-Boston Red Sox,18,12,.600,--,Red Sox,American,East,#8FBC8B,BOS
-New York Yankees,15,14,.517,2.5,Yankees,American,East,#8FBC8B,NYY
-Tampa Bay Rays,16,15,.516,2.5,Rays,American,East,#8FBC8B,TBR
-Toronto Blue Jays,14,14,.500,3.0,Blue Jays,American,East,#8FBC8B,TOR
-Baltimore Orioles,14,16,.467,4.0,Orioles,American,East,#8FBC8B,BAL
-Chicago White Sox,16,12,.571,--,White Sox,American,Central,#000000,CHW
-Kansas City Royals,16,12,.571,--,Royals,American,Central,#8FBC8B,KCR
-Cleveland Indians,15,13,.536,1.0,Indians,American,Central,#8FBC8B,CLE
-Minnesota Twins,11,17,.393,5.0,Twins,American,Central,#8FBC8B,MIN
-Detroit Tigers,8,22,.267,9.0,Tigers,American,Central,#8FBC8B,DET
-Oakland Athletics,19,12,.613,--,Athletics,American,West,#8FBC8B,OAK
-Seattle Mariners,17,14,.548,2.0,Mariners,American,West,#8FBC8B,SEA
-Houston Astros,15,14,.517,3.0,Astros,American,West,#8FBC8B,HOU
-Los Angeles Angels,13,15,.464,4.5,Angels,American,West,#8FBC8B,LAA
-Texas Rangers,14,17,.452,5.0,Rangers,American,West,#8FBC8B,TEX
-Philadelphia Phillies,15,15,.500,--,Phillies,National,East,#8FBC8B,PHI
-Washington Nationals,12,13,.480,0.5,Nationals,National,East,#8FBC8B,WSN
-New York Mets,11,12,.478,0.5,Mets,National,East,#8FBC8B,NYM
-Atlanta Braves,13,16,.448,1.5,Braves,National,East,#8FBC8B,ATL
-Miami Marlins,12,16,.429,2.0,Marlins,National,East,#8FBC8B,MIA
-St. Louis Cardinals,17,12,.586,--,Cardinals,National,Central,#8FBC8B,STL
-Milwaukee Brewers,17,13,.567,0.5,Brewers,National,Central,#8FBC8B,MIL
-Chicago Cubs,14,16,.467,3.5,Cubs,National,Central,#0000FF,CHC
-Cincinnati Reds,13,15,.464,3.5,Reds,National,Central,#8FBC8B,CIN
-Pittsburgh Pirates,13,16,.448,4.0,Pirates,National,Central,#8FBC8B,PIT
-San Francisco Giants,18,12,.600,--,Giants,National,West,#8FBC8B,SFG
-Los Angeles Dodgers,17,14,.548,1.5,Dodgers,National,West,#788DF0,LAD
-San Diego Padres,17,14,.548,1.5,Padres,National,West,#8FBC8B,SDP
-Arizona Diamondbacks,15,14,.517,2.5,Diamondbacks,National,West,#8FBC8B,ARI
-Colorado Rockies,11,19,.367,7.0,Rockies,National,West,#8FBC8B,COL
+Boston Red Sox,18,13,.581,--,Red Sox,American,East,#8FBC8B,BOS
+New York Yankees,16,14,.533,1.5,Yankees,American,East,#8FBC8B,NYY
+Tampa Bay Rays,17,15,.531,1.5,Rays,American,East,#8FBC8B,TBR
+Toronto Blue Jays,15,14,.517,2.0,Blue Jays,American,East,#8FBC8B,TOR
+Baltimore Orioles,15,16,.484,3.0,Orioles,American,East,#8FBC8B,BAL
+Chicago White Sox,16,13,.552,--,White Sox,American,Central,#000000,CHW
+Cleveland Indians,16,13,.552,--,Indians,American,Central,#8FBC8B,CLE
+Kansas City Royals,16,13,.552,--,Royals,American,Central,#8FBC8B,KCR
+Minnesota Twins,11,18,.379,5.0,Twins,American,Central,#8FBC8B,MIN
+Detroit Tigers,9,22,.290,8.0,Tigers,American,Central,#8FBC8B,DET
+Oakland Athletics,19,13,.594,--,Athletics,American,West,#8FBC8B,OAK
+Seattle Mariners,17,15,.531,2.0,Mariners,American,West,#8FBC8B,SEA
+Houston Astros,15,15,.500,3.0,Astros,American,West,#8FBC8B,HOU
+Texas Rangers,15,17,.469,4.0,Rangers,American,West,#8FBC8B,TEX
+Los Angeles Angels,13,16,.448,4.5,Angels,American,West,#8FBC8B,LAA
+Philadelphia Phillies,16,15,.516,--,Phillies,National,East,#8FBC8B,PHI
+New York Mets,12,13,.480,1.0,Mets,National,East,#8FBC8B,NYM
+Atlanta Braves,14,16,.467,1.5,Braves,National,East,#8FBC8B,ATL
+Washington Nationals,12,14,.462,1.5,Nationals,National,East,#8FBC8B,WSN
+Miami Marlins,13,16,.448,2.0,Marlins,National,East,#8FBC8B,MIA
+St. Louis Cardinals,18,13,.581,--,Cardinals,National,Central,#8FBC8B,STL
+Milwaukee Brewers,17,14,.548,1.0,Brewers,National,Central,#8FBC8B,MIL
+Chicago Cubs,15,16,.484,3.0,Cubs,National,Central,#0000FF,CHC
+Cincinnati Reds,14,15,.483,3.0,Reds,National,Central,#8FBC8B,CIN
+Pittsburgh Pirates,13,17,.433,4.5,Pirates,National,Central,#8FBC8B,PIT
+San Francisco Giants,18,13,.581,--,Giants,National,West,#8FBC8B,SFG
+San Diego Padres,18,14,.563,0.5,Padres,National,West,#8FBC8B,SDP
+Los Angeles Dodgers,17,15,.531,1.5,Dodgers,National,West,#788DF0,LAD
+Arizona Diamondbacks,15,15,.500,2.5,Diamondbacks,National,West,#8FBC8B,ARI
+Colorado Rockies,12,19,.387,6.0,Rockies,National,West,#8FBC8B,COL
