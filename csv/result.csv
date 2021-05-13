@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-Boston Red Sox,22,15,.595,--,Red Sox,American,East,#8FBC8B,BOS
-New York Yankees,19,16,.543,2.0,Yankees,American,East,#8FBC8B,NYY
-Toronto Blue Jays,18,16,.529,2.5,Blue Jays,American,East,#8FBC8B,TOR
-Tampa Bay Rays,19,18,.514,3.0,Rays,American,East,#8FBC8B,TBR
-Baltimore Orioles,16,20,.444,5.5,Orioles,American,East,#8FBC8B,BAL
-Chicago White Sox,20,13,.606,--,White Sox,American,Central,#000000,CHW
-Cleveland Indians,19,14,.576,1.0,Indians,American,Central,#8FBC8B,CLE
-Kansas City Royals,16,18,.471,4.5,Royals,American,Central,#8FBC8B,KCR
-Minnesota Twins,12,21,.364,8.0,Twins,American,Central,#8FBC8B,MIN
-Detroit Tigers,11,24,.314,10.0,Tigers,American,Central,#8FBC8B,DET
-Oakland Athletics,22,15,.595,--,Athletics,American,West,#8FBC8B,OAK
-Houston Astros,19,17,.528,2.5,Astros,American,West,#8FBC8B,HOU
-Seattle Mariners,18,18,.500,3.5,Mariners,American,West,#8FBC8B,SEA
-Texas Rangers,18,20,.474,4.5,Rangers,American,West,#8FBC8B,TEX
-Los Angeles Angels,16,19,.457,5.0,Angels,American,West,#8FBC8B,LAA
-New York Mets,17,13,.567,--,Mets,National,East,#8FBC8B,NYM
-Philadelphia Phillies,19,17,.528,1.0,Phillies,National,East,#8FBC8B,PHI
-Atlanta Braves,17,18,.486,2.5,Braves,National,East,#8FBC8B,ATL
-Miami Marlins,15,20,.429,4.5,Marlins,National,East,#8FBC8B,MIA
-Washington Nationals,13,18,.419,4.5,Nationals,National,East,#8FBC8B,WSN
-St. Louis Cardinals,22,14,.611,--,Cardinals,National,Central,#8FBC8B,STL
-Milwaukee Brewers,19,17,.528,3.0,Brewers,National,Central,#8FBC8B,MIL
-Chicago Cubs,17,18,.486,4.5,Cubs,National,Central,#0000FF,CHC
-Cincinnati Reds,16,17,.485,4.5,Reds,National,Central,#8FBC8B,CIN
-Pittsburgh Pirates,15,20,.429,6.5,Pirates,National,Central,#8FBC8B,PIT
+Boston Red Sox,22,16,.579,--,Red Sox,American,East,#8FBC8B,BOS
+New York Yankees,20,16,.556,1.0,Yankees,American,East,#8FBC8B,NYY
+Toronto Blue Jays,19,16,.543,1.5,Blue Jays,American,East,#8FBC8B,TOR
+Tampa Bay Rays,19,19,.500,3.0,Rays,American,East,#8FBC8B,TBR
+Baltimore Orioles,16,21,.432,5.5,Orioles,American,East,#8FBC8B,BAL
+Chicago White Sox,21,13,.618,--,White Sox,American,Central,#000000,CHW
+Cleveland Indians,20,14,.588,1.0,Indians,American,Central,#8FBC8B,CLE
+Kansas City Royals,16,19,.457,5.5,Royals,American,Central,#8FBC8B,KCR
+Minnesota Twins,12,22,.353,9.0,Twins,American,Central,#8FBC8B,MIN
+Detroit Tigers,12,24,.333,10.0,Tigers,American,Central,#8FBC8B,DET
+Oakland Athletics,23,15,.605,--,Athletics,American,West,#8FBC8B,OAK
+Houston Astros,20,17,.541,2.5,Astros,American,West,#8FBC8B,HOU
+Seattle Mariners,18,19,.486,4.5,Mariners,American,West,#8FBC8B,SEA
+Texas Rangers,18,20,.474,5.0,Rangers,American,West,#8FBC8B,TEX
+Los Angeles Angels,16,20,.444,6.0,Angels,American,West,#8FBC8B,LAA
+New York Mets,18,13,.581,--,Mets,National,East,#8FBC8B,NYM
+Philadelphia Phillies,20,17,.541,1.0,Phillies,National,East,#8FBC8B,PHI
+Atlanta Braves,17,19,.472,3.5,Braves,National,East,#8FBC8B,ATL
+Miami Marlins,16,20,.444,4.5,Marlins,National,East,#8FBC8B,MIA
+Washington Nationals,13,19,.406,5.5,Nationals,National,East,#8FBC8B,WSN
+St. Louis Cardinals,22,15,.595,--,Cardinals,National,Central,#8FBC8B,STL
+Milwaukee Brewers,20,17,.541,2.0,Brewers,National,Central,#8FBC8B,MIL
+Cincinnati Reds,17,17,.500,3.5,Reds,National,Central,#8FBC8B,CIN
+Chicago Cubs,17,19,.472,4.5,Cubs,National,Central,#0000FF,CHC
+Pittsburgh Pirates,15,21,.417,6.5,Pirates,National,Central,#8FBC8B,PIT
 San Francisco Giants,22,14,.611,--,Giants,National,West,#8FBC8B,SFG
-San Diego Padres,20,16,.556,2.0,Padres,National,West,#8FBC8B,SDP
-Los Angeles Dodgers,19,17,.528,3.0,Dodgers,National,West,#788DF0,LAD
-Arizona Diamondbacks,17,19,.472,5.0,Diamondbacks,National,West,#8FBC8B,ARI
-Colorado Rockies,12,23,.343,9.5,Rockies,National,West,#8FBC8B,COL
+San Diego Padres,21,17,.553,2.0,Padres,National,West,#8FBC8B,SDP
+Los Angeles Dodgers,20,17,.541,2.5,Dodgers,National,West,#788DF0,LAD
+Arizona Diamondbacks,17,20,.459,5.5,Diamondbacks,National,West,#8FBC8B,ARI
+Colorado Rockies,13,24,.351,9.5,Rockies,National,West,#8FBC8B,COL
