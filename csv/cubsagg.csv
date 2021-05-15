@@ -1,9 +1,9 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 ATL,2,5,5.0,6.86,Braves,Atlanta Braves,National,East,#8FBC8B,ATL
 CIN,1,2,7.0,7.67,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
-CLE,0,2,1.5,2.5,Indians,Cleveland Indians,American,Central,#F46D82,CLE
-DET,1,0,4.0,2.0,Tigers,Detroit Tigers,American,Central,#8FBC8B,DET
-LAD,3,0,5.67,3.0,Dodgers,Los Angeles Dodgers,National,West,#788DF0,LAD
+CLE,0,2,1.5,2.5,Indians,Cleveland Indians,American,Central,#E31937,CLE
+DET,1,0,4.0,2.0,Tigers,Detroit Tigers,American,Central,#FC5E35,DET
+LAD,3,0,5.67,3.0,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
 MIL,3,6,3.44,4.22,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
 NYM,3,0,7.67,2.67,Mets,New York Mets,National,East,#8FBC8B,NYM
 PIT,5,4,3.33,4.0,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
