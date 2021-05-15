@@ -1,7 +1,6 @@
 posName,posnum,lastname,position,status_code,bats,throws
-Jason Adam,60,Adam,P,A,R,R
 Adbert Alzolay,73,Alzolay,P,A,R,R
-Jake Arrieta,49,Arrieta,P,D10,R,R
+Jake Arrieta,49,Arrieta,P,A,R,R
 Javier Baez,9,Baez,SS,A,R,R
 David Bote,13,Bote,2B,A,R,R
 Rex Brothers,48,Brothers,P,A,L,L
@@ -13,11 +12,10 @@ Matt Duffy,5,Duffy,3B,A,R,R
 Ian Happ,8,Happ,CF,D10,S,R
 Kyle Hendricks,28,Hendricks,P,A,R,R
 Jason Heyward,22,Heyward,RF,A,L,L
-Nico Hoerner,2,Hoerner,2B,D10,R,R
+Nico Hoerner,2,Hoerner,2B,A,R,R
 Craig Kimbrel,46,Kimbrel,P,A,R,R
 Dillon Maples,36,Maples,P,A,R,R
 Jake Marisnick,6,Marisnick,CF,D10,R,R
-Nick Martini,62,Martini,OF,A,L,L
 Trevor Megill,74,Megill,P,D10,L,R
 Shelby Miller,29,Miller,P,D10,R,R
 Alec Mills,30,Mills,P,A,R,R
@@ -28,7 +26,6 @@ Justin Steele,35,Steele,P,A,L,L
 Ryan Tepera,18,Tepera,P,A,R,R
 Keegan Thompson,71,Thompson,P,A,R,R
 Ildemaro Vargas,16,Vargas,2B,A,S,R
-Brad Wieck,38,Wieck,P,A,L,L
 Trevor Williams,32,Williams,P,A,R,R
-Dan Winkler,43,Winkler,P,D10,R,R
+Dan Winkler,43,Winkler,P,A,R,R
 Tony Wolters,11,Wolters,C,A,L,R
