@@ -2,7 +2,7 @@ teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 BOS,2,2,4.0,5.25,Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
 CIN,1,1,4.5,0.5,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
 CLE,4,4,4.0,3.38,Indians,Cleveland Indians,American,Central,#E31937,CLE
-DET,2,1,5.33,2.0,Tigers,Detroit Tigers,American,Central,#FC5E35,DET
+DET,2,1,5.33,2.0,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
 KCR,5,3,4.5,2.5,Royals,Kansas City Royals,American,Central,#788DF0,KCR
 LAA,1,3,5.5,6.0,Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
 MIN,3,0,8.67,4.33,Twins,Minnesota Twins,American,Central,#B9975B,MIN
