@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Wednesday, May 19",CHW,@,MIN,W,2,1,9,26-16,1.0,up 2.5,Giolito,Shoemaker,Hendriks,2:35,D,8608.0,1.34,1.0,,0,Twins,Minnesota Twins,American,Central,#B9975B,MIN
-"Tuesday, May 18",CHW,@,MIN,L-wo,4,5,9,25-16,1.0,up 2.5,Rogers,Bummer,None,3:48,N,9504.0,1.33,-1.0,,1,Twins,Minnesota Twins,American,Central,#B9975B,MIN
-"Friday, May 21",CHW,@,NYY,,,,,,,,,,,,,,,,,2,Yankees,New York Yankees,American,East,#8FBC8B,NYY
-"Saturday, May 22",CHW,@,NYY,,,,,,,,,,,,,,,,,3,Yankees,New York Yankees,American,East,#8FBC8B,NYY
+"Saturday, May 22",CHW,@,NYY,L,0,7,9,26-18,1.0,up 1.5,Cole,Cease,None,3:06,D,14665.0,1.42,-2.0,,0,Yankees,New York Yankees,American,East,#8FBC8B,NYY
+"Friday, May 21",CHW,@,NYY,L-wo,1,2,9,26-17,1.0,up 2.5,Chapman,Marshall,None,2:53,N,14011.0,1.33,-1.0,,1,Yankees,New York Yankees,American,East,#8FBC8B,NYY
+"Sunday, May 23",CHW,@,NYY,,,,,,,,,,,,,,,,,2,Yankees,New York Yankees,American,East,#8FBC8B,NYY
+"Monday, May 24",CHW,Home,STL,,,,,,,,,,,,,,,,,3,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
