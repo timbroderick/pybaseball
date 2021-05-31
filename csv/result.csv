@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-Tampa Bay Rays,30,20,.600,--,Rays,American,East,#8FBC8B,TBR
-Boston Red Sox,29,20,.592,0.5,Red Sox,American,East,#8FBC8B,BOS
-New York Yankees,28,20,.583,1.0,Yankees,American,East,#8FBC8B,NYY
-Toronto Blue Jays,24,23,.511,4.5,Blue Jays,American,East,#8FBC8B,TOR
-Baltimore Orioles,17,31,.354,12.0,Orioles,American,East,#8FBC8B,BAL
-Chicago White Sox,28,19,.596,--,White Sox,American,Central,#000000,CHW
-Cleveland Indians,26,20,.565,1.5,Indians,American,Central,#E31937,CLE
-Kansas City Royals,23,23,.500,4.5,Royals,American,Central,#788DF0,KCR
-Minnesota Twins,19,29,.396,9.5,Twins,American,Central,#B9975B,MIN
-Detroit Tigers,18,30,.375,10.5,Tigers,American,Central,#FF8B00,DET
-Oakland Athletics,28,22,.560,--,Athletics,American,West,#8FBC8B,OAK
-Houston Astros,26,22,.542,1.0,Astros,American,West,#8FBC8B,HOU
-Seattle Mariners,23,26,.469,4.5,Mariners,American,West,#8FBC8B,SEA
-Texas Rangers,22,28,.440,6.0,Rangers,American,West,#8FBC8B,TEX
-Los Angeles Angels,21,27,.438,6.0,Angels,American,West,#8FBC8B,LAA
-New York Mets,22,20,.524,--,Mets,National,East,#8FBC8B,NYM
-Atlanta Braves,24,24,.500,1.0,Braves,National,East,#8FBC8B,ATL
-Philadelphia Phillies,24,25,.490,1.5,Phillies,National,East,#8FBC8B,PHI
-Miami Marlins,23,25,.479,2.0,Marlins,National,East,#8FBC8B,MIA
-Washington Nationals,20,24,.455,3.0,Nationals,National,East,#8FBC8B,WSN
-St. Louis Cardinals,26,22,.542,--,Cardinals,National,Central,#8FBC8B,STL
-Chicago Cubs,25,22,.532,0.5,Cubs,National,Central,#0000FF,CHC
-Milwaukee Brewers,24,24,.500,2.0,Brewers,National,Central,#8FBC8B,MIL
-Cincinnati Reds,21,25,.457,4.0,Reds,National,Central,#8FBC8B,CIN
-Pittsburgh Pirates,18,29,.383,7.5,Pirates,National,Central,#8FBC8B,PIT
-San Diego Padres,31,18,.633,--,Padres,National,West,#8FBC8B,SDP
-Los Angeles Dodgers,30,18,.625,0.5,Dodgers,National,West,#8FBC8B,LAD
-San Francisco Giants,29,19,.604,1.5,Giants,National,West,#8FBC8B,SFG
-Colorado Rockies,19,30,.388,12.0,Rockies,National,West,#8FBC8B,COL
-Arizona Diamondbacks,18,31,.367,13.0,Diamondbacks,National,West,#8FBC8B,ARI
+Tampa Bay Rays,33,20,.623,--,Rays,American,East,#8FBC8B,TBR
+Boston Red Sox,32,20,.615,0.5,Red Sox,American,East,#8FBC8B,BOS
+New York Yankees,29,23,.558,3.5,Yankees,American,East,#8FBC8B,NYY
+Toronto Blue Jays,26,24,.520,5.5,Blue Jays,American,East,#8FBC8B,TOR
+Baltimore Orioles,17,35,.327,15.5,Orioles,American,East,#8FBC8B,BAL
+Chicago White Sox,31,20,.608,--,White Sox,American,Central,#000000,CHW
+Cleveland Indians,27,22,.551,3.0,Indians,American,Central,#E31937,CLE
+Kansas City Royals,24,26,.480,6.5,Royals,American,Central,#788DF0,KCR
+Minnesota Twins,21,30,.412,10.0,Twins,American,Central,#B9975B,MIN
+Detroit Tigers,21,31,.404,10.5,Tigers,American,Central,#FF8B00,DET
+Oakland Athletics,31,23,.574,--,Athletics,American,West,#8FBC8B,OAK
+Houston Astros,27,24,.529,2.5,Astros,American,West,#8FBC8B,HOU
+Seattle Mariners,26,27,.491,4.5,Mariners,American,West,#8FBC8B,SEA
+Los Angeles Angels,23,29,.442,7.0,Angels,American,West,#8FBC8B,LAA
+Texas Rangers,22,32,.407,9.0,Rangers,American,West,#8FBC8B,TEX
+New York Mets,25,20,.556,--,Mets,National,East,#8FBC8B,NYM
+Philadelphia Phillies,25,27,.481,3.5,Phillies,National,East,#8FBC8B,PHI
+Atlanta Braves,24,26,.480,3.5,Braves,National,East,#8FBC8B,ATL
+Miami Marlins,24,28,.462,4.5,Marlins,National,East,#8FBC8B,MIA
+Washington Nationals,21,27,.438,5.5,Nationals,National,East,#8FBC8B,WSN
+St. Louis Cardinals,30,22,.577,--,Cardinals,National,Central,#8FBC8B,STL
+Chicago Cubs,29,22,.569,0.5,Cubs,National,Central,#0000FF,CHC
+Milwaukee Brewers,27,25,.519,3.0,Brewers,National,Central,#8FBC8B,MIL
+Cincinnati Reds,22,28,.440,7.0,Reds,National,Central,#8FBC8B,CIN
+Pittsburgh Pirates,20,31,.392,9.5,Pirates,National,Central,#8FBC8B,PIT
+San Diego Padres,34,19,.642,--,Padres,National,West,#8FBC8B,SDP
+San Francisco Giants,32,20,.615,1.5,Giants,National,West,#8FBC8B,SFG
+Los Angeles Dodgers,31,21,.596,2.5,Dodgers,National,West,#8FBC8B,LAD
+Colorado Rockies,19,34,.358,15.0,Rockies,National,West,#8FBC8B,COL
+Arizona Diamondbacks,18,35,.340,16.0,Diamondbacks,National,West,#8FBC8B,ARI
