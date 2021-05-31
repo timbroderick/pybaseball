@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Saturday, May 29",CHC,Home,CIN,W,10,2,9,29-22,2.0,0.5,Thompson,Castillo,None,3:13,D,24275.0,1.40,6.0,,0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
-"Friday, May 28",CHC,Home,CIN,W,1,0,9,28-22,2.0,0.5,Alzolay,Gutiérrez,Kimbrel,2:57,D,18478.0,1.39,5.0,,1,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
-"Sunday, May 30",CHC,Home,CIN,,,,,,,,,,,,,,,,,2,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
-"Monday, May 31",CHC,Home,SDP,,,,,,,,,,,,,,,,,3,Padres,San Diego Padres,National,West,#8FBC8B,SDP
+"Sunday, May 30",CHC,Home,CIN,L,1,5,9,29-23,2.0,0.5,Mahle,Arrieta,Antone,3:27,D,24824.0,1.40,-1.0,,0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Saturday, May 29",CHC,Home,CIN,W,10,2,9,29-22,2.0,0.5,Thompson,Castillo,None,3:13,D,24275.0,1.40,6.0,,1,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Monday, May 31",CHC,Home,SDP,,,,,,,,,,,,,,,,,2,Padres,San Diego Padres,National,West,#8FBC8B,SDP
+"Tuesday, Jun 1",CHC,Home,SDP,,,,,,,,,,,,,,,,,3,Padres,San Diego Padres,National,West,#8FBC8B,SDP
