@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Tuesday, Jun 1",CHC,Home,SDP,W,4,3,9,31-23,1.0,up 0.5,Hendricks,Weathers,Kimbrel,2:52,N,24824.0,1.36,2.0,,0,Padres,San Diego Padres,National,West,#8FBC8B,SDP
-"Monday, May 31",CHC,Home,SDP,W,7,2,9,30-23,1.0,up 0.5,Stewart,Paddack,None,2:53,D,24824.0,1.35,1.0,,1,Padres,San Diego Padres,National,West,#8FBC8B,SDP
-"Wednesday, Jun 2",CHC,Home,SDP,,,,,,,,,,,,,,,,,2,Padres,San Diego Padres,National,West,#8FBC8B,SDP
-"Thursday, Jun 3",CHC,@,SFG,,,,,,,,,,,,,,,,,3,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
+"Thursday, Jun 3",CHC,@,SFG,L,2,7,9,32-24,1.0,up 1.5,DeSclafani,Davies,None,3:05,N,10737.0,1.38,-1.0,,0,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
+"Wednesday, Jun 2",CHC,Home,SDP,W,6,1,9,32-23,1.0,up 1.5,Alzolay,Johnson,None,3:16,D,22056.0,1.39,3.0,,1,Padres,San Diego Padres,National,West,#8FBC8B,SDP
+"Friday, Jun 4",CHC,@,SFG,,,,,,,,,,,,,,,,,2,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
+"Saturday, Jun 5",CHC,@,SFG,,,,,,,,,,,,,,,,,3,Giants,San Francisco Giants,National,West,#8FBC8B,SFG

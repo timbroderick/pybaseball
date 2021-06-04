@@ -7,6 +7,7 @@ LAD,3,0,5.67,3.0,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
 MIL,3,6,3.44,4.22,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
 NYM,3,0,7.67,2.67,Mets,New York Mets,National,East,#8FBC8B,NYM
 PIT,8,4,3.58,3.58,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
-SDP,2,0,5.5,2.5,Padres,San Diego Padres,National,West,#8FBC8B,SDP
+SDP,3,0,5.67,2.0,Padres,San Diego Padres,National,West,#8FBC8B,SDP
+SFG,0,1,2.0,7.0,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
 STL,2,1,5.0,2.0,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
 WSN,3,1,5.25,3.0,Nationals,Washington Nationals,National,East,#8FBC8B,WSN
