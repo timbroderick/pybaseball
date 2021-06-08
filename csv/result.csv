@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
 Tampa Bay Rays,38,23,.623,--,Rays,American,East,#8FBC8B,TBR
-Boston Red Sox,36,23,.610,1.0,Red Sox,American,East,#8FBC8B,BOS
+Boston Red Sox,37,23,.617,0.5,Red Sox,American,East,#8FBC8B,BOS
 Toronto Blue Jays,30,27,.526,6.0,Blue Jays,American,East,#8FBC8B,TOR
 New York Yankees,31,29,.517,6.5,Yankees,American,East,#8FBC8B,NYY
 Baltimore Orioles,21,38,.356,16.0,Orioles,American,East,#8FBC8B,BAL
 Chicago White Sox,36,23,.610,--,White Sox,American,Central,#000000,CHW
 Cleveland Indians,31,26,.544,4.0,Indians,American,Central,#E31937,CLE
-Kansas City Royals,29,28,.509,6.0,Royals,American,Central,#788DF0,KCR
+Kansas City Royals,29,29,.500,6.5,Royals,American,Central,#788DF0,KCR
 Detroit Tigers,24,35,.407,12.0,Tigers,American,Central,#FF8B00,DET
 Minnesota Twins,24,35,.407,12.0,Twins,American,Central,#B9975B,MIN
 Oakland Athletics,35,26,.574,--,Athletics,American,West,#8FBC8B,OAK
 Houston Astros,33,26,.559,1.0,Astros,American,West,#8FBC8B,HOU
 Seattle Mariners,30,31,.492,5.0,Mariners,American,West,#8FBC8B,SEA
-Los Angeles Angels,27,32,.458,7.0,Angels,American,West,#8FBC8B,LAA
+Los Angeles Angels,28,32,.467,6.5,Angels,American,West,#8FBC8B,LAA
 Texas Rangers,23,38,.377,12.0,Rangers,American,West,#8FBC8B,TEX
 New York Mets,29,23,.558,--,Mets,National,East,#8FBC8B,NYM
 Atlanta Braves,28,29,.491,3.5,Braves,National,East,#8FBC8B,ATL
 Philadelphia Phillies,28,30,.483,4.0,Phillies,National,East,#8FBC8B,PHI
-Miami Marlins,25,33,.431,7.0,Marlins,National,East,#8FBC8B,MIA
 Washington Nationals,24,32,.429,7.0,Nationals,National,East,#8FBC8B,WSN
-Chicago Cubs,33,26,.559,--,Cubs,National,Central,#0000FF,CHC
+Miami Marlins,25,34,.424,7.5,Marlins,National,East,#8FBC8B,MIA
 Milwaukee Brewers,33,26,.559,--,Brewers,National,Central,#8FBC8B,MIL
+Chicago Cubs,33,27,.550,0.5,Cubs,National,Central,#0000FF,CHC
 St. Louis Cardinals,31,29,.517,2.5,Cardinals,National,Central,#8FBC8B,STL
 Cincinnati Reds,28,29,.491,4.0,Reds,National,Central,#8FBC8B,CIN
 Pittsburgh Pirates,23,35,.397,9.5,Pirates,National,Central,#8FBC8B,PIT
 San Francisco Giants,37,22,.627,--,Giants,National,West,#8FBC8B,SFG
-San Diego Padres,36,25,.590,2.0,Padres,National,West,#8FBC8B,SDP
+San Diego Padres,37,25,.597,1.5,Padres,National,West,#8FBC8B,SDP
 Los Angeles Dodgers,34,25,.576,3.0,Dodgers,National,West,#8FBC8B,LAD
 Colorado Rockies,24,36,.400,13.5,Rockies,National,West,#8FBC8B,COL
 Arizona Diamondbacks,20,41,.328,18.0,Diamondbacks,National,West,#8FBC8B,ARI
