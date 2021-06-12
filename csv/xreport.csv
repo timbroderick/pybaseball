@@ -1,0 +1,36 @@
+task,status
+Packages loaded,OK
+old directories removed,OK
+standings,OK
+team batting,OK
+team pitching,OK
+Sox sched,OK
+Cubs sched,OK
+batting stats,OK
+pitching stats,Problem
+Sox roster,Problem
+Cubs roster,Problem
+stadings appended,Problem
+standings joined,Problem
+batting stats joined,Problem
+pitching stats joined,Problem
+Sox games,Problem
+Sox players,Problem
+Sox batting,Problem
+Sox pitching,Problem
+Cubs games,Problem
+Cubs players,Problem
+Cubs batting,Problem
+Cubs pitching,Problem
+Plotting,Problem
+League plots,Problem
+Sox hitting charts,Problem
+Sox pitching charts,Problem
+Cubs hitting charts,Problem
+Cubs pitching charts,Problem
+h2h batting stats,Problem
+h2h batting charts,Problem
+h2h pitching stats,Problem
+h2h pitching charts,Problem
+site frozen,Problem
+pushed to web,Problem
