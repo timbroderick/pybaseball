@@ -5,9 +5,9 @@ CLE,0,2,1.5,2.5,Indians,Cleveland Indians,American,Central,#E31937,CLE
 DET,2,1,5.67,4.0,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
 LAD,3,0,5.67,3.0,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
 MIL,3,6,3.44,4.22,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
-NYM,3,0,7.67,2.67,Mets,New York Mets,National,East,#8FBC8B,NYM
+NYM,3,1,6.25,3.25,Mets,New York Mets,National,East,#8FBC8B,NYM
 PIT,8,4,3.58,3.58,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
 SDP,5,1,5.17,2.83,Padres,San Diego Padres,National,West,#8FBC8B,SDP
 SFG,1,3,3.5,5.5,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
-STL,4,1,6.0,2.6,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
+STL,5,1,5.33,2.17,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
 WSN,3,1,5.25,3.0,Nationals,Washington Nationals,National,East,#8FBC8B,WSN
