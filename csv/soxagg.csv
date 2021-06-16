@@ -10,6 +10,6 @@ MIN,5,1,8.0,3.83,Twins,Minnesota Twins,American,Central,#B9975B,MIN
 NYY,0,3,1.67,4.67,Yankees,New York Yankees,American,East,#8FBC8B,NYY
 SEA,2,1,6.67,4.0,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
 STL,2,1,4.33,2.67,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
-TBR,0,1,2.0,5.0,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
+TBR,1,1,2.5,2.5,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
 TEX,3,0,6.33,4.0,Rangers,Texas Rangers,American,West,#8FBC8B,TEX
 TOR,2,1,4.33,3.0,Blue Jays,Toronto Blue Jays,American,East,#8FBC8B,TOR
