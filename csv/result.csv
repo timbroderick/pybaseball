@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-Boston Red Sox,44,29,.603,--,Red Sox,American,East,#8FBC8B,BOS
-Tampa Bay Rays,43,31,.581,1.5,Rays,American,East,#8FBC8B,TBR
-New York Yankees,38,34,.528,5.5,Yankees,American,East,#8FBC8B,NYY
-Toronto Blue Jays,36,35,.507,7.0,Blue Jays,American,East,#8FBC8B,TOR
-Baltimore Orioles,23,50,.315,21.0,Orioles,American,East,#8FBC8B,BAL
-Chicago White Sox,43,30,.589,--,White Sox,American,Central,#000000,CHW
-Cleveland Indians,40,31,.563,2.0,Indians,American,Central,#E31937,CLE
-Kansas City Royals,33,38,.465,9.0,Royals,American,Central,#788DF0,KCR
-Detroit Tigers,31,42,.425,12.0,Tigers,American,Central,#FF8B00,DET
-Minnesota Twins,31,42,.425,12.0,Twins,American,Central,#B9975B,MIN
-Houston Astros,45,28,.616,--,Astros,American,West,#8FBC8B,HOU
-Oakland Athletics,45,30,.600,1.0,Athletics,American,West,#8FBC8B,OAK
-Seattle Mariners,39,36,.520,7.0,Mariners,American,West,#8FBC8B,SEA
-Los Angeles Angels,36,37,.493,9.0,Angels,American,West,#8FBC8B,LAA
-Texas Rangers,26,47,.356,19.0,Rangers,American,West,#8FBC8B,TEX
-New York Mets,37,31,.544,--,Mets,National,East,#8FBC8B,NYM
-Atlanta Braves,35,37,.486,4.0,Braves,National,East,#8FBC8B,ATL
-Philadelphia Phillies,34,36,.486,4.0,Phillies,National,East,#8FBC8B,PHI
-Washington Nationals,34,36,.486,4.0,Nationals,National,East,#8FBC8B,WSN
-Miami Marlins,31,41,.431,8.0,Marlins,National,East,#8FBC8B,MIA
-Chicago Cubs,41,33,.554,--,Cubs,National,Central,#0000FF,CHC
-Milwaukee Brewers,41,33,.554,--,Brewers,National,Central,#8FBC8B,MIL
-Cincinnati Reds,36,36,.500,4.0,Reds,National,Central,#8FBC8B,CIN
-St. Louis Cardinals,36,37,.493,4.5,Cardinals,National,Central,#8FBC8B,STL
-Pittsburgh Pirates,26,45,.366,13.5,Pirates,National,Central,#8FBC8B,PIT
-San Francisco Giants,47,26,.644,--,Giants,National,West,#8FBC8B,SFG
-Los Angeles Dodgers,44,29,.603,3.0,Dodgers,National,West,#8FBC8B,LAD
-San Diego Padres,44,32,.579,4.5,Padres,National,West,#8FBC8B,SDP
-Colorado Rockies,30,44,.405,17.5,Rockies,National,West,#8FBC8B,COL
-Arizona Diamondbacks,21,54,.280,27.0,Diamondbacks,National,West,#8FBC8B,ARI
+Boston Red Sox,48,31,.608,--,Red Sox,American,East,#8FBC8B,BOS
+Tampa Bay Rays,47,32,.595,1.0,Rays,American,East,#8FBC8B,TBR
+Toronto Blue Jays,40,36,.526,6.5,Blue Jays,American,East,#8FBC8B,TOR
+New York Yankees,40,38,.513,7.5,Yankees,American,East,#8FBC8B,NYY
+Baltimore Orioles,25,54,.316,23.0,Orioles,American,East,#8FBC8B,BAL
+Chicago White Sox,45,32,.584,--,White Sox,American,Central,#000000,CHW
+Cleveland Indians,42,33,.560,2.0,Indians,American,Central,#E31937,CLE
+Minnesota Twins,33,43,.434,11.5,Twins,American,Central,#B9975B,MIN
+Detroit Tigers,34,45,.430,12.0,Tigers,American,Central,#FF8B00,DET
+Kansas City Royals,33,44,.429,12.0,Royals,American,Central,#788DF0,KCR
+Houston Astros,48,31,.608,--,Astros,American,West,#8FBC8B,HOU
+Oakland Athletics,47,33,.588,1.5,Athletics,American,West,#8FBC8B,OAK
+Seattle Mariners,41,38,.519,7.0,Mariners,American,West,#8FBC8B,SEA
+Los Angeles Angels,38,40,.487,9.5,Angels,American,West,#8FBC8B,LAA
+Texas Rangers,30,48,.385,17.5,Rangers,American,West,#8FBC8B,TEX
+New York Mets,40,34,.541,--,Mets,National,East,#8FBC8B,NYM
+Washington Nationals,38,38,.500,3.0,Nationals,National,East,#8FBC8B,WSN
+Atlanta Braves,37,40,.481,4.5,Braves,National,East,#8FBC8B,ATL
+Philadelphia Phillies,36,40,.474,5.0,Phillies,National,East,#8FBC8B,PHI
+Miami Marlins,33,44,.429,8.5,Marlins,National,East,#8FBC8B,MIA
+Milwaukee Brewers,46,33,.582,--,Brewers,National,Central,#8FBC8B,MIL
+Chicago Cubs,42,37,.532,4.0,Cubs,National,Central,#0000FF,CHC
+Cincinnati Reds,39,38,.506,6.0,Reds,National,Central,#8FBC8B,CIN
+St. Louis Cardinals,38,41,.481,8.0,Cardinals,National,Central,#8FBC8B,STL
+Pittsburgh Pirates,29,48,.377,16.0,Pirates,National,Central,#8FBC8B,PIT
+San Francisco Giants,50,28,.641,--,Giants,National,West,#8FBC8B,SFG
+Los Angeles Dodgers,48,31,.608,2.5,Dodgers,National,West,#8FBC8B,LAD
+San Diego Padres,47,33,.588,4.0,Padres,National,West,#8FBC8B,SDP
+Colorado Rockies,32,47,.405,18.5,Rockies,National,West,#8FBC8B,COL
+Arizona Diamondbacks,22,58,.275,29.0,Diamondbacks,National,West,#8FBC8B,ARI
