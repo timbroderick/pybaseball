@@ -1,31 +1,31 @@
-Tm,W,L,WLperc,GB
-Boston Red Sox,63,42,.600,--
-Tampa Bay Rays,62,42,.596,0.5
-New York Yankees,54,48,.529,7.5
-Toronto Blue Jays,52,48,.520,8.5
-Baltimore Orioles,36,66,.353,25.5
-Chicago White Sox,61,43,.587,--
-Cleveland Indians,50,50,.500,9.0
-Detroit Tigers,50,56,.472,12.0
-Kansas City Royals,45,57,.441,15.0
-Minnesota Twins,43,61,.413,18.0
-Houston Astros,64,40,.615,--
-Oakland Athletics,59,46,.562,5.5
-Seattle Mariners,56,48,.538,8.0
-Los Angeles Angels,51,52,.495,12.5
-Texas Rangers,36,67,.350,27.5
-New York Mets,54,48,.529,--
-Philadelphia Phillies,51,52,.495,3.5
-Atlanta Braves,51,53,.490,4.0
-Washington Nationals,48,55,.466,6.5
-Miami Marlins,44,59,.427,10.5
-Milwaukee Brewers,62,42,.596,--
-Cincinnati Reds,55,49,.529,7.0
-St. Louis Cardinals,52,51,.505,9.5
-Chicago Cubs,50,55,.476,12.5
-Pittsburgh Pirates,39,64,.379,22.5
-San Francisco Giants,64,39,.621,--
-Los Angeles Dodgers,62,43,.590,3.0
-San Diego Padres,60,46,.566,5.5
-Colorado Rockies,45,59,.433,19.5
-Arizona Diamondbacks,33,71,.317,31.5
+Tm,W,L,WLperc,GB,E#
+Tampa Bay Rays,64,43,.598,--,--
+Boston Red Sox,63,44,.589,1.0,55
+New York Yankees,56,49,.533,7.0,50
+Toronto Blue Jays,54,49,.524,8.0,50
+Baltimore Orioles,38,67,.362,25.0,32
+Chicago White Sox,62,44,.585,--,--
+Cleveland Indians,52,51,.505,8.5,50
+Detroit Tigers,51,57,.472,12.0,44
+Kansas City Royals,45,59,.433,16.0,42
+Minnesota Twins,44,62,.415,18.0,39
+Houston Astros,64,42,.604,--,--
+Oakland Athletics,60,47,.561,4.5,52
+Seattle Mariners,57,50,.533,7.5,49
+Los Angeles Angels,52,54,.491,12.0,45
+Texas Rangers,39,67,.368,25.0,32
+New York Mets,55,50,.524,--,--
+Philadelphia Phillies,53,53,.500,2.5,55
+Atlanta Braves,52,54,.491,3.5,54
+Washington Nationals,49,57,.462,6.5,51
+Miami Marlins,45,61,.425,10.5,47
+Milwaukee Brewers,64,43,.598,--,--
+Cincinnati Reds,56,50,.528,7.5,49
+St. Louis Cardinals,53,52,.505,10.0,47
+Chicago Cubs,51,56,.477,13.0,43
+Pittsburgh Pirates,40,66,.377,23.5,33
+San Francisco Giants,67,39,.632,--,--
+Los Angeles Dodgers,64,43,.598,3.5,53
+San Diego Padres,61,47,.565,7.0,49
+Colorado Rockies,46,60,.434,21.0,36
+Arizona Diamondbacks,33,74,.308,34.5,22
