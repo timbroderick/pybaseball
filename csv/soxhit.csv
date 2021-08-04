@@ -1,24 +1,24 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,CHW,423,363,51,88,17,2,18,78,39,99,1,0,0.242,0.333,0.449,0.337,8.0,14.4,1.5,2.6,27.3
-Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,CHW,395,375,64,111,22,1,9,37,18,87,16,7,0.296,0.329,0.432,0.328,4.7,26.6,2.7,1.1,23.2
+Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,CHW,427,367,51,89,17,2,18,80,39,99,1,0,0.243,0.333,0.447,0.336,7.7,14.2,1.4,2.6,27.0
+Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,CHW,399,379,66,114,22,1,10,40,18,87,16,7,0.301,0.333,0.443,0.335,6.8,28.9,2.9,1.1,23.0
 Dylan Cease,84,Cease,P,A,R,R,Dylan Cease,CHW,6,6,1,3,1,0,0,0,0,1,0,0,0.5,0.5,0.667,0.502,0.9,1.8,0.2,,16.7
 Zack Collins,21,Collins,C,A,L,R,Zack Collins,CHW,177,149,20,31,10,0,4,23,26,53,1,1,0.208,0.33,0.356,0.306,-1.1,-3.5,-0.4,-11.2,35.6
-Adam Engel,15,Engel,CF,A,R,R,Adam Engel,CHW,91,78,14,21,5,0,6,16,8,15,4,1,0.269,0.363,0.564,0.391,5.8,9.5,1.0,0.2,19.2
-Leury Garcia,28,Garcia,CF,A,S,R,Leury Garcia,CHW,319,278,41,68,12,3,3,40,30,75,2,1,0.245,0.319,0.342,0.294,-5.1,10.8,1.1,1.6,27.0
+Adam Engel,15,Engel,CF,A,R,R,Adam Engel,CHW,95,82,14,21,5,0,6,16,8,18,4,1,0.256,0.347,0.537,0.375,4.8,8.6,0.9,0.2,22.0
+Leury Garcia,28,Garcia,CF,A,S,R,Leury Garcia,CHW,323,281,41,68,12,3,3,40,31,76,2,1,0.242,0.319,0.338,0.293,-5.6,10.4,1.1,1.6,27.0
 Lucas Giolito,27,Giolito,P,A,R,R,Lucas Giolito,CHW,4,4,0,1,0,0,0,0,0,3,0,0,0.25,0.25,0.25,0.22,-0.3,0.3,0.0,,75.0
 Brian Goodwin,18,Goodwin,CF,A,L,R,Brian Goodwin,CHW,156,137,24,34,8,1,6,19,18,35,0,0,0.248,0.335,0.453,0.341,3.5,7.2,0.7,-2.3,25.5
 Yasmani Grandal,24,Grandal,C,D10,S,R,Yasmani Grandal,CHW,246,181,42,34,3,0,14,38,60,64,0,0,0.188,0.388,0.436,0.365,10.3,18.5,1.9,-0.4,35.4
 Billy Hamilton,0,Hamilton,CF,D10,S,R,Billy Hamilton,CHW,112,106,19,24,8,2,2,11,3,38,8,0,0.226,0.245,0.396,0.271,-3.9,5.0,0.5,2.8,35.8
-Cesar Hernandez,12,Hernandez,2B,A,S,R,Cesar Hernandez,- - -,434,389,61,92,17,2,18,47,39,92,0,0,0.237,0.311,0.429,0.321,2.5,19.3,1.9,2.3,23.7
-Eloy Jimenez,74,Jimenez,LF,A,R,R,Eloy Jimenez,CHW,11,11,1,2,0,0,1,3,0,2,0,0,0.182,0.182,0.455,0.264,-0.4,1.1,0.1,1.7,18.2
+Cesar Hernandez,12,Hernandez,2B,A,S,R,Cesar Hernandez,- - -,438,391,61,92,17,2,18,47,41,93,0,0,0.235,0.313,0.427,0.321,2.6,19.5,2.0,2.3,23.8
+Eloy Jimenez,74,Jimenez,LF,A,R,R,Eloy Jimenez,CHW,15,15,1,2,0,0,1,3,0,3,0,0,0.133,0.133,0.333,0.193,-1.5,0.1,0.0,1.7,20.0
 Dallas Keuchel,60,Keuchel,P,A,L,L,Dallas Keuchel,CHW,2,2,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,50.0
 Craig Kimbrel,46,Kimbrel,P,A,R,R,Craig Kimbrel,- - -,1,1,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,100.0
 Michael Kopech,34,Kopech,P,A,R,R,Michael Kopech,CHW,1,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,0.0
 Jake Lamb,23,Lamb,LF,D10,L,R,Jake Lamb,CHW,99,85,16,19,2,0,5,10,13,28,0,0,0.224,0.333,0.424,0.332,1.5,3.8,0.4,-1.1,32.9
 Lance Lynn,33,Lynn,P,A,S,R,Lance Lynn,CHW,2,2,0,1,0,0,0,2,0,1,0,0,0.5,0.5,0.5,0.441,0.2,0.5,0.1,,50.0
-Yoan Moncada,10,Moncada,3B,A,S,R,Yoan Moncada,CHW,404,339,46,89,19,1,9,46,58,107,2,2,0.263,0.376,0.404,0.347,11.0,29.9,3.0,4.6,31.6
+Yoan Moncada,10,Moncada,3B,A,S,R,Yoan Moncada,CHW,408,342,47,89,19,1,9,46,59,108,2,2,0.26,0.375,0.401,0.345,10.6,29.6,3.0,4.6,31.6
 Carlos Rodon,55,Rodon,P,A,L,L,Carlos Rodon,CHW,1,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,0.0
 Jose Ruiz,66,Ruiz,P,A,R,R,Jose Ruiz,CHW,1,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,0.0
 Gavin Sheets,32,Sheets,1B,A,L,L,Gavin Sheets,CHW,93,83,10,19,5,0,6,15,9,19,0,0,0.229,0.301,0.506,0.34,2.0,1.2,0.1,-0.8,22.9
-Andrew Vaughn,25,Vaughn,LF,A,R,R,Andrew Vaughn,CHW,330,295,44,76,22,0,11,32,25,76,1,1,0.258,0.321,0.444,0.329,4.1,9.4,0.9,-1.6,25.8
-Seby Zavala,44,Zavala,C,A,R,R,Seby Zavala,CHW,40,34,7,8,2,0,3,7,3,14,0,0,0.235,0.316,0.559,0.369,1.8,4.2,0.4,-0.2,41.2
+Andrew Vaughn,25,Vaughn,LF,A,R,R,Andrew Vaughn,CHW,334,298,46,77,22,0,12,33,26,77,1,1,0.258,0.323,0.453,0.333,5.3,10.7,1.1,-1.6,25.8
+Seby Zavala,44,Zavala,C,A,R,R,Seby Zavala,CHW,43,35,9,8,2,0,3,8,5,15,0,0,0.229,0.341,0.543,0.375,2.2,4.8,0.5,-0.2,42.9
