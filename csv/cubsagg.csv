@@ -1,7 +1,7 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 ARI,4,2,4.83,3.33,Diamondbacks,Arizona Diamondbacks,National,West,#8FBC8B,ARI
 ATL,2,5,5.0,6.86,Braves,Atlanta Braves,National,East,#8FBC8B,ATL
-CHW,0,2,3.0,6.0,White Sox,Chicago White Sox,American,Central,#000000,CHW
+CHW,0,3,3.0,7.0,White Sox,Chicago White Sox,American,Central,#000000,CHW
 CIN,4,9,4.15,5.0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
 CLE,1,3,2.5,2.5,Indians,Cleveland Indians,American,Central,#E31937,CLE
 COL,1,2,4.67,7.0,Rockies,Colorado Rockies,National,West,#8FBC8B,COL
