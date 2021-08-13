@@ -1,23 +1,25 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Sergio Alcantara,51,Alcantara,SS,A,S,R,Sergio Alcantara,CHC,122,106,15,18,4,3,2,6,13,34,1,0,0.17,0.264,0.321,0.26,-5.4,-1.1,-0.1,0.0,32.1
-Adbert Alzolay,73,Alzolay,P,A,R,R,Adbert Alzolay,CHC,30,29,1,1,0,0,0,0,1,12,0,0,0.034,0.067,0.034,0.052,-6.4,-2.0,-0.2,,41.4
-Jake Arrieta,49,Arrieta,P,A,R,R,Jake Arrieta,CHC,25,20,2,2,0,0,0,0,2,15,0,0,0.1,0.217,0.1,0.168,-3.0,0.7,0.1,,75.0
-David Bote,13,Bote,2B,A,R,R,David Bote,CHC,214,190,21,39,9,0,6,29,18,45,0,1,0.205,0.282,0.347,0.278,-6.3,-1.4,-0.1,0.1,23.7
+Sergio Alcantara,51,Alcantara,SS,A,S,R,Sergio Alcantara,CHC,127,110,16,19,4,3,2,6,14,35,1,0,0.173,0.27,0.318,0.262,-5.4,-1.0,-0.1,0.0,31.8
+Adbert Alzolay,73,Alzolay,P,A,R,R,Adbert Alzolay,CHC,30,29,1,1,0,0,0,0,1,12,0,0,0.034,0.067,0.034,0.052,-6.4,-2.1,-0.2,,41.4
+David Bote,13,Bote,2B,A,R,R,David Bote,CHC,227,202,22,40,9,0,6,29,19,48,0,1,0.198,0.274,0.332,0.269,-8.5,-3.1,-0.3,0.1,23.8
 Rex Brothers,48,Brothers,P,A,L,L,Rex Brothers,CHC,1,1,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,100.0
-Robinson Chirinos,29,Chirinos,C,A,R,R,Robinson Chirinos,CHC,38,33,4,7,1,0,3,4,5,12,0,0,0.212,0.316,0.515,0.353,1.2,1.1,0.1,-1.1,36.4
-Willson Contreras,40,Contreras,C,A,R,R,Willson Contreras,CHC,396,339,48,78,15,0,17,40,43,114,4,4,0.23,0.336,0.425,0.332,6.1,19.7,2.0,-0.8,33.6
-Zach Davies,27,Davies,P,A,R,R,Zach Davies,CHC,35,27,1,4,0,0,0,2,0,7,0,0,0.148,0.148,0.148,0.131,-5.3,-0.1,0.0,,25.9
-Greg Deichmann,6,Deichmann,OF,A,L,R,Greg Deichmann,CHC,9,9,0,2,0,0,0,1,0,1,0,0,0.222,0.222,0.222,0.196,-0.9,-0.7,-0.1,,11.1
-Matt Duffy,5,Duffy,3B,A,R,R,Matt Duffy,CHC,148,129,19,30,4,0,1,12,14,29,4,1,0.233,0.324,0.287,0.281,-3.9,0.3,0.0,1.3,22.5
-Johneshwy Fargas,4,Fargas,CF,A,R,R,Johneshwy Fargas,- - -,33,31,2,9,3,1,0,3,1,10,1,2,0.29,0.313,0.452,0.325,0.3,0.0,0.0,0.1,32.3
-Ian Happ,8,Happ,CF,A,S,R,Ian Happ,CHC,341,293,33,52,10,0,11,28,43,102,1,1,0.177,0.289,0.324,0.277,-10.2,-4.9,-0.5,-1.8,34.8
-Kyle Hendricks,28,Hendricks,P,A,R,R,Kyle Hendricks,CHC,46,40,3,3,1,0,0,1,1,20,0,0,0.075,0.098,0.1,0.09,-8.4,-1.7,-0.2,,50.0
-Jason Heyward,22,Heyward,RF,D10,L,L,Jason Heyward,CHC,284,258,28,51,12,1,6,22,24,58,5,0,0.198,0.271,0.322,0.264,-11.6,1.1,0.1,6.4,22.5
+Robinson Chirinos,29,Chirinos,C,A,R,R,Robinson Chirinos,CHC,46,38,4,7,1,0,3,4,7,16,0,0,0.184,0.326,0.447,0.337,0.9,1.1,0.1,-1.1,42.1
+Willson Contreras,40,Contreras,C,D10,R,R,Willson Contreras,CHC,403,345,48,78,15,0,17,40,43,116,4,4,0.226,0.333,0.417,0.328,4.8,18.9,1.9,-0.6,33.6
+Zach Davies,27,Davies,P,A,R,R,Zach Davies,CHC,35,27,1,4,0,0,0,2,0,7,0,0,0.148,0.148,0.148,0.131,-5.3,-0.2,0.0,,25.9
+Greg Deichmann,6,Deichmann,OF,A,L,R,Greg Deichmann,CHC,21,21,0,4,0,0,0,1,0,7,0,0,0.19,0.19,0.19,0.168,-2.5,-2.2,-0.2,,33.3
+Matt Duffy,5,Duffy,3B,A,R,R,Matt Duffy,CHC,159,140,20,34,4,0,1,12,14,32,4,1,0.243,0.327,0.293,0.284,-3.9,0.7,0.1,1.3,22.9
+Johneshwy Fargas,4,Fargas,CF,A,R,R,Johneshwy Fargas,- - -,40,38,2,11,3,1,0,4,1,12,1,2,0.289,0.308,0.421,0.312,0.0,-0.2,0.0,0.1,31.6
+Ian Happ,8,Happ,CF,A,S,R,Ian Happ,CHC,355,307,33,54,10,0,11,28,43,109,1,1,0.176,0.283,0.316,0.271,-12.5,-6.8,-0.7,-1.8,35.5
+Kyle Hendricks,28,Hendricks,P,A,R,R,Kyle Hendricks,CHC,48,41,3,3,1,0,0,1,2,21,0,0,0.073,0.116,0.098,0.102,-8.3,-1.3,-0.1,,51.2
+Jason Heyward,22,Heyward,RF,D10,L,L,Jason Heyward,CHC,284,258,28,51,12,1,6,22,24,58,5,0,0.198,0.271,0.322,0.264,-11.7,1.1,0.1,6.4,22.5
 Nico Hoerner,2,Hoerner,2B,D10,R,R,Nico Hoerner,CHC,152,134,13,42,10,0,0,14,15,23,3,2,0.313,0.388,0.388,0.341,3.4,8.8,0.9,1.3,17.2
-Alec Mills,30,Mills,P,A,R,R,Alec Mills,CHC,20,19,1,1,1,0,0,0,0,14,0,0,0.053,0.053,0.105,0.066,-4.1,-1.1,-0.1,,73.7
-Rafael Ortega,66,Ortega,RF,A,L,R,Rafael Ortega,CHC,148,135,18,43,7,1,6,16,11,37,6,5,0.319,0.374,0.519,0.381,8.2,10.9,1.1,-0.3,27.4
-Andrew Romine,24,Romine,2B,A,S,R,Andrew Romine,CHC,20,20,5,7,1,0,1,4,0,5,0,0,0.35,0.35,0.55,0.384,1.2,2.6,0.3,0.8,25.0
-Kyle Ryan,56,Ryan,P,A,L,L,Kyle Ryan,CHC,2,2,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,0.0
-Frank Schwindel,18,Schwindel,1B,A,R,R,Frank Schwindel,- - -,43,42,4,11,2,0,2,8,1,8,0,0,0.262,0.279,0.452,0.311,-0.1,0.3,0.0,,19.0
+Jake Jewell,65,Jewell,P,A,R,R,Jake Jewell,CHC,1,1,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,100.0
+Alec Mills,30,Mills,P,A,R,R,Alec Mills,CHC,20,19,1,1,1,0,0,0,0,14,0,0,0.053,0.053,0.105,0.066,-4.1,-1.2,-0.1,,73.7
+Rafael Ortega,66,Ortega,RF,A,L,R,Rafael Ortega,CHC,161,147,18,49,7,1,6,17,12,40,7,5,0.333,0.388,0.517,0.387,9.7,13.0,1.3,-0.3,27.2
+Andrew Romine,24,Romine,2B,A,S,R,Andrew Romine,CHC,32,32,5,8,1,0,1,4,0,9,0,0,0.25,0.25,0.375,0.267,-1.2,0.7,0.1,0.8,28.1
+Austin Romine,25,Romine,C,A,R,R,Austin Romine,CHC,10,10,1,1,1,0,0,1,0,4,0,0,0.1,0.1,0.2,0.125,-1.6,-1.2,-0.1,-0.2,40.0
+Michael Rucker,59,Rucker,P,A,R,R,Michael Rucker,CHC,1,1,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,100.0
+Frank Schwindel,18,Schwindel,1B,A,R,R,Frank Schwindel,- - -,55,53,6,15,4,0,3,10,2,12,0,0,0.283,0.309,0.528,0.354,1.8,2.3,0.2,,22.6
+Justin Steele,35,Steele,P,A,L,L,Justin Steele,CHC,3,3,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.8,-0.3,0.0,,33.3
 Dan Winkler,43,Winkler,P,A,R,R,Dan Winkler,CHC,1,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,0.0
-Patrick Wisdom,16,Wisdom,3B,A,R,R,Patrick Wisdom,CHC,208,189,32,49,6,0,16,32,17,80,3,1,0.259,0.324,0.545,0.366,8.9,15.2,1.5,0.4,42.3
+Patrick Wisdom,16,Wisdom,3B,A,R,R,Patrick Wisdom,CHC,221,200,36,53,7,0,18,36,19,83,3,1,0.265,0.332,0.57,0.379,11.8,18.3,1.8,0.4,41.5

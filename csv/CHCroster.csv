@@ -1,11 +1,10 @@
 posName,posnum,lastname,position,status_code,bats,throws
 Sergio Alcantara,51,Alcantara,SS,A,S,R
 Adbert Alzolay,73,Alzolay,P,A,R,R
-Jake Arrieta,49,Arrieta,P,A,R,R
 David Bote,13,Bote,2B,A,R,R
 Rex Brothers,48,Brothers,P,A,L,L
 Robinson Chirinos,29,Chirinos,C,A,R,R
-Willson Contreras,40,Contreras,C,A,R,R
+Willson Contreras,40,Contreras,C,D10,R,R
 Zach Davies,27,Davies,P,A,R,R
 Greg Deichmann,6,Deichmann,OF,A,L,R
 Matt Duffy,5,Duffy,3B,A,R,R
@@ -17,14 +16,16 @@ Jason Heyward,22,Heyward,RF,D10,L,L
 Nico Hoerner,2,Hoerner,2B,D10,R,R
 Jake Jewell,65,Jewell,P,A,R,R
 Dillon Maples,36,Maples,P,D10,R,R
-Trevor Megill,74,Megill,P,A,L,R
+Ryan Meisinger,64,Meisinger,P,A,R,R
 Alec Mills,30,Mills,P,A,R,R
 Adam Morgan,47,Morgan,P,A,L,L
 Rafael Ortega,66,Ortega,RF,A,L,R
 Manuel Rodriguez,39,Rodriguez,P,A,R,R
 Andrew Romine,24,Romine,2B,A,S,R
+Austin Romine,25,Romine,C,A,R,R
 Michael Rucker,59,Rucker,P,A,R,R
-Kyle Ryan,56,Ryan,P,A,L,L
 Frank Schwindel,18,Schwindel,1B,A,R,R
+Justin Steele,35,Steele,P,A,L,L
+Rowan Wick,50,Wick,P,A,L,R
 Dan Winkler,43,Winkler,P,A,R,R
 Patrick Wisdom,16,Wisdom,3B,A,R,R
