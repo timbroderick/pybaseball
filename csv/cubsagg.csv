@@ -2,12 +2,12 @@ teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 ARI,4,2,4.83,3.33,Diamondbacks,Arizona Diamondbacks,National,West,#8FBC8B,ARI
 ATL,2,5,5.0,6.86,Braves,Atlanta Braves,National,East,#8FBC8B,ATL
 CHW,0,3,3.0,7.0,White Sox,Chicago White Sox,American,Central,#000000,CHW
-CIN,4,9,4.15,5.0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+CIN,6,10,4.25,5.06,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
 CLE,1,3,2.5,2.5,Indians,Cleveland Indians,American,Central,#E31937,CLE
 COL,1,2,4.67,7.0,Rockies,Colorado Rockies,National,West,#8FBC8B,COL
 DET,2,1,5.67,4.0,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
 LAD,4,3,3.71,3.57,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
-MIA,1,2,1.67,7.0,Marlins,Miami Marlins,National,East,#8FBC8B,MIA
+MIA,1,5,3.33,7.33,Marlins,Miami Marlins,National,East,#8FBC8B,MIA
 MIL,3,13,3.25,6.62,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
 NYM,4,3,4.57,3.14,Mets,New York Mets,National,East,#8FBC8B,NYM
 PHI,1,3,5.25,9.75,Phillies,Philadelphia Phillies,National,East,#8FBC8B,PHI
