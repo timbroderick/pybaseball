@@ -1,20 +1,20 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 BAL,7,0,6.43,2.29,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
-BOS,2,2,4.0,5.25,Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
-CHC,3,0,7.0,3.0,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
-CIN,1,1,4.5,0.5,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
-CLE,7,7,4.64,4.21,Indians,Cleveland Indians,American,Central,#E31937,CLE
-DET,9,4,5.92,3.46,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
+BOS,4,3,4.29,4.86,Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
+CHC,5,1,8.5,5.0,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
+CIN,2,1,5.33,0.67,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+CLE,10,9,4.26,3.89,Indians,Cleveland Indians,American,Central,#E31937,CLE
+DET,10,6,5.69,3.81,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
 HOU,2,5,3.29,5.0,Astros,Houston Astros,American,West,#8FBC8B,HOU
-KCR,8,8,3.75,3.19,Royals,Kansas City Royals,American,Central,#788DF0,KCR
-LAA,1,3,5.5,6.0,Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
+KCR,9,10,3.79,3.74,Royals,Kansas City Royals,American,Central,#788DF0,KCR
+LAA,2,5,5.14,5.57,Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
 MIL,1,2,1.67,4.67,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
 MIN,13,6,6.47,3.74,Twins,Minnesota Twins,American,Central,#B9975B,MIN
 NYY,1,5,3.67,5.67,Yankees,New York Yankees,American,East,#8FBC8B,NYY
-OAK,3,0,5.67,1.33,Athletics,Oakland Athletics,American,West,#8FBC8B,OAK
-PIT,1,1,3.5,4.5,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
+OAK,4,3,4.14,2.86,Athletics,Oakland Athletics,American,West,#8FBC8B,OAK
+PIT,3,1,4.25,3.5,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
 SEA,3,3,5.33,4.83,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
 STL,2,1,4.33,2.67,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
-TBR,2,1,4.33,4.0,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
-TEX,3,0,6.33,4.0,Rangers,Texas Rangers,American,West,#8FBC8B,TEX
-TOR,2,1,4.33,3.0,Blue Jays,Toronto Blue Jays,American,East,#8FBC8B,TOR
+TBR,3,3,4.0,5.67,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
+TEX,5,1,5.83,2.67,Rangers,Texas Rangers,American,West,#8FBC8B,TEX
+TOR,4,3,4.29,3.29,Blue Jays,Toronto Blue Jays,American,East,#8FBC8B,TOR
