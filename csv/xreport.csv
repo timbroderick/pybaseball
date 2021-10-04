@@ -7,17 +7,17 @@ team pitching,OK
 Sox sched,OK
 Cubs sched,OK
 batting stats,OK
-pitching stats,Problem
-Sox roster,Problem
-Cubs roster,Problem
-stadings appended,Problem
-standings joined,Problem
-batting stats joined,Problem
-pitching stats joined,Problem
-Sox games,Problem
-Sox players,Problem
-Sox batting,Problem
-Sox pitching,Problem
+pitching stats,OK
+Sox roster,OK
+Cubs roster,OK
+stadings appended,OK
+standings joined,OK
+batting stats joined,OK
+pitching stats joined,OK
+Sox games,OK
+Sox players,OK
+Sox batting,OK
+Sox pitching,OK
 Cubs games,Problem
 Cubs players,Problem
 Cubs batting,Problem
