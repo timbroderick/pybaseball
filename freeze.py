@@ -7,8 +7,8 @@ taskdata = {'task': ['Packages loaded','old directories removed','standings','te
 xreport = pd.DataFrame(data=taskdata)
 xreport ['status'] = ['Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem','Problem']
 
-get_season = 2021
-int_season ='2021'
+get_season = 2022
+int_season ='2022'
 print('getting the ',get_season,' season')
 
 try:

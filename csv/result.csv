@@ -1,31 +1,31 @@
-Tm,W,L,WLperc,GB,E#,Team,League,Division,color,tres
-Tampa Bay Rays,100,62,.617,--,--,Rays,American,East,#8FBC8B,TBR
-Boston Red Sox,92,70,.568,8.0,E,Red Sox,American,East,#8FBC8B,BOS
-New York Yankees,92,70,.568,8.0,E,Yankees,American,East,#8FBC8B,NYY
-Toronto Blue Jays,91,71,.562,9.0,☠,Blue Jays,American,East,#8FBC8B,TOR
-Baltimore Orioles,52,110,.321,48.0,☠,Orioles,American,East,#8FBC8B,BAL
-Chicago White Sox,93,69,.574,--,--,White Sox,American,Central,#000000,CHW
-Cleveland Indians,80,82,.494,13.0,☠,Indians,American,Central,#E31937,CLE
-Detroit Tigers,77,85,.475,16.0,☠,Tigers,American,Central,#FF8B00,DET
-Kansas City Royals,74,88,.457,19.0,☠,Royals,American,Central,#788DF0,KCR
-Minnesota Twins,73,89,.451,20.0,☠,Twins,American,Central,#B9975B,MIN
-Houston Astros,95,67,.586,--,--,Astros,American,West,#8FBC8B,HOU
-Seattle Mariners,90,72,.556,5.0,☠,Mariners,American,West,#8FBC8B,SEA
-Oakland Athletics,86,76,.531,9.0,☠,Athletics,American,West,#8FBC8B,OAK
-Los Angeles Angels,77,85,.475,18.0,☠,Angels,American,West,#8FBC8B,LAA
-Texas Rangers,60,102,.370,35.0,☠,Rangers,American,West,#8FBC8B,TEX
-Atlanta Braves,88,73,.547,--,--,Braves,National,East,#8FBC8B,ATL
-Philadelphia Phillies,82,80,.506,6.5,☠,Phillies,National,East,#8FBC8B,PHI
-New York Mets,77,85,.475,11.5,☠,Mets,National,East,#8FBC8B,NYM
-Miami Marlins,67,95,.414,21.5,☠,Marlins,National,East,#8FBC8B,MIA
-Washington Nationals,65,97,.401,23.5,☠,Nationals,National,East,#8FBC8B,WSN
-Milwaukee Brewers,95,67,.586,--,--,Brewers,National,Central,#8FBC8B,MIL
-St. Louis Cardinals,90,72,.556,5.0,E,Cardinals,National,Central,#8FBC8B,STL
-Cincinnati Reds,83,79,.512,12.0,☠,Reds,National,Central,#8FBC8B,CIN
-Chicago Cubs,71,91,.438,24.0,☠,Cubs,National,Central,#0000FF,CHC
-Pittsburgh Pirates,61,101,.377,34.0,☠,Pirates,National,Central,#8FBC8B,PIT
-San Francisco Giants,107,55,.660,--,--,Giants,National,West,#8FBC8B,SFG
-Los Angeles Dodgers,106,56,.654,1.0,E,Dodgers,National,West,#8FBC8B,LAD
-San Diego Padres,79,83,.488,28.0,☠,Padres,National,West,#8FBC8B,SDP
-Colorado Rockies,74,87,.460,32.5,☠,Rockies,National,West,#8FBC8B,COL
-Arizona Diamondbacks,52,110,.321,55.0,☠,Diamondbacks,National,West,#8FBC8B,ARI
+Tm,W,L,WLperc,GB,Team,League,Division,color,tres
+Toronto Blue Jays,5,3,.625,--,Blue Jays,American,East,#8FBC8B,TOR
+New York Yankees,4,4,.500,1.0,Yankees,American,East,#8FBC8B,NYY
+Tampa Bay Rays,4,4,.500,1.0,Rays,American,East,#8FBC8B,TBR
+Boston Red Sox,3,4,.429,1.5,Red Sox,American,East,#8FBC8B,BOS
+Baltimore Orioles,2,5,.286,2.5,Orioles,American,East,#8FBC8B,BAL
+Chicago White Sox,5,2,.714,--,White Sox,American,Central,#000000,CHW
+Cleveland Guardians,4,3,.571,1.0,Guardians,American,Central,#E31937,CLE
+Detroit Tigers,4,4,.500,1.5,Tigers,American,Central,#FF8B00,DET
+Minnesota Twins,3,4,.429,2.0,Twins,American,Central,#B9975B,MIN
+Kansas City Royals,2,5,.286,3.0,Royals,American,Central,#788DF0,KCR
+Houston Astros,4,3,.571,--,Astros,American,West,#8FBC8B,HOU
+Los Angeles Angels,4,4,.500,0.5,Angels,American,West,#8FBC8B,LAA
+Oakland Athletics,4,4,.500,0.5,Athletics,American,West,#8FBC8B,OAK
+Seattle Mariners,4,4,.500,0.5,Mariners,American,West,#8FBC8B,SEA
+Texas Rangers,2,5,.286,2.0,Rangers,American,West,#8FBC8B,TEX
+New York Mets,6,2,.750,--,Mets,National,East,#8FBC8B,NYM
+Atlanta Braves,4,5,.444,2.5,Braves,National,East,#8FBC8B,ATL
+Washington Nationals,4,5,.444,2.5,Nationals,National,East,#8FBC8B,WSN
+Miami Marlins,3,4,.429,2.5,Marlins,National,East,#8FBC8B,MIA
+Philadelphia Phillies,3,5,.375,3.0,Phillies,National,East,#8FBC8B,PHI
+St. Louis Cardinals,4,2,.667,--,Cardinals,National,Central,#8FBC8B,STL
+Chicago Cubs,4,3,.571,0.5,Cubs,National,Central,#0000FF,CHC
+Milwaukee Brewers,4,4,.500,1.0,Brewers,National,Central,#8FBC8B,MIL
+Pittsburgh Pirates,3,4,.429,1.5,Pirates,National,Central,#8FBC8B,PIT
+Cincinnati Reds,2,6,.250,3.0,Reds,National,Central,#8FBC8B,CIN
+Colorado Rockies,5,2,.714,--,Rockies,National,West,#8FBC8B,COL
+Los Angeles Dodgers,5,2,.714,--,Dodgers,National,West,#8FBC8B,LAD
+San Francisco Giants,5,2,.714,--,Giants,National,West,#8FBC8B,SFG
+San Diego Padres,5,4,.556,1.0,Padres,National,West,#8FBC8B,SDP
+Arizona Diamondbacks,2,5,.286,3.0,Diamondbacks,National,West,#8FBC8B,ARI

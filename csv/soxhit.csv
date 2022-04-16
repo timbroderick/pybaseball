@@ -1,23 +1,14 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Jose Abreu,79,Abreu,1B,A,R,R,Jose Abreu,CHW,659,566,86,148,30,2,30,117,61,143,1,0,0.261,0.351,0.481,0.354,21.6,28.7,2.9,1.4,25.3
-Tim Anderson,7,Anderson,SS,A,R,R,Tim Anderson,CHW,551,527,94,163,29,2,17,61,22,119,18,7,0.309,0.338,0.469,0.345,13.8,44.5,4.5,0.8,22.6
-Dylan Cease,84,Cease,P,A,R,R,Dylan Cease,CHW,8,8,1,3,1,0,0,0,0,3,0,0,0.375,0.375,0.5,0.375,0.4,1.6,0.2,,37.5
-Zack Collins,21,Collins,C,A,L,R,Zack Collins,CHW,231,195,25,41,13,0,4,26,34,69,1,1,0.21,0.33,0.338,0.3,-2.7,-6.9,-0.7,-14.9,35.4
-Adam Engel,15,Engel,CF,A,R,R,Adam Engel,CHW,140,123,21,31,9,0,7,18,11,31,7,1,0.252,0.336,0.496,0.354,4.6,11.7,1.2,1.6,25.2
-Leury Garcia,28,Garcia,CF,A,S,R,Leury Garcia,CHW,474,415,60,111,22,4,5,54,41,97,6,2,0.267,0.335,0.376,0.312,-0.8,20.0,2.0,1.7,23.4
-Lucas Giolito,27,Giolito,P,A,R,R,Lucas Giolito,CHW,4,4,0,1,0,0,0,0,0,3,0,0,0.25,0.25,0.25,0.22,-0.3,0.3,0.0,,75.0
-Brian Goodwin,18,Goodwin,CF,D10,L,R,Brian Goodwin,CHW,271,235,33,52,10,1,8,29,33,58,1,0,0.221,0.319,0.374,0.306,-1.9,1.9,0.2,-3.8,24.7
-Yasmani Grandal,24,Grandal,C,A,S,R,Yasmani Grandal,CHW,375,279,60,67,9,0,23,62,87,82,0,0,0.24,0.42,0.52,0.402,27.3,37.1,3.7,-1.9,29.4
-Billy Hamilton,0,Hamilton,CF,A,R,R,Billy Hamilton,CHW,135,127,23,28,8,3,2,11,4,47,9,0,0.22,0.242,0.378,0.262,-5.8,3.6,0.4,2.1,37.0
-Cesar Hernandez,12,Hernandez,2B,A,S,R,Cesar Hernandez,- - -,637,570,84,132,21,2,21,62,59,135,1,1,0.232,0.308,0.386,0.302,-6.6,21.5,2.2,5.3,23.7
-Eloy Jimenez,74,Jimenez,LF,A,R,R,Eloy Jimenez,CHW,231,213,23,53,10,0,10,37,16,57,0,0,0.249,0.303,0.437,0.317,0.5,4.0,0.4,0.8,26.8
-Dallas Keuchel,60,Keuchel,P,A,L,L,Dallas Keuchel,CHW,2,2,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.5,-0.2,0.0,,50.0
-Craig Kimbrel,46,Kimbrel,P,A,R,R,Craig Kimbrel,- - -,1,1,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,100.0
-Michael Kopech,34,Kopech,P,A,R,R,Michael Kopech,CHW,1,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,0.0
-Lance Lynn,33,Lynn,P,A,S,R,Lance Lynn,CHW,5,5,0,1,0,0,0,2,0,3,0,0,0.2,0.2,0.2,0.176,-0.6,0.2,0.0,,60.0
-Yoan Moncada,10,Moncada,3B,A,S,R,Yoan Moncada,CHW,616,520,74,137,33,1,14,61,84,157,3,2,0.263,0.375,0.412,0.347,16.7,44.4,4.4,5.4,30.2
-Luis Robert,88,Robert,CF,A,R,R,Luis Robert,CHW,296,275,42,93,22,1,13,43,14,61,6,1,0.338,0.378,0.567,0.399,20.7,32.1,3.2,-0.8,22.2
-Carlos Rodon,55,Rodon,P,A,L,L,Carlos Rodon,CHW,3,3,0,0,0,0,0,0,0,1,0,0,0.0,0.0,0.0,0.0,-0.8,-0.3,0.0,,33.3
-Jose Ruiz,66,Ruiz,P,A,R,R,Jose Ruiz,CHW,1,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,-0.3,-0.1,0.0,,0.0
-Gavin Sheets,32,Sheets,1B,A,L,L,Gavin Sheets,CHW,179,160,23,40,8,0,11,34,16,40,0,0,0.25,0.324,0.506,0.352,5.5,4.1,0.4,-1.9,25.0
-Andrew Vaughn,25,Vaughn,LF,A,R,R,Andrew Vaughn,CHW,469,417,56,98,22,0,15,48,41,101,1,1,0.235,0.309,0.396,0.306,-3.1,3.4,0.3,0.2,24.2
+Jose Abreu,42,Abreu,1B,A,R,R,Jose Abreu,CHW,29,26,6,5,2,0,0,2,3,8,0,0,0.192,0.276,0.269,0.253,-1.3,-0.8,-0.1,,30.8
+Tim Anderson,42,Anderson,SS,A,R,R,Tim Anderson,CHW,21,21,3,9,3,0,1,4,0,3,1,0,0.429,0.429,0.714,0.497,3.0,4.2,0.4,,14.3
+Jake Burger,42,Burger,3B,A,R,R,Jake Burger,CHW,18,16,3,6,1,0,1,4,1,5,0,0,0.375,0.412,0.625,0.451,2.0,2.7,0.3,,31.2
+Adam Engel,42,Engel,CF,A,R,R,Adam Engel,CHW,15,13,1,2,1,0,0,0,2,3,0,0,0.154,0.267,0.231,0.238,-0.9,-0.5,-0.1,,23.1
+Leury Garcia,42,Garcia,CF,A,S,R,Leury Garcia,CHW,20,20,1,1,1,0,0,0,0,3,0,0,0.05,0.05,0.1,0.064,-3.8,-3.0,-0.3,,15.0
+Yasmani Grandal,42,Grandal,C,A,S,R,Yasmani Grandal,CHW,19,18,1,3,0,0,1,2,1,2,0,0,0.167,0.211,0.333,0.242,-1.0,-0.1,0.0,0.0,11.1
+Josh Harrison,42,Harrison,2B,A,R,R,Josh Harrison,CHW,19,18,3,3,1,1,0,1,1,1,0,0,0.167,0.211,0.333,0.237,-1.1,-0.3,0.0,,5.6
+Eloy Jimenez,42,Jimenez,LF,A,R,R,Eloy Jimenez,CHW,22,20,2,4,0,0,1,7,1,4,0,0,0.2,0.227,0.35,0.25,-1.1,-0.5,-0.1,,20.0
+Reese McGuire,42,McGuire,C,A,L,R,Reese McGuire,CHW,10,9,1,2,0,0,0,0,1,3,0,0,0.222,0.3,0.222,0.249,-0.5,0.1,0.0,0.0,33.3
+Danny Mendick,42,Mendick,SS,A,R,R,Danny Mendick,CHW,5,4,0,1,1,0,0,1,1,1,0,0,0.25,0.4,0.5,0.396,0.3,0.5,0.1,,25.0
+Luis Robert,42,Robert,CF,A,R,R,Luis Robert,CHW,29,28,6,7,1,0,2,3,1,3,4,0,0.25,0.276,0.5,0.338,0.6,2.6,0.3,,10.7
+Gavin Sheets,42,Sheets,1B,A,L,L,Gavin Sheets,CHW,13,13,1,2,1,0,0,0,0,4,0,0,0.154,0.154,0.231,0.168,-1.5,-1.3,-0.1,,30.8
+Andrew Vaughn,42,Vaughn,LF,A,R,R,Andrew Vaughn,CHW,22,20,3,7,0,0,2,6,2,3,0,0,0.35,0.409,0.65,0.459,2.5,2.9,0.3,,15.0
