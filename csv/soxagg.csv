@@ -1,4 +1,4 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 DET,2,1,6.33,2.67,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
 SEA,2,1,3.33,3.67,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
-TBR,2,0,3.0,2.0,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
+TBR,2,1,3.0,4.33,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR

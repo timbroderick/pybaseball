@@ -1,14 +1,14 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Willson Contreras,40,Contreras,C,A,R,R,Willson Contreras,CHC,27,23,6,7,3,0,1,2,2,6,0,0,0.304,0.407,0.565,0.426,2.4,4.6,0.5,1.0,26.1
-Clint Frazier,77,Frazier,LF,A,R,R,Clint Frazier,CHC,16,14,2,2,2,0,0,0,2,3,0,0,0.143,0.25,0.286,0.247,-0.8,-0.9,-0.1,,21.4
-Yan Gomes,7,Gomes,C,A,R,R,Yan Gomes,CHC,8,8,1,3,2,0,0,0,0,1,0,0,0.375,0.375,0.625,0.432,0.8,1.1,0.1,0.0,12.5
-Ian Happ,8,Happ,CF,A,S,R,Ian Happ,CHC,29,25,3,9,2,0,0,5,3,7,0,0,0.36,0.448,0.44,0.401,2.1,2.5,0.3,,28.0
-Michael Hermosillo,32,Hermosillo,OF,A,R,R,Michael Hermosillo,CHC,11,7,0,0,0,0,0,0,3,3,0,0,0.0,0.364,0.0,0.255,-0.5,-0.1,0.0,,42.9
-Jason Heyward,22,Heyward,RF,A,L,L,Jason Heyward,CHC,20,18,3,6,0,1,0,1,2,5,0,0,0.333,0.4,0.444,0.374,1.0,1.6,0.2,,27.8
-Nico Hoerner,2,Hoerner,2B,A,R,R,Nico Hoerner,CHC,25,25,2,5,0,0,1,2,0,4,1,0,0.2,0.2,0.32,0.228,-1.6,-0.4,0.0,,16.0
-Nick Madrigal,1,Madrigal,2B,A,R,R,Nick Madrigal,CHC,26,23,3,4,1,0,0,0,2,2,0,0,0.174,0.269,0.217,0.234,-1.5,-0.7,-0.1,,8.7
-Rafael Ortega,66,Ortega,RF,A,L,R,Rafael Ortega,CHC,24,18,2,2,1,0,0,1,5,3,0,2,0.111,0.304,0.167,0.245,-1.2,-1.8,-0.2,,16.7
-Frank Schwindel,18,Schwindel,1B,A,R,R,Frank Schwindel,CHC,32,30,3,8,1,0,1,3,2,5,0,0,0.267,0.313,0.4,0.317,0.2,0.5,0.0,,16.7
-Seiya Suzuki,27,Suzuki,OF,A,R,R,Seiya Suzuki,CHC,30,22,6,9,2,0,3,10,7,7,0,0,0.409,0.533,0.909,0.575,6.2,6.6,0.7,,31.8
-Jonathan Villar,24,Villar,3B,A,S,R,Jonathan Villar,CHC,22,19,4,9,2,0,0,4,2,3,0,0,0.474,0.5,0.579,0.464,2.6,3.3,0.4,,15.8
-Patrick Wisdom,16,Wisdom,3B,A,R,R,Patrick Wisdom,CHC,29,27,2,6,4,0,0,6,1,11,0,1,0.222,0.241,0.37,0.262,-1.1,-0.6,-0.1,,40.7
+Willson Contreras,40,Contreras,C,A,R,R,Willson Contreras,CHC,32,28,7,8,3,0,2,3,2,7,0,0,0.286,0.375,0.607,0.429,2.9,5.0,0.5,1.0,25.0
+Clint Frazier,77,Frazier,LF,A,R,R,Clint Frazier,CHC,20,18,2,3,2,0,0,0,2,4,0,0,0.167,0.25,0.278,0.244,-1.0,-1.1,-0.1,,22.2
+Yan Gomes,7,Gomes,C,A,R,R,Yan Gomes,CHC,13,13,1,5,2,0,0,1,0,1,0,0,0.385,0.385,0.538,0.407,1.0,1.5,0.2,0.0,7.7
+Ian Happ,8,Happ,CF,A,S,R,Ian Happ,CHC,30,26,3,9,2,0,0,5,3,8,0,0,0.346,0.433,0.423,0.391,1.8,2.3,0.2,,30.8
+Michael Hermosillo,32,Hermosillo,OF,A,R,R,Michael Hermosillo,CHC,15,10,1,0,0,0,0,0,4,3,0,0,0.0,0.333,0.0,0.235,-0.9,-0.4,0.0,,30.0
+Jason Heyward,22,Heyward,RF,A,L,L,Jason Heyward,CHC,20,18,3,6,0,1,0,1,2,5,0,0,0.333,0.4,0.444,0.378,1.0,1.6,0.2,,27.8
+Nico Hoerner,2,Hoerner,2B,A,R,R,Nico Hoerner,CHC,29,29,2,7,2,0,1,4,0,4,1,0,0.241,0.241,0.414,0.287,-0.5,0.8,0.1,,13.8
+Nick Madrigal,1,Madrigal,2B,A,R,R,Nick Madrigal,CHC,31,28,5,7,2,0,0,0,2,3,0,0,0.25,0.323,0.321,0.298,-0.3,0.6,0.1,,10.7
+Rafael Ortega,66,Ortega,RF,A,L,R,Rafael Ortega,CHC,25,19,2,3,1,0,0,1,5,3,0,2,0.158,0.333,0.211,0.275,-0.7,-1.4,-0.1,,15.8
+Frank Schwindel,18,Schwindel,1B,A,R,R,Frank Schwindel,CHC,37,35,3,9,1,0,1,4,2,5,0,0,0.257,0.297,0.371,0.301,-0.3,0.0,0.0,,14.3
+Seiya Suzuki,27,Suzuki,OF,A,R,R,Seiya Suzuki,CHC,35,25,7,10,2,0,4,11,9,9,0,0,0.4,0.543,0.96,0.595,7.6,8.1,0.9,,36.0
+Jonathan Villar,24,Villar,3B,A,S,R,Jonathan Villar,CHC,22,19,4,9,2,0,0,4,2,3,0,0,0.474,0.5,0.579,0.468,2.6,3.3,0.4,,15.8
+Patrick Wisdom,16,Wisdom,3B,A,R,R,Patrick Wisdom,CHC,34,30,3,7,5,0,0,6,3,12,0,1,0.233,0.294,0.4,0.305,-0.2,0.4,0.0,,40.0
