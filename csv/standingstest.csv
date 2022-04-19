@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB
 Toronto Blue Jays,6,4,.600,--
-Boston Red Sox,5,4,.556,0.5
+Boston Red Sox,5,5,.500,1.0
 New York Yankees,5,5,.500,1.0
-Tampa Bay Rays,5,5,.500,1.0
-Baltimore Orioles,3,6,.333,2.5
+Tampa Bay Rays,5,6,.455,1.5
+Baltimore Orioles,3,7,.300,3.0
 Chicago White Sox,6,3,.667,--
 Cleveland Guardians,4,5,.444,2.0
 Detroit Tigers,4,5,.444,2.0
+Minnesota Twins,4,6,.400,2.5
 Kansas City Royals,3,5,.375,2.5
-Minnesota Twins,3,6,.333,3.0
-Los Angeles Angels,6,4,.600,--
-Houston Astros,5,4,.556,0.5
-Oakland Athletics,5,5,.500,1.0
+Houston Astros,6,4,.600,--
+Los Angeles Angels,6,5,.545,0.5
+Oakland Athletics,6,5,.545,0.5
 Seattle Mariners,5,5,.500,1.0
 Texas Rangers,2,7,.222,3.5
 New York Mets,7,3,.700,--
-Atlanta Braves,5,6,.455,2.5
 Miami Marlins,4,5,.444,2.5
-Philadelphia Phillies,4,6,.400,3.0
+Atlanta Braves,5,7,.417,3.0
+Philadelphia Phillies,4,7,.364,3.5
 Washington Nationals,4,7,.364,3.5
 St. Louis Cardinals,5,3,.625,--
-Chicago Cubs,5,4,.556,0.5
-Pittsburgh Pirates,5,4,.556,0.5
-Milwaukee Brewers,5,5,.500,1.0
-Cincinnati Reds,2,8,.200,4.0
-Los Angeles Dodgers,7,2,.778,--
-San Francisco Giants,7,2,.778,--
-Colorado Rockies,6,3,.667,1.0
-San Diego Padres,6,5,.545,2.0
-Arizona Diamondbacks,3,6,.333,4.0
+Chicago Cubs,6,4,.600,--
+Milwaukee Brewers,6,5,.545,0.5
+Pittsburgh Pirates,5,5,.500,1.0
+Cincinnati Reds,2,9,.182,4.5
+Los Angeles Dodgers,8,2,.800,--
+San Francisco Giants,7,2,.778,0.5
+Colorado Rockies,7,3,.700,1.0
+San Diego Padres,7,5,.583,2.0
+Arizona Diamondbacks,3,6,.333,4.5
