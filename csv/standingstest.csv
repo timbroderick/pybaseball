@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB
-Boston Red Sox,6,5,.545,--
-New York Yankees,6,5,.545,--
-Toronto Blue Jays,6,5,.545,--
-Tampa Bay Rays,6,6,.500,0.5
-Baltimore Orioles,3,8,.273,3.0
-Chicago White Sox,6,3,.667,--
-Cleveland Guardians,4,5,.444,2.0
-Kansas City Royals,4,5,.444,2.0
-Detroit Tigers,4,6,.400,2.5
-Minnesota Twins,4,7,.364,3.0
-Los Angeles Angels,7,5,.583,--
-Oakland Athletics,7,5,.583,--
-Houston Astros,6,5,.545,0.5
-Seattle Mariners,6,5,.545,0.5
-Texas Rangers,2,8,.200,4.0
-New York Mets,9,3,.750,--
-Atlanta Braves,6,7,.462,3.5
-Washington Nationals,6,7,.462,3.5
-Miami Marlins,4,6,.400,4.0
-Philadelphia Phillies,4,8,.333,5.0
-St. Louis Cardinals,6,3,.667,--
-Milwaukee Brewers,7,5,.583,0.5
-Chicago Cubs,6,5,.545,1.0
-Pittsburgh Pirates,5,6,.455,2.0
-Cincinnati Reds,2,10,.167,5.5
-Colorado Rockies,8,3,.727,--
-Los Angeles Dodgers,8,3,.727,--
-San Francisco Giants,7,4,.636,1.0
-San Diego Padres,8,5,.615,1.0
-Arizona Diamondbacks,3,8,.273,5.0
+Toronto Blue Jays,8,5,.615,--
+New York Yankees,7,6,.538,1.0
+Tampa Bay Rays,7,6,.538,1.0
+Boston Red Sox,6,7,.462,2.0
+Baltimore Orioles,4,9,.308,4.0
+Cleveland Guardians,7,5,.583,--
+Chicago White Sox,6,6,.500,1.0
+Kansas City Royals,5,6,.455,1.5
+Detroit Tigers,5,7,.417,2.0
+Minnesota Twins,5,8,.385,2.5
+Los Angeles Angels,8,5,.615,--
+Oakland Athletics,8,6,.571,0.5
+Seattle Mariners,7,6,.538,1.0
+Houston Astros,6,6,.500,1.5
+Texas Rangers,3,9,.250,4.5
+New York Mets,10,4,.714,--
+Atlanta Braves,6,8,.429,4.0
+Miami Marlins,5,7,.417,4.0
+Washington Nationals,6,9,.400,4.5
+Philadelphia Phillies,5,8,.385,4.5
+St. Louis Cardinals,7,4,.636,--
+Milwaukee Brewers,8,5,.615,--
+Chicago Cubs,6,7,.462,2.0
+Pittsburgh Pirates,6,7,.462,2.0
+Cincinnati Reds,2,11,.154,6.0
+Los Angeles Dodgers,9,3,.750,--
+Colorado Rockies,8,4,.667,1.0
+San Diego Padres,9,5,.643,1.0
+San Francisco Giants,8,5,.615,1.5
+Arizona Diamondbacks,5,8,.385,4.5
