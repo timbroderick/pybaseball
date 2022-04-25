@@ -1,7 +1,7 @@
 posName,posnum,lastname,position,status_code,bats,throws
 Willson Contreras,40,Contreras,C,A,R,R
 Scott Effross,57,Effross,P,A,R,R
-Clint Frazier,77,Frazier,LF,A,R,R
+Clint Frazier,77,Frazier,LF,D10,R,R
 Mychal Givens,60,Givens,P,A,R,R
 Yan Gomes,7,Gomes,C,A,R,R
 Ian Happ,8,Happ,CF,A,S,R
@@ -17,6 +17,7 @@ Alec Mills,30,Mills,P,D10,R,R
 Sean Newcomb,15,Newcomb,P,A,L,L
 Daniel Norris,49,Norris,P,A,L,L
 Rafael Ortega,66,Ortega,RF,A,L,R
+Alfonso Rivas,36,Rivas,1B,A,L,L
 Ethan Roberts,21,Roberts,P,A,R,R
 David Robertson,37,Robertson,P,A,R,R
 Michael Rucker,59,Rucker,P,A,R,R
