@@ -1,4 +1,5 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
+CHC,1,0,3.0,1.0,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
 CLE,0,3,1.67,6.33,Guardians,Cleveland Guardians,American,Central,#E31937,CLE
 DET,2,1,6.33,2.67,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
 KCR,1,2,3.0,4.67,Royals,Kansas City Royals,American,Central,#788DF0,KCR
