@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Wednesday, May 4",CHC,Home,CHW,L,3,4,9,9-15,4.0,7.5,Giolito,Hendricks,Hendriks,3:05,N,36755.0,.67,-2.0,,0,White Sox,Chicago White Sox,American,Central,#000000,CHW
-"Tuesday, May 3",CHC,Home,CHW,L,1,3,9,9-14,4.0,6.5,Lopez,Effross,Hendriks,3:01,N,34206.0,.72,-1.0,,1,White Sox,Chicago White Sox,American,Central,#000000,CHW
-"Friday, May 6",CHC,Home,LAD,,,,,,,,,,,,,,,,,2,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
-"Saturday, May 7",CHC,Home,LAD,,,,,,,,,,,,,,,,,3,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
+"Sunday, May 8",CHC,Home,LAD,L,1,7,9,9-18,4.0,9.0,Buehler,Steele,None,2:57,N,31424.0,.50,-5.0,,0,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
+"Saturday, May 7 ",CHC,Home,LAD,L,2,6,9,9-17,4.0,9.0,Anderson,Norris,None,3:05,N,31520.0,.55,-4.0,,1,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
+"Monday, May 9",CHC,@,SDP,,,,,,,,,,,,,,,,,2,Padres,San Diego Padres,National,West,#8FBC8B,SDP
+"Tuesday, May 10",CHC,@,SDP,,,,,,,,,,,,,,,,,3,Padres,San Diego Padres,National,West,#8FBC8B,SDP

@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team_x,League,Division,color,tres,Team_y,R,RBI,HR,AVGbat,OBP,SLG,wOBA,wRCplus,WARbat
-New York Yankees,18,7,.720,--,Yankees,American,East,#8FBC8B,NYY,NYY,119,112,35,0.248,0.323,0.424,0.331,122,5.6
-Tampa Bay Rays,16,10,.615,2.5,Rays,American,East,#8FBC8B,TBR,TBR,113,107,23,0.243,0.312,0.39,0.314,114,5.0
-Toronto Blue Jays,16,11,.593,3.0,Blue Jays,American,East,#8FBC8B,TOR,TOR,102,101,34,0.242,0.3,0.406,0.313,105,4.1
-Baltimore Orioles,10,16,.385,8.5,Orioles,American,East,#8FBC8B,BAL,BAL,88,86,18,0.225,0.303,0.343,0.293,92,1.6
-Boston Red Sox,10,16,.385,8.5,Red Sox,American,East,#8FBC8B,BOS,BOS,90,89,16,0.229,0.279,0.347,0.278,79,0.6
-Minnesota Twins,15,11,.577,--,Twins,American,Central,#B9975B,MIN,MIN,110,103,27,0.237,0.319,0.387,0.318,111,3.8
-Cleveland Guardians,12,13,.480,2.5,Guardians,American,Central,#E31937,CLE,CLE,117,115,21,0.254,0.32,0.399,0.321,114,4.7
-Chicago White Sox,11,13,.458,3.0,White Sox,American,Central,#000000,CHW,CHW,79,74,22,0.221,0.276,0.355,0.283,88,0.6
-Kansas City Royals,8,15,.348,5.5,Royals,American,Central,#788DF0,KCR,KCR,70,63,13,0.218,0.286,0.317,0.275,79,1.6
-Detroit Tigers,8,16,.333,6.0,Tigers,American,Central,#FF8B00,DET,DET,74,72,11,0.228,0.301,0.319,0.282,87,-0.3
-Los Angeles Angels,17,10,.630,--,Angels,American,West,#8FBC8B,LAA,LAA,128,123,34,0.244,0.321,0.416,0.329,119,4.3
-Houston Astros,15,11,.577,1.5,Astros,American,West,#8FBC8B,HOU,HOU,99,97,31,0.22,0.294,0.382,0.302,104,5.0
-Seattle Mariners,12,14,.462,4.5,Mariners,American,West,#8FBC8B,SEA,SEA,107,104,26,0.228,0.314,0.374,0.31,111,4.3
-Texas Rangers,10,14,.417,5.5,Rangers,American,West,#8FBC8B,TEX,TEX,104,99,21,0.224,0.293,0.34,0.286,90,2.0
-Oakland Athletics,10,15,.400,6.0,Athletics,American,West,#8FBC8B,OAK,OAK,92,84,19,0.206,0.269,0.329,0.269,82,1.7
-New York Mets,19,9,.679,--,Mets,National,East,#8FBC8B,NYM,NYM,128,120,23,0.258,0.337,0.386,0.326,118,5.7
-Miami Marlins,12,13,.480,5.5,Marlins,National,East,#8FBC8B,MIA,MIA,99,94,21,0.234,0.319,0.37,0.311,106,4.5
-Atlanta Braves,12,15,.444,6.5,Braves,National,East,#8FBC8B,ATL,ATL,107,100,31,0.227,0.301,0.393,0.31,98,2.5
-Philadelphia Phillies,11,15,.423,7.0,Phillies,National,East,#8FBC8B,PHI,PHI,118,113,28,0.247,0.316,0.409,0.323,108,4.0
-Washington Nationals,9,18,.333,9.5,Nationals,National,East,#8FBC8B,WSN,WSN,114,108,17,0.254,0.32,0.365,0.308,98,2.3
-Milwaukee Brewers,18,8,.692,--,Brewers,National,Central,#8FBC8B,MIL,MIL,128,123,35,0.233,0.31,0.414,0.322,108,4.2
-St. Louis Cardinals,15,10,.600,2.5,Cardinals,National,Central,#8FBC8B,STL,STL,108,103,20,0.238,0.313,0.364,0.305,102,4.1
-Pittsburgh Pirates,10,14,.417,7.0,Pirates,National,Central,#8FBC8B,PIT,PIT,89,80,14,0.233,0.3,0.338,0.288,87,0.6
-Chicago Cubs,9,15,.375,8.0,Cubs,National,Central,#0000FF,CHC,CHC,100,91,19,0.24,0.322,0.374,0.313,102,2.5
-Cincinnati Reds,3,22,.120,14.5,Reds,National,Central,#8FBC8B,CIN,CIN,79,76,18,0.203,0.267,0.318,0.265,66,-2.2
-Los Angeles Dodgers,16,7,.696,--,Dodgers,National,West,#8FBC8B,LAD,LAD,114,105,23,0.239,0.322,0.39,0.319,109,3.6
-San Diego Padres,17,9,.654,0.5,Padres,National,West,#8FBC8B,SDP,SDP,121,118,24,0.227,0.325,0.369,0.312,106,5.1
-Colorado Rockies,15,10,.600,2.0,Rockies,National,West,#8FBC8B,COL,COL,120,114,28,0.263,0.333,0.431,0.34,108,2.9
-San Francisco Giants,14,11,.560,3.0,Giants,National,West,#8FBC8B,SFG,SFG,112,104,25,0.236,0.312,0.367,0.306,102,3.3
-Arizona Diamondbacks,13,13,.500,4.5,Diamondbacks,National,West,#8FBC8B,ARI,ARI,91,86,29,0.191,0.281,0.347,0.284,81,2.1
+New York Yankees,19,8,.704,--,Yankees,American,East,#8FBC8B,NYY,NYY,123,116,37,0.241,0.318,0.412,0.326,119,5.7
+Tampa Bay Rays,18,11,.621,2.0,Rays,American,East,#8FBC8B,TBR,TBR,130,122,28,0.245,0.316,0.395,0.318,118,5.9
+Toronto Blue Jays,17,13,.567,3.5,Blue Jays,American,East,#8FBC8B,TOR,TOR,115,114,34,0.237,0.3,0.392,0.309,102,4.1
+Baltimore Orioles,11,17,.393,8.5,Orioles,American,East,#8FBC8B,BAL,BAL,96,93,18,0.232,0.308,0.347,0.297,96,2.3
+Boston Red Sox,10,19,.345,10.0,Red Sox,American,East,#8FBC8B,BOS,BOS,95,94,16,0.228,0.279,0.342,0.277,79,0.4
+Minnesota Twins,18,11,.621,--,Twins,American,Central,#B9975B,MIN,MIN,117,110,30,0.238,0.317,0.39,0.318,113,4.4
+Chicago White Sox,14,13,.519,3.0,White Sox,American,Central,#000000,CHW,CHW,89,84,23,0.225,0.281,0.351,0.284,89,1.1
+Cleveland Guardians,14,14,.500,3.5,Guardians,American,Central,#E31937,CLE,CLE,132,130,23,0.257,0.323,0.4,0.323,116,5.4
+Kansas City Royals,9,16,.360,7.0,Royals,American,Central,#788DF0,KCR,KCR,78,70,13,0.222,0.286,0.319,0.275,80,1.7
+Detroit Tigers,8,19,.296,9.0,Tigers,American,Central,#FF8B00,DET,DET,78,76,11,0.22,0.291,0.305,0.273,80,-0.7
+Los Angeles Angels,19,11,.633,--,Angels,American,West,#8FBC8B,LAA,LAA,139,134,36,0.241,0.322,0.405,0.326,118,4.9
+Houston Astros,18,11,.621,0.5,Astros,American,West,#8FBC8B,HOU,HOU,110,108,36,0.217,0.297,0.383,0.305,106,5.5
+Seattle Mariners,13,16,.448,5.5,Mariners,American,West,#8FBC8B,SEA,SEA,118,115,31,0.23,0.314,0.381,0.313,114,5.2
+Texas Rangers,11,15,.423,6.0,Rangers,American,West,#8FBC8B,TEX,TEX,109,103,24,0.222,0.288,0.343,0.285,90,2.1
+Oakland Athletics,10,18,.357,8.0,Athletics,American,West,#8FBC8B,OAK,OAK,96,88,19,0.2,0.264,0.314,0.262,77,1.2
+New York Mets,20,10,.667,--,Mets,National,East,#8FBC8B,NYM,NYM,136,126,25,0.255,0.335,0.384,0.325,118,6.2
+Atlanta Braves,14,16,.467,6.0,Braves,National,East,#8FBC8B,ATL,ATL,122,114,36,0.226,0.301,0.394,0.311,100,2.8
+Miami Marlins,13,15,.464,6.0,Marlins,National,East,#8FBC8B,MIA,MIA,111,106,25,0.231,0.312,0.373,0.309,105,4.8
+Philadelphia Phillies,12,16,.429,7.0,Phillies,National,East,#8FBC8B,PHI,PHI,122,117,30,0.247,0.313,0.405,0.321,107,4.2
+Washington Nationals,10,20,.333,10.0,Nationals,National,East,#8FBC8B,WSN,WSN,125,119,20,0.254,0.319,0.366,0.309,98,2.6
+Milwaukee Brewers,19,10,.655,--,Brewers,National,Central,#8FBC8B,MIL,MIL,138,131,36,0.232,0.308,0.402,0.318,105,4.4
+St. Louis Cardinals,16,12,.571,2.5,Cardinals,National,Central,#8FBC8B,STL,STL,121,116,23,0.239,0.313,0.368,0.308,104,4.8
+Pittsburgh Pirates,11,16,.407,7.0,Pirates,National,Central,#8FBC8B,PIT,PIT,102,93,20,0.233,0.301,0.352,0.295,92,1.4
+Chicago Cubs,9,18,.333,9.0,Cubs,National,Central,#0000FF,CHC,CHC,103,94,20,0.232,0.312,0.362,0.304,97,2.0
+Cincinnati Reds,5,23,.179,13.5,Reds,National,Central,#8FBC8B,CIN,CIN,100,97,21,0.204,0.277,0.326,0.275,73,-1.4
+Los Angeles Dodgers,19,7,.731,--,Dodgers,National,West,#8FBC8B,LAD,LAD,134,121,25,0.239,0.324,0.388,0.32,111,4.2
+San Diego Padres,19,10,.655,1.5,Padres,National,West,#8FBC8B,SDP,SDP,127,124,25,0.223,0.319,0.359,0.307,103,4.9
+Colorado Rockies,16,12,.571,4.0,Rockies,National,West,#8FBC8B,COL,COL,125,118,28,0.257,0.324,0.41,0.328,100,2.5
+San Francisco Giants,16,12,.571,4.0,Giants,National,West,#8FBC8B,SFG,SFG,131,123,30,0.237,0.318,0.374,0.312,106,4.0
+Arizona Diamondbacks,15,14,.517,5.5,Diamondbacks,National,West,#8FBC8B,ARI,ARI,100,94,31,0.193,0.284,0.346,0.286,83,2.6
