@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-New York Yankees,25,9,.735,--,Yankees,American,East,#8FBC8B,NYY
-Tampa Bay Rays,21,14,.600,4.5,Rays,American,East,#8FBC8B,TBR
-Toronto Blue Jays,18,17,.514,7.5,Blue Jays,American,East,#8FBC8B,TOR
-Baltimore Orioles,14,21,.400,11.5,Orioles,American,East,#8FBC8B,BAL
-Boston Red Sox,13,21,.382,12.0,Red Sox,American,East,#8FBC8B,BOS
-Minnesota Twins,20,15,.571,--,Twins,American,Central,#B9975B,MIN
-Chicago White Sox,16,17,.485,3.0,White Sox,American,Central,#000000,CHW
-Cleveland Guardians,16,17,.485,3.0,Guardians,American,Central,#E31937,CLE
-Kansas City Royals,12,20,.375,6.5,Royals,American,Central,#788DF0,KCR
-Detroit Tigers,12,23,.343,8.0,Tigers,American,Central,#FF8B00,DET
-Houston Astros,23,12,.657,--,Astros,American,West,#8FBC8B,HOU
-Los Angeles Angels,24,13,.649,--,Angels,American,West,#8FBC8B,LAA
-Seattle Mariners,16,19,.457,7.0,Mariners,American,West,#8FBC8B,SEA
-Texas Rangers,14,19,.424,8.0,Rangers,American,West,#8FBC8B,TEX
-Oakland Athletics,15,22,.405,9.0,Athletics,American,West,#8FBC8B,OAK
-New York Mets,23,13,.639,--,Mets,National,East,#8FBC8B,NYM
-Philadelphia Phillies,17,18,.486,5.5,Phillies,National,East,#8FBC8B,PHI
-Atlanta Braves,16,19,.457,6.5,Braves,National,East,#8FBC8B,ATL
-Miami Marlins,15,19,.441,7.0,Marlins,National,East,#8FBC8B,MIA
-Washington Nationals,12,24,.333,11.0,Nationals,National,East,#8FBC8B,WSN
-Milwaukee Brewers,22,13,.629,--,Brewers,National,Central,#8FBC8B,MIL
-St. Louis Cardinals,19,15,.559,2.5,Cardinals,National,Central,#8FBC8B,STL
-Pittsburgh Pirates,15,19,.441,6.5,Pirates,National,Central,#8FBC8B,PIT
-Chicago Cubs,13,20,.394,8.0,Cubs,National,Central,#0000FF,CHC
-Cincinnati Reds,9,26,.257,13.0,Reds,National,Central,#8FBC8B,CIN
-Los Angeles Dodgers,21,12,.636,--,Dodgers,National,West,#8FBC8B,LAD
-San Diego Padres,22,13,.629,--,Padres,National,West,#8FBC8B,SDP
-San Francisco Giants,20,14,.588,1.5,Giants,National,West,#8FBC8B,SFG
-Arizona Diamondbacks,18,17,.514,4.0,Diamondbacks,National,West,#8FBC8B,ARI
-Colorado Rockies,17,17,.500,4.5,Rockies,National,West,#8FBC8B,COL
+New York Yankees,27,9,.750,--,Yankees,American,East,#8FBC8B,NYY
+Tampa Bay Rays,22,15,.595,5.5,Rays,American,East,#8FBC8B,TBR
+Toronto Blue Jays,20,17,.541,7.5,Blue Jays,American,East,#8FBC8B,TOR
+Boston Red Sox,14,22,.389,13.0,Red Sox,American,East,#8FBC8B,BOS
+Baltimore Orioles,14,23,.378,13.5,Orioles,American,East,#8FBC8B,BAL
+Minnesota Twins,21,16,.568,--,Twins,American,Central,#B9975B,MIN
+Chicago White Sox,18,18,.500,2.5,White Sox,American,Central,#000000,CHW
+Cleveland Guardians,16,18,.471,3.5,Guardians,American,Central,#E31937,CLE
+Kansas City Royals,13,22,.371,7.0,Royals,American,Central,#788DF0,KCR
+Detroit Tigers,13,24,.351,8.0,Tigers,American,Central,#FF8B00,DET
+Houston Astros,24,13,.649,--,Astros,American,West,#8FBC8B,HOU
+Los Angeles Angels,24,15,.615,1.0,Angels,American,West,#8FBC8B,LAA
+Texas Rangers,16,19,.457,7.0,Rangers,American,West,#8FBC8B,TEX
+Seattle Mariners,16,21,.432,8.0,Mariners,American,West,#8FBC8B,SEA
+Oakland Athletics,16,23,.410,9.0,Athletics,American,West,#8FBC8B,OAK
+New York Mets,24,14,.632,--,Mets,National,East,#8FBC8B,NYM
+Miami Marlins,17,19,.472,6.0,Marlins,National,East,#8FBC8B,MIA
+Philadelphia Phillies,17,19,.472,6.0,Phillies,National,East,#8FBC8B,PHI
+Atlanta Braves,17,20,.459,6.5,Braves,National,East,#8FBC8B,ATL
+Washington Nationals,12,26,.316,12.0,Nationals,National,East,#8FBC8B,WSN
+Milwaukee Brewers,23,14,.622,--,Brewers,National,Central,#8FBC8B,MIL
+St. Louis Cardinals,20,16,.556,2.5,Cardinals,National,Central,#8FBC8B,STL
+Chicago Cubs,15,20,.429,7.0,Cubs,National,Central,#0000FF,CHC
+Pittsburgh Pirates,15,21,.417,7.5,Pirates,National,Central,#8FBC8B,PIT
+Cincinnati Reds,10,26,.278,12.5,Reds,National,Central,#8FBC8B,CIN
+Los Angeles Dodgers,24,12,.667,--,Dodgers,National,West,#8FBC8B,LAD
+San Diego Padres,23,13,.639,1.0,Padres,National,West,#8FBC8B,SDP
+San Francisco Giants,22,14,.611,2.0,Giants,National,West,#8FBC8B,SFG
+Arizona Diamondbacks,18,20,.474,7.0,Diamondbacks,National,West,#8FBC8B,ARI
+Colorado Rockies,17,19,.472,7.0,Rockies,National,West,#8FBC8B,COL
