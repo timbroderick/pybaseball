@@ -1,16 +1,13 @@
 posName,posnum,lastname,position,status_code,bats,throws
 Jose Abreu,79,Abreu,1B,A,R,R
 Tim Anderson,7,Anderson,SS,A,R,R
-Tanner Banks,57,Banks,P,A,R,L
-Aaron Bummer,39,Bummer,P,D15,L,L
-Ryan Burr,61,Burr,P,A,R,R
+Aaron Bummer,39,Bummer,P,A,L,L
 Dylan Cease,84,Cease,P,A,R,R
-Garrett Crochet,45,Crochet,P,D10,L,L
 Johnny Cueto,47,Cueto,P,A,R,R
 Adam Engel,15,Engel,CF,A,R,R
 Matt Foster,63,Foster,P,A,R,R
 Leury Garcia,28,Garcia,CF,A,S,R
-Lucas Giolito,27,Giolito,P,D10,R,R
+Lucas Giolito,27,Giolito,P,A,R,R
 Yasmani Grandal,24,Grandal,C,A,S,R
 Kendall Graveman,49,Graveman,P,A,R,R
 Josh Harrison,5,Harrison,2B,A,R,R
@@ -20,7 +17,6 @@ Joe Kelly,17,Kelly,P,A,R,R
 Dallas Keuchel,60,Keuchel,P,A,L,L
 Michael Kopech,34,Kopech,P,A,R,R
 Reynaldo Lopez,40,Lopez,P,A,R,R
-Lance Lynn,33,Lynn,P,D10,S,R
 Reese McGuire,21,McGuire,C,A,L,R
 Yoan Moncada,10,Moncada,3B,A,S,R
 AJ Pollock,18,Pollock,LF,A,R,R
