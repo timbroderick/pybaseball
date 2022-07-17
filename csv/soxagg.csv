@@ -1,14 +1,17 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
+BAL,1,3,1.75,4.25,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
 BOS,4,2,3.83,6.33,Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
 CHC,3,1,3.25,3.25,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
-CLE,1,4,3.6,6.4,Guardians,Cleveland Guardians,American,Central,#E31937,CLE
-DET,5,1,7.67,2.33,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
+CLE,3,6,3.56,5.0,Guardians,Cleveland Guardians,American,Central,#E31937,CLE
+DET,7,3,6.4,2.5,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
+HOU,1,2,4.33,5.67,Astros,Houston Astros,American,West,#8FBC8B,HOU
 KCR,4,4,3.38,3.62,Royals,Kansas City Royals,American,Central,#788DF0,KCR
-LAA,2,2,3.25,2.75,Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
+LAA,3,4,4.0,3.29,Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
 LAD,1,2,4.67,5.0,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
-MIN,0,3,2.33,5.67,Twins,Minnesota Twins,American,Central,#B9975B,MIN
+MIN,3,6,4.67,5.44,Twins,Minnesota Twins,American,Central,#B9975B,MIN
 NYY,3,4,4.0,5.71,Yankees,New York Yankees,American,East,#8FBC8B,NYY
 SEA,2,1,3.33,3.67,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
+SFG,3,0,6.33,2.33,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
 TBR,4,2,3.5,4.33,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
 TEX,1,2,7.67,7.33,Rangers,Texas Rangers,American,West,#8FBC8B,TEX
-TOR,0,3,3.67,7.0,Blue Jays,Toronto Blue Jays,American,East,#8FBC8B,TOR
+TOR,2,4,5.17,7.17,Blue Jays,Toronto Blue Jays,American,East,#8FBC8B,TOR

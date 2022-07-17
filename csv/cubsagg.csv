@@ -1,14 +1,16 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 ARI,3,4,4.0,4.57,Diamondbacks,Arizona Diamondbacks,National,West,#8FBC8B,ARI
-ATL,1,2,2.67,3.67,Braves,Atlanta Braves,National,East,#8FBC8B,ATL
-BAL,0,1,3.0,9.0,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
+ATL,3,3,2.5,3.33,Braves,Atlanta Braves,National,East,#8FBC8B,ATL
+BAL,0,3,2.0,6.67,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
+BOS,2,1,3.67,3.33,Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
 CHW,1,3,3.25,3.25,White Sox,Chicago White Sox,American,Central,#000000,CHW
-CIN,2,2,6.5,8.0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+CIN,4,3,7.43,6.71,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
 COL,2,2,5.5,5.25,Rockies,Colorado Rockies,National,West,#8FBC8B,COL
-LAD,0,3,1.0,6.67,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
-MIL,5,5,4.1,4.9,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+LAD,0,7,2.86,6.29,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
+MIL,7,6,4.08,4.46,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+NYM,0,3,1.33,4.67,Mets,New York Mets,National,East,#8FBC8B,NYM
 NYY,0,3,1.67,9.33,Yankees,New York Yankees,American,East,#8FBC8B,NYY
-PIT,4,5,5.67,2.44,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
+PIT,5,8,5.69,4.15,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
 SDP,2,5,4.57,7.29,Padres,San Diego Padres,National,West,#8FBC8B,SDP
-STL,2,3,5.0,6.4,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
+STL,4,4,4.62,5.25,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
 TBR,1,2,3.67,5.33,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
