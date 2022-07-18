@@ -90,7 +90,7 @@ Date,Tm,Home_Away,Opp,W/L,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,D/N,Attendance
 "Thursday, Jul 14",CHC,Home,NYM,L,0.0,8.0,9.0,34-55,4.0,15.5,Carrasco,Thompson,Williams,3:01,N,34051.0,.02,-7.0,
 "Saturday, Jul 16 (1)",CHC,Home,NYM,L,1.0,2.0,11.0,34-56,4.0,15.5,Ottavino,Givens,Díaz,3:46,D,39219.0,.02,-8.0,
 "Saturday, Jul 16 (2)",CHC,Home,NYM,L,3.0,4.0,10.0,34-57,4.0,15.5,López,Givens,None,3:33,N,34366.0,.01,-9.0,
-"Sunday, Jul 17",CHC,Home,NYM,,,,,,,,,,,,,,,,
+"Sunday, Jul 17",CHC,Home,NYM,W,3.0,2.0,9.0,35-57,4.0,14.5,Wick,Smith,Robertson,3:09,D,34424.0,.01,1.0,
 "Friday, Jul 22",CHC,@,PHI,,,,,,,,,,,,,,,,
 "Saturday, Jul 23",CHC,@,PHI,,,,,,,,,,,,,,,,
 "Sunday, Jul 24",CHC,@,PHI,,,,,,,,,,,,,,,,

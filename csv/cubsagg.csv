@@ -8,7 +8,7 @@ CIN,4,3,7.43,6.71,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
 COL,2,2,5.5,5.25,Rockies,Colorado Rockies,National,West,#8FBC8B,COL
 LAD,0,7,2.86,6.29,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
 MIL,7,6,4.08,4.46,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
-NYM,0,3,1.33,4.67,Mets,New York Mets,National,East,#8FBC8B,NYM
+NYM,1,3,1.75,4.0,Mets,New York Mets,National,East,#8FBC8B,NYM
 NYY,0,3,1.67,9.33,Yankees,New York Yankees,American,East,#8FBC8B,NYY
 PIT,5,8,5.69,4.15,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
 SDP,2,5,4.57,7.29,Padres,San Diego Padres,National,West,#8FBC8B,SDP
