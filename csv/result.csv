@@ -1,31 +1,31 @@
-Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-New York Yankees,64,28,.696,--,Yankees,American,East,#8FBC8B,NYY
-Tampa Bay Rays,51,41,.554,13.0,Rays,American,East,#8FBC8B,TBR
-Toronto Blue Jays,50,43,.538,14.5,Blue Jays,American,East,#8FBC8B,TOR
-Boston Red Sox,48,45,.516,16.5,Red Sox,American,East,#8FBC8B,BOS
-Baltimore Orioles,46,46,.500,18.0,Orioles,American,East,#8FBC8B,BAL
-Minnesota Twins,50,44,.532,--,Twins,American,Central,#B9975B,MIN
-Cleveland Guardians,46,44,.511,2.0,Guardians,American,Central,#E31937,CLE
-Chicago White Sox,46,46,.500,3.0,White Sox,American,Central,#000000,CHW
-Detroit Tigers,37,55,.402,12.0,Tigers,American,Central,#FF8B00,DET
-Kansas City Royals,36,56,.391,13.0,Royals,American,Central,#788DF0,KCR
-Houston Astros,59,32,.648,--,Astros,American,West,#8FBC8B,HOU
-Seattle Mariners,51,42,.548,9.0,Mariners,American,West,#8FBC8B,SEA
-Texas Rangers,41,49,.456,17.5,Rangers,American,West,#8FBC8B,TEX
-Los Angeles Angels,39,53,.424,20.5,Angels,American,West,#8FBC8B,LAA
-Oakland Athletics,32,61,.344,28.0,Athletics,American,West,#8FBC8B,OAK
-New York Mets,58,35,.624,--,Mets,National,East,#8FBC8B,NYM
-Atlanta Braves,56,38,.596,2.5,Braves,National,East,#8FBC8B,ATL
-Philadelphia Phillies,49,43,.533,8.5,Phillies,National,East,#8FBC8B,PHI
-Miami Marlins,43,48,.473,14.0,Marlins,National,East,#8FBC8B,MIA
-Washington Nationals,31,63,.330,27.5,Nationals,National,East,#8FBC8B,WSN
-Milwaukee Brewers,50,43,.538,--,Brewers,National,Central,#8FBC8B,MIL
-St. Louis Cardinals,50,44,.532,0.5,Cardinals,National,Central,#8FBC8B,STL
-Pittsburgh Pirates,39,54,.419,11.0,Pirates,National,Central,#8FBC8B,PIT
-Chicago Cubs,35,57,.380,14.5,Cubs,National,Central,#0000FF,CHC
-Cincinnati Reds,34,57,.374,15.0,Reds,National,Central,#8FBC8B,CIN
-Los Angeles Dodgers,60,30,.667,--,Dodgers,National,West,#8FBC8B,LAD
-San Diego Padres,52,42,.553,10.0,Padres,National,West,#8FBC8B,SDP
-San Francisco Giants,48,43,.527,12.5,Giants,National,West,#8FBC8B,SFG
-Colorado Rockies,43,50,.462,18.5,Rockies,National,West,#8FBC8B,COL
-Arizona Diamondbacks,40,52,.435,21.0,Diamondbacks,National,West,#8FBC8B,ARI
+Tm,W,L,WLperc,GB,E#,Team,League,Division,color,tres
+New York Yankees,70,39,.642,--,--,Yankees,American,East,#8FBC8B,NYY
+Toronto Blue Jays,60,48,.556,9.5,45,Blue Jays,American,East,#8FBC8B,TOR
+Tampa Bay Rays,58,50,.537,11.5,43,Rays,American,East,#8FBC8B,TBR
+Baltimore Orioles,56,52,.519,13.5,41,Orioles,American,East,#8FBC8B,BAL
+Boston Red Sox,54,56,.491,16.5,37,Red Sox,American,East,#8FBC8B,BOS
+Minnesota Twins,57,51,.528,--,--,Twins,American,Central,#B9975B,MIN
+Cleveland Guardians,56,52,.519,1.0,54,Guardians,American,Central,#E31937,CLE
+Chicago White Sox,55,53,.509,2.0,53,White Sox,American,Central,#000000,CHW
+Kansas City Royals,44,65,.404,13.5,41,Royals,American,Central,#788DF0,KCR
+Detroit Tigers,43,67,.391,15.0,39,Tigers,American,Central,#FF8B00,DET
+Houston Astros,70,40,.636,--,--,Astros,American,West,#8FBC8B,HOU
+Seattle Mariners,59,51,.536,11.0,42,Mariners,American,West,#8FBC8B,SEA
+Texas Rangers,48,60,.444,21.0,33,Rangers,American,West,#8FBC8B,TEX
+Los Angeles Angels,46,63,.422,23.5,30,Angels,American,West,#8FBC8B,LAA
+Oakland Athletics,41,68,.376,28.5,25,Athletics,American,West,#8FBC8B,OAK
+New York Mets,70,39,.642,--,--,Mets,National,East,#8FBC8B,NYM
+Atlanta Braves,64,46,.582,6.5,47,Braves,National,East,#8FBC8B,ATL
+Philadelphia Phillies,60,48,.556,9.5,45,Phillies,National,East,#8FBC8B,PHI
+Miami Marlins,49,59,.454,20.5,34,Marlins,National,East,#8FBC8B,MIA
+Washington Nationals,36,74,.327,34.5,19,Nationals,National,East,#8FBC8B,WSN
+St. Louis Cardinals,60,48,.556,--,--,Cardinals,National,Central,#8FBC8B,STL
+Milwaukee Brewers,58,50,.537,2.0,53,Brewers,National,Central,#8FBC8B,MIL
+Cincinnati Reds,44,63,.411,15.5,40,Reds,National,Central,#8FBC8B,CIN
+Pittsburgh Pirates,44,64,.407,16.0,39,Pirates,National,Central,#8FBC8B,PIT
+Chicago Cubs,43,64,.402,16.5,39,Cubs,National,Central,#0000FF,CHC
+Los Angeles Dodgers,75,33,.694,--,--,Dodgers,National,West,#8FBC8B,LAD
+San Diego Padres,61,50,.550,15.5,38,Padres,National,West,#8FBC8B,SDP
+San Francisco Giants,53,55,.491,22.0,33,Giants,National,West,#8FBC8B,SFG
+Arizona Diamondbacks,48,59,.449,26.5,29,Diamondbacks,National,West,#8FBC8B,ARI
+Colorado Rockies,48,63,.432,28.5,25,Rockies,National,West,#8FBC8B,COL

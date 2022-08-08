@@ -7,10 +7,13 @@ CHW,1,3,3.25,3.25,White Sox,Chicago White Sox,American,Central,#000000,CHW
 CIN,4,3,7.43,6.71,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
 COL,2,2,5.5,5.25,Rockies,Colorado Rockies,National,West,#8FBC8B,COL
 LAD,0,7,2.86,6.29,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
+MIA,2,1,2.0,1.33,Marlins,Miami Marlins,National,East,#8FBC8B,MIA
 MIL,7,6,4.08,4.46,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
 NYM,1,3,1.75,4.0,Mets,New York Mets,National,East,#8FBC8B,NYM
 NYY,0,3,1.67,9.33,Yankees,New York Yankees,American,East,#8FBC8B,NYY
-PIT,5,8,5.69,4.15,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
+PHI,3,0,8.33,2.33,Phillies,Philadelphia Phillies,National,East,#8FBC8B,PHI
+PIT,7,8,5.4,3.87,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
 SDP,2,5,4.57,7.29,Padres,San Diego Padres,National,West,#8FBC8B,SDP
-STL,4,4,4.62,5.25,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
+SFG,1,3,2.5,3.75,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
+STL,4,7,3.82,5.36,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
 TBR,1,2,3.67,5.33,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
