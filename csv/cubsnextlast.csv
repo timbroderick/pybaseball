@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Sunday, Aug 7",CHC,Home,MIA,L,0,3,9,43-64,5.0,16.5,Luzardo,Sampson,Scott,2:36,D,30177.0,.01,-1.0,,0,Marlins,Miami Marlins,National,East,#8FBC8B,MIA
-"Saturday, Aug 6",CHC,Home,MIA,W,4,0,9,43-63,3.0,15.5,Smyly,Lopez,None,2:46,D,36787.0,.00,2.0,,1,Marlins,Miami Marlins,National,East,#8FBC8B,MIA
-"Monday, Aug 8",CHC,Home,WSN,,,,,,,,,,,,,,,,,2,Nationals,Washington Nationals,National,East,#8FBC8B,WSN
-"Tuesday, Aug 9",CHC,Home,WSN,,,,,,,,,,,,,,,,,3,Nationals,Washington Nationals,National,East,#8FBC8B,WSN
+"Saturday, Aug 13",CHC,@,CIN,W,7,2,9,47-65,3.0,14.5,Newcomb,Ashcraft,None,3:20,N,33301.0,.00,3.0,,0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Thursday, Aug 11",CHC,@,CIN,W,4,2,9,46-65,3.0,15.0,Smyly,Lodolo,Wick,3:21,N,7823.0,.00,2.0,,1,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Sunday, Aug 14",CHC,@,CIN,,,,,,,,,,,,,,,,,2,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Monday, Aug 15",CHC,@,WSN,,,,,,,,,,,,,,,,,3,Nationals,Washington Nationals,National,East,#8FBC8B,WSN
