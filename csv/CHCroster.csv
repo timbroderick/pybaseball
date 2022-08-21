@@ -1,5 +1,5 @@
 posName,posnum,lastname,position,status_code,bats,throws
-Steven Brault,25,Brault,P,D10,L,L
+Steven Brault,25,Brault,P,A,L,L
 Kervin Castro,74,Castro,P,A,R,R
 Willson Contreras,40,Contreras,C,A,R,R
 Anderson Espinoza,51,Espinoza,P,A,R,R
@@ -25,7 +25,7 @@ Drew Smyly,11,Smyly,P,A,L,L
 Justin Steele,35,Steele,P,A,L,L
 Marcus Stroman,0,Stroman,P,A,R,R
 Seiya Suzuki,27,Suzuki,RF,A,R,R
-Keegan Thompson,71,Thompson,P,A,R,R
+Keegan Thompson,71,Thompson,P,D15,R,R
 Erich Uelmen,46,Uelmen,P,A,R,R
 Nelson Velazquez,4,Velazquez,RF,A,R,R
 Rowan Wick,50,Wick,P,A,L,R
