@@ -1,15 +1,16 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
-BAL,1,3,1.75,4.25,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
+ARI,0,3,3.0,6.67,Diamondbacks,Arizona Diamondbacks,National,West,#8FBC8B,ARI
+BAL,2,5,2.57,4.14,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
 BOS,4,2,3.83,6.33,Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
 CHC,3,1,3.25,3.25,Cubs,Chicago Cubs,National,Central,#0000FF,CHC
 CLE,6,9,3.53,4.8,Guardians,Cleveland Guardians,American,Central,#E31937,CLE
 COL,1,1,3.5,3.5,Rockies,Colorado Rockies,National,West,#8FBC8B,COL
 DET,10,3,5.92,2.46,Tigers,Detroit Tigers,American,Central,#FF8B00,DET
 HOU,3,4,4.0,6.57,Astros,Houston Astros,American,West,#8FBC8B,HOU
-KCR,7,8,3.47,3.53,Royals,Kansas City Royals,American,Central,#788DF0,KCR
+KCR,9,10,3.89,3.74,Royals,Kansas City Royals,American,Central,#788DF0,KCR
 LAA,3,4,4.0,3.29,Angels,Los Angeles Angels,American,West,#8FBC8B,LAA
 LAD,1,2,4.67,5.0,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
-MIN,4,6,5.3,4.9,Twins,Minnesota Twins,American,Central,#B9975B,MIN
+MIN,6,6,5.83,4.33,Twins,Minnesota Twins,American,Central,#B9975B,MIN
 NYY,3,4,4.0,5.71,Yankees,New York Yankees,American,East,#8FBC8B,NYY
 OAK,2,1,3.33,3.33,Athletics,Oakland Athletics,American,West,#8FBC8B,OAK
 SEA,2,1,3.33,3.67,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA

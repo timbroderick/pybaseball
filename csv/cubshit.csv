@@ -1,15 +1,16 @@
 posName,posnum,lastname,position,status_code,bats,throws,Name,Team,PA,AB,R,H,dbls,trps,HR,RBI,BB,SO,SB,CS,AVG,OBP,SLG,wOBA,wRAA,RAR,WAR,Fld,SOperc
-Willson Contreras,40,Contreras,C,A,R,R,Willson Contreras,CHC,443,376,61,94,21,2,20,52,42,93,4,2,0.25,0.359,0.476,0.365,19.4,31.2,3.3,-1.7,24.7
-Yan Gomes,7,Gomes,C,A,R,R,Yan Gomes,CHC,203,194,16,45,7,0,6,17,6,31,0,0,0.232,0.261,0.361,0.272,-6.2,3.1,0.3,2.7,16.0
-Ian Happ,8,Happ,LF,A,S,R,Ian Happ,CHC,477,423,52,118,31,2,12,55,46,113,7,3,0.279,0.354,0.447,0.348,14.4,25.3,2.6,1.8,26.7
-Jason Heyward,22,Heyward,CF,D10,L,L,Jason Heyward,CHC,151,137,15,28,5,1,1,10,11,32,1,0,0.204,0.278,0.277,0.254,-6.8,-4.6,-0.5,-1.6,23.4
-P.J. Higgins,48,Higgins,C,A,R,R,P.J. Higgins,CHC,130,116,17,30,6,1,6,20,11,31,0,0,0.259,0.328,0.483,0.351,4.2,3.0,0.3,-4.5,26.7
-Nico Hoerner,2,Hoerner,SS,A,R,R,Nico Hoerner,CHC,397,368,38,109,18,3,7,39,23,45,14,1,0.296,0.345,0.418,0.333,7.1,33.6,3.5,8.4,12.2
-Nick Madrigal,1,Madrigal,2B,A,R,R,Nick Madrigal,CHC,168,154,17,40,5,0,0,5,9,22,2,0,0.26,0.313,0.292,0.275,-4.7,1.5,0.2,0.9,14.3
-Zach McKinstry,6,McKinstry,SS,A,L,R,Zach McKinstry,- - -,60,55,6,9,2,0,1,2,5,19,3,0,0.164,0.233,0.255,0.222,-4.2,-3.4,-0.4,-1.7,34.5
-Christopher Morel,5,Morel,CF,A,R,R,Christopher Morel,CHC,311,279,47,72,13,4,12,34,27,95,9,6,0.258,0.326,0.462,0.341,7.6,14.8,1.6,-4.3,34.1
-Rafael Ortega,66,Ortega,CF,A,L,R,Rafael Ortega,CHC,323,274,30,63,13,1,6,27,39,63,9,7,0.23,0.324,0.35,0.3,-2.5,3.9,0.4,3.5,23.0
-Franmil Reyes,32,Reyes,RF,A,R,R,Franmil Reyes,- - -,323,304,29,70,12,2,11,35,15,115,2,0,0.23,0.266,0.391,0.285,-6.5,-4.7,-0.5,-1.0,37.8
-Seiya Suzuki,27,Suzuki,RF,A,R,R,Seiya Suzuki,CHC,321,286,37,69,17,1,9,37,29,85,7,3,0.241,0.315,0.402,0.312,0.5,3.7,0.4,-2.5,29.7
-Nelson Velazquez,4,Velazquez,RF,A,R,R,Nelson Velazquez,CHC,126,115,16,27,4,1,6,18,11,39,3,1,0.235,0.302,0.443,0.324,1.4,3.9,0.4,-0.2,33.9
-Patrick Wisdom,16,Wisdom,3B,A,R,R,Patrick Wisdom,CHC,460,401,59,88,24,0,22,58,50,154,7,4,0.219,0.314,0.444,0.33,7.2,11.7,1.2,-8.3,38.4
+David Bote,13,Bote,2B,A,R,R,David Bote,CHC,60,55,9,14,3,0,1,3,3,26,1,0,0.255,0.317,0.364,0.304,-0.3,1.1,0.1,-0.9,47.3
+Willson Contreras,40,Contreras,C,A,R,R,Willson Contreras,CHC,462,395,63,97,22,2,21,54,42,98,4,2,0.246,0.351,0.471,0.359,18.0,30.3,3.2,-1.7,24.8
+Yan Gomes,7,Gomes,C,A,R,R,Yan Gomes,CHC,231,219,19,49,8,0,6,20,7,34,1,0,0.224,0.251,0.342,0.259,-9.5,2.6,0.3,3.6,15.5
+Ian Happ,8,Happ,LF,A,S,R,Ian Happ,CHC,532,474,62,132,36,2,15,63,49,126,7,4,0.278,0.352,0.458,0.351,17.2,30.0,3.1,2.3,26.6
+P.J. Higgins,48,Higgins,C,A,R,R,P.J. Higgins,CHC,165,149,17,33,7,1,6,22,13,46,0,0,0.221,0.288,0.403,0.303,-1.0,-1.7,-0.2,-5.1,30.9
+Nico Hoerner,2,Hoerner,SS,A,R,R,Nico Hoerner,CHC,452,421,44,119,19,3,8,47,25,51,16,2,0.283,0.33,0.399,0.318,2.8,34.8,3.6,10.4,12.1
+Nick Madrigal,1,Madrigal,2B,A,R,R,Nick Madrigal,CHC,215,197,19,50,6,0,0,5,13,25,2,1,0.254,0.31,0.284,0.271,-6.8,2.8,0.3,2.2,12.7
+Zach McKinstry,6,McKinstry,SS,A,L,R,Zach McKinstry,- - -,90,83,10,15,2,1,2,6,7,25,3,0,0.181,0.244,0.301,0.244,-4.8,-0.9,-0.1,-0.3,30.1
+Christopher Morel,5,Morel,CF,A,R,R,Christopher Morel,CHC,347,314,49,77,15,4,13,36,28,108,9,6,0.245,0.309,0.443,0.326,4.3,15.1,1.6,-3.3,34.4
+Rafael Ortega,66,Ortega,CF,A,L,R,Rafael Ortega,CHC,350,298,32,70,14,1,6,31,42,69,11,7,0.235,0.328,0.349,0.301,-2.7,4.4,0.5,2.7,23.2
+Franmil Reyes,32,Reyes,RF,A,R,R,Franmil Reyes,- - -,380,357,34,82,14,2,13,41,19,129,2,0,0.23,0.268,0.389,0.286,-7.5,-5.8,-0.6,-1.1,36.1
+Alfonso Rivas,36,Rivas,1B,A,L,L,Alfonso Rivas,CHC,216,190,21,46,5,1,3,24,22,68,3,1,0.242,0.324,0.326,0.292,-3.2,-0.4,0.0,-0.5,35.8
+Seiya Suzuki,27,Suzuki,RF,A,R,R,Seiya Suzuki,CHC,375,334,43,88,21,1,10,40,35,92,8,4,0.263,0.336,0.422,0.33,5.7,12.1,1.3,-0.7,27.5
+Nelson Velazquez,4,Velazquez,RF,A,R,R,Nelson Velazquez,CHC,157,142,17,29,5,1,6,19,14,47,4,1,0.204,0.28,0.38,0.291,-2.4,-0.6,-0.1,-2.5,33.1
+Patrick Wisdom,16,Wisdom,3B,D10,R,R,Patrick Wisdom,CHC,471,411,60,89,25,0,22,58,51,158,7,4,0.217,0.311,0.438,0.326,6.0,11.2,1.2,-9.5,38.4

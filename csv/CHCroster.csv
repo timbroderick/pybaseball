@@ -1,24 +1,24 @@
 posName,posnum,lastname,position,status_code,bats,throws
-Steven Brault,25,Brault,P,A,L,L
-Kervin Castro,74,Castro,P,A,R,R
+Javier Assad,72,Assad,P,A,R,R
+David Bote,13,Bote,2B,A,R,R
+Steven Brault,25,Brault,P,D15,L,L
 Willson Contreras,40,Contreras,C,A,R,R
-Anderson Espinoza,51,Espinoza,P,A,R,R
+Jeremiah Estrada,56,Estrada,P,A,S,R
+Luke Farrell,60,Farrell,P,A,L,R
 Yan Gomes,7,Gomes,C,A,R,R
 Ian Happ,8,Happ,LF,A,S,R
-Kyle Hendricks,28,Hendricks,P,D15,R,R
-Jason Heyward,22,Heyward,CF,D10,L,L
 P.J. Higgins,48,Higgins,C,A,R,R
 Nico Hoerner,2,Hoerner,SS,A,R,R
 Brandon Hughes,47,Hughes,P,A,S,L
 Mark Leiter Jr.,62,Leiter,P,A,R,R
 Nick Madrigal,1,Madrigal,2B,A,R,R
 Zach McKinstry,6,McKinstry,SS,A,L,R
-Wade Miley,20,Miley,P,D15,L,L
-Alec Mills,30,Mills,P,D15,R,R
 Christopher Morel,5,Morel,CF,A,R,R
 Sean Newcomb,15,Newcomb,P,A,L,L
 Rafael Ortega,66,Ortega,CF,A,L,R
 Franmil Reyes,32,Reyes,RF,A,R,R
+Alfonso Rivas,36,Rivas,1B,A,L,L
+Manuel Rodriguez,39,Rodriguez,P,A,R,R
 Michael Rucker,59,Rucker,P,A,R,R
 Adrian Sampson,41,Sampson,P,A,R,R
 Drew Smyly,11,Smyly,P,A,L,L
@@ -29,4 +29,4 @@ Keegan Thompson,71,Thompson,P,D15,R,R
 Erich Uelmen,46,Uelmen,P,A,R,R
 Nelson Velazquez,4,Velazquez,RF,A,R,R
 Rowan Wick,50,Wick,P,A,L,R
-Patrick Wisdom,16,Wisdom,3B,A,R,R
+Patrick Wisdom,16,Wisdom,3B,D10,R,R
