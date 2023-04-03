@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Saturday, Sep 3",CHW,Home,MIN,W,13,0,9,67-66,3.0,2.0,Cease,Mahle,None,2:21,N,31655.0,.80,4.0,,0,Twins,Minnesota Twins,American,Central,#B9975B,MIN
-"Friday, Sep 2",CHW,Home,MIN,W-wo,4,3,9,66-66,3.0,3.0,Hendriks,Lopez,None,3:17,N,24818.0,.65,3.0,,1,Twins,Minnesota Twins,American,Central,#B9975B,MIN
-"Sunday, Sep 4",CHW,Home,MIN,,,,,,,,,,,,,,,,,2,Twins,Minnesota Twins,American,Central,#B9975B,MIN
-"Monday, Sep 5",CHW,@,SEA,,,,,,,,,,,,,,,,,3,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
+"Sunday, Apr 2",CHW,@,HOU,W,6,3,9,2-2,3.0,1.5,Clevinger,Garcia,None,3:06,D,42835.0,+,,,0,Astros,Houston Astros,American,West,#8FBC8B,HOU
+"Saturday, Apr 1",CHW,@,HOU,L,4,6,9,1-2,3.0,1.5,Stanek,Kelly,Neris,3:11,D,37519.0,--,,,1,Astros,Houston Astros,American,West,#8FBC8B,HOU
+"Monday, Apr 3",CHW,Home,SFG,,,,,,,,,,,,,,,,,2,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
+"Wednesday, Apr 5",CHW,Home,SFG,,,,,,,,,,,,,,,,,3,Giants,San Francisco Giants,National,West,#8FBC8B,SFG

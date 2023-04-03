@@ -1,31 +1,31 @@
-Tm,W,L,WLperc,GB,E#
-New York Yankees,79,54,.594,--,--
-Tampa Bay Rays,74,57,.565,4.0,27
-Toronto Blue Jays,72,59,.550,6.0,25
-Baltimore Orioles,71,61,.538,7.5,23
-Boston Red Sox,66,68,.493,13.5,16
-Cleveland Guardians,68,63,.519,--,--
-Minnesota Twins,67,64,.511,1.0,31
-Chicago White Sox,67,66,.504,2.0,29
-Kansas City Royals,54,80,.403,15.5,15
-Detroit Tigers,51,82,.383,18.0,13
-Houston Astros,85,48,.639,--,--
-Seattle Mariners,75,58,.564,10.0,20
-Texas Rangers,58,74,.439,26.5,4
-Los Angeles Angels,58,75,.436,27.0,3
-Oakland Athletics,49,85,.366,36.5,E
-New York Mets,85,49,.634,--,--
-Atlanta Braves,83,51,.619,2.0,27
-Philadelphia Phillies,73,60,.549,11.5,18
-Miami Marlins,55,77,.417,29.0,1
-Washington Nationals,46,87,.346,38.5,E
-St. Louis Cardinals,78,55,.586,--,--
-Milwaukee Brewers,70,62,.530,7.5,23
-Chicago Cubs,56,77,.421,22.0,8
-Cincinnati Reds,52,78,.400,24.5,7
-Pittsburgh Pirates,49,83,.371,28.5,2
-Los Angeles Dodgers,91,41,.689,--,--
-San Diego Padres,74,60,.552,18.0,12
-San Francisco Giants,63,68,.481,27.5,4
-Arizona Diamondbacks,63,69,.477,28.0,3
-Colorado Rockies,56,77,.421,35.5,E
+Tm,W,L,WLperc,GB
+Tampa Bay Rays,3,0,1.000,--
+Boston Red Sox,2,1,.667,1.0
+New York Yankees,2,1,.667,1.0
+Baltimore Orioles,1,2,.333,2.0
+Toronto Blue Jays,1,2,.333,2.0
+Minnesota Twins,3,0,1.000,--
+Cleveland Guardians,3,1,.750,0.5
+Chicago White Sox,2,2,.500,1.5
+Detroit Tigers,0,3,.000,3.0
+Kansas City Royals,0,3,.000,3.0
+Texas Rangers,3,0,1.000,--
+Los Angeles Angels,2,1,.667,1.0
+Houston Astros,2,2,.500,1.5
+Oakland Athletics,1,2,.333,2.0
+Seattle Mariners,1,3,.250,2.5
+New York Mets,3,1,.750,--
+Atlanta Braves,2,1,.667,0.5
+Washington Nationals,1,2,.333,1.5
+Miami Marlins,1,3,.250,2.0
+Philadelphia Phillies,0,3,.000,2.5
+Cincinnati Reds,2,1,.667,--
+Milwaukee Brewers,2,1,.667,--
+St. Louis Cardinals,2,1,.667,--
+Chicago Cubs,1,2,.333,1.0
+Pittsburgh Pirates,1,2,.333,1.0
+Arizona Diamondbacks,2,2,.500,--
+Colorado Rockies,2,2,.500,--
+Los Angeles Dodgers,2,2,.500,--
+San Diego Padres,2,2,.500,--
+San Francisco Giants,1,2,.333,0.5

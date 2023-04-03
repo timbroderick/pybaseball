@@ -1,21 +1,2 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
-ARI,3,4,4.0,4.57,Diamondbacks,Arizona Diamondbacks,National,West,#8FBC8B,ARI
-ATL,3,3,2.5,3.33,Braves,Atlanta Braves,National,East,#8FBC8B,ATL
-BAL,1,3,2.25,5.5,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
-BOS,2,1,3.67,3.33,Red Sox,Boston Red Sox,American,East,#8FBC8B,BOS
-CHW,1,3,3.25,3.25,White Sox,Chicago White Sox,American,Central,#000000,CHW
-CIN,6,4,6.8,5.9,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
-COL,2,2,5.5,5.25,Rockies,Colorado Rockies,National,West,#8FBC8B,COL
-LAD,0,7,2.86,6.29,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
-MIA,2,1,2.0,1.33,Marlins,Miami Marlins,National,East,#8FBC8B,MIA
-MIL,10,9,4.21,4.95,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
-NYM,1,3,1.75,4.0,Mets,New York Mets,National,East,#8FBC8B,NYM
-NYY,0,3,1.67,9.33,Yankees,New York Yankees,American,East,#8FBC8B,NYY
-PHI,3,0,8.33,2.33,Phillies,Philadelphia Phillies,National,East,#8FBC8B,PHI
-PIT,7,8,5.4,3.87,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
-SDP,2,5,4.57,7.29,Padres,San Diego Padres,National,West,#8FBC8B,SDP
-SFG,1,3,2.5,3.75,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
-STL,6,12,3.39,5.44,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
-TBR,1,2,3.67,5.33,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
-TOR,1,2,4.67,5.0,Blue Jays,Toronto Blue Jays,American,East,#8FBC8B,TOR
-WSN,4,2,4.83,3.83,Nationals,Washington Nationals,National,East,#8FBC8B,WSN
+MIL,1,2,3.33,4.0,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL

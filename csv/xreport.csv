@@ -14,13 +14,13 @@ stadings appended,OK
 standings joined,OK
 batting stats joined,OK
 pitching stats joined,OK
-Sox games,OK
-Sox players,OK
-Sox batting,OK
-Sox pitching,OK
-Cubs games,OK
-Cubs players,OK
-Cubs batting,OK
+Sox games,Problem
+Sox players,Problem
+Sox batting,Problem
+Sox pitching,Problem
+Cubs games,Problem
+Cubs players,Problem
+Cubs batting,Problem
 Cubs pitching,Problem
 Plotting,Problem
 League plots,Problem
