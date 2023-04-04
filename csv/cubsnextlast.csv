@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Sunday, Apr 2",CHC,Home,MIL,L,5,9,9,1-2,4.0,1.0,Lauer,Taillon,None,2:57,D,33266.0,--,,,0,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
-"Saturday, Apr 1",CHC,Home,MIL,L,1,3,9,1-1,1.0,Tied,Strzelecki,Assad,Williams,2:32,D,31363.0,-,,,1,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
-"Monday, Apr 3",CHC,@,CIN,,,,,,,,,,,,,,,,,2,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
-"Tuesday, Apr 4",CHC,@,CIN,,,,,,,,,,,,,,,,,3,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Monday, Apr 3",CHC,@,CIN,L,6,7,9,1-3,5.0,2.0,Cruz,Smyly,Law,2:35,N,11941.0,---,,,0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Sunday, Apr 2",CHC,Home,MIL,L,5,9,9,1-2,4.0,1.0,Lauer,Taillon,None,2:57,D,33266.0,.99,-2.0,,1,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+"Tuesday, Apr 4",CHC,@,CIN,,,,,,,,,,,,,,,,,2,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Wednesday, Apr 5",CHC,@,CIN,,,,,,,,,,,,,,,,,3,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
