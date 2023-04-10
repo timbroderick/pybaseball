@@ -1,3 +1,4 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
-CIN,0,1,6.0,7.0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+CIN,1,1,9.0,6.0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
 MIL,1,2,3.33,4.0,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+TEX,2,1,4.67,3.67,Rangers,Texas Rangers,American,West,#8FBC8B,TEX

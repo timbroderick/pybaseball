@@ -1,3 +1,4 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 HOU,2,2,4.0,4.25,Astros,Houston Astros,American,West,#8FBC8B,HOU
-SFG,0,1,3.0,12.0,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
+PIT,1,2,6.67,6.33,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
+SFG,1,2,5.33,10.33,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
