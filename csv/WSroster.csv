@@ -1,23 +1,23 @@
 posName,posnum,lastname,position,status_code,bats,throws
-Hanser Alberto,26,Alberto,SS,A,R,R
+Hanser Alberto,26,Alberto,3B,D15,R,R
 Tim Anderson,7,Anderson,SS,D10,R,R
-Elvis Andrus,1,Andrus,2B,A,R,R
-Tanner Banks,57,Banks,P,A,R,L
+Elvis Andrus,1,Andrus,SS,A,R,R
 Andrew Benintendi,23,Benintendi,LF,A,L,L
 Aaron Bummer,39,Bummer,P,A,L,L
-Jake Burger,30,Burger,1B,A,R,R
+Jake Burger,30,Burger,3B,A,R,R
 Dylan Cease,84,Cease,P,A,R,R
 Mike Clevinger,52,Clevinger,P,A,R,R
-Oscar Colas,22,Colas,OF,A,L,L
+Oscar Colas,22,Colas,RF,A,L,L
 Garrett Crochet,45,Crochet,P,D15,L,L
 Jake Diekman,55,Diekman,P,A,R,L
 Lucas Giolito,27,Giolito,P,A,R,R
-Romy Gonzalez,12,Gonzalez,2B,A,R,R
+Romy Gonzalez,12,Gonzalez,RF,A,R,R
 Yasmani Grandal,24,Grandal,C,A,S,R
 Kendall Graveman,49,Graveman,P,A,R,R
+Adam Haseley,51,Haseley,RF,A,L,L
 Liam Hendriks,31,Hendriks,P,D15,R,R
-Eloy Jimenez,74,Jimenez,RF,A,R,R
-Joe Kelly,17,Kelly,P,D15,R,R
+Eloy Jimenez,74,Jimenez,DH,A,R,R
+Joe Kelly,17,Kelly,P,A,R,R
 Michael Kopech,34,Kopech,P,A,R,R
 Jimmy Lambert,58,Lambert,P,A,R,R
 Reynaldo Lopez,40,Lopez,P,A,R,R
@@ -26,7 +26,7 @@ Keynan Middleton,99,Middleton,P,A,R,R
 Yoan Moncada,10,Moncada,3B,D10,S,R
 Luis Robert Jr.,88,Robert,CF,A,R,R
 Gregory Santos,60,Santos,P,A,R,R
-Gavin Sheets,32,Sheets,1B,A,L,L
-Lenyn Sosa,50,Sosa,SS,A,R,R
+Gavin Sheets,32,Sheets,DH,A,L,L
+Lenyn Sosa,50,Sosa,2B,A,R,R
 Andrew Vaughn,25,Vaughn,1B,A,R,R
 Seby Zavala,44,Zavala,C,A,R,R

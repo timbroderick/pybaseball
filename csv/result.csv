@@ -1,31 +1,31 @@
 Tm,W,L,WLperc,GB,Team,League,Division,color,tres
-Tampa Bay Rays,14,2,.875,--,Rays,American,East,#8FBC8B,TBR
-New York Yankees,10,6,.625,4.0,Yankees,American,East,#8FBC8B,NYY
-Toronto Blue Jays,10,6,.625,4.0,Blue Jays,American,East,#8FBC8B,TOR
-Baltimore Orioles,9,7,.563,5.0,Orioles,American,East,#8FBC8B,BAL
-Boston Red Sox,8,8,.500,6.0,Red Sox,American,East,#8FBC8B,BOS
-Minnesota Twins,10,6,.625,--,Twins,American,Central,#B9975B,MIN
-Cleveland Guardians,9,7,.563,1.0,Guardians,American,Central,#E31937,CLE
-Chicago White Sox,6,10,.375,4.0,White Sox,American,Central,#000000,CHW
-Detroit Tigers,5,9,.357,4.0,Tigers,American,Central,#FF8B00,DET
-Kansas City Royals,4,12,.250,6.0,Royals,American,Central,#788DF0,KCR
-Texas Rangers,9,6,.600,--,Rangers,American,West,#8FBC8B,TEX
-Seattle Mariners,8,8,.500,1.5,Mariners,American,West,#8FBC8B,SEA
-Los Angeles Angels,7,8,.467,2.0,Angels,American,West,#8FBC8B,LAA
-Houston Astros,7,9,.438,2.5,Astros,American,West,#8FBC8B,HOU
-Oakland Athletics,3,13,.188,6.5,Athletics,American,West,#8FBC8B,OAK
-Atlanta Braves,12,4,.750,--,Braves,National,East,#8FBC8B,ATL
-New York Mets,10,6,.625,2.0,Mets,National,East,#8FBC8B,NYM
-Miami Marlins,8,8,.500,4.0,Marlins,National,East,#8FBC8B,MIA
-Philadelphia Phillies,6,10,.375,6.0,Phillies,National,East,#8FBC8B,PHI
-Washington Nationals,5,11,.313,7.0,Nationals,National,East,#8FBC8B,WSN
-Milwaukee Brewers,11,5,.688,--,Brewers,National,Central,#8FBC8B,MIL
-Chicago Cubs,8,6,.571,2.0,Cubs,National,Central,#0000FF,CHC
-Pittsburgh Pirates,9,7,.563,2.0,Pirates,National,Central,#8FBC8B,PIT
-St. Louis Cardinals,7,9,.438,4.0,Cardinals,National,Central,#8FBC8B,STL
-Cincinnati Reds,6,9,.400,4.5,Reds,National,Central,#8FBC8B,CIN
-Arizona Diamondbacks,9,7,.563,--,Diamondbacks,National,West,#8FBC8B,ARI
-Los Angeles Dodgers,8,8,.500,1.0,Dodgers,National,West,#8FBC8B,LAD
-San Diego Padres,8,9,.471,1.5,Padres,National,West,#8FBC8B,SDP
-San Francisco Giants,5,9,.357,3.0,Giants,National,West,#8FBC8B,SFG
-Colorado Rockies,5,11,.313,4.0,Rockies,National,West,#8FBC8B,COL
+Tampa Bay Rays,23,6,.793,--,Rays,American,East,#8FBC8B,TBR
+Baltimore Orioles,19,9,.679,3.5,Orioles,American,East,#8FBC8B,BAL
+Toronto Blue Jays,18,10,.643,4.5,Blue Jays,American,East,#8FBC8B,TOR
+Boston Red Sox,15,14,.517,8.0,Red Sox,American,East,#8FBC8B,BOS
+New York Yankees,15,14,.517,8.0,Yankees,American,East,#8FBC8B,NYY
+Minnesota Twins,17,12,.586,--,Twins,American,Central,#B9975B,MIN
+Cleveland Guardians,13,15,.464,3.5,Guardians,American,Central,#E31937,CLE
+Detroit Tigers,10,17,.370,6.0,Tigers,American,Central,#FF8B00,DET
+Chicago White Sox,8,21,.276,9.0,White Sox,American,Central,#000000,CHW
+Kansas City Royals,7,22,.241,10.0,Royals,American,Central,#788DF0,KCR
+Texas Rangers,17,11,.607,--,Rangers,American,West,#8FBC8B,TEX
+Houston Astros,15,13,.536,2.0,Astros,American,West,#8FBC8B,HOU
+Los Angeles Angels,15,14,.517,2.5,Angels,American,West,#8FBC8B,LAA
+Seattle Mariners,12,16,.429,5.0,Mariners,American,West,#8FBC8B,SEA
+Oakland Athletics,6,23,.207,11.5,Athletics,American,West,#8FBC8B,OAK
+Atlanta Braves,18,9,.667,--,Braves,National,East,#8FBC8B,ATL
+New York Mets,15,12,.556,3.0,Mets,National,East,#8FBC8B,NYM
+Miami Marlins,16,13,.552,3.0,Marlins,National,East,#8FBC8B,MIA
+Philadelphia Phillies,15,14,.517,4.0,Phillies,National,East,#8FBC8B,PHI
+Washington Nationals,10,17,.370,8.0,Nationals,National,East,#8FBC8B,WSN
+Pittsburgh Pirates,20,9,.690,--,Pirates,National,Central,#8FBC8B,PIT
+Milwaukee Brewers,18,10,.643,1.5,Brewers,National,Central,#8FBC8B,MIL
+Chicago Cubs,14,13,.519,5.0,Cubs,National,Central,#0000FF,CHC
+Cincinnati Reds,12,16,.429,7.5,Reds,National,Central,#8FBC8B,CIN
+St. Louis Cardinals,10,19,.345,10.0,Cardinals,National,Central,#8FBC8B,STL
+Arizona Diamondbacks,16,13,.552,--,Diamondbacks,National,West,#8FBC8B,ARI
+Los Angeles Dodgers,16,13,.552,--,Dodgers,National,West,#8FBC8B,LAD
+San Diego Padres,15,14,.517,1.0,Padres,National,West,#8FBC8B,SDP
+San Francisco Giants,11,16,.407,4.0,Giants,National,West,#8FBC8B,SFG
+Colorado Rockies,9,20,.310,7.0,Rockies,National,West,#8FBC8B,COL
