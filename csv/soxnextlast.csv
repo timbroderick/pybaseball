@@ -1,5 +1,5 @@
 Date,teamID,Home_Away,Opp,WL,R,RA,Inn,W-L,Rank,GB,Win,Loss,Save,Time,DN,Attendance,cLI,Streak,Orig. Scheduled,sorting,Team,Tm,League,Division,color,tres
-"Sunday, Apr 30",CHW,Home,TBR,W-wo,12,9,9,8-21,4.0,9.0,Bummer,Beeks,None,3:24,D,17049.0,.31,1.0,,0,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
-"Saturday, Apr 29",CHW,Home,TBR,L,3,12,9,7-21,4.0,9.0,Chirinos,Lynn,None,2:53,N,28462.0,.35,-10.0,,1,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
-"Tuesday, May 2",CHW,Home,MIN,,,,,,,,,,,,,,,,,2,Twins,Minnesota Twins,American,Central,#B9975B,MIN
-"Wednesday, May 3",CHW,Home,MIN,,,,,,,,,,,,,,,,,3,Twins,Minnesota Twins,American,Central,#B9975B,MIN
+"Sunday, May 7",CHW,@,CIN,W,17,4,9,12-23,4.0,7.0,Kopech,Ashcraft,None,2:50,D,20338.0,.33,1.0,,0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Saturday, May 6",CHW,@,CIN,L,3,5,9,11-23,4.0,8.0,Law,Clevinger,Díaz,2:34,N,25543.0,.38,-1.0,,1,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+"Monday, May 8",CHW,@,KCR,,,,,,,,,,,,,,,,,2,Royals,Kansas City Royals,American,Central,#788DF0,KCR
+"Tuesday, May 9",CHW,@,KCR,,,,,,,,,,,,,,,,,3,Royals,Kansas City Royals,American,Central,#788DF0,KCR

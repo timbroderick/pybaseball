@@ -1,7 +1,8 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
 BAL,1,2,4.67,6.67,Orioles,Baltimore Orioles,American,East,#8FBC8B,BAL
+CIN,2,1,8.33,4.33,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
 HOU,2,2,4.0,4.25,Astros,Houston Astros,American,West,#8FBC8B,HOU
-MIN,1,2,2.67,3.33,Twins,Minnesota Twins,American,Central,#B9975B,MIN
+MIN,3,3,3.33,3.83,Twins,Minnesota Twins,American,Central,#B9975B,MIN
 PHI,1,2,3.0,4.0,Phillies,Philadelphia Phillies,National,East,#8FBC8B,PHI
 PIT,1,2,6.67,6.33,Pirates,Pittsburgh Pirates,National,Central,#8FBC8B,PIT
 SFG,1,2,5.33,10.33,Giants,San Francisco Giants,National,West,#8FBC8B,SFG
