@@ -1,10 +1,16 @@
 teamID,Wins,Loses,AvgRuns,AvgRunsAg,Team,Tm,League,Division,color,tres
-CIN,1,1,9.0,6.0,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+CIN,1,4,5.6,7.4,Reds,Cincinnati Reds,National,Central,#8FBC8B,CIN
+HOU,0,3,4.33,6.67,Astros,Houston Astros,American,West,#8FBC8B,HOU
 LAD,3,4,4.86,4.0,Dodgers,Los Angeles Dodgers,National,West,#8FBC8B,LAD
 MIA,2,4,3.83,3.67,Marlins,Miami Marlins,National,East,#8FBC8B,MIA
 MIL,1,2,3.33,4.0,Brewers,Milwaukee Brewers,National,Central,#8FBC8B,MIL
+MIN,1,2,3.33,9.67,Twins,Minnesota Twins,American,Central,#B9975B,MIN
+NYM,2,1,4.0,4.67,Mets,New York Mets,National,East,#8FBC8B,NYM
 OAK,3,0,8.67,1.0,Athletics,Oakland Athletics,American,West,#8FBC8B,OAK
+PHI,1,2,4.67,5.0,Phillies,Philadelphia Phillies,National,East,#8FBC8B,PHI
 SDP,2,1,4.67,2.33,Padres,San Diego Padres,National,West,#8FBC8B,SDP
 SEA,2,1,6.33,5.33,Mariners,Seattle Mariners,American,West,#8FBC8B,SEA
+STL,1,2,5.0,4.33,Cardinals,St. Louis Cardinals,National,Central,#8FBC8B,STL
+TBR,1,0,1.0,0.0,Rays,Tampa Bay Rays,American,East,#8FBC8B,TBR
 TEX,2,1,4.67,3.67,Rangers,Texas Rangers,American,West,#8FBC8B,TEX
 WSN,1,3,2.5,2.75,Nationals,Washington Nationals,National,East,#8FBC8B,WSN
