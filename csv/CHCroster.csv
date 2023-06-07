@@ -1,5 +1,6 @@
 posName,posnum,lastname,position,status_code,bats,throws
 Adbert Alzolay,73,Alzolay,P,A,R,R
+Miguel Amaya,6,Amaya,C,A,R,R
 Javier Assad,72,Assad,P,A,R,R
 Tucker Barnhart,18,Barnhart,C,A,L,R
 Cody Bellinger,24,Bellinger,CF,D10,L,L
@@ -14,17 +15,17 @@ Nico Hoerner,2,Hoerner,2B,A,R,R
 Brandon Hughes,47,Hughes,P,A,S,L
 Mark Leiter Jr.,38,Leiter,P,A,R,R
 Trey Mancini,36,Mancini,1B,A,R,R
-Miles Mastrobuoni,20,Mastrobuoni,SS,A,L,R
+Miles Mastrobuoni,20,Mastrobuoni,RF,A,L,R
 Julian Merryweather,66,Merryweather,P,A,R,R
 Matt Mervis,22,Mervis,1B,A,L,R
 Christopher Morel,5,Morel,CF,A,R,R
 Edwin Rios,30,Rios,DH,A,L,R
-Michael Rucker,59,Rucker,P,A,R,R
 Drew Smyly,11,Smyly,P,A,L,L
-Justin Steele,35,Steele,P,A,L,L
+Justin Steele,35,Steele,P,D15,L,L
 Marcus Stroman,0,Stroman,P,A,R,R
 Seiya Suzuki,27,Suzuki,RF,A,R,R
 Dansby Swanson,7,Swanson,SS,A,R,R
 Jameson Taillon,50,Taillon,P,A,R,R
-Mike Tauchman,40,Tauchman,LF,A,L,L
+Mike Tauchman,40,Tauchman,CF,A,L,L
+Hayden Wesneski,19,Wesneski,P,A,R,R
 Patrick Wisdom,16,Wisdom,3B,A,R,R
